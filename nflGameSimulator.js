@@ -19,557 +19,557 @@ function init(){
 					document.getElementById("texans"), document.getElementById("titans"), document.getElementById("vikings"), document.getElementById("49ers") ];
 					
 	/*TEAM O-LINES*/
-	CHIoffense = [ {name: "Andy Dalton", pos: "QB", points: 0},
-	{name: "Khalil Herbert", pos: "RB", points: 0},
-	{name: "David Montgomery", pos: "RB", points: 0},
-	{name: "Ryan Nall", pos: "RB", points: 0},
-	{name: "Damien Williams", pos: "RB", points: 0},
-	{name: "Damiere Byrd", pos: "WR", points: 0},
-	{name: "Marquise Goodwin", pos: "WR", points: 0},
-	{name: "Jakeem Grant", pos: "WR", points: 0},
-	{name: "Darnell Mooney", pos: "WR", points: 0},
-	{name: "Allen Robinson", pos: "WR", points: 0},
-	{name: "Jimmy Graham", pos: "TE", points: 0},
-	{name: "J.P. Holtz", pos: "TE", points: 0},
-	{name: "Jesper Horsted", pos: "TE", points: 0},
-	{name: "Jesse James", pos: "TE", points: 0},
-	{name: "Cole Kmet", pos: "TE", points: 0},
-	{name: "Cairo Santos", pos: "K", points: 0} ];
+	CHIoffense = [ {name: "Andy Dalton", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Khalil Herbert", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "David Montgomery", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ryan Nall", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Damien Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Damiere Byrd", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Marquise Goodwin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jakeem Grant", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Darnell Mooney", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Allen Robinson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jimmy Graham", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "J.P. Holtz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jesper Horsted", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jesse James", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cole Kmet", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cairo Santos", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	CINoffense = [ {name: "Joe Burrow", pos: "QB", points: 0},
-	{name: "Chris Evans", pos: "RB", points: 0},
-	{name: "Joe Mixon", pos: "RB", points: 0},
-	{name: "Samaje Perine", pos: "RB", points: 0},
-	{name: "Trayveon Williams", pos: "RB", points: 0},
-	{name: "Tyler Boyd", pos: "WR", points: 0},
-	{name: "Ja&#39;Marr Chase", pos: "WR", points: 0},
-	{name: "Tee Higgins", pos: "WR", points: 0},
-	{name: "Stanley Morgan Jr.", pos: "WR", points: 0},
-	{name: "Mike Thomas", pos: "WR", points: 0},
-	{name: "Drew Sample", pos: "TE", points: 0},
-	{name: "C.J. Uzomah", pos: "TE", points: 0},
-	{name: "Mitchell Wilcox", pos: "TE", points: 0},
-	{name: "Evan McPherson", pos: "K", points: 0} ];
+	CINoffense = [ {name: "Joe Burrow", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chris Evans", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Joe Mixon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Samaje Perine", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Trayveon Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyler Boyd", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ja&#39;Marr Chase", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tee Higgins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Stanley Morgan Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mike Thomas", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Drew Sample", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "C.J. Uzomah", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mitchell Wilcox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Evan McPherson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	BUFoffense = [ {name: "Josh Allen", pos: "QB", points: 0},
-	{name: "Matt Breida", pos: "RB", points: 0},
-	{name: "Reggie Gilliam", pos: "RB", points: 0},
-	{name: "Taiwan Jones", pos: "RB", points: 0},
-	{name: "Zack Moss", pos: "RB", points: 0},
-	{name: "Devin Singletary", pos: "RB", points: 0},
-	{name: "Cole Beasley", pos: "WR", points: 0},
-	{name: "Gabriel Davis", pos: "WR", points: 0},
-	{name: "Stefon Diggs", pos: "WR", points: 0},
-	{name: "Jake Kumerow", pos: "WR", points: 0},
-	{name: "Isaiah McKenzie", pos: "WR", points: 0},
-	{name: "Emmanuel Sanders", pos: "WR", points: 0},
-	{name: "Marquez Stevenson", pos: "WR", points: 0},
-	{name: "Dawson Knox", pos: "TE", points: 0},
-	{name: "Tommy Sweeney", pos: "TE", points: 0},
-	{name: "Tyler Bass", pos: "K", points: 0} ];
+	BUFoffense = [ {name: "Josh Allen", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Matt Breida", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Reggie Gilliam", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Taiwan Jones", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Zack Moss", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Devin Singletary", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cole Beasley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Gabriel Davis", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Stefon Diggs", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jake Kumerow", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Isaiah McKenzie", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Emmanuel Sanders", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Marquez Stevenson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dawson Knox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tommy Sweeney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyler Bass", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	DENoffense = [ {name: "Teddy Bridgewater", pos: "QB", points: 0},
-	{name: "Mike Boone", pos: "RB", points: 0},
-	{name: "Melvin Gordon", pos: "RB", points: 0},
-	{name: "Javonte Williams", pos: "RB", points: 0},
-	{name: "Kendall Hinton", pos: "WR", points: 0},
-	{name: "Diontae Spencer", pos: "WR", points: 0},
-	{name: "Courtland Sutton", pos: "WR", points: 0},
-	{name: "Noah Fant", pos: "TE", points: 0},
-	{name: "Albert Okwuegbunam", pos: "TE", points: 0},
-	{name: "Eric Saubert", pos: "TE", points: 0},
-	{name: "Brandon McManus", pos: "K", points: 0} ];
+	DENoffense = [ {name: "Teddy Bridgewater", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mike Boone", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Melvin Gordon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Javonte Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kendall Hinton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Diontae Spencer", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Courtland Sutton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Noah Fant", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Albert Okwuegbunam", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Eric Saubert", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Brandon McManus", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	CLEoffense = [ {name: "Baker Mayfield", pos: "QB", points: 0},
-	{name: "Nick Chubb", pos: "RB", points: 0},
-	{name: "Demetric Felton", pos: "RB", points: 0},
-	{name: "Kareem Hunt", pos: "RB", points: 0},
-	{name: "Andy Janovich", pos: "RB", points: 0},
-	{name: "D&#39;Ernest Johnson", pos: "RB", points: 0},
-	{name: "Ja&#39;Marcus Bradley", pos: "WR", points: 0},
-	{name: "Rashard Higgins", pos: "WR", points: 0},
-	{name: "Jarvis Landry", pos: "WR", points: 0},
-	{name: "Donovan Peoples-Jones", pos: "WR", points: 0},
-	{name: "Anthony Schwartz", pos: "WR", points: 0},
-	{name: "Harrison Bryant", pos: "TE", points: 0},
-	{name: "Austin Hooper", pos: "TE", points: 0},
-	{name: "David Njoku", pos: "TE", points: 0},
-	{name: "Chase McLaughlin", pos: "K", points: 0} ];
+	CLEoffense = [ {name: "Baker Mayfield", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nick Chubb", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Demetric Felton", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kareem Hunt", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Andy Janovich", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "D&#39;Ernest Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ja&#39;Marcus Bradley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Rashard Higgins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jarvis Landry", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Donovan Peoples-Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Anthony Schwartz", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Harrison Bryant", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Austin Hooper", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "David Njoku", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chase McLaughlin", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	TBoffense = [ {name: "Tom Brady", pos: "QB", points: 0},
-	{name: "Kenjon Barner", pos: "RB", points: 0},
-	{name: "Le&#39;Veon Bell", pos: "RB", points: 0},
-	{name: "Ronald Jones II", pos: "RB", points: 0},
-	{name: "Ke&#39;Shawn Vaughn", pos: "RB", points: 0},
-	{name: "Leonard Fournette", pos: "RB", points: 0},
-	{name: "Mike Evans", pos: "WR", points: 0},
-	{name: "Cyril Grayson", pos: "WR", points: 0},
-	{name: "Tyler Johnson", pos: "WR", points: 0},
-	{name: "Scotty Miller", pos: "WR", points: 0},
-	{name: "Breshad Perriman", pos: "WR", points: 0},
-	{name: "Chris Godwin", pos: "WR", points: 0},
-	{name: "Justin Watson", pos: "WR", points: 0},
-	{name: "Cameron Brate", pos: "TE", points: 0},
-	{name: "Rob Gronkowski", pos: "TE", points: 0},
-	{name: "O.J. Howard", pos: "TE", points: 0},
-	{name: "Ryan Succop", pos: "K", points: 0} ];
+	TBoffense = [ {name: "Tom Brady", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kenjon Barner", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Le&#39;Veon Bell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ronald Jones II", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ke&#39;Shawn Vaughn", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Leonard Fournette", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mike Evans", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cyril Grayson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyler Johnson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Scotty Miller", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Breshad Perriman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chris Godwin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Justin Watson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cameron Brate", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Rob Gronkowski", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "O.J. Howard", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ryan Succop", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	ARIoffense = [ {name: "Kyler Murray", pos: "QB", points: 0},
-	{name: "Eno Benjamin", pos: "RB", points: 0},
-	{name: "James Conner", pos: "RB", points: 0},
-	{name: "Chase Edmonds", pos: "RB", points: 0},
-	{name: "Jonathan Ward", pos: "RB", points: 0},
-	{name: "Greg Dortch", pos: "WR", points: 0},
-	{name: "A.J. Green", pos: "WR", points: 0},
-	{name: "Andy Isabella", pos: "WR", points: 0},
-	{name: "Christian Kirk", pos: "WR", points: 0},
-	{name: "Rondale Moore", pos: "WR", points: 0},
-	{name: "Antoine Wesley", pos: "WR", points: 0},
-	{name: "Darrell Daniels", pos: "TE", points: 0},
-	{name: "Zach Ertz", pos: "TE", points: 0},
-	{name: "Demetrius Harris", pos: "TE", points: 0},
-	{name: "Matt Prater", pos: "K", points: 0} ];
+	ARIoffense = [ {name: "Kyler Murray", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Eno Benjamin", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "James Conner", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chase Edmonds", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jonathan Ward", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Greg Dortch", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "A.J. Green", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Andy Isabella", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Christian Kirk", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Rondale Moore", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Antoine Wesley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Darrell Daniels", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Zach Ertz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Demetrius Harris", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Matt Prater", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	LACoffense = [ {name: "Justin Herbert", pos: "QB", points: 0},
-	{name: "Austin Ekeler", pos: "RB", points: 0},
-	{name: "Justin Jackson", pos: "RB", points: 0},
-	{name: "Joshua Kelley", pos: "RB", points: 0},
-	{name: "Gabe Nabers", pos: "RB", points: 0},
-	{name: "Larry Rountree III", pos: "RB", points: 0},
-	{name: "Keenan Allen", pos: "WR", points: 0},
-	{name: "Jalen Guyton", pos: "WR", points: 0},
-	{name: "Josh Palmer", pos: "WR", points: 0},
-	{name: "Andre Roberts", pos: "WR", points: 0},
-	{name: "Mike Williams", pos: "WR", points: 0},
-	{name: "Stephen Anderson", pos: "TE", points: 0},
-	{name: "Tre&#39; McKitty", pos: "TE", points: 0},
-	{name: "Dustin Hopkins", pos: "K", points: 0} ];
+	LACoffense = [ {name: "Justin Herbert", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Austin Ekeler", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Justin Jackson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Joshua Kelley", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Gabe Nabers", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Larry Rountree III", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Keenan Allen", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jalen Guyton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Josh Palmer", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Andre Roberts", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mike Williams", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Stephen Anderson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tre&#39; McKitty", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dustin Hopkins", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	KCoffense = [ {name: "Patrick Mahomes", pos: "QB", points: 0},
-	{name: "Michael Burton", pos: "RB", points: 0},
-	{name: "Clyde Edwards-Helaire", pos: "RB", points: 0},
-	{name: "Derrick Gore", pos: "RB", points: 0},
-	{name: "Jerick McKinnon", pos: "RB", points: 0},
-	{name: "Darrel Williams", pos: "RB", points: 0},
-	{name: "Josh Gordon", pos: "WR", points: 0},
-	{name: "Mecole Hardman", pos: "WR", points: 0},
-	{name: "Tyreek Hill", pos: "WR", points: 0},
-	{name: "Marcus Kemp", pos: "WR", points: 0},
-	{name: "Byron Pringle", pos: "WR", points: 0},
-	{name: "Demarcus Robinson", pos: "WR", points: 0},
-	{name: "Blake Bell", pos: "TE", points: 0},
-	{name: "Noah Gray", pos: "TE", points: 0},
-	{name: "Travis Kelce", pos: "TE", points: 0},
-	{name: "Harrison Butker", pos: "K", points: 0} ];
+	KCoffense = [ {name: "Patrick Mahomes", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Michael Burton", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Clyde Edwards-Helaire", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Derrick Gore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jerick McKinnon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Darrel Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Josh Gordon", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mecole Hardman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyreek Hill", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Marcus Kemp", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Byron Pringle", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Demarcus Robinson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Blake Bell", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Noah Gray", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Travis Kelce", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Harrison Butker", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	INDoffense = [ {name: "Carson Wentz", pos: "QB", points: 0},
-	{name: "Nyheim Hines", pos: "RB", points: 0},
-	{name: "Deon Jackson", pos: "RB", points: 0},
-	{name: "Marlon Mack", pos: "RB", points: 0},
-	{name: "Jonathan Taylor", pos: "RB", points: 0},
-	{name: "Ashton Dulin", pos: "WR", points: 0},
-	{name: "T.Y. Hilton", pos: "WR", points: 0},
-	{name: "Zach Pascal", pos: "WR", points: 0},
-	{name: "Dezmon Patmon", pos: "WR", points: 0},
-	{name: "Michael Pittman Jr.", pos: "WR", points: 0},
-	{name: "Michael Strachan", pos: "WR", points: 0},
-	{name: "Mo Alie-Cox", pos: "TE", points: 0},
-	{name: "Jack Doyle", pos: "TE", points: 0},
-	{name: "Kylen Granson", pos: "TE", points: 0},
-	{name: "Michael Badgley", pos: "K", points: 0} ];
+	INDoffense = [ {name: "Carson Wentz", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nyheim Hines", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Deon Jackson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Marlon Mack", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jonathan Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ashton Dulin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "T.Y. Hilton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Zach Pascal", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dezmon Patmon", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Michael Pittman Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Michael Strachan", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mo Alie-Cox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jack Doyle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kylen Granson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Michael Badgley", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	DALoffense = [ {name: "Dak Prescott", pos: "QB", points: 0},
-	{name: "Corey Clement", pos: "RB", points: 0},
-	{name: "Ezekiel Elliott", pos: "RB", points: 0},
-	{name: "Tony Pollard", pos: "RB", points: 0},
-	{name: "Noah Brown", pos: "WR", points: 0},
-	{name: "Amari Cooper", pos: "WR", points: 0},
-	{name: "Simi Fehoko", pos: "WR", points: 0},
-	{name: "Michael Gallup", pos: "WR", points: 0},
-	{name: "CeeDee Lamb", pos: "WR", points: 0},
-	{name: "Malik Turner", pos: "WR", points: 0},
-	{name: "Cedrick Wilson Jr.", pos: "WR", points: 0},
-	{name: "Sean McKeon", pos: "TE", points: 0},
-	{name: "Dalton Schultz", pos: "TE", points: 0},
-	{name: "Jeremy Sprinkle", pos: "TE", points: 0},
-	{name: "Greg Zuerlein", pos: "K", points: 0} ];
+	DALoffense = [ {name: "Dak Prescott", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Corey Clement", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ezekiel Elliott", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tony Pollard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Noah Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Amari Cooper", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Simi Fehoko", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Michael Gallup", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "CeeDee Lamb", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Malik Turner", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cedrick Wilson Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Sean McKeon", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dalton Schultz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jeremy Sprinkle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Greg Zuerlein", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	MIAoffense = [ {name: "Tua Tagovailoa", pos: "QB", points: 0},
-	{name: "Salvon Ahmed", pos: "RB", points: 0},
-	{name: "Myles Gaskin", pos: "RB", points: 0},
-	{name: "Duke Johnson", pos: "RB", points: 0},
-	{name: "Phillip Lindsay", pos: "RB", points: 0},
-	{name: "Isaiah Ford", pos: "WR", points: 0},
-	{name: "Mack Hollins", pos: "WR", points: 0},
-	{name: "DeVante Parker", pos: "WR", points: 0},
-	{name: "Jaylen Waddle", pos: "WR", points: 0},
-	{name: "Preston Williams", pos: "WR", points: 0},
-	{name: "Albert Wilson", pos: "WR", points: 0},
-	{name: "Cethan Carter", pos: "TE", points: 0},
-	{name: "Mike Gesicki", pos: "TE", points: 0},
-	{name: "Hunter Long", pos: "TE", points: 0},
-	{name: "Adam Shaheen", pos: "TE", points: 0},
-	{name: "Durham Smythe", pos: "TE", points: 0},
-	{name: "Jason Sanders", pos: "K", points: 0} ];
+	MIAoffense = [ {name: "Tua Tagovailoa", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Salvon Ahmed", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Myles Gaskin", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Duke Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Phillip Lindsay", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Isaiah Ford", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mack Hollins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "DeVante Parker", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jaylen Waddle", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Preston Williams", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Albert Wilson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cethan Carter", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mike Gesicki", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Hunter Long", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Adam Shaheen", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Durham Smythe", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jason Sanders", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	PHIoffense = [ {name: "Jalen Hurts", pos: "QB", points: 0},
-	{name: "Kenneth Gainwell", pos: "RB", points: 0},
-	{name: "Miles Sanders", pos: "RB", points: 0},
-	{name: "Jordan Howard", pos: "RB", points: 0},
-	{name: "Boston Scott", pos: "RB", points: 0},
-	{name: "J.J. Arcega-Whiteside", pos: "WR", points: 0},
-	{name: "Jalen Reagor", pos: "WR", points: 0},
-	{name: "DeVonta Smith", pos: "WR", points: 0},
-	{name: "Greg Ward", pos: "WR", points: 0},
-	{name: "Quez Watkins", pos: "WR", points: 0},
-	{name: "Tyree Jackson", pos: "TE", points: 0},
-	{name: "Jason Croom", pos: "TE", points: 0},
-	{name: "Dallas Goedert", pos: "TE", points: 0},
-	{name: "Jack Stoll", pos: "TE", points: 0},
-	{name: "Jake Elliott", pos: "K", points: 0} ];
+	PHIoffense = [ {name: "Jalen Hurts", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kenneth Gainwell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Miles Sanders", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jordan Howard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Boston Scott", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "J.J. Arcega-Whiteside", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jalen Reagor", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "DeVonta Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Greg Ward", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Quez Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyree Jackson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jason Croom", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dallas Goedert", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jack Stoll", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jake Elliott", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	ATLoffense = [ {name: "Matt Ryan", pos: "QB", points: 0},
-	{name: "Mike Davis", pos: "RB", points: 0},
-	{name: "Qadree Ollison", pos: "RB", points: 0},
-	{name: "Cordarrelle Patterson", pos: "RB", points: 0},
-	{name: "Keith Smith", pos: "RB", points: 0},
-	{name: "Christian Blake", pos: "WR", points: 0},
-	{name: "Frank Darby", pos: "WR", points: 0},
-	{name: "Russell Gage", pos: "WR", points: 0},
-	{name: "Olamide Zaccheaus", pos: "WR", points: 0},
-	{name: "Kyle Pitts", pos: "TE", points: 0},
-	{name: "Lee Smith", pos: "TE", points: 0},
-	{name: "Younghoe Koo", pos: "K", points: 0} ];
+	ATLoffense = [ {name: "Matt Ryan", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mike Davis", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Qadree Ollison", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cordarrelle Patterson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Keith Smith", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Christian Blake", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Frank Darby", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Russell Gage", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Olamide Zaccheaus", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kyle Pitts", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Lee Smith", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Younghoe Koo", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	NYGoffense = [ {name: "Daniel Jones", pos: "QB", points: 0},
-	{name: "Saquon Barkley", pos: "RB", points: 0},
-	{name: "Devontae Booker", pos: "RB", points: 0},
-	{name: "Cullen Gillaspia", pos: "RB", points: 0},
-	{name: "Elijhaa Penny", pos: "RB", points: 0},
-	{name: "Kenny Golladay", pos: "WR", points: 0},
-	{name: "Collin Johnson", pos: "WR", points: 0},
-	{name: "John Ross", pos: "WR", points: 0},
-	{name: "Kadarius Toney", pos: "WR", points: 0},
-	{name: "Evan Engram", pos: "TE", points: 0},
-	{name: "Chris Myarick", pos: "TE", points: 0},
-	{name: "Kyle Rudolph", pos: "TE", points: 0},
-	{name: "Graham Gano", pos: "K", points: 0} ];
+	NYGoffense = [ {name: "Daniel Jones", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Saquon Barkley", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Devontae Booker", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cullen Gillaspia", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Elijhaa Penny", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kenny Golladay", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Collin Johnson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "John Ross", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kadarius Toney", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Evan Engram", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chris Myarick", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kyle Rudolph", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Graham Gano", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	JAXoffense = [ {name: "Trevor Lawrence", pos: "QB", points: 0},
-	{name: "Ryquell Armstead", pos: "RB", points: 0},
-	{name: "Dare Ogunbowale", pos: "RB", points: 0},
-	{name: "Mekhi Sargent", pos: "RB", points: 0},
-	{name: "Tavon Austin", pos: "WR", points: 0},
-	{name: "Marvin Jones", pos: "WR", points: 0},
-	{name: "Laviska Shenault", pos: "WR", points: 0},
-	{name: "Laquon Treadwell", pos: "WR", points: 0},
-	{name: "Luke Farrell", pos: "TE", points: 0},
-	{name: "Chris Manhertz", pos: "TE", points: 0},
-	{name: "James O&#39;Shaughnessy", pos: "TE", points: 0},
-	{name: "Kahale Warring", pos: "TE", points: 0},
-	{name: "Matthew Wright", pos: "K", points: 0} ];
+	JAXoffense = [ {name: "Trevor Lawrence", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ryquell Armstead", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dare Ogunbowale", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mekhi Sargent", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tavon Austin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Marvin Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Laviska Shenault", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Laquon Treadwell", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Luke Farrell", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chris Manhertz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "James O&#39;Shaughnessy", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kahale Warring", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Matthew Wright", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	NYJoffense = [ {name: "Zach Wilson", pos: "QB", points: 0},
-	{name: "Nick Bawden", pos: "RB", points: 0},
-	{name: "Michael Carter", pos: "RB", points: 0},
-	{name: "Ty Johnson", pos: "RB", points: 0},
-	{name: "La&#39;Mical Perine", pos: "RB", points: 0},
-	{name: "Austin Walter", pos: "RB", points: 0},
-	{name: "Braxton Berrios", pos: "WR", points: 0},
-	{name: "Keelan Cole", pos: "WR", points: 0},
-	{name: "Jamison Crowder", pos: "WR", points: 0},
-	{name: "Denzel Mims", pos: "WR", points: 0},
-	{name: "Jeff Smith", pos: "WR", points: 0},
-	{name: "Kenny Yeboah", pos: "TE", points: 0},
-	{name: "Eddy Pi&ntilde;eiro", pos: "K", points: 0} ];
+	NYJoffense = [ {name: "Zach Wilson", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nick Bawden", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Michael Carter", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ty Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "La&#39;Mical Perine", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Austin Walter", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Braxton Berrios", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Keelan Cole", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jamison Crowder", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Denzel Mims", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jeff Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kenny Yeboah", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Eddy Pi&ntilde;eiro", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	DEToffense = [ {name: "Jared Goff", pos: "QB", points: 0},
-	{name: "Jason Cabinda", pos: "RB", points: 0},
-	{name: "Godwin Igwebuike", pos: "RB", points: 0},
-	{name: "Jermar Jefferson", pos: "RB", points: 0},
-	{name: "Craig Reynolds", pos: "RB", points: 0},
-	{name: "D&#39;Andre Swift", pos: "RB", points: 0},
-	{name: "Jamaal Williams", pos: "RB", points: 0},
-	{name: "Trinity Benson", pos: "WR", points: 0},
-	{name: "KhaDarel Hodge", pos: "WR", points: 0},
-	{name: "Tom Kennedy", pos: "WR", points: 0},
-	{name: "Josh Reynolds", pos: "WR", points: 0},
-	{name: "Amon-Ra St. Brown", pos: "WR", points: 0},
-	{name: "Jared Pinkney", pos: "TE", points: 0},
-	{name: "Brock Wright", pos: "TE", points: 0},
-	{name: "Riley Patterson", pos: "K", points: 0} ];
+	DEToffense = [ {name: "Jared Goff", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jason Cabinda", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Godwin Igwebuike", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jermar Jefferson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Craig Reynolds", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "D&#39;Andre Swift", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jamaal Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Trinity Benson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "KhaDarel Hodge", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tom Kennedy", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Josh Reynolds", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Amon-Ra St. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jared Pinkney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Brock Wright", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Riley Patterson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	GBoffense = [ {name: "Aaron Rodgers", pos: "QB", points: 0},
-	{name: "A.J. Dillon", pos: "RB", points: 0},
-	{name: "Aaron Jones", pos: "RB", points: 0},
-	{name: "Patrick Taylor", pos: "RB", points: 0},
-	{name: "Davante Adams", pos: "WR", points: 0},
-	{name: "Allen Lazard", pos: "WR", points: 0},
-	{name: "Equanimeous St. Brown", pos: "WR", points: 0},
-	{name: "Marquez Valdes-Scantling", pos: "WR", points: 0},
-	{name: "Juwann Winfree", pos: "WR", points: 0},
-	{name: "Dominique Dafney", pos: "TE", points: 0},
-	{name: "Tyler Davis", pos: "TE", points: 0},
-	{name: "Josiah Deguara", pos: "TE", points: 0},
-	{name: "Marcedes Lewis", pos: "TE", points: 0},
-	{name: "Mason Crosby", pos: "K", points: 0} ];
+	GBoffense = [ {name: "Aaron Rodgers", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "A.J. Dillon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Aaron Jones", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Patrick Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Davante Adams", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Allen Lazard", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Equanimeous St. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Marquez Valdes-Scantling", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Juwann Winfree", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dominique Dafney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyler Davis", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Josiah Deguara", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Marcedes Lewis", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mason Crosby", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	CARoffense = [ {name: "Cam Newton", pos: "QB", points: 0},
-	{name: "Ameer Abdullah", pos: "RB", points: 0},
-	{name: "Chuba Hubbard", pos: "RB", points: 0},
-	{name: "Giovanni Ricci", pos: "RB", points: 0},
-	{name: "Robby Anderson", pos: "WR", points: 0},
-	{name: "Alex Erickson", pos: "WR", points: 0},
-	{name: "Terrace Marshall Jr.", pos: "WR", points: 0},
-	{name: "D.J. Moore", pos: "WR", points: 0},
-	{name: "Shi Smith", pos: "WR", points: 0},
-	{name: "Brandon Zylstra", pos: "WR", points: 0},
-	{name: "Ian Thomas", pos: "TE", points: 0},
-	{name: "Lirim Hajrullahu", pos: "K", points: 0} ];
+	CARoffense = [ {name: "Cam Newton", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ameer Abdullah", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chuba Hubbard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Giovanni Ricci", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Robby Anderson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Alex Erickson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Terrace Marshall Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "D.J. Moore", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Shi Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Brandon Zylstra", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ian Thomas", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Lirim Hajrullahu", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	NEoffense = [ {name: "Mac Jones", pos: "QB", points: 0},
-	{name: "Brandon Bolden", pos: "RB", points: 0},
-	{name: "Damien Harris", pos: "RB", points: 0},
-	{name: "Jakob Johnson", pos: "RB", points: 0},
-	{name: "Rhamondre Stevenson", pos: "RB", points: 0},
-	{name: "J.J. Taylor", pos: "RB", points: 0},
-	{name: "Nelson Agholor", pos: "WR", points: 0},
-	{name: "Kendrick Bourne", pos: "WR", points: 0},
-	{name: "N&#39;Keal Harry", pos: "WR", points: 0},
-	{name: "Jakobi Meyers", pos: "WR", points: 0},
-	{name: "Gunner Olszewski", pos: "WR", points: 0},
-	{name: "Matthew Slater", pos: "WR", points: 0},
-	{name: "Devin Asiasi", pos: "TE", points: 0},
-	{name: "Hunter Henry", pos: "TE", points: 0},
-	{name: "Jonnu Smith", pos: "TE", points: 0},
-	{name: "Nick Folk", pos: "K", points: 0} ];
+	NEoffense = [ {name: "Mac Jones", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Brandon Bolden", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Damien Harris", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jakob Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Rhamondre Stevenson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "J.J. Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nelson Agholor", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kendrick Bourne", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "N&#39;Keal Harry", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jakobi Meyers", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Gunner Olszewski", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Matthew Slater", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Devin Asiasi", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Hunter Henry", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jonnu Smith", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nick Folk", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	WASoffense = [ {name: "Taylor Heinicke", pos: "QB", points: 0},
-	{name: "Jaret Patterson", pos: "RB", points: 0},
-	{name: "Jonathan Williams", pos: "RB", points: 0},
-	{name: "Antonio Gibson", pos: "RB", points: 0},
-	{name: "J.D. McKissic", pos: "RB", points: 0},
-	{name: "Dyami Brown", pos: "WR", points: 0},
-	{name: "DeAndre Carter", pos: "WR", points: 0},
-	{name: "Adam Humphries", pos: "WR", points: 0},
-	{name: "Terry McLaurin", pos: "WR", points: 0},
-	{name: "Dax Milne", pos: "WR", points: 0},
-	{name: "Curtis Samuel", pos: "WR", points: 0},
-	{name: "Cam Sims", pos: "WR", points: 0},
-	{name: "John Bates", pos: "TE", points: 0},
-	{name: "Sammis Reyes", pos: "TE", points: 0},
-	{name: "Ricky Seals-Jones", pos: "TE", points: 0},
-	{name: "Joey Slye", pos: "K", points: 0} ];
+	WASoffense = [ {name: "Taylor Heinicke", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jaret Patterson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jonathan Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Antonio Gibson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "J.D. McKissic", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dyami Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "DeAndre Carter", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Adam Humphries", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Terry McLaurin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dax Milne", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Curtis Samuel", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cam Sims", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "John Bates", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Sammis Reyes", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ricky Seals-Jones", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Joey Slye", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	LVoffense = [ {name: "Derek Carr", pos: "QB", points: 0},
-	{name: "Peyton Barber", pos: "RB", points: 0},
-	{name: "Josh Jacobs", pos: "RB", points: 0},
-	{name: "Jalen Richard", pos: "RB", points: 0},
-	{name: "Sutton Smith", pos: "RB", points: 0},
-	{name: "Bryan Edwards", pos: "WR", points: 0},
-	{name: "DeSean Jackson", pos: "WR", points: 0},
-	{name: "Zay Jones", pos: "WR", points: 0},
-	{name: "Hunter Renfrow", pos: "WR", points: 0},
-	{name: "Nick Bowers", pos: "TE", points: 0},
-	{name: "Daniel Helm", pos: "TE", points: 0},
-	{name: "Foster Moreau", pos: "TE", points: 0},
-	{name: "Daniel Carlson", pos: "K", points: 0} ];
+	LVoffense = [ {name: "Derek Carr", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Peyton Barber", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Josh Jacobs", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jalen Richard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Sutton Smith", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Bryan Edwards", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "DeSean Jackson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Zay Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Hunter Renfrow", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nick Bowers", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Daniel Helm", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Foster Moreau", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Daniel Carlson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	LARoffense = [ {name: "Matthew Stafford", pos: "QB", points: 0},
-	{name: "Cam Akers", pos: "RB", points: 0},
-	{name: "Jake Funk", pos: "RB", points: 0},
-	{name: "Buddy Howell", pos: "RB", points: 0},
-	{name: "Sony Michel", pos: "RB", points: 0},
-	{name: "Odell Beckham Jr.", pos: "WR", points: 0},
-	{name: "Van Jefferson", pos: "WR", points: 0},
-	{name: "J.J. Koski", pos: "WR", points: 0},
-	{name: "Cooper Kupp", pos: "WR", points: 0},
-	{name: "Ben Skowronek", pos: "WR", points: 0},
-	{name: "Kendall Blanton", pos: "TE", points: 0},
-	{name: "Tyler Higbee", pos: "TE", points: 0},
-	{name: "Brycen Hopkins", pos: "TE", points: 0},
-	{name: "Matt Gay", pos: "K", points: 0} ];
+	LARoffense = [ {name: "Matthew Stafford", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cam Akers", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jake Funk", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Buddy Howell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Sony Michel", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Odell Beckham Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Van Jefferson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "J.J. Koski", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cooper Kupp", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ben Skowronek", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kendall Blanton", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyler Higbee", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Brycen Hopkins", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Matt Gay", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	BALoffense = [ {name: "Lamar Jackson", pos: "QB", points: 0},
-	{name: "Devonta Freeman", pos: "RB", points: 0},
-	{name: "Latavius Murray", pos: "RB", points: 0},
-	{name: "Patrick Ricard", pos: "RB", points: 0},
-	{name: "Ty&#39;Son Williams", pos: "RB", points: 0},
-	{name: "Rashod Bateman", pos: "WR", points: 0},
-	{name: "Miles Boykin", pos: "WR", points: 0},
-	{name: "Marquise Brown", pos: "WR", points: 0},
-	{name: "Devin Duvernay", pos: "WR", points: 0},
-	{name: "James Proche", pos: "WR", points: 0},
-	{name: "Sammy Watkins", pos: "WR", points: 0},
-	{name: "Tylan Wallace", pos: "WR", points: 0},
-	{name: "Mark Andrews", pos: "TE", points: 0},
-	{name: "Nick Boyle", pos: "TE", points: 0},
-	{name: "Eric Tomlinson", pos: "TE", points: 0},
-	{name: "Justin Tucker", pos: "K", points: 0} ];
+	BALoffense = [ {name: "Lamar Jackson", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Devonta Freeman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Latavius Murray", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Patrick Ricard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ty&#39;Son Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Rashod Bateman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Miles Boykin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Marquise Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Devin Duvernay", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "James Proche", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Sammy Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tylan Wallace", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mark Andrews", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nick Boyle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Eric Tomlinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Justin Tucker", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	NOoffense = [ {name: "Taysom Hill", pos: "QB", points: 0},
-	{name: "Mark Ingram Jr.", pos: "RB", points: 0},
-	{name: "Tony Jones Jr.", pos: "RB", points: 0},
-	{name: "Alvin Kamara", pos: "RB", points: 0},
-	{name: "Adam Prentice", pos: "RB", points: 0},
-	{name: "Dwayne Washington", pos: "RB", points: 0},
-	{name: "Marquez Callaway", pos: "WR", points: 0},
-	{name: "Deonte Harris", pos: "WR", points: 0},
-	{name: "Lil&#39;Jordan Humphrey", pos: "WR", points: 0},
-	{name: "Ty Montgomery", pos: "WR", points: 0},
-	{name: "Tre&#39;Quan Smith", pos: "WR", points: 0},
-	{name: "Kenny Stills", pos: "WR", points: 0},
-	{name: "Juwan Johnson", pos: "TE", points: 0},
-	{name: "Adam Trautman", pos: "TE", points: 0},
-	{name: "Brett Maher", pos: "K", points: 0} ];
+	NOoffense = [ {name: "Taysom Hill", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mark Ingram Jr.", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tony Jones Jr.", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Alvin Kamara", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Adam Prentice", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dwayne Washington", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Marquez Callaway", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Deonte Harris", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Lil&#39;Jordan Humphrey", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ty Montgomery", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tre&#39;Quan Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kenny Stills", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Juwan Johnson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Adam Trautman", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Brett Maher", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	SEAoffense = [ {name: "Russell Wilson", pos: "QB", points: 0},
-	{name: "Nick Bellore", pos: "RB", points: 0},
-	{name: "Alex Collins", pos: "RB", points: 0},
-	{name: "DeeJay Dallas", pos: "RB", points: 0},
-	{name: "Travis Homer", pos: "RB", points: 0},
-	{name: "Rashaad Penny", pos: "RB", points: 0},
-	{name: "D&#39;Wayne Eskridge", pos: "WR", points: 0},
-	{name: "Penny Hart", pos: "WR", points: 0},
-	{name: "Tyler Lockett", pos: "WR", points: 0},
-	{name: "DK Metcalf", pos: "WR", points: 0},
-	{name: "Freddie Swain", pos: "WR", points: 0},
-	{name: "Will Dissly", pos: "TE", points: 0},
-	{name: "Gerald Everett", pos: "TE", points: 0},
-	{name: "Colby Parkinson", pos: "TE", points: 0},
-	{name: "Jason Myers", pos: "K", points: 0} ];
+	SEAoffense = [ {name: "Russell Wilson", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nick Bellore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Alex Collins", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "DeeJay Dallas", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Travis Homer", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Rashaad Penny", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "D&#39;Wayne Eskridge", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Penny Hart", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyler Lockett", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "DK Metcalf", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Freddie Swain", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Will Dissly", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Gerald Everett", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Colby Parkinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jason Myers", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	SEAoffense = [ {name: "Russell Wilson", pos: "QB", points: 0},
-	{name: "Nick Bellore", pos: "RB", points: 0},
-	{name: "Alex Collins", pos: "RB", points: 0},
-	{name: "DeeJay Dallas", pos: "RB", points: 0},
-	{name: "Travis Homer", pos: "RB", points: 0},
-	{name: "Rashaad Penny", pos: "RB", points: 0},
-	{name: "D&#39;Wayne Eskridge", pos: "WR", points: 0},
-	{name: "Penny Hart", pos: "WR", points: 0},
-	{name: "Tyler Lockett", pos: "WR", points: 0},
-	{name: "DK Metcalf", pos: "WR", points: 0},
-	{name: "Freddie Swain", pos: "WR", points: 0},
-	{name: "Will Dissly", pos: "TE", points: 0},
-	{name: "Gerald Everett", pos: "TE", points: 0},
-	{name: "Colby Parkinson", pos: "TE", points: 0},
-	{name: "Jason Myers", pos: "K", points: 0} ];
+	SEAoffense = [ {name: "Russell Wilson", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nick Bellore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Alex Collins", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "DeeJay Dallas", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Travis Homer", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Rashaad Penny", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "D&#39;Wayne Eskridge", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Penny Hart", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyler Lockett", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "DK Metcalf", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Freddie Swain", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Will Dissly", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Gerald Everett", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Colby Parkinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jason Myers", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	PIToffense = [ {name: "Ben Roethlisberger", pos: "QB", points: 0},
-	{name: "Kalen Ballage", pos: "RB", points: 0},
-	{name: "Najee Harris", pos: "RB", points: 0},
-	{name: "Benny Snell", pos: "RB", points: 0},
-	{name: "Derek Watt", pos: "RB", points: 0},
-	{name: "Chase Claypool", pos: "WR", points: 0},
-	{name: "Diontae Johnson", pos: "WR", points: 0},
-	{name: "Ray-Ray McCloud", pos: "WR", points: 0},
-	{name: "James Washington", pos: "WR", points: 0},
-	{name: "Cody White", pos: "WR", points: 0},
-	{name: "Pat Freiermuth", pos: "TE", points: 0},
-	{name: "Zach Gentry", pos: "TE", points: 0},
-	{name: "Kevin Rader", pos: "TE", points: 0},
-	{name: "Chris Boswell", pos: "K", points: 0} ];
+	PIToffense = [ {name: "Ben Roethlisberger", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kalen Ballage", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Najee Harris", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Benny Snell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Derek Watt", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chase Claypool", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Diontae Johnson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ray-Ray McCloud", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "James Washington", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cody White", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Pat Freiermuth", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Zach Gentry", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kevin Rader", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chris Boswell", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	HOUoffense = [ {name: "Tyrod Taylor", pos: "QB", points: 0},
-	{name: "Rex Burkhead", pos: "RB", points: 0},
-	{name: "Royce Freeman", pos: "RB", points: 0},
-	{name: "David Johnson", pos: "RB", points: 0},
-	{name: "Scottie Phillips", pos: "RB", points: 0},
-	{name: "Danny Amendola", pos: "WR", points: 0},
-	{name: "Davion Davis", pos: "WR", points: 0},
-	{name: "Phillip Dorsett", pos: "WR", points: 0},
-	{name: "Chris Moore", pos: "WR", points: 0},
-	{name: "Nico Collins", pos: "WR", points: 0},
-	{name: "Chris Conley", pos: "WR", points: 0},
-	{name: "Brandin Cooks", pos: "WR", points: 0},
-	{name: "Jordan Akins", pos: "TE", points: 0},
-	{name: "Pharoah Brown", pos: "TE", points: 0},
-	{name: "Brevin Jordan", pos: "TE", points: 0},
-	{name: "Antony Auclair", pos: "TE", points: 0},
-	{name: "Jeff Driskel", pos: "TE", points: 0},
-	{name: "Ka&#39;imi Fairbairn", pos: "K", points: 0} ];
+	HOUoffense = [ {name: "Tyrod Taylor", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Rex Burkhead", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Royce Freeman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "David Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Scottie Phillips", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Danny Amendola", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Davion Davis", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Phillip Dorsett", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chris Moore", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nico Collins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chris Conley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Brandin Cooks", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jordan Akins", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Pharoah Brown", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Brevin Jordan", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Antony Auclair", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jeff Driskel", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ka&#39;imi Fairbairn", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	TENoffense = [ {name: "Ryan Tannehill", pos: "QB", points: 0},
-	{name: "Khari Blasingame", pos: "RB", points: 0},
-	{name: "D&#39;Onta Foreman", pos: "RB", points: 0},
-	{name: "Dontrell Hilliard", pos: "RB", points: 0},
-	{name: "Jeremy McNichols", pos: "RB", points: 0},
-	{name: "A.J. Brown", pos: "WR", points: 0},
-	{name: "Dez Fitzpatrick", pos: "WR", points: 0},
-	{name: "Julio Jones", pos: "WR", points: 0},
-	{name: "Racey McMath", pos: "WR", points: 0},
-	{name: "Chester Rogers", pos: "WR", points: 0},
-	{name: "Nick Westbrook-Ikhine", pos: "WR", points: 0},
-	{name: "Anthony Firkser", pos: "TE", points: 0},
-	{name: "Geoff Swaim", pos: "TE", points: 0},
-	{name: "Randy Bullock", pos: "K", points: 0} ];
+	TENoffense = [ {name: "Ryan Tannehill", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Khari Blasingame", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "D&#39;Onta Foreman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dontrell Hilliard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jeremy McNichols", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "A.J. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dez Fitzpatrick", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Julio Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Racey McMath", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chester Rogers", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nick Westbrook-Ikhine", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Anthony Firkser", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Geoff Swaim", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Randy Bullock", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	MINoffense = [ {name: "Kirk Cousins", pos: "QB", points: 0},
-	{name: "Dalvin Cook", pos: "RB", points: 0},
-	{name: "Wayne Gallman", pos: "RB", points: 0},
-	{name: "C.J. Ham", pos: "RB", points: 0},
-	{name: "Alexander Mattison", pos: "RB", points: 0},
-	{name: "Kene Nwangwu", pos: "RB", points: 0},
-	{name: "Dan Chisena", pos: "WR", points: 0},
-	{name: "Justin Jefferson", pos: "WR", points: 0},
-	{name: "K.J. Osborn", pos: "WR", points: 0},
-	{name: "Ihmir Smith-Marsette", pos: "WR", points: 0},
-	{name: "Dede Westbrook", pos: "WR", points: 0},
-	{name: "Tyler Conklin", pos: "TE", points: 0},
-	{name: "Chris Herndon", pos: "TE", points: 0},
-	{name: "Luke Stocker", pos: "TE", points: 0},
-	{name: "Greg Joseph", pos: "K", points: 0} ];
+	MINoffense = [ {name: "Kirk Cousins", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dalvin Cook", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Wayne Gallman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "C.J. Ham", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Alexander Mattison", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kene Nwangwu", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dan Chisena", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Justin Jefferson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "K.J. Osborn", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ihmir Smith-Marsette", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dede Westbrook", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyler Conklin", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chris Herndon", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Luke Stocker", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Greg Joseph", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	SFoffense = [ {name: "Jimmy Garoppolo", pos: "QB", points: 0},
-	{name: "JaMycal Hasty", pos: "RB", points: 0},
-	{name: "Kyle Juszczyk", pos: "RB", points: 0},
-	{name: "Elijah Mitchell", pos: "RB", points: 0},
-	{name: "Jeff Wilson", pos: "RB", points: 0},
-	{name: "Brandon Aiyuk", pos: "WR", points: 0},
-	{name: "Travis Benjamin", pos: "WR", points: 0},
-	{name: "River Cracraft", pos: "WR", points: 0},
-	{name: "Jauan Jennings", pos: "WR", points: 0},
-	{name: "Deebo Samuel", pos: "WR", points: 0},
-	{name: "Trent Sherfield", pos: "WR", points: 0},
-	{name: "Ross Dwelley", pos: "TE", points: 0},
-	{name: "Tanner Hudson", pos: "TE", points: 0},
-	{name: "George Kittle", pos: "TE", points: 0},
-	{name: "Charlie Woerner", pos: "TE", points: 0},
-	{name: "Robbie Gould", pos: "K", points: 0} ];
+	SFoffense = [ {name: "Jimmy Garoppolo", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "JaMycal Hasty", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kyle Juszczyk", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Elijah Mitchell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jeff Wilson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Brandon Aiyuk", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Travis Benjamin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "River Cracraft", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jauan Jennings", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Deebo Samuel", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Trent Sherfield", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ross Dwelley", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tanner Hudson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "George Kittle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Charlie Woerner", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Robbie Gould", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
 	/*TEAM D-LINES*/
-	CHIdefense = [ {name: "Bears Defense", pos: "DEF", points: 0} ];
-	CINdefense = [ {name: "Bengals Defense", pos: "DEF", points: 0} ];
-	BUFdefense = [ {name: "Bills Defense", pos: "DEF", points: 0} ];
-	DENdefense = [ {name: "Broncos Defense", pos: "DEF", points: 0} ];
-	CLEdefense = [ {name: "Browns Defense", pos: "DEF", points: 0} ];
-	TBdefense = [ {name: "Buccaneers Defense", pos: "DEF", points: 0} ];
-	ARIdefense = [ {name: "Cardinals Defense", pos: "DEF", points: 0} ];
-	LACdefense = [ {name: "Chargers Defense", pos: "DEF", points: 0} ];
-	KCdefense = [ {name: "Chiefs Defense", pos: "DEF", points: 0} ];
-	INDdefense = [ {name: "Colts Defense", pos: "DEF", points: 0} ];
-	DALdefense = [ {name: "Cowboys Defense", pos: "DEF", points: 0} ];
-	MIAdefense = [ {name: "Dolphins Defense", pos: "DEF", points: 0} ];
-	PHIdefense = [ {name: "Eagles Defense", pos: "DEF", points: 0} ];
-	ATLdefense = [ {name: "Falcons Defense", pos: "DEF", points: 0} ];
-	NYGdefense = [ {name: "Giants Defense", pos: "DEF", points: 0} ];
-	JAXdefense = [ {name: "Jaguars Defense", pos: "DEF", points: 0} ];
-	NYJdefense = [ {name: "Jets Defense", pos: "DEF", points: 0} ];
-	DETdefense = [ {name: "Lions Defense", pos: "DEF", points: 0} ];
-	GBdefense = [ {name: "Packers Defense", pos: "DEF", points: 0} ];
-	CARdefense = [ {name: "Panthers Defense", pos: "DEF", points: 0} ];
-	NEdefense = [ {name: "Patriots Defense", pos: "DEF", points: 0} ];
-	WASdefense = [ {name: "Football Team Defense", pos: "DEF", points: 0} ];
-	LVdefense = [ {name: "Raiders Defense", pos: "DEF", points: 0} ];
-	LARdefense = [ {name: "Rams Defense", pos: "DEF", points: 0} ];
-	BALdefense = [ {name: "Ravens Defense", pos: "DEF", points: 0} ];
-	NOdefense = [ {name: "Saints Defense", pos: "DEF", points: 0} ];
-	SEAdefense = [ {name: "Seahawks Defense", pos: "DEF", points: 0} ];
-	PITdefense = [ {name: "Steelers Defense", pos: "DEF", points: 0} ];
-	HOUdefense = [ {name: "Texans Defense", pos: "DEF", points: 0} ];
-	TENdefense = [ {name: "Titans Defense", pos: "DEF", points: 0} ];
-	MINdefense = [ {name: "Vikings Defense", pos: "DEF", points: 0} ];
-	SFdefense = [ {name: "49ers Defense", pos: "DEF", points: 0} ];
+	CHIdefense = [ {name: "Bears Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	CINdefense = [ {name: "Bengals Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	BUFdefense = [ {name: "Bills Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	DENdefense = [ {name: "Broncos Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	CLEdefense = [ {name: "Browns Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	TBdefense = [ {name: "Buccaneers Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	ARIdefense = [ {name: "Cardinals Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	LACdefense = [ {name: "Chargers Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	KCdefense = [ {name: "Chiefs Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	INDdefense = [ {name: "Colts Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	DALdefense = [ {name: "Cowboys Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	MIAdefense = [ {name: "Dolphins Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	PHIdefense = [ {name: "Eagles Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	ATLdefense = [ {name: "Falcons Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	NYGdefense = [ {name: "Giants Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	JAXdefense = [ {name: "Jaguars Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	NYJdefense = [ {name: "Jets Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	DETdefense = [ {name: "Lions Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	GBdefense = [ {name: "Packers Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	CARdefense = [ {name: "Panthers Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	NEdefense = [ {name: "Patriots Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	WASdefense = [ {name: "Football Team Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	LVdefense = [ {name: "Raiders Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	LARdefense = [ {name: "Rams Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	BALdefense = [ {name: "Ravens Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	NOdefense = [ {name: "Saints Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	SEAdefense = [ {name: "Seahawks Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	PITdefense = [ {name: "Steelers Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	HOUdefense = [ {name: "Texans Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	TENdefense = [ {name: "Titans Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	MINdefense = [ {name: "Vikings Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	SFdefense = [ {name: "49ers Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
 	
 	team1 = [null, 0, null, null, null, null, null];
 	team2 = [null, 0, null, null, null, null, null];
@@ -724,556 +724,556 @@ function resetAll(e){
 	document.getElementById("box-score").style.visibility = "hidden";
 	
 	/*REINITIALIZE THE ROSTERS*/
-	CHIoffense = [ {name: "Andy Dalton", pos: "QB", points: 0},
-	{name: "Khalil Herbert", pos: "RB", points: 0},
-	{name: "David Montgomery", pos: "RB", points: 0},
-	{name: "Ryan Nall", pos: "RB", points: 0},
-	{name: "Damien Williams", pos: "RB", points: 0},
-	{name: "Damiere Byrd", pos: "WR", points: 0},
-	{name: "Marquise Goodwin", pos: "WR", points: 0},
-	{name: "Jakeem Grant", pos: "WR", points: 0},
-	{name: "Darnell Mooney", pos: "WR", points: 0},
-	{name: "Allen Robinson", pos: "WR", points: 0},
-	{name: "Jimmy Graham", pos: "TE", points: 0},
-	{name: "J.P. Holtz", pos: "TE", points: 0},
-	{name: "Jesper Horsted", pos: "TE", points: 0},
-	{name: "Jesse James", pos: "TE", points: 0},
-	{name: "Cole Kmet", pos: "TE", points: 0},
-	{name: "Cairo Santos", pos: "K", points: 0} ];
+	CHIoffense = [ {name: "Andy Dalton", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Khalil Herbert", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "David Montgomery", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ryan Nall", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Damien Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Damiere Byrd", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Marquise Goodwin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jakeem Grant", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Darnell Mooney", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Allen Robinson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jimmy Graham", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "J.P. Holtz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jesper Horsted", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jesse James", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cole Kmet", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cairo Santos", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	CINoffense = [ {name: "Joe Burrow", pos: "QB", points: 0},
-	{name: "Chris Evans", pos: "RB", points: 0},
-	{name: "Joe Mixon", pos: "RB", points: 0},
-	{name: "Samaje Perine", pos: "RB", points: 0},
-	{name: "Trayveon Williams", pos: "RB", points: 0},
-	{name: "Tyler Boyd", pos: "WR", points: 0},
-	{name: "Ja&#39;Marr Chase", pos: "WR", points: 0},
-	{name: "Tee Higgins", pos: "WR", points: 0},
-	{name: "Stanley Morgan Jr.", pos: "WR", points: 0},
-	{name: "Mike Thomas", pos: "WR", points: 0},
-	{name: "Drew Sample", pos: "TE", points: 0},
-	{name: "C.J. Uzomah", pos: "TE", points: 0},
-	{name: "Mitchell Wilcox", pos: "TE", points: 0},
-	{name: "Evan McPherson", pos: "K", points: 0} ];
+	CINoffense = [ {name: "Joe Burrow", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chris Evans", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Joe Mixon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Samaje Perine", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Trayveon Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyler Boyd", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ja&#39;Marr Chase", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tee Higgins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Stanley Morgan Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mike Thomas", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Drew Sample", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "C.J. Uzomah", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mitchell Wilcox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Evan McPherson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	BUFoffense = [ {name: "Josh Allen", pos: "QB", points: 0},
-	{name: "Matt Breida", pos: "RB", points: 0},
-	{name: "Reggie Gilliam", pos: "RB", points: 0},
-	{name: "Taiwan Jones", pos: "RB", points: 0},
-	{name: "Zack Moss", pos: "RB", points: 0},
-	{name: "Devin Singletary", pos: "RB", points: 0},
-	{name: "Cole Beasley", pos: "WR", points: 0},
-	{name: "Gabriel Davis", pos: "WR", points: 0},
-	{name: "Stefon Diggs", pos: "WR", points: 0},
-	{name: "Jake Kumerow", pos: "WR", points: 0},
-	{name: "Isaiah McKenzie", pos: "WR", points: 0},
-	{name: "Emmanuel Sanders", pos: "WR", points: 0},
-	{name: "Marquez Stevenson", pos: "WR", points: 0},
-	{name: "Dawson Knox", pos: "TE", points: 0},
-	{name: "Tommy Sweeney", pos: "TE", points: 0},
-	{name: "Tyler Bass", pos: "K", points: 0} ];
+	BUFoffense = [ {name: "Josh Allen", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Matt Breida", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Reggie Gilliam", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Taiwan Jones", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Zack Moss", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Devin Singletary", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cole Beasley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Gabriel Davis", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Stefon Diggs", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jake Kumerow", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Isaiah McKenzie", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Emmanuel Sanders", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Marquez Stevenson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dawson Knox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tommy Sweeney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyler Bass", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	DENoffense = [ {name: "Teddy Bridgewater", pos: "QB", points: 0},
-	{name: "Mike Boone", pos: "RB", points: 0},
-	{name: "Melvin Gordon", pos: "RB", points: 0},
-	{name: "Javonte Williams", pos: "RB", points: 0},
-	{name: "Kendall Hinton", pos: "WR", points: 0},
-	{name: "Diontae Spencer", pos: "WR", points: 0},
-	{name: "Courtland Sutton", pos: "WR", points: 0},
-	{name: "Noah Fant", pos: "TE", points: 0},
-	{name: "Albert Okwuegbunam", pos: "TE", points: 0},
-	{name: "Eric Saubert", pos: "TE", points: 0},
-	{name: "Brandon McManus", pos: "K", points: 0} ];
+	DENoffense = [ {name: "Teddy Bridgewater", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mike Boone", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Melvin Gordon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Javonte Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kendall Hinton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Diontae Spencer", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Courtland Sutton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Noah Fant", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Albert Okwuegbunam", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Eric Saubert", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Brandon McManus", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	CLEoffense = [ {name: "Baker Mayfield", pos: "QB", points: 0},
-	{name: "Nick Chubb", pos: "RB", points: 0},
-	{name: "Demetric Felton", pos: "RB", points: 0},
-	{name: "Kareem Hunt", pos: "RB", points: 0},
-	{name: "Andy Janovich", pos: "RB", points: 0},
-	{name: "D&#39;Ernest Johnson", pos: "RB", points: 0},
-	{name: "Ja&#39;Marcus Bradley", pos: "WR", points: 0},
-	{name: "Rashard Higgins", pos: "WR", points: 0},
-	{name: "Jarvis Landry", pos: "WR", points: 0},
-	{name: "Donovan Peoples-Jones", pos: "WR", points: 0},
-	{name: "Anthony Schwartz", pos: "WR", points: 0},
-	{name: "Harrison Bryant", pos: "TE", points: 0},
-	{name: "Austin Hooper", pos: "TE", points: 0},
-	{name: "David Njoku", pos: "TE", points: 0},
-	{name: "Chase McLaughlin", pos: "K", points: 0} ];
+	CLEoffense = [ {name: "Baker Mayfield", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nick Chubb", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Demetric Felton", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kareem Hunt", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Andy Janovich", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "D&#39;Ernest Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ja&#39;Marcus Bradley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Rashard Higgins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jarvis Landry", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Donovan Peoples-Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Anthony Schwartz", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Harrison Bryant", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Austin Hooper", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "David Njoku", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chase McLaughlin", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	TBoffense = [ {name: "Tom Brady", pos: "QB", points: 0},
-	{name: "Kenjon Barner", pos: "RB", points: 0},
-	{name: "Le&#39;Veon Bell", pos: "RB", points: 0},
-	{name: "Ronald Jones II", pos: "RB", points: 0},
-	{name: "Ke&#39;Shawn Vaughn", pos: "RB", points: 0},
-	{name: "Leonard Fournette", pos: "RB", points: 0},
-	{name: "Mike Evans", pos: "WR", points: 0},
-	{name: "Cyril Grayson", pos: "WR", points: 0},
-	{name: "Tyler Johnson", pos: "WR", points: 0},
-	{name: "Scotty Miller", pos: "WR", points: 0},
-	{name: "Breshad Perriman", pos: "WR", points: 0},
-	{name: "Chris Godwin", pos: "WR", points: 0},
-	{name: "Justin Watson", pos: "WR", points: 0},
-	{name: "Cameron Brate", pos: "TE", points: 0},
-	{name: "Rob Gronkowski", pos: "TE", points: 0},
-	{name: "O.J. Howard", pos: "TE", points: 0},
-	{name: "Ryan Succop", pos: "K", points: 0} ];
+	TBoffense = [ {name: "Tom Brady", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kenjon Barner", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Le&#39;Veon Bell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ronald Jones II", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ke&#39;Shawn Vaughn", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Leonard Fournette", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mike Evans", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cyril Grayson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyler Johnson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Scotty Miller", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Breshad Perriman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chris Godwin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Justin Watson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cameron Brate", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Rob Gronkowski", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "O.J. Howard", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ryan Succop", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	ARIoffense = [ {name: "Kyler Murray", pos: "QB", points: 0},
-	{name: "Eno Benjamin", pos: "RB", points: 0},
-	{name: "James Conner", pos: "RB", points: 0},
-	{name: "Chase Edmonds", pos: "RB", points: 0},
-	{name: "Jonathan Ward", pos: "RB", points: 0},
-	{name: "Greg Dortch", pos: "WR", points: 0},
-	{name: "A.J. Green", pos: "WR", points: 0},
-	{name: "Andy Isabella", pos: "WR", points: 0},
-	{name: "Christian Kirk", pos: "WR", points: 0},
-	{name: "Rondale Moore", pos: "WR", points: 0},
-	{name: "Antoine Wesley", pos: "WR", points: 0},
-	{name: "Darrell Daniels", pos: "TE", points: 0},
-	{name: "Zach Ertz", pos: "TE", points: 0},
-	{name: "Demetrius Harris", pos: "TE", points: 0},
-	{name: "Matt Prater", pos: "K", points: 0} ];
+	ARIoffense = [ {name: "Kyler Murray", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Eno Benjamin", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "James Conner", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chase Edmonds", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jonathan Ward", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Greg Dortch", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "A.J. Green", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Andy Isabella", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Christian Kirk", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Rondale Moore", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Antoine Wesley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Darrell Daniels", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Zach Ertz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Demetrius Harris", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Matt Prater", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	LACoffense = [ {name: "Justin Herbert", pos: "QB", points: 0},
-	{name: "Austin Ekeler", pos: "RB", points: 0},
-	{name: "Justin Jackson", pos: "RB", points: 0},
-	{name: "Joshua Kelley", pos: "RB", points: 0},
-	{name: "Gabe Nabers", pos: "RB", points: 0},
-	{name: "Larry Rountree III", pos: "RB", points: 0},
-	{name: "Keenan Allen", pos: "WR", points: 0},
-	{name: "Jalen Guyton", pos: "WR", points: 0},
-	{name: "Josh Palmer", pos: "WR", points: 0},
-	{name: "Andre Roberts", pos: "WR", points: 0},
-	{name: "Mike Williams", pos: "WR", points: 0},
-	{name: "Stephen Anderson", pos: "TE", points: 0},
-	{name: "Tre&#39; McKitty", pos: "TE", points: 0},
-	{name: "Dustin Hopkins", pos: "K", points: 0} ];
+	LACoffense = [ {name: "Justin Herbert", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Austin Ekeler", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Justin Jackson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Joshua Kelley", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Gabe Nabers", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Larry Rountree III", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Keenan Allen", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jalen Guyton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Josh Palmer", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Andre Roberts", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mike Williams", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Stephen Anderson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tre&#39; McKitty", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dustin Hopkins", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	KCoffense = [ {name: "Patrick Mahomes", pos: "QB", points: 0},
-	{name: "Michael Burton", pos: "RB", points: 0},
-	{name: "Clyde Edwards-Helaire", pos: "RB", points: 0},
-	{name: "Derrick Gore", pos: "RB", points: 0},
-	{name: "Jerick McKinnon", pos: "RB", points: 0},
-	{name: "Darrel Williams", pos: "RB", points: 0},
-	{name: "Josh Gordon", pos: "WR", points: 0},
-	{name: "Mecole Hardman", pos: "WR", points: 0},
-	{name: "Tyreek Hill", pos: "WR", points: 0},
-	{name: "Marcus Kemp", pos: "WR", points: 0},
-	{name: "Byron Pringle", pos: "WR", points: 0},
-	{name: "Demarcus Robinson", pos: "WR", points: 0},
-	{name: "Blake Bell", pos: "TE", points: 0},
-	{name: "Noah Gray", pos: "TE", points: 0},
-	{name: "Travis Kelce", pos: "TE", points: 0},
-	{name: "Harrison Butker", pos: "K", points: 0} ];
+	KCoffense = [ {name: "Patrick Mahomes", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Michael Burton", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Clyde Edwards-Helaire", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Derrick Gore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jerick McKinnon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Darrel Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Josh Gordon", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mecole Hardman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyreek Hill", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Marcus Kemp", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Byron Pringle", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Demarcus Robinson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Blake Bell", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Noah Gray", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Travis Kelce", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Harrison Butker", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	INDoffense = [ {name: "Carson Wentz", pos: "QB", points: 0},
-	{name: "Nyheim Hines", pos: "RB", points: 0},
-	{name: "Deon Jackson", pos: "RB", points: 0},
-	{name: "Marlon Mack", pos: "RB", points: 0},
-	{name: "Jonathan Taylor", pos: "RB", points: 0},
-	{name: "Ashton Dulin", pos: "WR", points: 0},
-	{name: "T.Y. Hilton", pos: "WR", points: 0},
-	{name: "Zach Pascal", pos: "WR", points: 0},
-	{name: "Dezmon Patmon", pos: "WR", points: 0},
-	{name: "Michael Pittman Jr.", pos: "WR", points: 0},
-	{name: "Michael Strachan", pos: "WR", points: 0},
-	{name: "Mo Alie-Cox", pos: "TE", points: 0},
-	{name: "Jack Doyle", pos: "TE", points: 0},
-	{name: "Kylen Granson", pos: "TE", points: 0},
-	{name: "Michael Badgley", pos: "K", points: 0} ];
+	INDoffense = [ {name: "Carson Wentz", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nyheim Hines", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Deon Jackson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Marlon Mack", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jonathan Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ashton Dulin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "T.Y. Hilton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Zach Pascal", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dezmon Patmon", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Michael Pittman Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Michael Strachan", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mo Alie-Cox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jack Doyle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kylen Granson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Michael Badgley", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	DALoffense = [ {name: "Dak Prescott", pos: "QB", points: 0},
-	{name: "Corey Clement", pos: "RB", points: 0},
-	{name: "Ezekiel Elliott", pos: "RB", points: 0},
-	{name: "Tony Pollard", pos: "RB", points: 0},
-	{name: "Noah Brown", pos: "WR", points: 0},
-	{name: "Amari Cooper", pos: "WR", points: 0},
-	{name: "Simi Fehoko", pos: "WR", points: 0},
-	{name: "Michael Gallup", pos: "WR", points: 0},
-	{name: "CeeDee Lamb", pos: "WR", points: 0},
-	{name: "Malik Turner", pos: "WR", points: 0},
-	{name: "Cedrick Wilson Jr.", pos: "WR", points: 0},
-	{name: "Sean McKeon", pos: "TE", points: 0},
-	{name: "Dalton Schultz", pos: "TE", points: 0},
-	{name: "Jeremy Sprinkle", pos: "TE", points: 0},
-	{name: "Greg Zuerlein", pos: "K", points: 0} ];
+	DALoffense = [ {name: "Dak Prescott", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Corey Clement", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ezekiel Elliott", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tony Pollard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Noah Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Amari Cooper", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Simi Fehoko", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Michael Gallup", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "CeeDee Lamb", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Malik Turner", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cedrick Wilson Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Sean McKeon", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dalton Schultz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jeremy Sprinkle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Greg Zuerlein", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	MIAoffense = [ {name: "Tua Tagovailoa", pos: "QB", points: 0},
-	{name: "Salvon Ahmed", pos: "RB", points: 0},
-	{name: "Myles Gaskin", pos: "RB", points: 0},
-	{name: "Duke Johnson", pos: "RB", points: 0},
-	{name: "Phillip Lindsay", pos: "RB", points: 0},
-	{name: "Isaiah Ford", pos: "WR", points: 0},
-	{name: "Mack Hollins", pos: "WR", points: 0},
-	{name: "DeVante Parker", pos: "WR", points: 0},
-	{name: "Jaylen Waddle", pos: "WR", points: 0},
-	{name: "Preston Williams", pos: "WR", points: 0},
-	{name: "Albert Wilson", pos: "WR", points: 0},
-	{name: "Cethan Carter", pos: "TE", points: 0},
-	{name: "Mike Gesicki", pos: "TE", points: 0},
-	{name: "Hunter Long", pos: "TE", points: 0},
-	{name: "Adam Shaheen", pos: "TE", points: 0},
-	{name: "Durham Smythe", pos: "TE", points: 0},
-	{name: "Jason Sanders", pos: "K", points: 0} ];
+	MIAoffense = [ {name: "Tua Tagovailoa", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Salvon Ahmed", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Myles Gaskin", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Duke Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Phillip Lindsay", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Isaiah Ford", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mack Hollins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "DeVante Parker", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jaylen Waddle", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Preston Williams", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Albert Wilson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cethan Carter", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mike Gesicki", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Hunter Long", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Adam Shaheen", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Durham Smythe", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jason Sanders", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	PHIoffense = [ {name: "Jalen Hurts", pos: "QB", points: 0},
-	{name: "Kenneth Gainwell", pos: "RB", points: 0},
-	{name: "Miles Sanders", pos: "RB", points: 0},
-	{name: "Jordan Howard", pos: "RB", points: 0},
-	{name: "Boston Scott", pos: "RB", points: 0},
-	{name: "J.J. Arcega-Whiteside", pos: "WR", points: 0},
-	{name: "Jalen Reagor", pos: "WR", points: 0},
-	{name: "DeVonta Smith", pos: "WR", points: 0},
-	{name: "Greg Ward", pos: "WR", points: 0},
-	{name: "Quez Watkins", pos: "WR", points: 0},
-	{name: "Tyree Jackson", pos: "TE", points: 0},
-	{name: "Jason Croom", pos: "TE", points: 0},
-	{name: "Dallas Goedert", pos: "TE", points: 0},
-	{name: "Jack Stoll", pos: "TE", points: 0},
-	{name: "Jake Elliott", pos: "K", points: 0} ];
+	PHIoffense = [ {name: "Jalen Hurts", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kenneth Gainwell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Miles Sanders", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jordan Howard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Boston Scott", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "J.J. Arcega-Whiteside", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jalen Reagor", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "DeVonta Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Greg Ward", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Quez Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyree Jackson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jason Croom", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dallas Goedert", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jack Stoll", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jake Elliott", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	ATLoffense = [ {name: "Matt Ryan", pos: "QB", points: 0},
-	{name: "Mike Davis", pos: "RB", points: 0},
-	{name: "Qadree Ollison", pos: "RB", points: 0},
-	{name: "Cordarrelle Patterson", pos: "RB", points: 0},
-	{name: "Keith Smith", pos: "RB", points: 0},
-	{name: "Christian Blake", pos: "WR", points: 0},
-	{name: "Frank Darby", pos: "WR", points: 0},
-	{name: "Russell Gage", pos: "WR", points: 0},
-	{name: "Olamide Zaccheaus", pos: "WR", points: 0},
-	{name: "Kyle Pitts", pos: "TE", points: 0},
-	{name: "Lee Smith", pos: "TE", points: 0},
-	{name: "Younghoe Koo", pos: "K", points: 0} ];
+	ATLoffense = [ {name: "Matt Ryan", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mike Davis", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Qadree Ollison", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cordarrelle Patterson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Keith Smith", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Christian Blake", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Frank Darby", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Russell Gage", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Olamide Zaccheaus", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kyle Pitts", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Lee Smith", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Younghoe Koo", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	NYGoffense = [ {name: "Daniel Jones", pos: "QB", points: 0},
-	{name: "Saquon Barkley", pos: "RB", points: 0},
-	{name: "Devontae Booker", pos: "RB", points: 0},
-	{name: "Cullen Gillaspia", pos: "RB", points: 0},
-	{name: "Elijhaa Penny", pos: "RB", points: 0},
-	{name: "Kenny Golladay", pos: "WR", points: 0},
-	{name: "Collin Johnson", pos: "WR", points: 0},
-	{name: "John Ross", pos: "WR", points: 0},
-	{name: "Kadarius Toney", pos: "WR", points: 0},
-	{name: "Evan Engram", pos: "TE", points: 0},
-	{name: "Chris Myarick", pos: "TE", points: 0},
-	{name: "Kyle Rudolph", pos: "TE", points: 0},
-	{name: "Graham Gano", pos: "K", points: 0} ];
+	NYGoffense = [ {name: "Daniel Jones", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Saquon Barkley", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Devontae Booker", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cullen Gillaspia", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Elijhaa Penny", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kenny Golladay", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Collin Johnson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "John Ross", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kadarius Toney", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Evan Engram", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chris Myarick", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kyle Rudolph", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Graham Gano", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	JAXoffense = [ {name: "Trevor Lawrence", pos: "QB", points: 0},
-	{name: "Ryquell Armstead", pos: "RB", points: 0},
-	{name: "Dare Ogunbowale", pos: "RB", points: 0},
-	{name: "Mekhi Sargent", pos: "RB", points: 0},
-	{name: "Tavon Austin", pos: "WR", points: 0},
-	{name: "Marvin Jones", pos: "WR", points: 0},
-	{name: "Laviska Shenault", pos: "WR", points: 0},
-	{name: "Laquon Treadwell", pos: "WR", points: 0},
-	{name: "Luke Farrell", pos: "TE", points: 0},
-	{name: "Chris Manhertz", pos: "TE", points: 0},
-	{name: "James O&#39;Shaughnessy", pos: "TE", points: 0},
-	{name: "Kahale Warring", pos: "TE", points: 0},
-	{name: "Matthew Wright", pos: "K", points: 0} ];
+	JAXoffense = [ {name: "Trevor Lawrence", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ryquell Armstead", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dare Ogunbowale", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mekhi Sargent", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tavon Austin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Marvin Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Laviska Shenault", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Laquon Treadwell", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Luke Farrell", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chris Manhertz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "James O&#39;Shaughnessy", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kahale Warring", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Matthew Wright", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	NYJoffense = [ {name: "Zach Wilson", pos: "QB", points: 0},
-	{name: "Nick Bawden", pos: "RB", points: 0},
-	{name: "Michael Carter", pos: "RB", points: 0},
-	{name: "Ty Johnson", pos: "RB", points: 0},
-	{name: "La&#39;Mical Perine", pos: "RB", points: 0},
-	{name: "Austin Walter", pos: "RB", points: 0},
-	{name: "Braxton Berrios", pos: "WR", points: 0},
-	{name: "Keelan Cole", pos: "WR", points: 0},
-	{name: "Jamison Crowder", pos: "WR", points: 0},
-	{name: "Denzel Mims", pos: "WR", points: 0},
-	{name: "Jeff Smith", pos: "WR", points: 0},
-	{name: "Kenny Yeboah", pos: "TE", points: 0},
-	{name: "Eddy Pi&ntilde;eiro", pos: "K", points: 0} ];
+	NYJoffense = [ {name: "Zach Wilson", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nick Bawden", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Michael Carter", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ty Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "La&#39;Mical Perine", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Austin Walter", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Braxton Berrios", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Keelan Cole", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jamison Crowder", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Denzel Mims", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jeff Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kenny Yeboah", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Eddy Pi&ntilde;eiro", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	DEToffense = [ {name: "Jared Goff", pos: "QB", points: 0},
-	{name: "Jason Cabinda", pos: "RB", points: 0},
-	{name: "Godwin Igwebuike", pos: "RB", points: 0},
-	{name: "Jermar Jefferson", pos: "RB", points: 0},
-	{name: "Craig Reynolds", pos: "RB", points: 0},
-	{name: "D&#39;Andre Swift", pos: "RB", points: 0},
-	{name: "Jamaal Williams", pos: "RB", points: 0},
-	{name: "Trinity Benson", pos: "WR", points: 0},
-	{name: "KhaDarel Hodge", pos: "WR", points: 0},
-	{name: "Tom Kennedy", pos: "WR", points: 0},
-	{name: "Josh Reynolds", pos: "WR", points: 0},
-	{name: "Amon-Ra St. Brown", pos: "WR", points: 0},
-	{name: "Jared Pinkney", pos: "TE", points: 0},
-	{name: "Brock Wright", pos: "TE", points: 0},
-	{name: "Riley Patterson", pos: "K", points: 0} ];
+	DEToffense = [ {name: "Jared Goff", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jason Cabinda", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Godwin Igwebuike", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jermar Jefferson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Craig Reynolds", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "D&#39;Andre Swift", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jamaal Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Trinity Benson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "KhaDarel Hodge", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tom Kennedy", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Josh Reynolds", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Amon-Ra St. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jared Pinkney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Brock Wright", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Riley Patterson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	GBoffense = [ {name: "Aaron Rodgers", pos: "QB", points: 0},
-	{name: "A.J. Dillon", pos: "RB", points: 0},
-	{name: "Aaron Jones", pos: "RB", points: 0},
-	{name: "Patrick Taylor", pos: "RB", points: 0},
-	{name: "Davante Adams", pos: "WR", points: 0},
-	{name: "Allen Lazard", pos: "WR", points: 0},
-	{name: "Equanimeous St. Brown", pos: "WR", points: 0},
-	{name: "Marquez Valdes-Scantling", pos: "WR", points: 0},
-	{name: "Juwann Winfree", pos: "WR", points: 0},
-	{name: "Dominique Dafney", pos: "TE", points: 0},
-	{name: "Tyler Davis", pos: "TE", points: 0},
-	{name: "Josiah Deguara", pos: "TE", points: 0},
-	{name: "Marcedes Lewis", pos: "TE", points: 0},
-	{name: "Mason Crosby", pos: "K", points: 0} ];
+	GBoffense = [ {name: "Aaron Rodgers", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "A.J. Dillon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Aaron Jones", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Patrick Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Davante Adams", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Allen Lazard", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Equanimeous St. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Marquez Valdes-Scantling", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Juwann Winfree", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dominique Dafney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyler Davis", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Josiah Deguara", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Marcedes Lewis", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mason Crosby", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	CARoffense = [ {name: "Cam Newton", pos: "QB", points: 0},
-	{name: "Ameer Abdullah", pos: "RB", points: 0},
-	{name: "Chuba Hubbard", pos: "RB", points: 0},
-	{name: "Giovanni Ricci", pos: "RB", points: 0},
-	{name: "Robby Anderson", pos: "WR", points: 0},
-	{name: "Alex Erickson", pos: "WR", points: 0},
-	{name: "Terrace Marshall Jr.", pos: "WR", points: 0},
-	{name: "D.J. Moore", pos: "WR", points: 0},
-	{name: "Shi Smith", pos: "WR", points: 0},
-	{name: "Brandon Zylstra", pos: "WR", points: 0},
-	{name: "Ian Thomas", pos: "TE", points: 0},
-	{name: "Lirim Hajrullahu", pos: "K", points: 0} ];
+	CARoffense = [ {name: "Cam Newton", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ameer Abdullah", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chuba Hubbard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Giovanni Ricci", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Robby Anderson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Alex Erickson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Terrace Marshall Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "D.J. Moore", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Shi Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Brandon Zylstra", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ian Thomas", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Lirim Hajrullahu", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	NEoffense = [ {name: "Mac Jones", pos: "QB", points: 0},
-	{name: "Brandon Bolden", pos: "RB", points: 0},
-	{name: "Damien Harris", pos: "RB", points: 0},
-	{name: "Jakob Johnson", pos: "RB", points: 0},
-	{name: "Rhamondre Stevenson", pos: "RB", points: 0},
-	{name: "J.J. Taylor", pos: "RB", points: 0},
-	{name: "Nelson Agholor", pos: "WR", points: 0},
-	{name: "Kendrick Bourne", pos: "WR", points: 0},
-	{name: "N&#39;Keal Harry", pos: "WR", points: 0},
-	{name: "Jakobi Meyers", pos: "WR", points: 0},
-	{name: "Gunner Olszewski", pos: "WR", points: 0},
-	{name: "Matthew Slater", pos: "WR", points: 0},
-	{name: "Devin Asiasi", pos: "TE", points: 0},
-	{name: "Hunter Henry", pos: "TE", points: 0},
-	{name: "Jonnu Smith", pos: "TE", points: 0},
-	{name: "Nick Folk", pos: "K", points: 0} ];
+	NEoffense = [ {name: "Mac Jones", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Brandon Bolden", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Damien Harris", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jakob Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Rhamondre Stevenson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "J.J. Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nelson Agholor", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kendrick Bourne", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "N&#39;Keal Harry", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jakobi Meyers", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Gunner Olszewski", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Matthew Slater", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Devin Asiasi", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Hunter Henry", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jonnu Smith", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nick Folk", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	WASoffense = [ {name: "Taylor Heinicke", pos: "QB", points: 0},
-	{name: "Jaret Patterson", pos: "RB", points: 0},
-	{name: "Jonathan Williams", pos: "RB", points: 0},
-	{name: "Antonio Gibson", pos: "RB", points: 0},
-	{name: "J.D. McKissic", pos: "RB", points: 0},
-	{name: "Dyami Brown", pos: "WR", points: 0},
-	{name: "DeAndre Carter", pos: "WR", points: 0},
-	{name: "Adam Humphries", pos: "WR", points: 0},
-	{name: "Terry McLaurin", pos: "WR", points: 0},
-	{name: "Dax Milne", pos: "WR", points: 0},
-	{name: "Curtis Samuel", pos: "WR", points: 0},
-	{name: "Cam Sims", pos: "WR", points: 0},
-	{name: "John Bates", pos: "TE", points: 0},
-	{name: "Sammis Reyes", pos: "TE", points: 0},
-	{name: "Ricky Seals-Jones", pos: "TE", points: 0},
-	{name: "Joey Slye", pos: "K", points: 0} ];
+	WASoffense = [ {name: "Taylor Heinicke", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jaret Patterson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jonathan Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Antonio Gibson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "J.D. McKissic", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dyami Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "DeAndre Carter", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Adam Humphries", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Terry McLaurin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dax Milne", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Curtis Samuel", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cam Sims", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "John Bates", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Sammis Reyes", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ricky Seals-Jones", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Joey Slye", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	LVoffense = [ {name: "Derek Carr", pos: "QB", points: 0},
-	{name: "Peyton Barber", pos: "RB", points: 0},
-	{name: "Josh Jacobs", pos: "RB", points: 0},
-	{name: "Jalen Richard", pos: "RB", points: 0},
-	{name: "Sutton Smith", pos: "RB", points: 0},
-	{name: "Bryan Edwards", pos: "WR", points: 0},
-	{name: "DeSean Jackson", pos: "WR", points: 0},
-	{name: "Zay Jones", pos: "WR", points: 0},
-	{name: "Hunter Renfrow", pos: "WR", points: 0},
-	{name: "Nick Bowers", pos: "TE", points: 0},
-	{name: "Daniel Helm", pos: "TE", points: 0},
-	{name: "Foster Moreau", pos: "TE", points: 0},
-	{name: "Daniel Carlson", pos: "K", points: 0} ];
+	LVoffense = [ {name: "Derek Carr", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Peyton Barber", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Josh Jacobs", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jalen Richard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Sutton Smith", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Bryan Edwards", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "DeSean Jackson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Zay Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Hunter Renfrow", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nick Bowers", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Daniel Helm", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Foster Moreau", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Daniel Carlson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	LARoffense = [ {name: "Matthew Stafford", pos: "QB", points: 0},
-	{name: "Cam Akers", pos: "RB", points: 0},
-	{name: "Jake Funk", pos: "RB", points: 0},
-	{name: "Buddy Howell", pos: "RB", points: 0},
-	{name: "Sony Michel", pos: "RB", points: 0},
-	{name: "Odell Beckham Jr.", pos: "WR", points: 0},
-	{name: "Van Jefferson", pos: "WR", points: 0},
-	{name: "J.J. Koski", pos: "WR", points: 0},
-	{name: "Cooper Kupp", pos: "WR", points: 0},
-	{name: "Ben Skowronek", pos: "WR", points: 0},
-	{name: "Kendall Blanton", pos: "TE", points: 0},
-	{name: "Tyler Higbee", pos: "TE", points: 0},
-	{name: "Brycen Hopkins", pos: "TE", points: 0},
-	{name: "Matt Gay", pos: "K", points: 0} ];
+	LARoffense = [ {name: "Matthew Stafford", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cam Akers", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jake Funk", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Buddy Howell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Sony Michel", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Odell Beckham Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Van Jefferson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "J.J. Koski", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cooper Kupp", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ben Skowronek", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kendall Blanton", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyler Higbee", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Brycen Hopkins", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Matt Gay", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	BALoffense = [ {name: "Lamar Jackson", pos: "QB", points: 0},
-	{name: "Devonta Freeman", pos: "RB", points: 0},
-	{name: "Latavius Murray", pos: "RB", points: 0},
-	{name: "Patrick Ricard", pos: "RB", points: 0},
-	{name: "Ty&#39;Son Williams", pos: "RB", points: 0},
-	{name: "Rashod Bateman", pos: "WR", points: 0},
-	{name: "Miles Boykin", pos: "WR", points: 0},
-	{name: "Marquise Brown", pos: "WR", points: 0},
-	{name: "Devin Duvernay", pos: "WR", points: 0},
-	{name: "James Proche", pos: "WR", points: 0},
-	{name: "Sammy Watkins", pos: "WR", points: 0},
-	{name: "Tylan Wallace", pos: "WR", points: 0},
-	{name: "Mark Andrews", pos: "TE", points: 0},
-	{name: "Nick Boyle", pos: "TE", points: 0},
-	{name: "Eric Tomlinson", pos: "TE", points: 0},
-	{name: "Justin Tucker", pos: "K", points: 0} ];
+	BALoffense = [ {name: "Lamar Jackson", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Devonta Freeman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Latavius Murray", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Patrick Ricard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ty&#39;Son Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Rashod Bateman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Miles Boykin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Marquise Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Devin Duvernay", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "James Proche", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Sammy Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tylan Wallace", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mark Andrews", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nick Boyle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Eric Tomlinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Justin Tucker", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	NOoffense = [ {name: "Taysom Hill", pos: "QB", points: 0},
-	{name: "Mark Ingram Jr.", pos: "RB", points: 0},
-	{name: "Tony Jones Jr.", pos: "RB", points: 0},
-	{name: "Alvin Kamara", pos: "RB", points: 0},
-	{name: "Adam Prentice", pos: "RB", points: 0},
-	{name: "Dwayne Washington", pos: "RB", points: 0},
-	{name: "Marquez Callaway", pos: "WR", points: 0},
-	{name: "Deonte Harris", pos: "WR", points: 0},
-	{name: "Lil&#39;Jordan Humphrey", pos: "WR", points: 0},
-	{name: "Ty Montgomery", pos: "WR", points: 0},
-	{name: "Tre&#39;Quan Smith", pos: "WR", points: 0},
-	{name: "Kenny Stills", pos: "WR", points: 0},
-	{name: "Juwan Johnson", pos: "TE", points: 0},
-	{name: "Adam Trautman", pos: "TE", points: 0},
-	{name: "Brett Maher", pos: "K", points: 0} ];
+	NOoffense = [ {name: "Taysom Hill", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Mark Ingram Jr.", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tony Jones Jr.", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Alvin Kamara", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Adam Prentice", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dwayne Washington", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Marquez Callaway", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Deonte Harris", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Lil&#39;Jordan Humphrey", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ty Montgomery", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tre&#39;Quan Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kenny Stills", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Juwan Johnson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Adam Trautman", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Brett Maher", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	SEAoffense = [ {name: "Russell Wilson", pos: "QB", points: 0},
-	{name: "Nick Bellore", pos: "RB", points: 0},
-	{name: "Alex Collins", pos: "RB", points: 0},
-	{name: "DeeJay Dallas", pos: "RB", points: 0},
-	{name: "Travis Homer", pos: "RB", points: 0},
-	{name: "Rashaad Penny", pos: "RB", points: 0},
-	{name: "D&#39;Wayne Eskridge", pos: "WR", points: 0},
-	{name: "Penny Hart", pos: "WR", points: 0},
-	{name: "Tyler Lockett", pos: "WR", points: 0},
-	{name: "DK Metcalf", pos: "WR", points: 0},
-	{name: "Freddie Swain", pos: "WR", points: 0},
-	{name: "Will Dissly", pos: "TE", points: 0},
-	{name: "Gerald Everett", pos: "TE", points: 0},
-	{name: "Colby Parkinson", pos: "TE", points: 0},
-	{name: "Jason Myers", pos: "K", points: 0} ];
+	SEAoffense = [ {name: "Russell Wilson", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nick Bellore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Alex Collins", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "DeeJay Dallas", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Travis Homer", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Rashaad Penny", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "D&#39;Wayne Eskridge", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Penny Hart", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyler Lockett", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "DK Metcalf", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Freddie Swain", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Will Dissly", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Gerald Everett", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Colby Parkinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jason Myers", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	SEAoffense = [ {name: "Russell Wilson", pos: "QB", points: 0},
-	{name: "Nick Bellore", pos: "RB", points: 0},
-	{name: "Alex Collins", pos: "RB", points: 0},
-	{name: "DeeJay Dallas", pos: "RB", points: 0},
-	{name: "Travis Homer", pos: "RB", points: 0},
-	{name: "Rashaad Penny", pos: "RB", points: 0},
-	{name: "D&#39;Wayne Eskridge", pos: "WR", points: 0},
-	{name: "Penny Hart", pos: "WR", points: 0},
-	{name: "Tyler Lockett", pos: "WR", points: 0},
-	{name: "DK Metcalf", pos: "WR", points: 0},
-	{name: "Freddie Swain", pos: "WR", points: 0},
-	{name: "Will Dissly", pos: "TE", points: 0},
-	{name: "Gerald Everett", pos: "TE", points: 0},
-	{name: "Colby Parkinson", pos: "TE", points: 0},
-	{name: "Jason Myers", pos: "K", points: 0} ];
+	SEAoffense = [ {name: "Russell Wilson", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nick Bellore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Alex Collins", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "DeeJay Dallas", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Travis Homer", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Rashaad Penny", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "D&#39;Wayne Eskridge", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Penny Hart", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyler Lockett", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "DK Metcalf", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Freddie Swain", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Will Dissly", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Gerald Everett", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Colby Parkinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jason Myers", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	PIToffense = [ {name: "Ben Roethlisberger", pos: "QB", points: 0},
-	{name: "Kalen Ballage", pos: "RB", points: 0},
-	{name: "Najee Harris", pos: "RB", points: 0},
-	{name: "Benny Snell", pos: "RB", points: 0},
-	{name: "Derek Watt", pos: "RB", points: 0},
-	{name: "Chase Claypool", pos: "WR", points: 0},
-	{name: "Diontae Johnson", pos: "WR", points: 0},
-	{name: "Ray-Ray McCloud", pos: "WR", points: 0},
-	{name: "James Washington", pos: "WR", points: 0},
-	{name: "Cody White", pos: "WR", points: 0},
-	{name: "Pat Freiermuth", pos: "TE", points: 0},
-	{name: "Zach Gentry", pos: "TE", points: 0},
-	{name: "Kevin Rader", pos: "TE", points: 0},
-	{name: "Chris Boswell", pos: "K", points: 0} ];
+	PIToffense = [ {name: "Ben Roethlisberger", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kalen Ballage", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Najee Harris", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Benny Snell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Derek Watt", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chase Claypool", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Diontae Johnson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ray-Ray McCloud", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "James Washington", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Cody White", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Pat Freiermuth", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Zach Gentry", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kevin Rader", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chris Boswell", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	HOUoffense = [ {name: "Tyrod Taylor", pos: "QB", points: 0},
-	{name: "Rex Burkhead", pos: "RB", points: 0},
-	{name: "Royce Freeman", pos: "RB", points: 0},
-	{name: "David Johnson", pos: "RB", points: 0},
-	{name: "Scottie Phillips", pos: "RB", points: 0},
-	{name: "Danny Amendola", pos: "WR", points: 0},
-	{name: "Davion Davis", pos: "WR", points: 0},
-	{name: "Phillip Dorsett", pos: "WR", points: 0},
-	{name: "Chris Moore", pos: "WR", points: 0},
-	{name: "Nico Collins", pos: "WR", points: 0},
-	{name: "Chris Conley", pos: "WR", points: 0},
-	{name: "Brandin Cooks", pos: "WR", points: 0},
-	{name: "Jordan Akins", pos: "TE", points: 0},
-	{name: "Pharoah Brown", pos: "TE", points: 0},
-	{name: "Brevin Jordan", pos: "TE", points: 0},
-	{name: "Antony Auclair", pos: "TE", points: 0},
-	{name: "Jeff Driskel", pos: "TE", points: 0},
-	{name: "Ka&#39;imi Fairbairn", pos: "K", points: 0} ];
+	HOUoffense = [ {name: "Tyrod Taylor", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Rex Burkhead", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Royce Freeman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "David Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Scottie Phillips", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Danny Amendola", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Davion Davis", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Phillip Dorsett", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chris Moore", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nico Collins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chris Conley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Brandin Cooks", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jordan Akins", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Pharoah Brown", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Brevin Jordan", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Antony Auclair", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jeff Driskel", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ka&#39;imi Fairbairn", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	TENoffense = [ {name: "Ryan Tannehill", pos: "QB", points: 0},
-	{name: "Khari Blasingame", pos: "RB", points: 0},
-	{name: "D&#39;Onta Foreman", pos: "RB", points: 0},
-	{name: "Dontrell Hilliard", pos: "RB", points: 0},
-	{name: "Jeremy McNichols", pos: "RB", points: 0},
-	{name: "A.J. Brown", pos: "WR", points: 0},
-	{name: "Dez Fitzpatrick", pos: "WR", points: 0},
-	{name: "Julio Jones", pos: "WR", points: 0},
-	{name: "Racey McMath", pos: "WR", points: 0},
-	{name: "Chester Rogers", pos: "WR", points: 0},
-	{name: "Nick Westbrook-Ikhine", pos: "WR", points: 0},
-	{name: "Anthony Firkser", pos: "TE", points: 0},
-	{name: "Geoff Swaim", pos: "TE", points: 0},
-	{name: "Randy Bullock", pos: "K", points: 0} ];
+	TENoffense = [ {name: "Ryan Tannehill", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Khari Blasingame", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "D&#39;Onta Foreman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dontrell Hilliard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jeremy McNichols", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "A.J. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dez Fitzpatrick", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Julio Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Racey McMath", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chester Rogers", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Nick Westbrook-Ikhine", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Anthony Firkser", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Geoff Swaim", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Randy Bullock", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	MINoffense = [ {name: "Kirk Cousins", pos: "QB", points: 0},
-	{name: "Dalvin Cook", pos: "RB", points: 0},
-	{name: "Wayne Gallman", pos: "RB", points: 0},
-	{name: "C.J. Ham", pos: "RB", points: 0},
-	{name: "Alexander Mattison", pos: "RB", points: 0},
-	{name: "Kene Nwangwu", pos: "RB", points: 0},
-	{name: "Dan Chisena", pos: "WR", points: 0},
-	{name: "Justin Jefferson", pos: "WR", points: 0},
-	{name: "K.J. Osborn", pos: "WR", points: 0},
-	{name: "Ihmir Smith-Marsette", pos: "WR", points: 0},
-	{name: "Dede Westbrook", pos: "WR", points: 0},
-	{name: "Tyler Conklin", pos: "TE", points: 0},
-	{name: "Chris Herndon", pos: "TE", points: 0},
-	{name: "Luke Stocker", pos: "TE", points: 0},
-	{name: "Greg Joseph", pos: "K", points: 0} ];
+	MINoffense = [ {name: "Kirk Cousins", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dalvin Cook", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Wayne Gallman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "C.J. Ham", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Alexander Mattison", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kene Nwangwu", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dan Chisena", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Justin Jefferson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "K.J. Osborn", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ihmir Smith-Marsette", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Dede Westbrook", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tyler Conklin", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Chris Herndon", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Luke Stocker", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Greg Joseph", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	SFoffense = [ {name: "Jimmy Garoppolo", pos: "QB", points: 0},
-	{name: "JaMycal Hasty", pos: "RB", points: 0},
-	{name: "Kyle Juszczyk", pos: "RB", points: 0},
-	{name: "Elijah Mitchell", pos: "RB", points: 0},
-	{name: "Jeff Wilson", pos: "RB", points: 0},
-	{name: "Brandon Aiyuk", pos: "WR", points: 0},
-	{name: "Travis Benjamin", pos: "WR", points: 0},
-	{name: "River Cracraft", pos: "WR", points: 0},
-	{name: "Jauan Jennings", pos: "WR", points: 0},
-	{name: "Deebo Samuel", pos: "WR", points: 0},
-	{name: "Trent Sherfield", pos: "WR", points: 0},
-	{name: "Ross Dwelley", pos: "TE", points: 0},
-	{name: "Tanner Hudson", pos: "TE", points: 0},
-	{name: "George Kittle", pos: "TE", points: 0},
-	{name: "Charlie Woerner", pos: "TE", points: 0},
-	{name: "Robbie Gould", pos: "K", points: 0} ];
+	SFoffense = [ {name: "Jimmy Garoppolo", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "JaMycal Hasty", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Kyle Juszczyk", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Elijah Mitchell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jeff Wilson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Brandon Aiyuk", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Travis Benjamin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "River Cracraft", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Jauan Jennings", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Deebo Samuel", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Trent Sherfield", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Ross Dwelley", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Tanner Hudson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "George Kittle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Charlie Woerner", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Robbie Gould", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	CHIdefense = [ {name: "Bears Defense", pos: "DEF", points: 0} ];
-	CINdefense = [ {name: "Bengals Defense", pos: "DEF", points: 0} ];
-	BUFdefense = [ {name: "Bills Defense", pos: "DEF", points: 0} ];
-	DENdefense = [ {name: "Broncos Defense", pos: "DEF", points: 0} ];
-	CLEdefense = [ {name: "Browns Defense", pos: "DEF", points: 0} ];
-	TBdefense = [ {name: "Buccaneers Defense", pos: "DEF", points: 0} ];
-	ARIdefense = [ {name: "Cardinals Defense", pos: "DEF", points: 0} ];
-	LACdefense = [ {name: "Chargers Defense", pos: "DEF", points: 0} ];
-	KCdefense = [ {name: "Chiefs Defense", pos: "DEF", points: 0} ];
-	INDdefense = [ {name: "Colts Defense", pos: "DEF", points: 0} ];
-	DALdefense = [ {name: "Cowboys Defense", pos: "DEF", points: 0} ];
-	MIAdefense = [ {name: "Dolphins Defense", pos: "DEF", points: 0} ];
-	PHIdefense = [ {name: "Eagles Defense", pos: "DEF", points: 0} ];
-	ATLdefense = [ {name: "Falcons Defense", pos: "DEF", points: 0} ];
-	NYGdefense = [ {name: "Giants Defense", pos: "DEF", points: 0} ];
-	JAXdefense = [ {name: "Jaguars Defense", pos: "DEF", points: 0} ];
-	NYJdefense = [ {name: "Jets Defense", pos: "DEF", points: 0} ];
-	DETdefense = [ {name: "Lions Defense", pos: "DEF", points: 0} ];
-	GBdefense = [ {name: "Packers Defense", pos: "DEF", points: 0} ];
-	CARdefense = [ {name: "Panthers Defense", pos: "DEF", points: 0} ];
-	NEdefense = [ {name: "Patriots Defense", pos: "DEF", points: 0} ];
-	WASdefense = [ {name: "Football Team Defense", pos: "DEF", points: 0} ];
-	LVdefense = [ {name: "Raiders Defense", pos: "DEF", points: 0} ];
-	LARdefense = [ {name: "Rams Defense", pos: "DEF", points: 0} ];
-	BALdefense = [ {name: "Ravens Defense", pos: "DEF", points: 0} ];
-	NOdefense = [ {name: "Saints Defense", pos: "DEF", points: 0} ];
-	SEAdefense = [ {name: "Seahawks Defense", pos: "DEF", points: 0} ];
-	PITdefense = [ {name: "Steelers Defense", pos: "DEF", points: 0} ];
-	HOUdefense = [ {name: "Texans Defense", pos: "DEF", points: 0} ];
-	TENdefense = [ {name: "Titans Defense", pos: "DEF", points: 0} ];
-	MINdefense = [ {name: "Vikings Defense", pos: "DEF", points: 0} ];
-	SFdefense = [ {name: "49ers Defense", pos: "DEF", points: 0} ];
+	CHIdefense = [ {name: "Bears Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	CINdefense = [ {name: "Bengals Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	BUFdefense = [ {name: "Bills Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	DENdefense = [ {name: "Broncos Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	CLEdefense = [ {name: "Browns Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	TBdefense = [ {name: "Buccaneers Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	ARIdefense = [ {name: "Cardinals Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	LACdefense = [ {name: "Chargers Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	KCdefense = [ {name: "Chiefs Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	INDdefense = [ {name: "Colts Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	DALdefense = [ {name: "Cowboys Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	MIAdefense = [ {name: "Dolphins Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	PHIdefense = [ {name: "Eagles Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	ATLdefense = [ {name: "Falcons Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	NYGdefense = [ {name: "Giants Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	JAXdefense = [ {name: "Jaguars Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	NYJdefense = [ {name: "Jets Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	DETdefense = [ {name: "Lions Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	GBdefense = [ {name: "Packers Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	CARdefense = [ {name: "Panthers Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	NEdefense = [ {name: "Patriots Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	WASdefense = [ {name: "Football Team Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	LVdefense = [ {name: "Raiders Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	LARdefense = [ {name: "Rams Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	BALdefense = [ {name: "Ravens Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	NOdefense = [ {name: "Saints Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	SEAdefense = [ {name: "Seahawks Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	PITdefense = [ {name: "Steelers Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	HOUdefense = [ {name: "Texans Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	TENdefense = [ {name: "Titans Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	MINdefense = [ {name: "Vikings Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
+	SFdefense = [ {name: "49ers Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
 	
 	team1 = [null, 0, null, null, null, null, null];
 	team2 = [null, 0, null, null, null, null, null];
@@ -2112,12 +2112,50 @@ function firstQuarter(team1, team2){
 			/*TOUCHDOWN*/
 			var randomPlayerIndex = Math.floor(Math.random() * (team1[4].length - 1));
 			team1[4][randomPlayerIndex].points = team1[4][randomPlayerIndex].points + 6;
+			
+			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
+			if(team1[4][randomPlayerIndex].pos.valueOf() == "QB"){
+				team1[4][randomPlayerIndex].rushTD++;
+			}
+			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
+			else if (team1[4][randomPlayerIndex].pos.valueOf() == "RB"){
+				rbTDnumber = Math.floor(Math.random() * 2);
+				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+					team1[4][randomPlayerIndex].rushTD++;
+				}
+				else {
+					team1[4][randomPlayerIndex].recTD++;
+					team1[4][0].passTD++;
+				}
+			}
+			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
+			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
+			else{
+				team1[4][randomPlayerIndex].recTD++;
+				team1[4][0].passTD++;
+			}
+			
 			var playerName = team1[4][randomPlayerIndex];
 			
 			/*EXTRA POINT; KICKER LAST PLAYER IN ROSTER*/
 			team1[4][team1[4].length - 1].points++;
+			team1[4][team1[4].length - 1].xp++;
 			var extraPoint = team1[4][team1[4].length - 1];
-			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+			
+			if(playerName.pos.valueOf() == "QB"){
+				document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " rushing touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+			}
+			else if(playerName.pos.valueOf() == "RB"){
+				if(rbTDnumber == 0){
+					document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " rushing touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+				}
+				else{
+					document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown reception from " + playerName.name + " from " + team1[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
+				}
+			}
+			else{
+				document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown reception from " + playerName.name + " from " + team1[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
+			}
 		}
 		else if(driveResult == 3) //Field goal
 		{
@@ -2126,6 +2164,7 @@ function firstQuarter(team1, team2){
 			
 			/*FIELD GOAL*/
 			team1[4][team1[4].length - 1].points = team1[4][team1[4].length - 1].points + 3;
+			team1[4][team1[4].length - 1].fg++;
 			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " field goal kick from " + team1[4][team1[4].length - 1].name + " is good from " + (Math.floor(Math.random() * 31) + 20) + " yards out</p>";
 		}
 		else if(driveResult == 23) //Safety
@@ -2134,6 +2173,7 @@ function firstQuarter(team1, team2){
 			team2[1] += home;
 			
 			team2[5][0].points = team2[5][0].points + 2;
+			team2[5][0].safeties++;
 			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " record the safety</p>";
 		}
 		else if(driveResult == 29) //Defensive TD (Scoop n' Score or Pick Six)
@@ -2142,7 +2182,9 @@ function firstQuarter(team1, team2){
 			team2[1] += home;
 			
 			team2[5][0].points = team2[5][0].points + 6;
+			team2[5][0].defensiveTD++;
 			team2[4][team2[4].length - 1].points++;
+			team2[4][team2[4].length - 1].xp++;
 			
 			var defensiveTDtype = Math.floor(Math.random() * 2);
 			if(defensiveTDtype == 0){ //Scoop n' Score
@@ -2161,12 +2203,50 @@ function firstQuarter(team1, team2){
 			/*TOUCHDOWN*/
 			var randomPlayerIndex = Math.floor(Math.random() * (team2[4].length - 1));
 			team2[4][randomPlayerIndex].points = team2[4][randomPlayerIndex].points + 6;
+			
+			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
+			if(team2[4][randomPlayerIndex].pos.valueOf() == "QB"){
+				team2[4][randomPlayerIndex].rushTD++;
+			}
+			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
+			else if (team2[4][randomPlayerIndex].pos.valueOf() == "RB"){
+				rbTDnumber = Math.floor(Math.random() * 2);
+				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+					team2[4][randomPlayerIndex].rushTD++;
+				}
+				else {
+					team2[4][randomPlayerIndex].recTD++;
+					team2[4][0].passTD++;
+				}
+			}
+			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
+			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
+			else{
+				team2[4][randomPlayerIndex].recTD++;
+				team2[4][0].passTD++;
+			}
+			
 			var playerName = team2[4][randomPlayerIndex];
 			
 			/*EXTRA POINT; KICKER LAST PLAYER IN ROSTER*/
 			team2[4][team2[4].length - 1].points++;
+			team2[4][team2[4].length - 1].xp++;
 			var extraPoint = team2[4][team2[4].length - 1];
-			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+			
+			if(playerName.pos.valueOf() == "QB"){
+				document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " rushing touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+			}
+			else if(playerName.pos.valueOf() == "RB"){
+				if(rbTDnumber == 0){
+					document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " rushing touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+				}
+				else{
+					document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown reception from " + playerName.name + " from " + team2[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
+				}
+			}
+			else{
+				document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown reception from " + playerName.name + " from " + team2[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
+			}
 		}
 		else if(driveResult == 7) //Field goal
 		{
@@ -2175,6 +2255,7 @@ function firstQuarter(team1, team2){
 			
 			/*FIELD GOAL*/
 			team2[4][team2[4].length - 1].points = team2[4][team2[4].length - 1].points + 3;
+			team2[4][team2[4].length - 1].fg++;
 			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " field goal kick from " + team2[4][team2[4].length - 1].name + " is good from " + (Math.floor(Math.random() * 31) + 20) + " yards out</p>";
 		}
 		else if(driveResult == 24) //Safety
@@ -2183,6 +2264,7 @@ function firstQuarter(team1, team2){
 			team1[1] += away;
 			
 			team1[5][0].points = team1[5][0].points + 2;
+			team1[5][0].safeties++;
 			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " record the safety</p>";
 		}
 		else if(driveResult == 30) //Defensive TD (Scoop n' Score or Pick Six)
@@ -2191,7 +2273,9 @@ function firstQuarter(team1, team2){
 			team1[1] += away;
 			
 			team1[5][0].points = team1[5][0].points + 6;
+			team1[5][0].defensiveTD++;
 			team1[4][team1[4].length - 1].points++;
+			team1[4][team1[4].length - 1].xp++;
 			
 			var defensiveTDtype = Math.floor(Math.random() * 2);
 			if(defensiveTDtype == 0){ //Scoop n' Score
@@ -2229,12 +2313,50 @@ function secondQuarter(team1, team2){
 			/*TOUCHDOWN*/
 			var randomPlayerIndex = Math.floor(Math.random() * (team1[4].length - 1));
 			team1[4][randomPlayerIndex].points = team1[4][randomPlayerIndex].points + 6;
+			
+			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
+			if(team1[4][randomPlayerIndex].pos.valueOf() == "QB"){
+				team1[4][randomPlayerIndex].rushTD++;
+			}
+			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
+			else if (team1[4][randomPlayerIndex].pos.valueOf() == "RB"){
+				rbTDnumber = Math.floor(Math.random() * 2);
+				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+					team1[4][randomPlayerIndex].rushTD++;
+				}
+				else {
+					team1[4][randomPlayerIndex].recTD++;
+					team1[4][0].passTD++;
+				}
+			}
+			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
+			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
+			else{
+				team1[4][randomPlayerIndex].recTD++;
+				team1[4][0].passTD++;
+			}
+			
 			var playerName = team1[4][randomPlayerIndex];
 			
 			/*EXTRA POINT; KICKER LAST PLAYER IN ROSTER*/
 			team1[4][team1[4].length - 1].points++;
+			team1[4][team1[4].length - 1].xp++;
 			var extraPoint = team1[4][team1[4].length - 1];
-			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+			
+			if(playerName.pos.valueOf() == "QB"){
+				document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " rushing touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+			}
+			else if(playerName.pos.valueOf() == "RB"){
+				if(rbTDnumber == 0){
+					document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " rushing touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+				}
+				else{
+					document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown reception from " + playerName.name + " from " + team1[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
+				}
+			}
+			else{
+				document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown reception from " + playerName.name + " from " + team1[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
+			}
 		}
 		else if(driveResult == 3) //Field goal
 		{
@@ -2243,6 +2365,7 @@ function secondQuarter(team1, team2){
 			
 			/*FIELD GOAL*/
 			team1[4][team1[4].length - 1].points = team1[4][team1[4].length - 1].points + 3;
+			team1[4][team1[4].length - 1].fg++;
 			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " field goal kick from " + team1[4][team1[4].length - 1].name + " is good from " + (Math.floor(Math.random() * 31) + 20) + " yards out</p>";
 		}
 		else if(driveResult == 23) //Safety
@@ -2251,6 +2374,7 @@ function secondQuarter(team1, team2){
 			team2[1] += home;
 			
 			team2[5][0].points = team2[5][0].points + 2;
+			team2[5][0].safeties++;
 			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " record the safety</p>";
 		}
 		else if(driveResult == 29) //Defensive TD (Scoop n' Score or Pick Six)
@@ -2259,7 +2383,9 @@ function secondQuarter(team1, team2){
 			team2[1] += home;
 			
 			team2[5][0].points = team2[5][0].points + 6;
+			team2[5][0].defensiveTD++;
 			team2[4][team2[4].length - 1].points++;
+			team2[4][team2[4].length - 1].xp++;
 			
 			var defensiveTDtype = Math.floor(Math.random() * 2);
 			if(defensiveTDtype == 0){ //Scoop n' Score
@@ -2278,12 +2404,50 @@ function secondQuarter(team1, team2){
 			/*TOUCHDOWN*/
 			var randomPlayerIndex = Math.floor(Math.random() * (team2[4].length - 1));
 			team2[4][randomPlayerIndex].points = team2[4][randomPlayerIndex].points + 6;
+			
+			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
+			if(team2[4][randomPlayerIndex].pos.valueOf() == "QB"){
+				team2[4][randomPlayerIndex].rushTD++;
+			}
+			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
+			else if (team2[4][randomPlayerIndex].pos.valueOf() == "RB"){
+				rbTDnumber = Math.floor(Math.random() * 2);
+				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+					team2[4][randomPlayerIndex].rushTD++;
+				}
+				else {
+					team2[4][randomPlayerIndex].recTD++;
+					team2[4][0].passTD++;
+				}
+			}
+			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
+			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
+			else{
+				team2[4][randomPlayerIndex].recTD++;
+				team2[4][0].passTD++;
+			}
+			
 			var playerName = team2[4][randomPlayerIndex];
 			
 			/*EXTRA POINT; KICKER LAST PLAYER IN ROSTER*/
 			team2[4][team2[4].length - 1].points++;
+			team2[4][team2[4].length - 1].xp++;
 			var extraPoint = team2[4][team2[4].length - 1];
-			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+			
+			if(playerName.pos.valueOf() == "QB"){
+				document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " rushing touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+			}
+			else if(playerName.pos.valueOf() == "RB"){
+				if(rbTDnumber == 0){
+					document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " rushing touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+				}
+				else{
+					document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown reception from " + playerName.name + " from " + team2[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
+				}
+			}
+			else{
+				document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown reception from " + playerName.name + " from " + team2[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
+			}
 		}
 		else if(driveResult == 7) //Field goal
 		{
@@ -2292,6 +2456,7 @@ function secondQuarter(team1, team2){
 			
 			/*FIELD GOAL*/
 			team2[4][team2[4].length - 1].points = team2[4][team2[4].length - 1].points + 3;
+			team2[4][team2[4].length - 1].fg++;
 			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " field goal kick from " + team2[4][team2[4].length - 1].name + " is good from " + (Math.floor(Math.random() * 31) + 20) + " yards out</p>";
 		}
 		else if(driveResult == 24) //Safety
@@ -2300,6 +2465,7 @@ function secondQuarter(team1, team2){
 			team1[1] += away;
 			
 			team1[5][0].points = team1[5][0].points + 2;
+			team1[5][0].safeties++;
 			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " record the safety</p>";
 		}
 		else if(driveResult == 30) //Defensive TD (Scoop n' Score or Pick Six)
@@ -2308,7 +2474,9 @@ function secondQuarter(team1, team2){
 			team1[1] += away;
 			
 			team1[5][0].points = team1[5][0].points + 6;
+			team1[5][0].defensiveTD++;
 			team1[4][team1[4].length - 1].points++;
+			team1[4][team1[4].length - 1].xp++;
 			
 			var defensiveTDtype = Math.floor(Math.random() * 2);
 			if(defensiveTDtype == 0){ //Scoop n' Score
@@ -2346,12 +2514,50 @@ function thirdQuarter(team1, team2){
 			/*TOUCHDOWN*/
 			var randomPlayerIndex = Math.floor(Math.random() * (team1[4].length - 1));
 			team1[4][randomPlayerIndex].points = team1[4][randomPlayerIndex].points + 6;
+			
+			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
+			if(team1[4][randomPlayerIndex].pos.valueOf() == "QB"){
+				team1[4][randomPlayerIndex].rushTD++;
+			}
+			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
+			else if (team1[4][randomPlayerIndex].pos.valueOf() == "RB"){
+				rbTDnumber = Math.floor(Math.random() * 2);
+				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+					team1[4][randomPlayerIndex].rushTD++;
+				}
+				else {
+					team1[4][randomPlayerIndex].recTD++;
+					team1[4][0].passTD++;
+				}
+			}
+			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
+			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
+			else{
+				team1[4][randomPlayerIndex].recTD++;
+				team1[4][0].passTD++;
+			}
+			
 			var playerName = team1[4][randomPlayerIndex];
 			
 			/*EXTRA POINT; KICKER LAST PLAYER IN ROSTER*/
 			team1[4][team1[4].length - 1].points++;
+			team1[4][team1[4].length - 1].xp++;
 			var extraPoint = team1[4][team1[4].length - 1];
-			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+			
+			if(playerName.pos.valueOf() == "QB"){
+				document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " rushing touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+			}
+			else if(playerName.pos.valueOf() == "RB"){
+				if(rbTDnumber == 0){
+					document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " rushing touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+				}
+				else{
+					document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown reception from " + playerName.name + " from " + team1[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
+				}
+			}
+			else{
+				document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown reception from " + playerName.name + " from " + team1[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
+			}
 		}
 		else if(driveResult == 3) //Field goal
 		{
@@ -2360,6 +2566,7 @@ function thirdQuarter(team1, team2){
 			
 			/*FIELD GOAL*/
 			team1[4][team1[4].length - 1].points = team1[4][team1[4].length - 1].points + 3;
+			team1[4][team1[4].length - 1].fg++;
 			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " field goal kick from " + team1[4][team1[4].length - 1].name + " is good from " + (Math.floor(Math.random() * 31) + 20) + " yards out</p>";
 		}
 		else if(driveResult == 23) //Safety
@@ -2368,6 +2575,7 @@ function thirdQuarter(team1, team2){
 			team2[1] += home;
 			
 			team2[5][0].points = team2[5][0].points + 2;
+			team2[5][0].safeties++;
 			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " record the safety</p>";
 		}
 		else if(driveResult == 29) //Defensive TD (Scoop n' Score or Pick Six)
@@ -2376,7 +2584,9 @@ function thirdQuarter(team1, team2){
 			team2[1] += home;
 			
 			team2[5][0].points = team2[5][0].points + 6;
+			team2[5][0].defensiveTD++;
 			team2[4][team2[4].length - 1].points++;
+			team2[4][team2[4].length - 1].xp++;
 			
 			var defensiveTDtype = Math.floor(Math.random() * 2);
 			if(defensiveTDtype == 0){ //Scoop n' Score
@@ -2395,12 +2605,50 @@ function thirdQuarter(team1, team2){
 			/*TOUCHDOWN*/
 			var randomPlayerIndex = Math.floor(Math.random() * (team2[4].length - 1));
 			team2[4][randomPlayerIndex].points = team2[4][randomPlayerIndex].points + 6;
+			
+			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
+			if(team2[4][randomPlayerIndex].pos.valueOf() == "QB"){
+				team2[4][randomPlayerIndex].rushTD++;
+			}
+			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
+			else if (team2[4][randomPlayerIndex].pos.valueOf() == "RB"){
+				rbTDnumber = Math.floor(Math.random() * 2);
+				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+					team2[4][randomPlayerIndex].rushTD++;
+				}
+				else {
+					team2[4][randomPlayerIndex].recTD++;
+					team2[4][0].passTD++;
+				}
+			}
+			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
+			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
+			else{
+				team2[4][randomPlayerIndex].recTD++;
+				team2[4][0].passTD++;
+			}
+			
 			var playerName = team2[4][randomPlayerIndex];
 			
 			/*EXTRA POINT; KICKER LAST PLAYER IN ROSTER*/
 			team2[4][team2[4].length - 1].points++;
+			team2[4][team2[4].length - 1].xp++;
 			var extraPoint = team2[4][team2[4].length - 1];
-			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+			
+			if(playerName.pos.valueOf() == "QB"){
+				document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " rushing touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+			}
+			else if(playerName.pos.valueOf() == "RB"){
+				if(rbTDnumber == 0){
+					document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " rushing touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+				}
+				else{
+					document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown reception from " + playerName.name + " from " + team2[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
+				}
+			}
+			else{
+				document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown reception from " + playerName.name + " from " + team2[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
+			}
 		}
 		else if(driveResult == 7) //Field goal
 		{
@@ -2409,6 +2657,7 @@ function thirdQuarter(team1, team2){
 			
 			/*FIELD GOAL*/
 			team2[4][team2[4].length - 1].points = team2[4][team2[4].length - 1].points + 3;
+			team2[4][team2[4].length - 1].fg++;
 			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " field goal kick from " + team2[4][team2[4].length - 1].name + " is good from " + (Math.floor(Math.random() * 31) + 20) + " yards out</p>";
 		}
 		else if(driveResult == 24) //Safety
@@ -2417,6 +2666,7 @@ function thirdQuarter(team1, team2){
 			team1[1] += away;
 			
 			team1[5][0].points = team1[5][0].points + 2;
+			team1[5][0].safeties++;
 			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " record the safety</p>";
 		}
 		else if(driveResult == 30) //Defensive TD (Scoop n' Score or Pick Six)
@@ -2425,7 +2675,9 @@ function thirdQuarter(team1, team2){
 			team1[1] += away;
 			
 			team1[5][0].points = team1[5][0].points + 6;
+			team1[5][0].defensiveTD++;
 			team1[4][team1[4].length - 1].points++;
+			team1[4][team1[4].length - 1].xp++;
 			
 			var defensiveTDtype = Math.floor(Math.random() * 2);
 			if(defensiveTDtype == 0){ //Scoop n' Score
@@ -2462,12 +2714,50 @@ function fourthQuarter(team1, team2){
 			/*TOUCHDOWN*/
 			var randomPlayerIndex = Math.floor(Math.random() * (team1[4].length - 1));
 			team1[4][randomPlayerIndex].points = team1[4][randomPlayerIndex].points + 6;
+			
+			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
+			if(team1[4][randomPlayerIndex].pos.valueOf() == "QB"){
+				team1[4][randomPlayerIndex].rushTD++;
+			}
+			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
+			else if (team1[4][randomPlayerIndex].pos.valueOf() == "RB"){
+				rbTDnumber = Math.floor(Math.random() * 2);
+				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+					team1[4][randomPlayerIndex].rushTD++;
+				}
+				else {
+					team1[4][randomPlayerIndex].recTD++;
+					team1[4][0].passTD++;
+				}
+			}
+			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
+			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
+			else{
+				team1[4][randomPlayerIndex].recTD++;
+				team1[4][0].passTD++;
+			}
+			
 			var playerName = team1[4][randomPlayerIndex];
 			
 			/*EXTRA POINT; KICKER LAST PLAYER IN ROSTER*/
 			team1[4][team1[4].length - 1].points++;
+			team1[4][team1[4].length - 1].xp++;
 			var extraPoint = team1[4][team1[4].length - 1];
-			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+			
+			if(playerName.pos.valueOf() == "QB"){
+				document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " rushing touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+			}
+			else if(playerName.pos.valueOf() == "RB"){
+				if(rbTDnumber == 0){
+					document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " rushing touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+				}
+				else{
+					document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown reception from " + playerName.name + " from " + team1[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
+				}
+			}
+			else{
+				document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown reception from " + playerName.name + " from " + team1[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
+			}
 		}
 		else if(driveResult == 3) //Field goal
 		{
@@ -2476,6 +2766,7 @@ function fourthQuarter(team1, team2){
 			
 			/*FIELD GOAL*/
 			team1[4][team1[4].length - 1].points = team1[4][team1[4].length - 1].points + 3;
+			team1[4][team1[4].length - 1].fg++;
 			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " field goal kick from " + team1[4][team1[4].length - 1].name + " is good from " + (Math.floor(Math.random() * 31) + 20) + " yards out</p>";
 		}
 		else if(driveResult == 23) //Safety
@@ -2484,6 +2775,7 @@ function fourthQuarter(team1, team2){
 			team2[1] += home;
 			
 			team2[5][0].points = team2[5][0].points + 2;
+			team2[5][0].safeties++;
 			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " record the safety</p>";
 		}
 		else if(driveResult == 29) //Defensive TD (Scoop n' Score or Pick Six)
@@ -2492,7 +2784,9 @@ function fourthQuarter(team1, team2){
 			team2[1] += home;
 			
 			team2[5][0].points = team2[5][0].points + 6;
+			team2[5][0].defensiveTD++;
 			team2[4][team2[4].length - 1].points++;
+			team2[4][team2[4].length - 1].xp++;
 			
 			var defensiveTDtype = Math.floor(Math.random() * 2);
 			if(defensiveTDtype == 0){ //Scoop n' Score
@@ -2511,12 +2805,50 @@ function fourthQuarter(team1, team2){
 			/*TOUCHDOWN*/
 			var randomPlayerIndex = Math.floor(Math.random() * (team2[4].length - 1));
 			team2[4][randomPlayerIndex].points = team2[4][randomPlayerIndex].points + 6;
+			
+			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
+			if(team2[4][randomPlayerIndex].pos.valueOf() == "QB"){
+				team2[4][randomPlayerIndex].rushTD++;
+			}
+			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
+			else if (team2[4][randomPlayerIndex].pos.valueOf() == "RB"){
+				rbTDnumber = Math.floor(Math.random() * 2);
+				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+					team2[4][randomPlayerIndex].rushTD++;
+				}
+				else {
+					team2[4][randomPlayerIndex].recTD++;
+					team2[4][0].passTD++;
+				}
+			}
+			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
+			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
+			else{
+				team2[4][randomPlayerIndex].recTD++;
+				team2[4][0].passTD++;
+			}
+			
 			var playerName = team2[4][randomPlayerIndex];
 			
 			/*EXTRA POINT; KICKER LAST PLAYER IN ROSTER*/
 			team2[4][team2[4].length - 1].points++;
+			team2[4][team2[4].length - 1].xp++;
 			var extraPoint = team2[4][team2[4].length - 1];
-			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+			
+			if(playerName.pos.valueOf() == "QB"){
+				document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " rushing touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+			}
+			else if(playerName.pos.valueOf() == "RB"){
+				if(rbTDnumber == 0){
+					document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " rushing touchdown from " + playerName.name + " and extra point from " + extraPoint.name + "</p>";
+				}
+				else{
+					document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown reception from " + playerName.name + " from " + team2[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
+				}
+			}
+			else{
+				document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown reception from " + playerName.name + " from " + team2[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
+			}
 		}
 		else if(driveResult == 7) //Field goal
 		{
@@ -2525,6 +2857,7 @@ function fourthQuarter(team1, team2){
 			
 			/*FIELD GOAL*/
 			team2[4][team2[4].length - 1].points = team2[4][team2[4].length - 1].points + 3;
+			team2[4][team2[4].length - 1].fg++;
 			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " field goal kick from " + team2[4][team2[4].length - 1].name + " is good from " + (Math.floor(Math.random() * 31) + 20) + " yards out</p>";
 		}
 		else if(driveResult == 24) //Safety
@@ -2533,6 +2866,7 @@ function fourthQuarter(team1, team2){
 			team1[1] += away;
 			
 			team1[5][0].points = team1[5][0].points + 2;
+			team1[5][0].safeties++;
 			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " record the safety</p>";
 		}
 		else if(driveResult == 30) //Defensive TD (Scoop n' Score or Pick Six)
@@ -2541,7 +2875,9 @@ function fourthQuarter(team1, team2){
 			team1[1] += away;
 			
 			team1[5][0].points = team1[5][0].points + 6;
+			team1[5][0].defensiveTD++;
 			team1[4][team1[4].length - 1].points++;
+			team1[4][team1[4].length - 1].xp++;
 			
 			var defensiveTDtype = Math.floor(Math.random() * 2);
 			if(defensiveTDtype == 0){ //Scoop n' Score
@@ -2572,18 +2908,40 @@ function fourthQuarter(team1, team2){
 		document.getElementById("box-score").innerHTML += "<table>";
 		document.getElementById("box-score").innerHTML += "<br/>";
 		for(var i=0; i<team1[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team1[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].points+"</b> PTS</td></tr><br/>";
+			if(team1[4][i].pos.valueOf() == "K"){
+				document.getElementById("box-score").innerHTML += "<tr><td><b>SPECIAL TEAMS</b><br/><b>"+team1[4][i].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team1[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].fg+"</b> FG</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].xp+"</b> XP</td></tr><br/>";
+			}
+			else if(team1[4][i].pos.valueOf() == "QB"){
+				document.getElementById("box-score").innerHTML += "<tr><td><b>OFFENSE</b><br/><b>"+team1[4][i].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team1[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].rushTD+"</b> RUSH TD</td>&emsp;&emsp;&emsp;<td>(<b>"+team1[4][i].passTD+"</b> PASS TD)</td></tr><br/>";
+			}
+			else if(team1[4][i].pos.valueOf() == "RB"){
+				document.getElementById("box-score").innerHTML += "<tr><td><b>"+team1[4][i].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team1[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].rushTD+"</b> RUSH TD</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].recTD+"</b> REC TD</td></tr><br/>";
+			}
+			else{
+				document.getElementById("box-score").innerHTML += "<tr><td><b>"+team1[4][i].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team1[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].recTD+"</b> REC TD</td></tr><br/>";
+			}
 		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team1[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[5][0].points+"</b> PTS</td></tr><br/>";
+		document.getElementById("box-score").innerHTML += "<tr><td><b>DEFENSE</b><br/><b>"+team1[5][0].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team1[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[5][0].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team1[5][0].safeties+"</b> SFT</td>&emsp;&emsp;&emsp;<td><b>"+team1[5][0].defensiveTD+"</b> DTD</td></tr><br/>";
 		document.getElementById("box-score").innerHTML += "</table>";
 		document.getElementById("box-score").innerHTML += "<br/><br/>";
 		document.getElementById("box-score").innerHTML += "<h3>"+team2[6]+" "+team2[0].toUpperCase()+"</h3>";
 		document.getElementById("box-score").innerHTML += "<table>";
 		document.getElementById("box-score").innerHTML += "<br/>";
 		for(var i=0; i<team2[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team2[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].points+"</b> PTS</td></tr><br/>";
+			if(team2[4][i].pos.valueOf() == "K"){
+				document.getElementById("box-score").innerHTML += "<tr><td><b>SPECIAL TEAMS</b><br/><b>"+team2[4][i].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team2[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].fg+"</b> FG</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].xp+"</b> XP</td></tr><br/>";
+			}
+			else if (team2[4][i].pos.valueOf() == "QB"){
+				document.getElementById("box-score").innerHTML += "<tr><td><b>OFFENSE</b><br/><b>"+team2[4][i].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team2[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].rushTD+"</b> RUSH TD</td>&emsp;&emsp;&emsp;<td>(<b>"+team2[4][i].passTD+"</b> PASS TD)</td></tr><br/>";
+			}
+			else if (team2[4][i].pos.valueOf() == "RB"){
+				document.getElementById("box-score").innerHTML += "<tr><td><b>"+team2[4][i].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team2[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].rushTD+"</b> RUSH TD</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].recTD+"</b> REC TD</td></tr><br/>";
+			}
+			else{
+				document.getElementById("box-score").innerHTML += "<tr><td><b>"+team2[4][i].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team2[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].recTD+"</b> REC TD</td></tr><br/>";
+			}
 		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team2[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[5][0].points+"</b> PTS</td></tr><br/>";
+		document.getElementById("box-score").innerHTML += "<tr><td><b>DEFENSE</b><br/><b>"+team2[5][0].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team2[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[5][0].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team2[5][0].safeties+"</b> SFT</td>&emsp;&emsp;&emsp;<td><b>"+team2[5][0].defensiveTD+"</b> DTD</td></tr><br/>";
 		document.getElementById("box-score").innerHTML += "</table>";
 		
 		document.getElementById("reset-btn").disabled = false;
@@ -2640,33 +2998,48 @@ function overtime(team1, team2){
 		/*TOUCHDOWN*/
 			var randomPlayerIndex = Math.floor(Math.random() * (team1[4].length - 1));
 			team1[4][randomPlayerIndex].points = team1[4][randomPlayerIndex].points + 6;
+			
+			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
+			if(team1[4][randomPlayerIndex].pos.valueOf() == "QB"){
+				team1[4][randomPlayerIndex].rushTD++;
+			}
+			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
+			else if (team1[4][randomPlayerIndex].pos.valueOf() == "RB"){
+				rbTDnumber = Math.floor(Math.random() * 2);
+				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+					team1[4][randomPlayerIndex].rushTD++;
+				}
+				else {
+					team1[4][randomPlayerIndex].recTD++;
+					team1[4][0].passTD++;
+				}
+			}
+			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
+			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
+			else{
+				team1[4][randomPlayerIndex].recTD++;
+				team1[4][0].passTD++;
+			}
+			
 			var playerName = team1[4][randomPlayerIndex];
 			
-		document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown from " + playerName.name + "</p>";
+		if(playerName.pos.valueOf() == "QB"){
+			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " rushing touchdown from " + playerName.name + "</p>";
+		}
+		else if(playerName.pos.valueOf() == "RB"){
+			if(rbTDnumber == 0){
+				document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " rushing touchdown from " + playerName.name + "</p>";
+			}
+			else{
+				document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown reception from " + playerName.name + " from " + team1[4][0].name + " touchdown pass</p>";
+			}
+		}
+		else{
+			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown reception from " + playerName.name + " from " + team1[4][0].name + " touchdown pass</p>";
+		}
+			
 		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
-		/*BOX SCORE*/
-		document.getElementById("box-score").style.visibility = "visible";
-		document.getElementById("box-score").innerHTML += "<h2>BOX SCORE</h2>";
-		document.getElementById("box-score").innerHTML += "<h3>"+team1[6]+" "+team1[0].toUpperCase()+"</h3>";
-		document.getElementById("box-score").innerHTML += "<table>";
-		document.getElementById("box-score").innerHTML += "<br/>";
-		for(var i=0; i<team1[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team1[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].points+"</b> PTS</td></tr><br/>";
-		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team1[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[5][0].points+"</b> PTS</td></tr><br/>";
-		document.getElementById("box-score").innerHTML += "</table>";
-		document.getElementById("box-score").innerHTML += "<br/><br/>";
-		document.getElementById("box-score").innerHTML += "<h3>"+team2[6]+" "+team2[0].toUpperCase()+"</h3>";
-		document.getElementById("box-score").innerHTML += "<table>";
-		document.getElementById("box-score").innerHTML += "<br/>";
-		for(var i=0; i<team2[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team2[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].points+"</b> PTS</td></tr><br/>";
-		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team2[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[5][0].points+"</b> PTS</td></tr><br/>";
-		document.getElementById("box-score").innerHTML += "</table>";
-		
-		document.getElementById("reset-btn").disabled = false;
 	}
 	else if(picker == 2)
 	{
@@ -2674,63 +3047,21 @@ function overtime(team1, team2){
 		
 		/*FIELD GOAL*/
 			team1[4][team1[4].length - 1].points = team1[4][team1[4].length - 1].points + 3;
+			team1[4][team1[4].length - 1].fg++;
 			
 		document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " field goal kick from " + team1[4][team1[4].length - 1].name + " is good from " + (Math.floor(Math.random() * 31) + 20) + " yards out</p>";
 		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
-		/*BOX SCORE*/
-		document.getElementById("box-score").style.visibility = "visible";
-		document.getElementById("box-score").innerHTML += "<h2>BOX SCORE</h2>";
-		document.getElementById("box-score").innerHTML += "<h3>"+team1[6]+" "+team1[0].toUpperCase()+"</h3>";
-		document.getElementById("box-score").innerHTML += "<table>";
-		document.getElementById("box-score").innerHTML += "<br/>";
-		for(var i=0; i<team1[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team1[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].points+"</b> PTS</td></tr><br/>";
-		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team1[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[5][0].points+"</b> PTS</td></tr><br/>";
-		document.getElementById("box-score").innerHTML += "</table>";
-		document.getElementById("box-score").innerHTML += "<br/><br/>";
-		document.getElementById("box-score").innerHTML += "<h3>"+team2[6]+" "+team2[0].toUpperCase()+"</h3>";
-		document.getElementById("box-score").innerHTML += "<table>";
-		document.getElementById("box-score").innerHTML += "<br/>";
-		for(var i=0; i<team2[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team2[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].points+"</b> PTS</td></tr><br/>";
-		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team2[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[5][0].points+"</b> PTS</td></tr><br/>";
-		document.getElementById("box-score").innerHTML += "</table>";
-		
-		document.getElementById("reset-btn").disabled = false;
 	}
 	else if(picker == 3)
 	{
 		team2[1] += 2;
 		team2[5][0].points = team2[5][0].points + 2;
+		team2[5][0].safeties++;
 		
 		document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " record the safety</p>";
 		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
-		/*BOX SCORE*/
-		document.getElementById("box-score").style.visibility = "visible";
-		document.getElementById("box-score").innerHTML += "<h2>BOX SCORE</h2>";
-		document.getElementById("box-score").innerHTML += "<h3>"+team1[6]+" "+team1[0].toUpperCase()+"</h3>";
-		document.getElementById("box-score").innerHTML += "<table>";
-		document.getElementById("box-score").innerHTML += "<br/>";
-		for(var i=0; i<team1[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team1[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].points+"</b> PTS</td></tr><br/>";
-		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team1[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[5][0].points+"</b> PTS</td></tr><br/>";
-		document.getElementById("box-score").innerHTML += "</table>";
-		document.getElementById("box-score").innerHTML += "<br/><br/>";
-		document.getElementById("box-score").innerHTML += "<h3>"+team2[6]+" "+team2[0].toUpperCase()+"</h3>";
-		document.getElementById("box-score").innerHTML += "<table>";
-		document.getElementById("box-score").innerHTML += "<br/>";
-		for(var i=0; i<team2[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team2[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].points+"</b> PTS</td></tr><br/>";
-		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team2[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[5][0].points+"</b> PTS</td></tr><br/>";
-		document.getElementById("box-score").innerHTML += "</table>";
-		
-		document.getElementById("reset-btn").disabled = false;
 	}
 	else if(picker == 4)
 	{
@@ -2739,33 +3070,48 @@ function overtime(team1, team2){
 		/*TOUCHDOWN*/
 			var randomPlayerIndex = Math.floor(Math.random() * (team2[4].length - 1));
 			team2[4][randomPlayerIndex].points = team2[4][randomPlayerIndex].points + 6;
+			
+			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
+			if(team2[4][randomPlayerIndex].pos.valueOf() == "QB"){
+				team2[4][randomPlayerIndex].rushTD++;
+			}
+			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
+			else if (team2[4][randomPlayerIndex].pos.valueOf() == "RB"){
+				rbTDnumber = Math.floor(Math.random() * 2);
+				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+					team2[4][randomPlayerIndex].rushTD++;
+				}
+				else {
+					team2[4][randomPlayerIndex].recTD++;
+					team2[4][0].passTD++;
+				}
+			}
+			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
+			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
+			else{
+				team2[4][randomPlayerIndex].recTD++;
+				team2[4][0].passTD++;
+			}
+			
 			var playerName = team2[4][randomPlayerIndex];
 			
-		document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown from " + playerName.name + "</p>";
+		if(playerName.pos.valueOf() == "QB"){
+			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " rushing touchdown from " + playerName.name + "</p>";
+		}
+		else if(playerName.pos.valueOf() == "RB"){
+			if(rbTDnumber == 0){
+				document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " rushing touchdown from " + playerName.name + "</p>";
+			}
+			else{
+				document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown reception from " + playerName.name + " from " + team2[4][0].name + " touchdown pass</p>";
+			}
+		}
+		else{
+			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown reception from " + playerName.name + " from " + team2[4][0].name + " touchdown pass</p>";
+		}
+			
 		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
-		/*BOX SCORE*/
-		document.getElementById("box-score").style.visibility = "visible";
-		document.getElementById("box-score").innerHTML += "<h2>BOX SCORE</h2>";
-		document.getElementById("box-score").innerHTML += "<h3>"+team1[6]+" "+team1[0].toUpperCase()+"</h3>";
-		document.getElementById("box-score").innerHTML += "<table>";
-		document.getElementById("box-score").innerHTML += "<br/>";
-		for(var i=0; i<team1[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team1[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].points+"</b> PTS</td></tr><br/>";
-		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team1[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[5][0].points+"</b> PTS</td></tr><br/>";
-		document.getElementById("box-score").innerHTML += "</table>";
-		document.getElementById("box-score").innerHTML += "<br/><br/>";
-		document.getElementById("box-score").innerHTML += "<h3>"+team2[6]+" "+team2[0].toUpperCase()+"</h3>";
-		document.getElementById("box-score").innerHTML += "<table>";
-		document.getElementById("box-score").innerHTML += "<br/>";
-		for(var i=0; i<team2[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team2[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].points+"</b> PTS</td></tr><br/>";
-		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team2[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[5][0].points+"</b> PTS</td></tr><br/>";
-		document.getElementById("box-score").innerHTML += "</table>";
-		
-		document.getElementById("reset-btn").disabled = false;
 	}
 	else if(picker == 5)
 	{
@@ -2773,68 +3119,27 @@ function overtime(team1, team2){
 		
 		/*FIELD GOAL*/
 			team2[4][team2[4].length - 1].points = team2[4][team2[4].length - 1].points + 3;
+			team2[4][team2[4].length - 1].fg++;
 			
 		document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " field goal kick from " + team2[4][team2[4].length - 1].name + " is good from " + (Math.floor(Math.random() * 31) + 20) + " yards out</p>";
 		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
-		/*BOX SCORE*/
-		document.getElementById("box-score").style.visibility = "visible";
-		document.getElementById("box-score").innerHTML += "<h2>BOX SCORE</h2>";
-		document.getElementById("box-score").innerHTML += "<h3>"+team1[6]+" "+team1[0].toUpperCase()+"</h3>";
-		document.getElementById("box-score").innerHTML += "<table>";
-		document.getElementById("box-score").innerHTML += "<br/>";
-		for(var i=0; i<team1[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team1[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].points+"</b> PTS</td></tr><br/>";
-		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team1[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[5][0].points+"</b> PTS</td></tr><br/>";
-		document.getElementById("box-score").innerHTML += "</table>";
-		document.getElementById("box-score").innerHTML += "<br/><br/>";
-		document.getElementById("box-score").innerHTML += "<h3>"+team2[6]+" "+team2[0].toUpperCase()+"</h3>";
-		document.getElementById("box-score").innerHTML += "<table>";
-		document.getElementById("box-score").innerHTML += "<br/>";
-		for(var i=0; i<team2[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team2[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].points+"</b> PTS</td></tr><br/>";
-		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team2[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[5][0].points+"</b> PTS</td></tr><br/>";
-		document.getElementById("box-score").innerHTML += "</table>";
-		
-		document.getElementById("reset-btn").disabled = false;
 	}
 	else if(picker == 6)
 	{
 		team1[1] += 2;
 		team1[5][0].points = team1[5][0].points + 2;
+		team1[5][0].safeties++;
 		
 		document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " record the safety</p>";
 		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
-		/*BOX SCORE*/
-		document.getElementById("box-score").style.visibility = "visible";
-		document.getElementById("box-score").innerHTML += "<h2>BOX SCORE</h2>";
-		document.getElementById("box-score").innerHTML += "<h3>"+team1[6]+" "+team1[0].toUpperCase()+"</h3>";
-		document.getElementById("box-score").innerHTML += "<table>";
-		document.getElementById("box-score").innerHTML += "<br/>";
-		for(var i=0; i<team1[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team1[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].points+"</b> PTS</td></tr><br/>";
-		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team1[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[5][0].points+"</b> PTS</td></tr><br/>";
-		document.getElementById("box-score").innerHTML += "</table>";
-		document.getElementById("box-score").innerHTML += "<br/><br/>";
-		document.getElementById("box-score").innerHTML += "<h3>"+team2[6]+" "+team2[0].toUpperCase()+"</h3>";
-		document.getElementById("box-score").innerHTML += "<table>";
-		document.getElementById("box-score").innerHTML += "<br/>";
-		for(var i=0; i<team2[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team2[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].points+"</b> PTS</td></tr><br/>";
-		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team2[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[5][0].points+"</b> PTS</td></tr><br/>";
-		document.getElementById("box-score").innerHTML += "</table>";
-		
-		document.getElementById("reset-btn").disabled = false;
 	}
 	else if(picker == 7)
 	{		
 		team2[1] += 6;
 		team2[5][0].points = team2[5][0].points + 6;
+		team2[5][0].defensiveTD++;
 		
 		var defensiveTDtype = Math.floor(Math.random() * 2);
 		if(defensiveTDtype == 0){ //Scoop n' Score
@@ -2847,33 +3152,12 @@ function overtime(team1, team2){
 		
 		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
-		/*BOX SCORE*/
-		document.getElementById("box-score").style.visibility = "visible";
-		document.getElementById("box-score").innerHTML += "<h2>BOX SCORE</h2>";
-		document.getElementById("box-score").innerHTML += "<h3>"+team1[6]+" "+team1[0].toUpperCase()+"</h3>";
-		document.getElementById("box-score").innerHTML += "<table>";
-		document.getElementById("box-score").innerHTML += "<br/>";
-		for(var i=0; i<team1[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team1[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].points+"</b> PTS</td></tr><br/>";
-		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team1[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[5][0].points+"</b> PTS</td></tr><br/>";
-		document.getElementById("box-score").innerHTML += "</table>";
-		document.getElementById("box-score").innerHTML += "<br/><br/>";
-		document.getElementById("box-score").innerHTML += "<h3>"+team2[6]+" "+team2[0].toUpperCase()+"</h3>";
-		document.getElementById("box-score").innerHTML += "<table>";
-		document.getElementById("box-score").innerHTML += "<br/>";
-		for(var i=0; i<team2[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team2[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].points+"</b> PTS</td></tr><br/>";
-		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team2[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[5][0].points+"</b> PTS</td></tr><br/>";
-		document.getElementById("box-score").innerHTML += "</table>";
-		
-		document.getElementById("reset-btn").disabled = false;
 	}
 	else if(picker == 8)
 	{
 		team1[1] += 6;
 		team1[5][0].points = team1[5][0].points + 6;
+		team1[5][0].defensiveTD++;
 		
 		var defensiveTDtype = Math.floor(Math.random() * 2);
 		if(defensiveTDtype == 0){ //Scoop n' Score
@@ -2886,57 +3170,57 @@ function overtime(team1, team2){
 		
 		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
-		/*BOX SCORE*/
-		document.getElementById("box-score").style.visibility = "visible";
-		document.getElementById("box-score").innerHTML += "<h2>BOX SCORE</h2>";
-		document.getElementById("box-score").innerHTML += "<h3>"+team1[6]+" "+team1[0].toUpperCase()+"</h3>";
-		document.getElementById("box-score").innerHTML += "<table>";
-		document.getElementById("box-score").innerHTML += "<br/>";
-		for(var i=0; i<team1[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team1[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].points+"</b> PTS</td></tr><br/>";
-		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team1[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[5][0].points+"</b> PTS</td></tr><br/>";
-		document.getElementById("box-score").innerHTML += "</table>";
-		document.getElementById("box-score").innerHTML += "<br/><br/>";
-		document.getElementById("box-score").innerHTML += "<h3>"+team2[6]+" "+team2[0].toUpperCase()+"</h3>";
-		document.getElementById("box-score").innerHTML += "<table>";
-		document.getElementById("box-score").innerHTML += "<br/>";
-		for(var i=0; i<team2[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team2[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].points+"</b> PTS</td></tr><br/>";
-		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team2[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[5][0].points+"</b> PTS</td></tr><br/>";
-		document.getElementById("box-score").innerHTML += "</table>";
-		
-		document.getElementById("reset-btn").disabled = false;
 	}
 	else
 	{
 		document.getElementById("simulation").innerHTML += "<p>-</p>";
 		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
-		/*BOX SCORE*/
+	}
+	/*BOX SCORE*/
 		document.getElementById("box-score").style.visibility = "visible";
 		document.getElementById("box-score").innerHTML += "<h2>BOX SCORE</h2>";
 		document.getElementById("box-score").innerHTML += "<h3>"+team1[6]+" "+team1[0].toUpperCase()+"</h3>";
 		document.getElementById("box-score").innerHTML += "<table>";
 		document.getElementById("box-score").innerHTML += "<br/>";
 		for(var i=0; i<team1[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team1[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].points+"</b> PTS</td></tr><br/>";
+			if(team1[4][i].pos.valueOf() == "K"){
+				document.getElementById("box-score").innerHTML += "<tr><td><b>SPECIAL TEAMS</b><br/><b>"+team1[4][i].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team1[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].fg+"</b> FG</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].xp+"</b> XP</td></tr><br/>";
+			}
+			else if(team1[4][i].pos.valueOf() == "QB"){
+				document.getElementById("box-score").innerHTML += "<tr><td><b>OFFENSE</b><br/><b>"+team1[4][i].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team1[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].rushTD+"</b> RUSH TD</td>&emsp;&emsp;&emsp;<td>(<b>"+team1[4][i].passTD+"</b> PASS TD)</td></tr><br/>";
+			}
+			else if(team1[4][i].pos.valueOf() == "RB"){
+				document.getElementById("box-score").innerHTML += "<tr><td><b>"+team1[4][i].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team1[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].rushTD+"</b> RUSH TD</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].recTD+"</b> REC TD</td></tr><br/>";
+			}
+			else{
+				document.getElementById("box-score").innerHTML += "<tr><td><b>"+team1[4][i].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team1[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team1[4][i].recTD+"</b> REC TD</td></tr><br/>";
+			}
 		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team1[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team1[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[5][0].points+"</b> PTS</td></tr><br/>";
+		document.getElementById("box-score").innerHTML += "<tr><td><b>DEFENSE</b><br/><b>"+team1[5][0].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team1[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team1[5][0].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team1[5][0].safeties+"</b> SFT</td>&emsp;&emsp;&emsp;<td><b>"+team1[5][0].defensiveTD+"</b> DTD</td></tr><br/>";
 		document.getElementById("box-score").innerHTML += "</table>";
 		document.getElementById("box-score").innerHTML += "<br/><br/>";
 		document.getElementById("box-score").innerHTML += "<h3>"+team2[6]+" "+team2[0].toUpperCase()+"</h3>";
 		document.getElementById("box-score").innerHTML += "<table>";
 		document.getElementById("box-score").innerHTML += "<br/>";
 		for(var i=0; i<team2[4].length; i++){
-			document.getElementById("box-score").innerHTML += "<tr><td>"+team2[4][i].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].points+"</b> PTS</td></tr><br/>";
+			if(team2[4][i].pos.valueOf() == "K"){
+				document.getElementById("box-score").innerHTML += "<tr><td><b>SPECIAL TEAMS</b><br/><b>"+team2[4][i].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team2[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].fg+"</b> FG</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].xp+"</b> XP</td></tr><br/>";
+			}
+			else if (team2[4][i].pos.valueOf() == "QB"){
+				document.getElementById("box-score").innerHTML += "<tr><td><b>OFFENSE</b><br/><b>"+team2[4][i].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team2[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].rushTD+"</b> RUSH TD</td>&emsp;&emsp;&emsp;<td>(<b>"+team2[4][i].passTD+"</b> PASS TD)</td></tr><br/>";
+			}
+			else if (team2[4][i].pos.valueOf() == "RB"){
+				document.getElementById("box-score").innerHTML += "<tr><td><b>"+team2[4][i].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team2[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].rushTD+"</b> RUSH TD</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].recTD+"</b> REC TD</td></tr><br/>";
+			}
+			else{
+				document.getElementById("box-score").innerHTML += "<tr><td><b>"+team2[4][i].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team2[4][i].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team2[4][i].recTD+"</b> REC TD</td></tr><br/>";
+			}
 		}
-		document.getElementById("box-score").innerHTML += "<tr><td>"+team2[5][0].name+"</td>&emsp;&emsp;&emsp;<td>"+team2[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[5][0].points+"</b> PTS</td></tr><br/>";
+		document.getElementById("box-score").innerHTML += "<tr><td><b>DEFENSE</b><br/><b>"+team2[5][0].name+"</b></td>&emsp;&emsp;&emsp;<td>"+team2[5][0].pos+"</td>&emsp;&emsp;&emsp;<td><b>"+team2[5][0].points+"</b> PTS &#9654;</td>&emsp;&emsp;&emsp;<td><b>"+team2[5][0].safeties+"</b> SFT</td>&emsp;&emsp;&emsp;<td><b>"+team2[5][0].defensiveTD+"</b> DTD</td></tr><br/>";
 		document.getElementById("box-score").innerHTML += "</table>";
 		
 		document.getElementById("reset-btn").disabled = false;
-	}
 }
 
 function resume1(){
@@ -2954,6 +3238,7 @@ var teamButtons;
 var coinToss;
 var awayKick;
 var homeKick;
+var rbTDnumber;
 
 /*TEAM O-LINES*/
 var CHIoffense, CINoffense, BUFoffense, DENoffense, CLEoffense, TBoffense, ARIoffense, LACoffense, KCoffense, INDoffense, DALoffense, MIAoffense, PHIoffense, ATLoffense, NYGoffense,
