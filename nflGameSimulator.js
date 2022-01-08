@@ -2046,10 +2046,7 @@ function teamSelect(e){
 		for(var i=0; i<teamButtons.length; i++){
 			teamButtons[i].disabled = true;
 		}
-		
-		/*document.getElementById("header-text").innerHTML = "<p>Game On! Read the Simulation Below</p>" + "<ul><li>" + "<img src=\"" + team1[3] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
-															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[3] + "\"></img>" + "</li></ul></div>";*/
-		//firstPeriod(team1, team2);
+
 	}
 }
 
