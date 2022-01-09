@@ -439,22 +439,6 @@ function init(){
 	{name: "Colby Parkinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jason Myers", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	SEAoffense = [ {name: "Russell Wilson", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Nick Bellore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Alex Collins", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "DeeJay Dallas", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Travis Homer", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Rashaad Penny", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "D&#39;Wayne Eskridge", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Penny Hart", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Tyler Lockett", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "DK Metcalf", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Freddie Swain", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Will Dissly", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Gerald Everett", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Colby Parkinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Jason Myers", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
-	
 	PIToffense = [ {name: "Ben Roethlisberger", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Kalen Ballage", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Najee Harris", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -1127,22 +1111,6 @@ function resetAll(e){
 	{name: "Juwan Johnson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Adam Trautman", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Brett Maher", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
-	
-	SEAoffense = [ {name: "Russell Wilson", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Nick Bellore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Alex Collins", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "DeeJay Dallas", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Travis Homer", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Rashaad Penny", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "D&#39;Wayne Eskridge", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Penny Hart", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Tyler Lockett", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "DK Metcalf", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Freddie Swain", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Will Dissly", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Gerald Everett", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Colby Parkinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Jason Myers", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
 	SEAoffense = [ {name: "Russell Wilson", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Nick Bellore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -2046,7 +2014,7 @@ function teamSelect(e){
 		for(var i=0; i<teamButtons.length; i++){
 			teamButtons[i].disabled = true;
 		}
-
+		
 	}
 }
 
