@@ -97,6 +97,14 @@ li p{
 	padding-right: 12.5%;
 }
 
+#starting-quarterbacks {
+	text-align: center;
+}
+
+#team1qb1, #team1qb2, #team1qb3, #team2qb1, #team2qb2, #team2qb3 {
+	display: inline-block;
+}
+
 input:hover{
 	background: forestgreen;
 	color: white;
