@@ -18,8 +18,42 @@ function init(){
 					document.getElementById("ravens"), document.getElementById("saints"), document.getElementById("seahawks"), document.getElementById("steelers"),
 					document.getElementById("texans"), document.getElementById("titans"), document.getElementById("vikings"), document.getElementById("49ers") ];
 					
+	/*TEAM QUARTERBACKS*/
+	CHIqbs = [ "Andy Dalton", "Nick Foles", "Justin Fields" ];
+	CINqbs = [ "Joe Burrow", "Brandon Allen", "Jake Browning" ];
+	BUFqbs = [ "Josh Allen", "Mitchell Trubisky", "Davis Webb" ];
+	DENqbs = [ "Teddy Bridgewater", "Drew Lock", "Brett Rypien" ];
+	CLEqbs = [ "Baker Mayfield", "Case Keenum", "Nick Mullens" ];
+	TBqbs = [ "Tom Brady", "Blaine Gabbert", "Kyle Trask" ];
+	ARIqbs = [ "Kyler Murray", "Trace McSorley", "Colt McCoy" ];
+	LACqbs = [ "Justin Herbert", "Chase Daniel", "Easton Stick" ];
+	KCqbs = [ "Patrick Mahomes", "Chad Henne", "Shane Buechele" ];
+	INDqbs = [ "Carson Wentz", "Sam Ehlinger", "Brett Hundley" ];
+	DALqbs = [ "Dak Prescott", "Cooper Rush", "Will Grier" ];
+	MIAqbs = [ "Tua Tagovailoa", "Jacoby Brissett", "Jake Luton" ];
+	PHIqbs = [ "Jalen Hurts", "Gardner Minshew", "Reid Sinnett" ];
+	ATLqbs = [ "Matt Ryan", "Josh Rosen", "Feleipe Franks" ];
+	NYGqbs = [ "Daniel Jones", "Jake Fromm", "Mike Glennon" ];
+	JAXqbs = [ "Trevor Lawrence", "C.J. Beathard", "Danny Etling" ];
+	NYJqbs = [ "Zach Wilson", "Joe Flacco", "Mike White" ];
+	DETqbs = [ "Jared Goff", "Tim Boyle", "David Blough" ];
+	GBqbs = [ "Aaron Rodgers", "Jordan Love", "Kurt Benkert" ];
+	CARqbs = [ "Cam Newton", "Sam Darnold", "P.J. Walker" ];
+	NEqbs = [ "Mac Jones", "Brian Hoyer", "Jarrett Stidham" ];
+	WASqbs = [ "Taylor Heinicke", "Kyle Allen", "Garrett Gilbert" ];
+	LVqbs = [ "Derek Carr", "Marcus Mariota", "Nathan Peterman" ];
+	LARqbs = [ "Matthew Stafford", "John Wolford", "Bryce Perkins" ];
+	BALqbs = [ "Lamar Jackson", "Tyler Huntley", "Josh Johnson" ];
+	NOqbs = [ "Taysom Hill", "Trevor Siemian", "Ian Book" ];
+	SEAqbs = [ "Russell Wilson", "Geno Smith", "Jacob Eason" ];
+	PITqbs = [ "Ben Roethlisberger", "Mason Rudolph", "Dwayne Haskins" ];
+	HOUqbs = [ "Tyrod Taylor", "Deshaun Watson", "Davis Mills" ];
+	TENqbs = [ "Ryan Tannehill", "Logan Woodside", "Kevin Hogan" ];
+	MINqbs = [ "Kirk Cousins", "Sean Mannion", "Kellen Mond" ];
+	SFqbs = [ "Jimmy Garoppolo", "Trey Lance", "Tyler Bray" ];
+	
 	/*TEAM O-LINES*/
-	CHIoffense = [ {name: "Andy Dalton", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	CHIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Khalil Herbert", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "David Montgomery", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Ryan Nall", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -36,7 +70,7 @@ function init(){
 	{name: "Cole Kmet", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Cairo Santos", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	CINoffense = [ {name: "Joe Burrow", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	CINoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Chris Evans", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Joe Mixon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Samaje Perine", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -51,7 +85,7 @@ function init(){
 	{name: "Mitchell Wilcox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Evan McPherson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	BUFoffense = [ {name: "Josh Allen", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	BUFoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Matt Breida", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Reggie Gilliam", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Taiwan Jones", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -68,7 +102,7 @@ function init(){
 	{name: "Tommy Sweeney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Tyler Bass", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	DENoffense = [ {name: "Teddy Bridgewater", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	DENoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Mike Boone", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Melvin Gordon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Javonte Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -80,7 +114,7 @@ function init(){
 	{name: "Eric Saubert", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Brandon McManus", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	CLEoffense = [ {name: "Baker Mayfield", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	CLEoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Nick Chubb", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Demetric Felton", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Kareem Hunt", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -96,7 +130,7 @@ function init(){
 	{name: "David Njoku", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Chase McLaughlin", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	TBoffense = [ {name: "Tom Brady", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	TBoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Kenjon Barner", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Le&#39;Veon Bell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Ronald Jones II", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -114,7 +148,7 @@ function init(){
 	{name: "O.J. Howard", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Ryan Succop", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	ARIoffense = [ {name: "Kyler Murray", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	ARIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Eno Benjamin", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "James Conner", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Chase Edmonds", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -130,7 +164,7 @@ function init(){
 	{name: "Demetrius Harris", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Matt Prater", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	LACoffense = [ {name: "Justin Herbert", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	LACoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Austin Ekeler", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Justin Jackson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Joshua Kelley", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -145,7 +179,7 @@ function init(){
 	{name: "Tre&#39; McKitty", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Dustin Hopkins", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	KCoffense = [ {name: "Patrick Mahomes", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	KCoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Michael Burton", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Clyde Edwards-Helaire", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Derrick Gore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -162,7 +196,7 @@ function init(){
 	{name: "Travis Kelce", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Harrison Butker", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	INDoffense = [ {name: "Carson Wentz", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	INDoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Nyheim Hines", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Deon Jackson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Marlon Mack", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -178,7 +212,7 @@ function init(){
 	{name: "Kylen Granson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Michael Badgley", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	DALoffense = [ {name: "Dak Prescott", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	DALoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Corey Clement", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Ezekiel Elliott", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Tony Pollard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -194,7 +228,7 @@ function init(){
 	{name: "Jeremy Sprinkle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Greg Zuerlein", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	MIAoffense = [ {name: "Tua Tagovailoa", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	MIAoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Salvon Ahmed", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Myles Gaskin", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Duke Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -212,7 +246,7 @@ function init(){
 	{name: "Durham Smythe", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jason Sanders", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	PHIoffense = [ {name: "Jalen Hurts", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	PHIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Kenneth Gainwell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Miles Sanders", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jordan Howard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -228,7 +262,7 @@ function init(){
 	{name: "Jack Stoll", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jake Elliott", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	ATLoffense = [ {name: "Matt Ryan", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	ATLoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Mike Davis", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Qadree Ollison", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Cordarrelle Patterson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -241,7 +275,7 @@ function init(){
 	{name: "Lee Smith", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Younghoe Koo", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	NYGoffense = [ {name: "Daniel Jones", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	NYGoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Saquon Barkley", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Devontae Booker", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Cullen Gillaspia", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -255,7 +289,7 @@ function init(){
 	{name: "Kyle Rudolph", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Graham Gano", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	JAXoffense = [ {name: "Trevor Lawrence", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	JAXoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Ryquell Armstead", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Dare Ogunbowale", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Mekhi Sargent", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -269,7 +303,7 @@ function init(){
 	{name: "Kahale Warring", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Matthew Wright", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	NYJoffense = [ {name: "Zach Wilson", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	NYJoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Nick Bawden", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Michael Carter", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Ty Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -283,7 +317,7 @@ function init(){
 	{name: "Kenny Yeboah", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Eddy Pi&ntilde;eiro", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	DEToffense = [ {name: "Jared Goff", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	DEToffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jason Cabinda", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Godwin Igwebuike", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jermar Jefferson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -299,7 +333,7 @@ function init(){
 	{name: "Brock Wright", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Riley Patterson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	GBoffense = [ {name: "Aaron Rodgers", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	GBoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "A.J. Dillon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Aaron Jones", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Patrick Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -314,7 +348,7 @@ function init(){
 	{name: "Marcedes Lewis", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Mason Crosby", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	CARoffense = [ {name: "Cam Newton", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	CARoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Ameer Abdullah", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Chuba Hubbard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Giovanni Ricci", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -327,7 +361,7 @@ function init(){
 	{name: "Ian Thomas", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Lirim Hajrullahu", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	NEoffense = [ {name: "Mac Jones", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	NEoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Brandon Bolden", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Damien Harris", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jakob Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -344,7 +378,7 @@ function init(){
 	{name: "Jonnu Smith", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Nick Folk", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	WASoffense = [ {name: "Taylor Heinicke", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	WASoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jaret Patterson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jonathan Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Antonio Gibson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -361,7 +395,7 @@ function init(){
 	{name: "Ricky Seals-Jones", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Joey Slye", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	LVoffense = [ {name: "Derek Carr", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	LVoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Peyton Barber", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Josh Jacobs", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jalen Richard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -375,7 +409,7 @@ function init(){
 	{name: "Foster Moreau", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Daniel Carlson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	LARoffense = [ {name: "Matthew Stafford", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	LARoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Cam Akers", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jake Funk", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Buddy Howell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -390,7 +424,7 @@ function init(){
 	{name: "Brycen Hopkins", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Matt Gay", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	BALoffense = [ {name: "Lamar Jackson", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	BALoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Devonta Freeman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Latavius Murray", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Patrick Ricard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -407,7 +441,7 @@ function init(){
 	{name: "Eric Tomlinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Justin Tucker", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	NOoffense = [ {name: "Taysom Hill", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	NOoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Mark Ingram Jr.", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Tony Jones Jr.", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Alvin Kamara", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -423,7 +457,7 @@ function init(){
 	{name: "Adam Trautman", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Brett Maher", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	SEAoffense = [ {name: "Russell Wilson", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	SEAoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Nick Bellore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Alex Collins", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "DeeJay Dallas", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -439,7 +473,7 @@ function init(){
 	{name: "Colby Parkinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jason Myers", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	PIToffense = [ {name: "Ben Roethlisberger", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	PIToffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Kalen Ballage", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Najee Harris", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Benny Snell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -454,7 +488,7 @@ function init(){
 	{name: "Kevin Rader", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Chris Boswell", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	HOUoffense = [ {name: "Tyrod Taylor", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	HOUoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Rex Burkhead", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Royce Freeman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "David Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -473,7 +507,7 @@ function init(){
 	{name: "Jeff Driskel", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Ka&#39;imi Fairbairn", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	TENoffense = [ {name: "Ryan Tannehill", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	TENoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Khari Blasingame", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "D&#39;Onta Foreman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Dontrell Hilliard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -488,7 +522,7 @@ function init(){
 	{name: "Geoff Swaim", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Randy Bullock", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	MINoffense = [ {name: "Kirk Cousins", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	MINoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Dalvin Cook", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Wayne Gallman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "C.J. Ham", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -504,7 +538,7 @@ function init(){
 	{name: "Luke Stocker", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Greg Joseph", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	SFoffense = [ {name: "Jimmy Garoppolo", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	SFoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "JaMycal Hasty", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Kyle Juszczyk", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Elijah Mitchell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -555,14 +589,23 @@ function init(){
 	MINdefense = [ {name: "Vikings Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
 	SFdefense = [ {name: "49ers Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
 	
-	team1 = [null, 0, null, null, null, null, null];
-	team2 = [null, 0, null, null, null, null, null];
+	team1 = [null, 0, null, null, null, null, null, null];
+	team2 = [null, 0, null, null, null, null, null, null];
 	
 	for(var i=0; i<teamButtons.length; i++){
 		addEvent(teamButtons[i], "click", teamSelect);
 	}
 	
 	addEvent(document.getElementById("reset-btn"), "click", resetAll);
+	
+	/*STARTING QBS*/
+	addEvent(document.getElementById("awayqb1"), "click", awayqb1);
+	addEvent(document.getElementById("awayqb2"), "click", awayqb2);
+	addEvent(document.getElementById("awayqb3"), "click", awayqb3);
+	addEvent(document.getElementById("homeqb1"), "click", homeqb1);
+	addEvent(document.getElementById("homeqb2"), "click", homeqb2);
+	addEvent(document.getElementById("homeqb3"), "click", homeqb3);
+	addEvent(document.getElementById("starting-quarterbacks-submit"), "click", startingQBsSubmit);
 	
 	/*INITIALIZE THE PLAYLIST*/
 	musicPlaylist = [ {song: "Trophies (feat. Drake)", artist: "Young Money", src: "playlist/track01.mp3", songLength: 190},
@@ -707,8 +750,42 @@ function resetAll(e){
 	document.getElementById("box-score").innerHTML = "";
 	document.getElementById("box-score").style.visibility = "hidden";
 	
+	/*REINITIALIZE THE QUARTERBACKS*/
+	CHIqbs = [ "Andy Dalton", "Nick Foles", "Justin Fields" ];
+	CINqbs = [ "Joe Burrow", "Brandon Allen", "Jake Browning" ];
+	BUFqbs = [ "Josh Allen", "Mitchell Trubisky", "Davis Webb" ];
+	DENqbs = [ "Teddy Bridgewater", "Drew Lock", "Brett Rypien" ];
+	CLEqbs = [ "Baker Mayfield", "Case Keenum", "Nick Mullens" ];
+	TBqbs = [ "Tom Brady", "Blaine Gabbert", "Kyle Trask" ];
+	ARIqbs = [ "Kyler Murray", "Trace McSorley", "Colt McCoy" ];
+	LACqbs = [ "Justin Herbert", "Chase Daniel", "Easton Stick" ];
+	KCqbs = [ "Patrick Mahomes", "Chad Henne", "Shane Buechele" ];
+	INDqbs = [ "Carson Wentz", "Sam Ehlinger", "Brett Hundley" ];
+	DALqbs = [ "Dak Prescott", "Cooper Rush", "Will Grier" ];
+	MIAqbs = [ "Tua Tagovailoa", "Jacoby Brissett", "Jake Luton" ];
+	PHIqbs = [ "Jalen Hurts", "Gardner Minshew", "Reid Sinnett" ];
+	ATLqbs = [ "Matt Ryan", "Josh Rosen", "Feleipe Franks" ];
+	NYGqbs = [ "Daniel Jones", "Jake Fromm", "Mike Glennon" ];
+	JAXqbs = [ "Trevor Lawrence", "C.J. Beathard", "Danny Etling" ];
+	NYJqbs = [ "Zach Wilson", "Joe Flacco", "Mike White" ];
+	DETqbs = [ "Jared Goff", "Tim Boyle", "David Blough" ];
+	GBqbs = [ "Aaron Rodgers", "Jordan Love", "Kurt Benkert" ];
+	CARqbs = [ "Cam Newton", "Sam Darnold", "P.J. Walker" ];
+	NEqbs = [ "Mac Jones", "Brian Hoyer", "Jarrett Stidham" ];
+	WASqbs = [ "Taylor Heinicke", "Kyle Allen", "Garrett Gilbert" ];
+	LVqbs = [ "Derek Carr", "Marcus Mariota", "Nathan Peterman" ];
+	LARqbs = [ "Matthew Stafford", "John Wolford", "Bryce Perkins" ];
+	BALqbs = [ "Lamar Jackson", "Tyler Huntley", "Josh Johnson" ];
+	NOqbs = [ "Taysom Hill", "Trevor Siemian", "Ian Book" ];
+	SEAqbs = [ "Russell Wilson", "Geno Smith", "Jacob Eason" ];
+	PITqbs = [ "Ben Roethlisberger", "Mason Rudolph", "Dwayne Haskins" ];
+	HOUqbs = [ "Tyrod Taylor", "Deshaun Watson", "Davis Mills" ];
+	TENqbs = [ "Ryan Tannehill", "Logan Woodside", "Kevin Hogan" ];
+	MINqbs = [ "Kirk Cousins", "Sean Mannion", "Kellen Mond" ];
+	SFqbs = [ "Jimmy Garoppolo", "Trey Lance", "Tyler Bray" ];
+	
 	/*REINITIALIZE THE ROSTERS*/
-	CHIoffense = [ {name: "Andy Dalton", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	CHIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Khalil Herbert", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "David Montgomery", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Ryan Nall", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -725,7 +802,7 @@ function resetAll(e){
 	{name: "Cole Kmet", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Cairo Santos", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	CINoffense = [ {name: "Joe Burrow", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	CINoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Chris Evans", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Joe Mixon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Samaje Perine", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -740,7 +817,7 @@ function resetAll(e){
 	{name: "Mitchell Wilcox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Evan McPherson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	BUFoffense = [ {name: "Josh Allen", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	BUFoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Matt Breida", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Reggie Gilliam", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Taiwan Jones", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -757,7 +834,7 @@ function resetAll(e){
 	{name: "Tommy Sweeney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Tyler Bass", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	DENoffense = [ {name: "Teddy Bridgewater", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	DENoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Mike Boone", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Melvin Gordon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Javonte Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -769,7 +846,7 @@ function resetAll(e){
 	{name: "Eric Saubert", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Brandon McManus", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	CLEoffense = [ {name: "Baker Mayfield", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	CLEoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Nick Chubb", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Demetric Felton", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Kareem Hunt", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -785,7 +862,7 @@ function resetAll(e){
 	{name: "David Njoku", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Chase McLaughlin", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	TBoffense = [ {name: "Tom Brady", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	TBoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Kenjon Barner", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Le&#39;Veon Bell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Ronald Jones II", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -803,7 +880,7 @@ function resetAll(e){
 	{name: "O.J. Howard", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Ryan Succop", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	ARIoffense = [ {name: "Kyler Murray", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	ARIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Eno Benjamin", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "James Conner", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Chase Edmonds", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -819,7 +896,7 @@ function resetAll(e){
 	{name: "Demetrius Harris", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Matt Prater", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	LACoffense = [ {name: "Justin Herbert", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	LACoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Austin Ekeler", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Justin Jackson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Joshua Kelley", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -834,7 +911,7 @@ function resetAll(e){
 	{name: "Tre&#39; McKitty", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Dustin Hopkins", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	KCoffense = [ {name: "Patrick Mahomes", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	KCoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Michael Burton", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Clyde Edwards-Helaire", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Derrick Gore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -851,7 +928,7 @@ function resetAll(e){
 	{name: "Travis Kelce", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Harrison Butker", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	INDoffense = [ {name: "Carson Wentz", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	INDoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Nyheim Hines", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Deon Jackson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Marlon Mack", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -867,7 +944,7 @@ function resetAll(e){
 	{name: "Kylen Granson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Michael Badgley", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	DALoffense = [ {name: "Dak Prescott", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	DALoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Corey Clement", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Ezekiel Elliott", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Tony Pollard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -883,7 +960,7 @@ function resetAll(e){
 	{name: "Jeremy Sprinkle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Greg Zuerlein", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	MIAoffense = [ {name: "Tua Tagovailoa", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	MIAoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Salvon Ahmed", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Myles Gaskin", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Duke Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -901,7 +978,7 @@ function resetAll(e){
 	{name: "Durham Smythe", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jason Sanders", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	PHIoffense = [ {name: "Jalen Hurts", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	PHIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Kenneth Gainwell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Miles Sanders", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jordan Howard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -917,7 +994,7 @@ function resetAll(e){
 	{name: "Jack Stoll", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jake Elliott", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	ATLoffense = [ {name: "Matt Ryan", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	ATLoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Mike Davis", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Qadree Ollison", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Cordarrelle Patterson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -930,7 +1007,7 @@ function resetAll(e){
 	{name: "Lee Smith", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Younghoe Koo", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	NYGoffense = [ {name: "Daniel Jones", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	NYGoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Saquon Barkley", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Devontae Booker", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Cullen Gillaspia", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -944,7 +1021,7 @@ function resetAll(e){
 	{name: "Kyle Rudolph", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Graham Gano", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	JAXoffense = [ {name: "Trevor Lawrence", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	JAXoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Ryquell Armstead", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Dare Ogunbowale", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Mekhi Sargent", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -958,7 +1035,7 @@ function resetAll(e){
 	{name: "Kahale Warring", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Matthew Wright", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	NYJoffense = [ {name: "Zach Wilson", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	NYJoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Nick Bawden", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Michael Carter", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Ty Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -972,7 +1049,7 @@ function resetAll(e){
 	{name: "Kenny Yeboah", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Eddy Pi&ntilde;eiro", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	DEToffense = [ {name: "Jared Goff", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	DEToffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jason Cabinda", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Godwin Igwebuike", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jermar Jefferson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -988,7 +1065,7 @@ function resetAll(e){
 	{name: "Brock Wright", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Riley Patterson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	GBoffense = [ {name: "Aaron Rodgers", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	GBoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "A.J. Dillon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Aaron Jones", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Patrick Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -1003,7 +1080,7 @@ function resetAll(e){
 	{name: "Marcedes Lewis", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Mason Crosby", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	CARoffense = [ {name: "Cam Newton", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	CARoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Ameer Abdullah", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Chuba Hubbard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Giovanni Ricci", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -1016,7 +1093,7 @@ function resetAll(e){
 	{name: "Ian Thomas", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Lirim Hajrullahu", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	NEoffense = [ {name: "Mac Jones", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	NEoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Brandon Bolden", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Damien Harris", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jakob Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -1033,7 +1110,7 @@ function resetAll(e){
 	{name: "Jonnu Smith", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Nick Folk", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	WASoffense = [ {name: "Taylor Heinicke", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	WASoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jaret Patterson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jonathan Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Antonio Gibson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -1050,7 +1127,7 @@ function resetAll(e){
 	{name: "Ricky Seals-Jones", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Joey Slye", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	LVoffense = [ {name: "Derek Carr", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	LVoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Peyton Barber", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Josh Jacobs", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jalen Richard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -1064,7 +1141,7 @@ function resetAll(e){
 	{name: "Foster Moreau", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Daniel Carlson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	LARoffense = [ {name: "Matthew Stafford", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	LARoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Cam Akers", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jake Funk", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Buddy Howell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -1079,7 +1156,7 @@ function resetAll(e){
 	{name: "Brycen Hopkins", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Matt Gay", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	BALoffense = [ {name: "Lamar Jackson", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	BALoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Devonta Freeman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Latavius Murray", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Patrick Ricard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -1096,7 +1173,7 @@ function resetAll(e){
 	{name: "Eric Tomlinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Justin Tucker", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	NOoffense = [ {name: "Taysom Hill", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	NOoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Mark Ingram Jr.", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Tony Jones Jr.", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Alvin Kamara", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -1112,7 +1189,7 @@ function resetAll(e){
 	{name: "Adam Trautman", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Brett Maher", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	SEAoffense = [ {name: "Russell Wilson", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	SEAoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Nick Bellore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Alex Collins", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "DeeJay Dallas", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -1128,7 +1205,7 @@ function resetAll(e){
 	{name: "Colby Parkinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jason Myers", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	PIToffense = [ {name: "Ben Roethlisberger", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	PIToffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Kalen Ballage", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Najee Harris", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Benny Snell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -1143,7 +1220,7 @@ function resetAll(e){
 	{name: "Kevin Rader", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Chris Boswell", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	HOUoffense = [ {name: "Tyrod Taylor", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	HOUoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Rex Burkhead", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Royce Freeman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "David Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -1162,7 +1239,7 @@ function resetAll(e){
 	{name: "Jeff Driskel", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Ka&#39;imi Fairbairn", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	TENoffense = [ {name: "Ryan Tannehill", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	TENoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Khari Blasingame", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "D&#39;Onta Foreman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Dontrell Hilliard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -1177,7 +1254,7 @@ function resetAll(e){
 	{name: "Geoff Swaim", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Randy Bullock", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	MINoffense = [ {name: "Kirk Cousins", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	MINoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Dalvin Cook", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Wayne Gallman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "C.J. Ham", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -1193,7 +1270,7 @@ function resetAll(e){
 	{name: "Luke Stocker", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Greg Joseph", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
 	
-	SFoffense = [ {name: "Jimmy Garoppolo", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	SFoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "JaMycal Hasty", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Kyle Juszczyk", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Elijah Mitchell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -1243,8 +1320,8 @@ function resetAll(e){
 	MINdefense = [ {name: "Vikings Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
 	SFdefense = [ {name: "49ers Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
 	
-	team1 = [null, 0, null, null, null, null, null];
-	team2 = [null, 0, null, null, null, null, null];
+	team1 = [null, 0, null, null, null, null, null, null];
+	team2 = [null, 0, null, null, null, null, null, null];
 	
 	//CLEAR SIMULATION AREA
 	document.getElementById("simulation").innerHTML = "<p id=\"simulation\"></p>";
@@ -1292,6 +1369,7 @@ function teamSelect(e){
 				team1[4] = CHIoffense;
 				team1[5] = CHIdefense;
 				team1[6] = "Chicago".toUpperCase();
+				team1[7] = CHIqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1303,6 +1381,7 @@ function teamSelect(e){
 				team1[4] = CINoffense;
 				team1[5] = CINdefense;
 				team1[6] = "Cincinnati".toUpperCase();
+				team1[7] = CINqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1314,6 +1393,7 @@ function teamSelect(e){
 				team1[4] = BUFoffense;
 				team1[5] = BUFdefense;
 				team1[6] = "Buffalo".toUpperCase();
+				team1[7] = BUFqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1325,6 +1405,7 @@ function teamSelect(e){
 				team1[4] = DENoffense;
 				team1[5] = DENdefense;
 				team1[6] = "Denver".toUpperCase();
+				team1[7] = DENqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1336,6 +1417,7 @@ function teamSelect(e){
 				team1[4] = CLEoffense;
 				team1[5] = CLEdefense;
 				team1[6] = "Cleveland".toUpperCase();
+				team1[7] = CLEqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1347,6 +1429,7 @@ function teamSelect(e){
 				team1[4] = TBoffense;
 				team1[5] = TBdefense;
 				team1[6] = "Tampa Bay".toUpperCase();
+				team1[7] = TBqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1358,6 +1441,7 @@ function teamSelect(e){
 				team1[4] = ARIoffense;
 				team1[5] = ARIdefense;
 				team1[6] = "Arizona".toUpperCase();
+				team1[7] = ARIqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1369,6 +1453,7 @@ function teamSelect(e){
 				team1[4] = LACoffense;
 				team1[5] = LACdefense;
 				team1[6] = "Los Angeles".toUpperCase();
+				team1[7] = LACqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1380,6 +1465,7 @@ function teamSelect(e){
 				team1[4] = KCoffense;
 				team1[5] = KCdefense;
 				team1[6] = "Kansas City".toUpperCase();
+				team1[7] = KCqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1391,6 +1477,7 @@ function teamSelect(e){
 				team1[4] = INDoffense;
 				team1[5] = INDdefense;
 				team1[6] = "Indianapolis".toUpperCase();
+				team1[7] = INDqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1402,6 +1489,7 @@ function teamSelect(e){
 				team1[4] = DALoffense;
 				team1[5] = DALdefense;
 				team1[6] = "Dallas".toUpperCase();
+				team1[7] = DALqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1413,6 +1501,7 @@ function teamSelect(e){
 				team1[4] = MIAoffense;
 				team1[5] = MIAdefense;
 				team1[6] = "Miami".toUpperCase();
+				team1[7] = MIAqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1424,6 +1513,7 @@ function teamSelect(e){
 				team1[4] = PHIoffense;
 				team1[5] = PHIdefense;
 				team1[6] = "Philadelphia".toUpperCase();
+				team1[7] = PHIqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1435,6 +1525,7 @@ function teamSelect(e){
 				team1[4] = ATLoffense;
 				team1[5] = ATLdefense;
 				team1[6] = "Atlanta".toUpperCase();
+				team1[7] = ATLqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1446,6 +1537,7 @@ function teamSelect(e){
 				team1[4] = NYGoffense;
 				team1[5] = NYGdefense;
 				team1[6] = "New York".toUpperCase();
+				team1[7] = NYGqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1457,6 +1549,7 @@ function teamSelect(e){
 				team1[4] = JAXoffense;
 				team1[5] = JAXdefense;
 				team1[6] = "Jacksonville".toUpperCase();
+				team1[7] = JAXqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1468,6 +1561,7 @@ function teamSelect(e){
 				team1[4] = NYJoffense;
 				team1[5] = NYJdefense;
 				team1[6] = "New York".toUpperCase();
+				team1[7] = NYJqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1479,6 +1573,7 @@ function teamSelect(e){
 				team1[4] = DEToffense;
 				team1[5] = DETdefense;
 				team1[6]= "Detroit".toUpperCase();
+				team1[7] = DETqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1490,6 +1585,7 @@ function teamSelect(e){
 				team1[4] = GBoffense;
 				team1[5] = GBdefense;
 				team1[6] = "Green Bay".toUpperCase();
+				team1[7] = GBqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1501,6 +1597,7 @@ function teamSelect(e){
 				team1[4] = CARoffense;
 				team1[5] = CARdefense;
 				team1[6] = "Carolina".toUpperCase();
+				team1[7] = CARqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1512,6 +1609,7 @@ function teamSelect(e){
 				team1[4] = NEoffense;
 				team1[5] = NEdefense;
 				team1[6] = "New England".toUpperCase();
+				team1[7] = NEqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1523,6 +1621,7 @@ function teamSelect(e){
 				team1[4] = LVoffense;
 				team1[5] = LVdefense;
 				team1[6] = "Las Vegas".toUpperCase();
+				team1[7] = LVqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1534,6 +1633,7 @@ function teamSelect(e){
 				team1[4] = LARoffense;
 				team1[5] = LARdefense;
 				team1[6] = "Los Angeles".toUpperCase();
+				team1[7] = LARqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1545,6 +1645,7 @@ function teamSelect(e){
 				team1[4] = BALoffense;
 				team1[5] = BALdefense;
 				team1[6] = "Baltimore".toUpperCase();
+				team1[7] = BALqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1556,6 +1657,7 @@ function teamSelect(e){
 				team1[4] = WASoffense;
 				team1[5] = WASdefense;
 				team1[6] = "Washington".toUpperCase();
+				team1[7] = WASqbs;
 				team1[0] = "football team";
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
@@ -1568,6 +1670,7 @@ function teamSelect(e){
 				team1[4] = NOoffense;
 				team1[5] = NOdefense;
 				team1[6] = "New Orleans".toUpperCase();
+				team1[7] = NOqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1579,6 +1682,7 @@ function teamSelect(e){
 				team1[4] = SEAoffense;
 				team1[5] = SEAdefense;
 				team1[6] = "Seattle".toUpperCase();
+				team1[7] = SEAqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1590,6 +1694,7 @@ function teamSelect(e){
 				team1[4] = PIToffense;
 				team1[5] = PITdefense;
 				team1[6] = "Pittsburgh".toUpperCase();
+				team1[7] = PITqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1601,6 +1706,7 @@ function teamSelect(e){
 				team1[4] = HOUoffense;
 				team1[5] = HOUdefense;
 				team1[6] = "Houston".toUpperCase();
+				team1[7] = HOUqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1612,6 +1718,7 @@ function teamSelect(e){
 				team1[4] = TENoffense;
 				team1[5] = TENdefense;
 				team1[6] = "Tennessee".toUpperCase();
+				team1[7] = TENqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1623,6 +1730,7 @@ function teamSelect(e){
 				team1[4] = MINoffense;
 				team1[5] = MINdefense;
 				team1[6] = "Minnesota".toUpperCase();
+				team1[7] = MINqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1634,6 +1742,7 @@ function teamSelect(e){
 				team1[4] = SFoffense;
 				team1[5] = SFdefense;
 				team1[6] = "San Francisco".toUpperCase();
+				team1[7] = SFqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume1, 1000);
 				break;
@@ -1659,6 +1768,7 @@ function teamSelect(e){
 				team2[4] = CHIoffense;
 				team2[5] = CHIdefense;
 				team2[6] = "Chicago".toUpperCase();
+				team2[7] = CHIqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1670,6 +1780,7 @@ function teamSelect(e){
 				team2[4] = CINoffense;
 				team2[5] = CINdefense;
 				team2[6] = "Cincinnati".toUpperCase();
+				team2[7] = CINqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1681,6 +1792,7 @@ function teamSelect(e){
 				team2[4] = BUFoffense;
 				team2[5] = BUFdefense;
 				team2[6] = "Buffalo".toUpperCase();
+				team2[7] = BUFqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1692,6 +1804,7 @@ function teamSelect(e){
 				team2[4] = DENoffense;
 				team2[5] = DENdefense;
 				team2[6] = "Denver".toUpperCase();
+				team2[7] = DENqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1703,6 +1816,7 @@ function teamSelect(e){
 				team2[4] = CLEoffense;
 				team2[5] = CLEdefense;
 				team2[6] = "Cleveland".toUpperCase();
+				team2[7] = CLEqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1714,6 +1828,7 @@ function teamSelect(e){
 				team2[4] = TBoffense;
 				team2[5] = TBdefense;
 				team2[6] = "Tampa Bay".toUpperCase();
+				team2[7] = TBqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1725,6 +1840,7 @@ function teamSelect(e){
 				team2[4] = ARIoffense;
 				team2[5] = ARIdefense;
 				team2[6] = "Arizona".toUpperCase();
+				team2[7] = ARIqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1736,6 +1852,7 @@ function teamSelect(e){
 				team2[4] = LACoffense;
 				team2[5] = LACdefense;
 				team2[6] = "Los Angeles".toUpperCase();
+				team2[7] = LACqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1747,6 +1864,7 @@ function teamSelect(e){
 				team2[4] = KCoffense;
 				team2[5] = KCdefense;
 				team2[6] = "Kansas City".toUpperCase();
+				team2[7] = KCqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1758,6 +1876,7 @@ function teamSelect(e){
 				team2[4] = INDoffense;
 				team2[5] = INDdefense;
 				team2[6] = "Indianapolis".toUpperCase();
+				team2[7] = INDqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1769,6 +1888,7 @@ function teamSelect(e){
 				team2[4] = DALoffense;
 				team2[5] = DALdefense;
 				team2[6] = "Dallas".toUpperCase();
+				team2[7] = DALqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1780,6 +1900,7 @@ function teamSelect(e){
 				team2[4] = MIAoffense;
 				team2[5] = MIAdefense;
 				team2[6] = "Miami".toUpperCase();
+				team2[7] = MIAqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1791,6 +1912,7 @@ function teamSelect(e){
 				team2[4] = PHIoffense;
 				team2[5] = PHIdefense;
 				team2[6] = "Philadelphia".toUpperCase();
+				team2[7] = PHIqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1802,6 +1924,7 @@ function teamSelect(e){
 				team2[4] = ATLoffense;
 				team2[5] = ATLdefense;
 				team2[6] = "Atlanta".toUpperCase();
+				team2[7] = ATLqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1813,6 +1936,7 @@ function teamSelect(e){
 				team2[4] = NYGoffense;
 				team2[5] = NYGdefense;
 				team2[6] = "New York".toUpperCase();
+				team2[7] = NYGqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1824,6 +1948,7 @@ function teamSelect(e){
 				team2[4] = JAXoffense;
 				team2[5] = JAXdefense;
 				team2[6] = "Jacksonville".toUpperCase();
+				team2[7] = JAXqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1835,6 +1960,7 @@ function teamSelect(e){
 				team2[4] = NYJoffense;
 				team2[5] = NYJdefense;
 				team2[6] = "New York".toUpperCase();
+				team2[7] = NYJqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1845,7 +1971,8 @@ function teamSelect(e){
 				team2[3] = "DET";
 				team2[4] = DEToffense;
 				team2[5] = DETdefense;
-				team2[6] = "Detroit".toUpperCase();
+				team2[6]= "Detroit".toUpperCase();
+				team2[7] = DETqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1857,6 +1984,7 @@ function teamSelect(e){
 				team2[4] = GBoffense;
 				team2[5] = GBdefense;
 				team2[6] = "Green Bay".toUpperCase();
+				team2[7] = GBqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1868,6 +1996,7 @@ function teamSelect(e){
 				team2[4] = CARoffense;
 				team2[5] = CARdefense;
 				team2[6] = "Carolina".toUpperCase();
+				team2[7] = CARqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1879,6 +2008,7 @@ function teamSelect(e){
 				team2[4] = NEoffense;
 				team2[5] = NEdefense;
 				team2[6] = "New England".toUpperCase();
+				team2[7] = NEqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1890,6 +2020,7 @@ function teamSelect(e){
 				team2[4] = LVoffense;
 				team2[5] = LVdefense;
 				team2[6] = "Las Vegas".toUpperCase();
+				team2[7] = LVqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1901,6 +2032,7 @@ function teamSelect(e){
 				team2[4] = LARoffense;
 				team2[5] = LARdefense;
 				team2[6] = "Los Angeles".toUpperCase();
+				team2[7] = LARqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1912,6 +2044,7 @@ function teamSelect(e){
 				team2[4] = BALoffense;
 				team2[5] = BALdefense;
 				team2[6] = "Baltimore".toUpperCase();
+				team2[7] = BALqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1923,6 +2056,7 @@ function teamSelect(e){
 				team2[4] = WASoffense;
 				team2[5] = WASdefense;
 				team2[6] = "Washington".toUpperCase();
+				team2[7] = WASqbs;
 				team2[0] = "football team";
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
@@ -1935,6 +2069,7 @@ function teamSelect(e){
 				team2[4] = NOoffense;
 				team2[5] = NOdefense;
 				team2[6] = "New Orleans".toUpperCase();
+				team2[7] = NOqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1946,6 +2081,7 @@ function teamSelect(e){
 				team2[4] = SEAoffense;
 				team2[5] = SEAdefense;
 				team2[6] = "Seattle".toUpperCase();
+				team2[7] = SEAqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1957,6 +2093,7 @@ function teamSelect(e){
 				team2[4] = PIToffense;
 				team2[5] = PITdefense;
 				team2[6] = "Pittsburgh".toUpperCase();
+				team2[7] = PITqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1968,6 +2105,7 @@ function teamSelect(e){
 				team2[4] = HOUoffense;
 				team2[5] = HOUdefense;
 				team2[6] = "Houston".toUpperCase();
+				team2[7] = HOUqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1979,6 +2117,7 @@ function teamSelect(e){
 				team2[4] = TENoffense;
 				team2[5] = TENdefense;
 				team2[6] = "Tennessee".toUpperCase();
+				team2[7] = TENqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -1990,6 +2129,7 @@ function teamSelect(e){
 				team2[4] = MINoffense;
 				team2[5] = MINdefense;
 				team2[6] = "Minnesota".toUpperCase();
+				team2[7] = MINqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -2001,6 +2141,7 @@ function teamSelect(e){
 				team2[4] = SFoffense;
 				team2[5] = SFdefense;
 				team2[6] = "San Francisco".toUpperCase();
+				team2[7] = SFqbs;
 				document.getElementById("header-text").innerHTML = "<p id=\"header-text\">Please wait...</p>";
 				setTimeout(resume2, 1000);
 				break;
@@ -3193,6 +3334,136 @@ function resume1(){
 }
 
 function resume2(){
+	startingQBs(team1, team2);
+}
+
+function startingQBs(team1, team2){
+	document.getElementById("starting-quarterbacks").style.visibility = "visible";
+	document.getElementById("header-text").innerHTML = "<p>Select the starting quarterbacks for this game</p>";
+	document.getElementById("awayqb1").disabled = false;
+	document.getElementById("awayqb2").disabled = false;
+	document.getElementById("awayqb3").disabled = false;
+	document.getElementById("homeqb1").disabled = false;
+	document.getElementById("homeqb2").disabled = false;
+	document.getElementById("homeqb3").disabled = false;
+	
+	document.getElementById("welcome-to-the-game").innerHTML = "<p><b>WELCOME TO THE GAME. THIS GAME WILL OPPOSE THE " + team1[6] + " " + team1[0].toUpperCase() + " AND THE " + team2[6] + " " + team2[0].toUpperCase() + ".<br/>PLEASE SELECT THE STARTING QUARTERBACKS FOR THIS MATCHUP. THEN CLICK SUBMIT TO KICKOFF THE GAME.</b><br/><br/></p>";
+	
+	document.getElementById("awayTeam").innerHTML = "<p><b>"+team1[6] + " " + team1[0].toUpperCase() + "</b></p>";
+	
+	document.getElementById("team1qb1").innerHTML = "<p>Click <b>1</b> to name <b>"+team1[7][0]+"</b> your starting quarterback. &nbsp;&nbsp;</p>";
+	document.getElementById("team1qb2").innerHTML = "<p>Click <b>2</b> to name <b>"+team1[7][1]+"</b> your starting quarterback. &nbsp;&nbsp;</p>";
+	document.getElementById("team1qb3").innerHTML = "<p>Click <b>3</b> to name <b>"+team1[7][2]+"</b> your starting quarterback. &nbsp;&nbsp;</p>";
+	
+	document.getElementById("homeTeam").innerHTML = "<br/><p><b>"+team2[6] + " " + team2[0].toUpperCase() + "</b></p>";
+	
+	document.getElementById("team2qb1").innerHTML = "<p>Click <b>1</b> to name <b>"+team2[7][0]+"</b> your starting quarterback. &nbsp;&nbsp;</p>";
+	document.getElementById("team2qb2").innerHTML = "<p>Click <b>2</b> to name <b>"+team2[7][1]+"</b> your starting quarterback. &nbsp;&nbsp;</p>";
+	document.getElementById("team2qb3").innerHTML = "<p>Click <b>3</b> to name <b>"+team2[7][2]+"</b> your starting quarterback. &nbsp;&nbsp;</p>";
+}
+
+function awayqb1(e){
+	var evt = e || window.event;
+	var t = evt.target || evt.srcElement;
+	
+	team1[4][0].name = team1[7][0];
+	document.getElementById("header-text").innerHTML = "<p>"+team1[3]+" has named "+team1[7][0]+" their starting quarterback</p>";
+	
+	document.getElementById("awayqb1").disabled = true;
+	document.getElementById("awayqb2").disabled = true;
+	document.getElementById("awayqb3").disabled = true;
+	
+	if(team1[4][0].name.valueOf() != "" && team2[4][0].name.valueOf() != ""){
+		document.getElementById("starting-quarterbacks-submit").disabled = false;
+	}
+}
+
+function awayqb2(e){
+	var evt = e || window.event;
+	var t = evt.target || evt.srcElement;
+	
+	team1[4][0].name = team1[7][1];
+	document.getElementById("header-text").innerHTML = "<p>"+team1[3]+" has named "+team1[7][1]+" their starting quarterback</p>";
+	
+	document.getElementById("awayqb1").disabled = true;
+	document.getElementById("awayqb2").disabled = true;
+	document.getElementById("awayqb3").disabled = true;
+	
+	if(team1[4][0].name.valueOf() != "" && team2[4][0].name.valueOf() != ""){
+		document.getElementById("starting-quarterbacks-submit").disabled = false;
+	}
+}
+
+function awayqb3(e){
+	var evt = e || window.event;
+	var t = evt.target || evt.srcElement;
+	
+	team1[4][0].name = team1[7][2];
+	document.getElementById("header-text").innerHTML = "<p>"+team1[3]+" has named "+team1[7][2]+" their starting quarterback</p>";
+	
+	document.getElementById("awayqb1").disabled = true;
+	document.getElementById("awayqb2").disabled = true;
+	document.getElementById("awayqb3").disabled = true;
+	
+	if(team1[4][0].name.valueOf() != "" && team2[4][0].name.valueOf() != ""){
+		document.getElementById("starting-quarterbacks-submit").disabled = false;
+	}
+}
+
+function homeqb1(e){
+	var evt = e || window.event;
+	var t = evt.target || evt.srcElement;
+	
+	team2[4][0].name = team2[7][0];
+	document.getElementById("header-text").innerHTML = "<p>"+team2[3]+" has named "+team2[7][0]+" their starting quarterback</p>";
+	
+	document.getElementById("homeqb1").disabled = true;
+	document.getElementById("homeqb2").disabled = true;
+	document.getElementById("homeqb3").disabled = true;
+	
+	if(team1[4][0].name.valueOf() != "" && team2[4][0].name.valueOf() != ""){
+		document.getElementById("starting-quarterbacks-submit").disabled = false;
+	}
+}
+
+function homeqb2(e){
+	var evt = e || window.event;
+	var t = evt.target || evt.srcElement;
+	
+	team2[4][0].name = team2[7][1];
+	document.getElementById("header-text").innerHTML = "<p>"+team2[3]+" has named "+team2[7][1]+" their starting quarterback</p>";
+	
+	document.getElementById("homeqb1").disabled = true;
+	document.getElementById("homeqb2").disabled = true;
+	document.getElementById("homeqb3").disabled = true;
+	
+	if(team1[4][0].name.valueOf() != "" && team2[4][0].name.valueOf() != ""){
+		document.getElementById("starting-quarterbacks-submit").disabled = false;
+	}
+}
+
+function homeqb3(e){
+	var evt = e || window.event;
+	var t = evt.target || evt.srcElement;
+	
+	team2[4][0].name = team2[7][2];
+	document.getElementById("header-text").innerHTML = "<p>"+team2[3]+" has named "+team2[7][2]+" their starting quarterback</p>";
+	
+	document.getElementById("homeqb1").disabled = true;
+	document.getElementById("homeqb2").disabled = true;
+	document.getElementById("homeqb3").disabled = true;
+	
+	if(team1[4][0].name.valueOf() != "" && team2[4][0].name.valueOf() != ""){
+		document.getElementById("starting-quarterbacks-submit").disabled = false;
+	}
+}
+
+function startingQBsSubmit(e){
+	var evt = e || window.event;
+	var t = evt.target || evt.srcElement;
+	
+	document.getElementById("starting-quarterbacks").style.visibility = "hidden";
+	document.getElementById("starting-quarterbacks-submit").disabled = true;
 	coinToss(team1, team2);
 }
 
@@ -3213,3 +3484,6 @@ var CHIoffense, CINoffense, BUFoffense, DENoffense, CLEoffense, TBoffense, ARIof
 var CHIdefense, CINdefense, BUFdefense, DENdefense, CLEdefense, TBdefense, ARIdefense, LACdefense, KCdefense, INDdefense, DALdefense, MIAdefense, PHIdefense, ATLdefense, NYGdefense,
 	JAXdefense, NYJdefense, DETdefense, GBdefense, CARdefense, NEdefense, WASdefense, LVdefense, LARdefense, BALdefense, NOdefense, SEAdefense, PITdefense, HOUdefense, TENdefense,
 	MINdefense, SFdefense;
+/*TEAM QUARTERBACKS*/
+var CHIqbs, CINqbs, BUFqbs, DENqbs, CLEqbs, TBqbs, ARIqbs, LACqbs, KCqbs, INDqbs, DALqbs, MIAqbs, PHIqbs, ATLqbs, NYGqbs, JAXqbs, NYJqbs, DETqbs, GBqbs, CARqbs, NEqbs, WASqbs, LVqbs,
+	LARqbs, BALqbs, NOqbs, SEAqbs, PITqbs, HOUqbs, TENqbs, MINqbs, SFqbs;
