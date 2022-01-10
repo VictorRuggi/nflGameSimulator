@@ -21,24 +21,34 @@
 		<h1>NFL GAME SIMULATOR <h2><a href="about-me.html">by Victor Ruggi</a></h2></h1>
 		<p style="text-align: center"><b>IN MEMORY OF JOHN MADDEN, COACH AND BROADCASTER</b></p>
 		<br/>
-		<p id="about">This simulator does not take into account current NFL standings or injuries. It does not calculate individual player yardage. Once the simulation is done, you can view a detailed box score of the result at the very bottom of the page.</p>
+		<p id="about">This simulator does not take into account current NFL standings or injuries. It does not calculate individual player yardage. Once the simulation is done, you can view a detailed box score of the result at the very bottom of the page, as well as an explanation as to how players are credited with scoring plays.</p>
 		
 		<br/>
 		
-		<div id="scoring">
-			<h2>SCORING BREAKDOWN</h2>
-			<p>Players on <b>offense</b> (QB, RB, WR, TE) uniquely score through touchdowns. Each touchdown is worth 6 points. Touchdown passes do not result in 6 points for the quarterback; only rushing and receiving touchdowns will lead to points being credited to a player&#39;s stat line. Quarterbacks can only get credited with points through rushing touchdowns, wide receivers and tight ends can only earn points by catching a touchdown pass, and running backs can earn points both through rushing for a touchdown and by catching a touchdown pass.</p>
-			<br/>
-			<p>Players on <b>special teams</b> (K) score in two different ways: by kicking field goals or by successfully kicking extra point conversions following touchdowns. A field goal is worth 3 points, and as its name implies, extra point conversions are worth 1 point. Under current NFL rules, if a touchdown is scored in overtime, the special teams will not kick as a touchdown automatically ends the game in this case.</p>
-			<br/>
-			<p>Players on <b>defense</b> (DEF) are also capable of scoring in two different ways: by scoring a safety or by scoring a touchdown following a turnover of possession through either recovering the opponent&#39;s fumble or intercepting the opposing quarterback&#39;s pass. Safeties are worth 2 points, and just like with offensive touchdowns, defensive touchdowns are also worth 6 points.</p>
-		</div>
-		
+		<p id="header-text">Select Team 1 (Away)</p>
 		<div id="reset">
 			<input type="button" id="reset-btn" value="Reset" disabled="true" />
 		</div>
+		
 		<br/>
-		<p id="header-text">Select Team 1 (Away)</p>
+		
+		<div id="starting-quarterbacks" style="visibility: hidden">
+			<p id="welcome-to-the-game"></p>
+			<div id="team1" name="team1">
+				<p id="awayTeam"></p>
+				<p id="team1qb1"></p><input type="button" id="awayqb1" value=" 1 " disabled="true"/>
+				<p id="team1qb2"></p><input type="button" id="awayqb2" value=" 2 " disabled="true"/>
+				<p id="team1qb3"></p><input type="button" id="awayqb3" value=" 3 " disabled="true"/>
+			</div>
+			<div id="team2" name="team2">
+				<p id="homeTeam"></p>
+				<p id="team2qb1"></p><input type="button" id="homeqb1" value=" 1 " disabled="true"/>
+				<p id="team2qb2"></p><input type="button" id="homeqb2" value=" 2 " disabled="true"/>
+				<p id="team2qb3"></p><input type="button" id="homeqb3" value=" 3 " disabled="true"/>
+			</div>
+			<input id="starting-quarterbacks-submit" type="button" value="Submit" disabled="true"/>
+		</div>
+
 		<p id="simulation"></p>
 		
 		<div id="row1">
@@ -91,6 +101,17 @@
 			<li><img src="logos/vikings.png"><input type="button" id="vikings" value="Minnesota Vikings" /></img></li>
 			<li><img src="logos/49ers.png"><input type="button" id="49ers" value="San Francisco 49ers" /></img></li>
 		</ul>
+		</div>
+		
+		<br/><br/>
+		
+		<div id="scoring">
+			<h2>SCORING BREAKDOWN</h2>
+			<p>Players on <b>offense</b> (QB, RB, WR, TE) uniquely score through touchdowns. Each touchdown is worth 6 points. Touchdown passes do not result in 6 points for the quarterback; only rushing and receiving touchdowns will lead to points being credited to a player&#39;s stat line. Quarterbacks can only get credited with points through rushing touchdowns, wide receivers and tight ends can only earn points by catching a touchdown pass, and running backs can earn points both through rushing for a touchdown and by catching a touchdown pass.</p>
+			<br/>
+			<p>Players on <b>special teams</b> (K) score in two different ways: by kicking field goals or by successfully kicking extra point conversions following touchdowns. A field goal is worth 3 points, and as its name implies, extra point conversions are worth 1 point. Under current NFL rules, if a touchdown is scored in overtime, the special teams will not kick as a touchdown automatically ends the game in this case.</p>
+			<br/>
+			<p>Players on <b>defense</b> (DEF) are also capable of scoring in two different ways: by scoring a safety or by scoring a touchdown following a turnover of possession through either recovering the opponent&#39;s fumble or intercepting the opposing quarterback&#39;s pass. Safeties are worth 2 points, and just like with offensive touchdowns, defensive touchdowns are also worth 6 points.</p>
 		</div>
 		
 		<div id="box-score" style="visibility: hidden">
