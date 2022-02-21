@@ -119,6 +119,15 @@ img
   margin-right: 10%;
 }
 
+select, option
+{
+	font-family: "Gotham";
+	font-weight: bold;
+	font-size: 16px;
+	background-color: forestgreen;
+	color: white;
+}
+
 #music {
 	text-align: right;
 	background: rgb(0,0,0);
