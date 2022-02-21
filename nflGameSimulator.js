@@ -9,6 +9,9 @@ function addEvent (obj, type, fn)
 }
 
 function init(){
+	venue = "";
+	venueInWords = "";
+	
 	teamButtons = [ document.getElementById("bears"), document.getElementById("bengals"), document.getElementById("bills"), document.getElementById("broncos"), 
 					document.getElementById("browns"), document.getElementById("buccaneers"), document.getElementById("cardinals"), document.getElementById("chargers"), 
 					document.getElementById("chiefs"), document.getElementById("colts"), document.getElementById("cowboys"), document.getElementById("dolphins"),
@@ -24,7 +27,7 @@ function init(){
 	BUFqbs = [ "Josh Allen", "Mitchell Trubisky", "Davis Webb" ];
 	DENqbs = [ "Teddy Bridgewater", "Drew Lock", "Brett Rypien" ];
 	CLEqbs = [ "Baker Mayfield", "Case Keenum", "Nick Mullens" ];
-	TBqbs = [ "Tom Brady", "Blaine Gabbert", "Kyle Trask" ];
+	TBqbs = [ "Blaine Gabbert", "Kyle Trask", "Ryan Griffin" ];
 	ARIqbs = [ "Kyler Murray", "Trace McSorley", "Colt McCoy" ];
 	LACqbs = [ "Justin Herbert", "Chase Daniel", "Easton Stick" ];
 	KCqbs = [ "Patrick Mahomes", "Chad Henne", "Shane Buechele" ];
@@ -46,7 +49,7 @@ function init(){
 	BALqbs = [ "Lamar Jackson", "Tyler Huntley", "Josh Johnson" ];
 	NOqbs = [ "Taysom Hill", "Trevor Siemian", "Ian Book" ];
 	SEAqbs = [ "Russell Wilson", "Geno Smith", "Jacob Eason" ];
-	PITqbs = [ "Ben Roethlisberger", "Mason Rudolph", "Dwayne Haskins" ];
+	PITqbs = [ "Mason Rudolph", "Dwayne Haskins", "Joshua Dobbs" ];
 	HOUqbs = [ "Tyrod Taylor", "Deshaun Watson", "Davis Mills" ];
 	TENqbs = [ "Ryan Tannehill", "Logan Woodside", "Kevin Hogan" ];
 	MINqbs = [ "Kirk Cousins", "Sean Mannion", "Kellen Mond" ];
@@ -756,7 +759,7 @@ function resetAll(e){
 	BUFqbs = [ "Josh Allen", "Mitchell Trubisky", "Davis Webb" ];
 	DENqbs = [ "Teddy Bridgewater", "Drew Lock", "Brett Rypien" ];
 	CLEqbs = [ "Baker Mayfield", "Case Keenum", "Nick Mullens" ];
-	TBqbs = [ "Tom Brady", "Blaine Gabbert", "Kyle Trask" ];
+	TBqbs = [ "Blaine Gabbert", "Kyle Trask", "Ryan Griffin" ];
 	ARIqbs = [ "Kyler Murray", "Trace McSorley", "Colt McCoy" ];
 	LACqbs = [ "Justin Herbert", "Chase Daniel", "Easton Stick" ];
 	KCqbs = [ "Patrick Mahomes", "Chad Henne", "Shane Buechele" ];
@@ -778,7 +781,7 @@ function resetAll(e){
 	BALqbs = [ "Lamar Jackson", "Tyler Huntley", "Josh Johnson" ];
 	NOqbs = [ "Taysom Hill", "Trevor Siemian", "Ian Book" ];
 	SEAqbs = [ "Russell Wilson", "Geno Smith", "Jacob Eason" ];
-	PITqbs = [ "Ben Roethlisberger", "Mason Rudolph", "Dwayne Haskins" ];
+	PITqbs = [ "Mason Rudolph", "Dwayne Haskins", "Joshua Dobbs" ];
 	HOUqbs = [ "Tyrod Taylor", "Deshaun Watson", "Davis Mills" ];
 	TENqbs = [ "Ryan Tannehill", "Logan Woodside", "Kevin Hogan" ];
 	MINqbs = [ "Kirk Cousins", "Sean Mannion", "Kellen Mond" ];
@@ -2160,6 +2163,209 @@ function teamSelect(e){
 }
 
 function coinToss(team1, team2){
+	switch(document.getElementById("venues").value){
+		case "nfl01":{
+			venueInWords = "Soldier Field - Chicago, IL";
+			break;
+		}
+		case "nfl02":{
+			venueInWords = "Paul Brown Stadium - Cincinnati, OH";
+			break;
+		}
+		case "nfl03":{
+			venueInWords = "Highmark Stadium - Orchard Park, NY";
+			break;
+		}
+		case "nfl04":{
+			venueInWords = "Empower Field at Mile High - Denver, CO";
+			break;
+		}
+		case "nfl05":{
+			venueInWords = "FirstEnergy Stadium - Cleveland, OH";
+			break;
+		}
+		case "nfl06":{
+			venueInWords = "Raymond James Stadium - Tampa, FL";
+			break;
+		}
+		case "nfl07":{
+			venueInWords = "State Farm Stadium - Glendale, AZ";
+			break;
+		}
+		case "nfl08":{
+			venueInWords = "SoFi Stadium - Inglewood, CA";
+			break;
+		}
+		case "nfl09":{
+			venueInWords = "GEHA Field at Arrowhead Stadium - Kansas City, MO";
+			break;
+		}
+		case "nfl10":{
+			venueInWords = "Lucas Oil Stadium - Indianapolis, IN";
+			break;
+		}
+		case "nfl11":{
+			venueInWords = "AT&amp;T Stadium - Arlington, TX";
+			break;
+		}
+		case "nfl12":{
+			venueInWords = "Hard Rock Stadium - Miami Gardens, FL";
+			break;
+		}
+		case "nfl13":{
+			venueInWords = "Lincoln Financial Field - Philadelphia, PA";
+			break;
+		}
+		case "nfl14":{
+			venueInWords = "Mercedes-Benz Stadium - Atlanta, GA";
+			break;
+		}
+		case "nfl15":{
+			venueInWords = "MetLife Stadium - East Rutherford, NJ";
+			break;
+		}
+		case "nfl16":{
+			venueInWords = "TIAA Bank Field - Jacksonville, FL";
+			break;
+		}
+		case "nfl17":{
+			venueInWords = "Ford Field - Detroit, MI";
+			break;
+		}
+		case "nfl18":{
+			venueInWords = "Lambeau Field - Green Bay, WI";
+			break;
+		}
+		case "nfl19":{
+			venueInWords = "Bank of America Stadium - Charlotte, NC";
+			break;
+		}
+		case "nfl20":{
+			venueInWords = "Gillette Stadium - Foxborough, MA";
+			break;
+		}
+		case "nfl21":{
+			venueInWords = "FedEx Field - Landover, MD";
+			break;
+		}
+		case "nfl22":{
+			venueInWords = "Allegiant Stadium - Las Vegas, NV";
+			break;
+		}
+		case "nfl23":{
+			venueInWords = "M&amp;T Bank Stadium - Baltimore, MD";
+			break;
+		}
+		case "nfl24":{
+			venueInWords = "Caesars Superdome - New Orleans, LA";
+			break;
+		}
+		case "nfl25":{
+			venueInWords = "Lumen Field - Seattle, WA";
+			break;
+		}
+		case "nfl26":{
+			venueInWords = "Heinz Field - Pittsburgh, PA";
+			break;
+		}
+		case "nfl27":{
+			venueInWords = "NRG Stadium - Houston, TX";
+			break;
+		}
+		case "nfl28":{
+			venueInWords = "Nissan Stadium - Nashville, TN";
+			break;
+		}
+		case "nfl29":{
+			venueInWords = "U.S. Bank Stadium - Minneapolis, MN";
+			break;
+		}
+		case "nfl30":{
+			venueInWords = "Levi&#39;s Stadium - Santa Clara, CA";
+			break;
+		}
+		case "cfl01":{
+			venueInWords = "BC Place Stadium - Vancouver, BC, CAN";
+			break;
+		}
+		case "cfl02":{
+			venueInWords = "McMahon Stadium - Calgary, AB, CAN";
+			break;
+		}
+		case "cfl03":{
+			venueInWords = "The Brick Field at Commonwealth Stadium - Edmonton, AB, CAN";
+			break;
+		}
+		case "cfl04":{
+			venueInWords = "Mosaic Stadium - Regina, SK, CAN";
+			break;
+		}
+		case "cfl05":{
+			venueInWords = "Investors Group Field - Winnipeg, MB, CAN";
+			break;
+		}
+		case "cfl06":{
+			venueInWords = "Tim Hortons Field - Hamilton, ON, CAN";
+			break;
+		}
+		case "cfl07":{
+			venueInWords = "BMO Field - Toronto, ON, CAN";
+			break;
+		}
+		case "cfl08":{
+			venueInWords = "TD Place Stadium - Ottawa, ON, CAN";
+			break;
+		}
+		case "cfl09":{
+			venueInWords = "Percival-Molson Memorial Stadium - Montreal, QC, CAN";
+			break;
+		}
+		case "cfl10":{
+			venueInWords = "Rogers Centre - Toronto, ON, CAN";
+			break;
+		}
+		case "cfl11":{
+			venueInWords = "Olympic Stadium - Montreal, QC, CAN";
+			break;
+		}
+		case "cfl12":{
+			venueInWords = "Croix-Bleue Medavie Stadium - Moncton, NB, CAN";
+			break;
+		}
+		case "cfl13":{
+			venueInWords = "Huskies Stadium - Halifax, NS, CAN";
+			break;
+		}
+		case "int01":{
+			venueInWords = "Wembley Stadium - London, UK";
+			break;
+		}
+		case "int02":{
+			venueInWords = "Tottenham Hotspur Stadium - London, UK";
+			break;
+		}
+		case "int03":{
+			venueInWords = "Twickenham Stadium - London, UK";
+			break;
+		}
+		case "int04":{
+			venueInWords = "Estadio Azteca - Mexico City, MEX";
+			break;
+		}
+		case "int05":{
+			venueInWords = "Allianz Arena - Munich, DEU";
+			break;
+		}
+		case "alt01":{
+			venueInWords = "Tom Benson Hall of Fame Stadium - Canton, OH";
+			break;
+		}
+		case "alt02":{
+			venueInWords = "Aloha Stadium - Honolulu, HI";
+			break;
+		}
+	}
+	
 	document.getElementById("simulation").innerHTML += "<p><br/><b>COIN TOSS</b></p>";
 	var coinToss = Math.floor(Math.random() * 2);
 	
@@ -2174,13 +2380,19 @@ function coinToss(team1, team2){
 		{
 			//AWAY KICKS TO BEGIN
 			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " will kick to start</p></b><br/><b>SCORING DRIVES</b><br/><b>FIRST QUARTER</b></p>";
-			firstQuarter(team1, team2);
+			document.getElementById("header-text").innerHTML = "<p>Projected Result - "+venueInWords+"</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
+															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
+			setTimeout(firstQuarterStart, 1000);
+			//firstQuarter(team1, team2);
 		}
 		else
 		{
 			//HOME TEAM KICKS TO BEGIN
 			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " will receive to start</p></b><br/><b>SCORING DRIVES</b><br/><b>FIRST QUARTER</b></p>";
-			firstQuarter(team1, team2);
+			document.getElementById("header-text").innerHTML = "<p>Projected Result - "+venueInWords+"</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
+															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
+			setTimeout(firstQuarterStart, 1000);
+			//firstQuarter(team1, team2);
 		}
 	}
 	else
@@ -2192,13 +2404,19 @@ function coinToss(team1, team2){
 		{
 			//HOME TEAM KICKS TO BEGIN
 			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " will kick to start</p></b><br/><b>SCORING DRIVES</b><br/><b>FIRST QUARTER</b></p>";
-			firstQuarter(team1, team2);
+			document.getElementById("header-text").innerHTML = "<p>Projected Result - "+venueInWords+"</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
+															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
+			setTimeout(firstQuarterStart, 1000);
+			//firstQuarter(team1, team2);
 		}
 		else
 		{
 			//AWAY TEAM KICKS TO BEGIN
 			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " will receive to start</p></b><br/><b>SCORING DRIVES</b><br/><b>FIRST QUARTER</b></p>";
-			firstQuarter(team1, team2);
+			document.getElementById("header-text").innerHTML = "<p>Projected Result - "+venueInWords+"</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
+															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
+			setTimeout(firstQuarterStart, 1000);
+			//firstQuarter(team1, team2);
 		}
 	}	
 }
@@ -2398,7 +2616,10 @@ function firstQuarter(team1, team2){
 			team2[1] +=0;
 		}
 	}
-	secondQuarter(team1, team2);
+	document.getElementById("header-text").innerHTML = "<p>Projected Result - "+venueInWords+"</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
+															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
+	setTimeout(secondQuarterStart, 250);
+	//secondQuarter(team1, team2);
 }
 	
 
@@ -2599,8 +2820,10 @@ function secondQuarter(team1, team2){
 			team2[1] +=0;
 		}
 	}
-	
-	thirdQuarter(team1, team2);
+	document.getElementById("header-text").innerHTML = "<p>Projected Result - "+venueInWords+"</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
+															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
+	setTimeout(thirdQuarterStart, 250);
+	//thirdQuarter(team1, team2);
 }
 
 function thirdQuarter(team1, team2){
@@ -2800,7 +3023,10 @@ function thirdQuarter(team1, team2){
 			team2[1] +=0;
 		}
 	}
-	fourthQuarter(team1, team2);
+	document.getElementById("header-text").innerHTML = "<p>Projected Result - "+venueInWords+"</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
+															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
+	setTimeout(fourthQuarterStart, 250);
+	//fourthQuarter(team1, team2);
 }
 
 function fourthQuarter(team1, team2){
@@ -3002,10 +3228,12 @@ function fourthQuarter(team1, team2){
 	}
 	
 	if( team1[1] == team2[1] ) {
+		document.getElementById("header-text").innerHTML = "<p>Projected Result - "+venueInWords+"</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
+															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
 		otCoinToss(team1, team2);
 	}
 	else {
-		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
+		document.getElementById("header-text").innerHTML = "<p>Projected Result - "+venueInWords+"</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
 		/*BOX SCORE*/
 		document.getElementById("box-score").style.visibility = "visible";
@@ -3067,12 +3295,14 @@ function otCoinToss(team1, team2){
 		if(picker == 0)
 		{
 			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " will kick to start</p></b><br/><b>OVERTIME</b></p>";
-			overtime(team1, team2);
+			setTimeout(overtimeStart, 1000);
+			//overtime(team1, team2);
 		}
 		else
 		{
 			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " will receive to start</p></b><br/><b>OVERTIME</b></p>";
-			overtime(team1, team2);
+			setTimeout(overtimeStart, 1000);
+			//overtime(team1, team2);
 		}
 	}
 	else
@@ -3083,12 +3313,14 @@ function otCoinToss(team1, team2){
 		if(picker == 0)
 		{
 			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " will kick to start</p></b><br/><b>OVERTIME</b></p>";
-			overtime(team1, team2);
+			setTimeout(overtimeStart, 1000);
+			//overtime(team1, team2);
 		}
 		else
 		{
 			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " will receive to start</p></b><br/><b>OVERTIME</b></p>";
-			overtime(team1, team2);
+			setTimeout(overtimeStart, 1000);
+			//overtime(team1, team2);
 		}
 	}
 }
@@ -3144,7 +3376,7 @@ function overtime(team1, team2){
 			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown reception from " + playerName.name + " from " + team1[4][0].name + " touchdown pass</p>";
 		}
 			
-		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
+		document.getElementById("header-text").innerHTML = "<p>Projected Result - "+venueInWords+"</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
 	}
 	else if(picker == 2)
@@ -3156,7 +3388,7 @@ function overtime(team1, team2){
 			team1[4][team1[4].length - 1].fg++;
 			
 		document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " field goal kick from " + team1[4][team1[4].length - 1].name + " is good from " + (Math.floor(Math.random() * 31) + 20) + " yards out</p>";
-		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
+		document.getElementById("header-text").innerHTML = "<p>Projected Result - "+venueInWords+"</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
 	}
 	else if(picker == 3)
@@ -3166,7 +3398,7 @@ function overtime(team1, team2){
 		team2[5][0].safeties++;
 		
 		document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " record the safety</p>";
-		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
+		document.getElementById("header-text").innerHTML = "<p>Projected Result - "+venueInWords+"</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
 	}
 	else if(picker == 4)
@@ -3216,7 +3448,7 @@ function overtime(team1, team2){
 			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown reception from " + playerName.name + " from " + team2[4][0].name + " touchdown pass</p>";
 		}
 			
-		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
+		document.getElementById("header-text").innerHTML = "<p>Projected Result - "+venueInWords+"</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
 	}
 	else if(picker == 5)
@@ -3228,7 +3460,7 @@ function overtime(team1, team2){
 			team2[4][team2[4].length - 1].fg++;
 			
 		document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " field goal kick from " + team2[4][team2[4].length - 1].name + " is good from " + (Math.floor(Math.random() * 31) + 20) + " yards out</p>";
-		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
+		document.getElementById("header-text").innerHTML = "<p>Projected Result - "+venueInWords+"</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
 	}
 	else if(picker == 6)
@@ -3238,7 +3470,7 @@ function overtime(team1, team2){
 		team1[5][0].safeties++;
 		
 		document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " record the safety</p>";
-		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
+		document.getElementById("header-text").innerHTML = "<p>Projected Result - "+venueInWords+"</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
 	}
 	else if(picker == 7)
@@ -3256,7 +3488,7 @@ function overtime(team1, team2){
 			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " defense intercepts the pass from " + team1[3] + " QB " + team1[4][0].name + " for a touchdown</p>";
 		}
 		
-		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
+		document.getElementById("header-text").innerHTML = "<p>Projected Result - "+venueInWords+"</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
 	}
 	else if(picker == 8)
@@ -3274,13 +3506,13 @@ function overtime(team1, team2){
 			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " defense intercepts the pass from " + team2[3] + " QB " + team2[4][0].name + " for a touchdown</p>";
 		}
 		
-		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
+		document.getElementById("header-text").innerHTML = "<p>Projected Result - "+venueInWords+"</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
 	}
 	else
 	{
 		document.getElementById("simulation").innerHTML += "<p>-</p>";
-		document.getElementById("header-text").innerHTML = "<p>Projected Result</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
+		document.getElementById("header-text").innerHTML = "<p>Projected Result - "+venueInWords+"</p>" + "<ul><li>" + "<img src=\"" + team1[2] + "\"></img>" + "</li><li>" + team1[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team1[1] + "</h1></li>" + 
 															"<li>" + team2[0].toUpperCase() + "<h1 style=\"font-family: Gotham Black\"> " + team2[1] + "</h1></li><li><img src=\"" + team2[2] + "\"></img>" + "</li></ul></div>";
 	}
 	/*BOX SCORE*/
@@ -3339,6 +3571,171 @@ function resume2(){
 
 function startingQBs(team1, team2){
 	document.getElementById("starting-quarterbacks").style.visibility = "visible";
+	document.getElementById("venues").style.visibility = "visible";
+	
+	/*BY DEFAULT, THE GAME WILL BE AT THE HOME TEAM'S VENUE*/
+	switch (team2[0]){
+		case "bears":{
+			venue = "nfl01";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "bengals":{
+			venue = "nfl02";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "bills":{
+			venue = "nfl03";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "broncos":{
+			venue = "nfl04";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "browns":{
+			venue = "nfl05";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "buccaneers":{
+			venue = "nfl06";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "cardinals":{
+			venue = "nfl07";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "chargers":{
+			venue = "nfl08";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "chiefs":{
+			venue = "nfl09";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "colts":{
+			venue = "nfl10";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "cowboys":{
+			venue = "nfl11";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "dolphins":{
+			venue = "nfl12";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "eagles":{
+			venue = "nfl13";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "falcons":{
+			venue = "nfl14";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "giants":{
+			venue = "nfl15";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "jaguars":{
+			venue = "nfl16";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "jets":{
+			venue = "nfl15";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "lions":{
+			venue = "nfl17";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "packers":{
+			venue = "nfl18";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "panthers":{
+			venue = "nfl19";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "patriots":{
+			venue = "nfl20";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "football team":{
+			venue = "nfl21";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "raiders":{
+			venue = "nfl22";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "rams":{
+			venue = "nfl08";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "ravens":{
+			venue = "nfl23";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "saints":{
+			venue = "nfl24";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "seahawks":{
+			venue = "nfl25";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "steelers":{
+			venue = "nfl26";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "texans":{
+			venue = "nfl27";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "titans":{
+			venue = "nfl28";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "vikings":{
+			venue = "nfl29";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+		case "49ers":{
+			venue = "nfl30";
+			document.getElementById("venues").value = venue;
+			break;
+		}
+	}
 	document.getElementById("header-text").innerHTML = "<p>Select the starting quarterbacks for this game</p>";
 	document.getElementById("awayqb1").disabled = false;
 	document.getElementById("awayqb2").disabled = false;
@@ -3463,8 +3860,25 @@ function startingQBsSubmit(e){
 	var t = evt.target || evt.srcElement;
 	
 	document.getElementById("starting-quarterbacks").style.visibility = "hidden";
+	document.getElementById("venues").style.visibility = "hidden";
 	document.getElementById("starting-quarterbacks-submit").disabled = true;
 	coinToss(team1, team2);
+}
+
+function firstQuarterStart(){
+	firstQuarter(team1, team2);
+}
+function secondQuarterStart(){
+	secondQuarter(team1, team2);
+}
+function thirdQuarterStart(){
+	thirdQuarter(team1, team2);
+}
+function fourthQuarterStart(){
+	fourthQuarter(team1, team2);
+}
+function overtimeStart(){
+	overtime(team1, team2);
 }
 
 window.onload = init;
@@ -3487,3 +3901,6 @@ var CHIdefense, CINdefense, BUFdefense, DENdefense, CLEdefense, TBdefense, ARIde
 /*TEAM QUARTERBACKS*/
 var CHIqbs, CINqbs, BUFqbs, DENqbs, CLEqbs, TBqbs, ARIqbs, LACqbs, KCqbs, INDqbs, DALqbs, MIAqbs, PHIqbs, ATLqbs, NYGqbs, JAXqbs, NYJqbs, DETqbs, GBqbs, CARqbs, NEqbs, WASqbs, LVqbs,
 	LARqbs, BALqbs, NOqbs, SEAqbs, PITqbs, HOUqbs, TENqbs, MINqbs, SFqbs;
+/*GAME VENUE*/
+var venue;
+var venueInWords;
