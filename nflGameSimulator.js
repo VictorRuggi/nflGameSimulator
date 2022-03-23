@@ -31,11 +31,11 @@ function init(){
 	ARIqbs = [ "Kyler Murray", "Trace McSorley", "Colt McCoy" ];
 	LACqbs = [ "Justin Herbert", "Chase Daniel", "Easton Stick" ];
 	KCqbs = [ "Patrick Mahomes", "Chad Henne", "Shane Buechele" ];
-	INDqbs = [ "Sam Ehlinger", "James Morgan", "Brett Hundley" ];
+	INDqbs = [ "Matt Ryan", "Sam Ehlinger", "James Morgan"  ];
 	DALqbs = [ "Dak Prescott", "Cooper Rush", "Will Grier" ];
 	MIAqbs = [ "Tua Tagovailoa", "Jacoby Brissett", "Jake Luton" ];
 	PHIqbs = [ "Jalen Hurts", "Gardner Minshew", "Reid Sinnett" ];
-	ATLqbs = [ "Matt Ryan", "Josh Rosen", "Feleipe Franks" ];
+	ATLqbs = [ "Feleipe Franks", "Marcus Mariota", "Josh Rosen" ];
 	NYGqbs = [ "Daniel Jones", "Jake Fromm", "Mike Glennon" ];
 	JAXqbs = [ "Trevor Lawrence", "C.J. Beathard", "Danny Etling" ];
 	NYJqbs = [ "Zach Wilson", "Joe Flacco", "Mike White" ];
@@ -44,7 +44,7 @@ function init(){
 	CARqbs = [ "Cam Newton", "Sam Darnold", "P.J. Walker" ];
 	NEqbs = [ "Mac Jones", "Brian Hoyer", "Jarrett Stidham" ];
 	WASqbs = [ "Carson Wentz", "Taylor Heinicke", "Kyle Allen" ];
-	LVqbs = [ "Derek Carr", "Marcus Mariota", "Nathan Peterman" ];
+	LVqbs = [ "Derek Carr", "Garrett Gilbert", "Nathan Peterman" ];
 	LARqbs = [ "Matthew Stafford", "John Wolford", "Bryce Perkins" ];
 	BALqbs = [ "Lamar Jackson", "Tyler Huntley", "Josh Johnson" ];
 	NOqbs = [ "Taysom Hill", "Trevor Siemian", "Ian Book" ];
@@ -208,7 +208,6 @@ function init(){
 	{name: "Jonathan Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Parris Campbell", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "T.Y. Hilton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Zach Pascal", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Dezmon Patmon", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Michael Pittman Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Michael Strachan", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -260,6 +259,7 @@ function init(){
 	{name: "DeVonta Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Greg Ward", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Quez Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Zach Pascal", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Tyree Jackson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jason Croom", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Dallas Goedert", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -765,11 +765,11 @@ function resetAll(e){
 	ARIqbs = [ "Kyler Murray", "Trace McSorley", "Colt McCoy" ];
 	LACqbs = [ "Justin Herbert", "Chase Daniel", "Easton Stick" ];
 	KCqbs = [ "Patrick Mahomes", "Chad Henne", "Shane Buechele" ];
-	INDqbs = [ "Sam Ehlinger", "James Morgan", "Brett Hundley" ];
+	INDqbs = [ "Matt Ryan", "Sam Ehlinger", "James Morgan"  ];
 	DALqbs = [ "Dak Prescott", "Cooper Rush", "Will Grier" ];
 	MIAqbs = [ "Tua Tagovailoa", "Jacoby Brissett", "Jake Luton" ];
 	PHIqbs = [ "Jalen Hurts", "Gardner Minshew", "Reid Sinnett" ];
-	ATLqbs = [ "Matt Ryan", "Josh Rosen", "Feleipe Franks" ];
+	ATLqbs = [ "Feleipe Franks", "Marcus Mariota", "Josh Rosen" ];
 	NYGqbs = [ "Daniel Jones", "Jake Fromm", "Mike Glennon" ];
 	JAXqbs = [ "Trevor Lawrence", "C.J. Beathard", "Danny Etling" ];
 	NYJqbs = [ "Zach Wilson", "Joe Flacco", "Mike White" ];
@@ -778,7 +778,7 @@ function resetAll(e){
 	CARqbs = [ "Cam Newton", "Sam Darnold", "P.J. Walker" ];
 	NEqbs = [ "Mac Jones", "Brian Hoyer", "Jarrett Stidham" ];
 	WASqbs = [ "Carson Wentz", "Taylor Heinicke", "Kyle Allen" ];
-	LVqbs = [ "Derek Carr", "Marcus Mariota", "Nathan Peterman" ];
+	LVqbs = [ "Derek Carr", "Garrett Gilbert", "Nathan Peterman" ];
 	LARqbs = [ "Matthew Stafford", "John Wolford", "Bryce Perkins" ];
 	BALqbs = [ "Lamar Jackson", "Tyler Huntley", "Josh Johnson" ];
 	NOqbs = [ "Taysom Hill", "Trevor Siemian", "Ian Book" ];
@@ -942,7 +942,6 @@ function resetAll(e){
 	{name: "Jonathan Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Parris Campbell", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "T.Y. Hilton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Zach Pascal", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Dezmon Patmon", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Michael Pittman Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Michael Strachan", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -994,6 +993,7 @@ function resetAll(e){
 	{name: "DeVonta Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Greg Ward", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Quez Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Zach Pascal", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Tyree Jackson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jason Croom", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Dallas Goedert", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
