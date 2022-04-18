@@ -22,9 +22,9 @@ function init(){
 					document.getElementById("texans"), document.getElementById("titans"), document.getElementById("vikings"), document.getElementById("49ers") ];
 					
 	/*TEAM QUARTERBACKS*/
-	CHIqbs = [ "Andy Dalton", "Nick Foles", "Justin Fields" ];
+	CHIqbs = [ "Trevor Siemian", "Nick Foles", "Justin Fields" ];
 	CINqbs = [ "Joe Burrow", "Brandon Allen", "Jake Browning" ];
-	BUFqbs = [ "Josh Allen", "Mitchell Trubisky", "Davis Webb" ];
+	BUFqbs = [ "Josh Allen", "Matt Barkley", "Davis Webb" ];
 	DENqbs = [ "Russell Wilson", "Teddy Bridgewater", "Brett Rypien" ];
 	CLEqbs = [ "Baker Mayfield", "Case Keenum", "Nick Mullens" ];
 	TBqbs = [ "Tom Brady", "Kyle Trask", "Blaine Gabbert" ];
@@ -47,9 +47,9 @@ function init(){
 	LVqbs = [ "Derek Carr", "Garrett Gilbert", "Nathan Peterman" ];
 	LARqbs = [ "Matthew Stafford", "John Wolford", "Bryce Perkins" ];
 	BALqbs = [ "Lamar Jackson", "Tyler Huntley", "Josh Johnson" ];
-	NOqbs = [ "Taysom Hill", "Trevor Siemian", "Ian Book" ];
+	NOqbs = [ "Taysom Hill", "Andy Dalton", "Ian Book" ];
 	SEAqbs = [ "Drew Lock", "Geno Smith", "Jacob Eason" ];
-	PITqbs = [ "Mason Rudolph", "Dwayne Haskins", "Joshua Dobbs" ];
+	PITqbs = [ "Mason Rudolph", "Mitchell Trubisky", "Joshua Dobbs" ];
 	HOUqbs = [ "Tyrod Taylor", "Deshaun Watson", "Davis Mills" ];
 	TENqbs = [ "Ryan Tannehill", "Logan Woodside", "Kevin Hogan" ];
 	MINqbs = [ "Kirk Cousins", "Sean Mannion", "Kellen Mond" ];
@@ -261,7 +261,8 @@ function init(){
 	{name: "Quez Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Zach Pascal", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Tyree Jackson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Jason Croom", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Richard Rodgers II", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Noah Togiai", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Dallas Goedert", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jack Stoll", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jake Elliott", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
@@ -756,9 +757,9 @@ function resetAll(e){
 	document.getElementById("box-score").style.visibility = "hidden";
 	
 	/*REINITIALIZE THE QUARTERBACKS*/
-	CHIqbs = [ "Andy Dalton", "Nick Foles", "Justin Fields" ];
+	CHIqbs = [ "Trevor Siemian", "Nick Foles", "Justin Fields" ];
 	CINqbs = [ "Joe Burrow", "Brandon Allen", "Jake Browning" ];
-	BUFqbs = [ "Josh Allen", "Mitchell Trubisky", "Davis Webb" ];
+	BUFqbs = [ "Josh Allen", "Matt Barkley", "Davis Webb" ];
 	DENqbs = [ "Russell Wilson", "Teddy Bridgewater", "Brett Rypien" ];
 	CLEqbs = [ "Baker Mayfield", "Case Keenum", "Nick Mullens" ];
 	TBqbs = [ "Tom Brady", "Kyle Trask", "Blaine Gabbert" ];
@@ -781,9 +782,9 @@ function resetAll(e){
 	LVqbs = [ "Derek Carr", "Garrett Gilbert", "Nathan Peterman" ];
 	LARqbs = [ "Matthew Stafford", "John Wolford", "Bryce Perkins" ];
 	BALqbs = [ "Lamar Jackson", "Tyler Huntley", "Josh Johnson" ];
-	NOqbs = [ "Taysom Hill", "Trevor Siemian", "Ian Book" ];
+	NOqbs = [ "Taysom Hill", "Andy Dalton", "Ian Book" ];
 	SEAqbs = [ "Drew Lock", "Geno Smith", "Jacob Eason" ];
-	PITqbs = [ "Mason Rudolph", "Dwayne Haskins", "Joshua Dobbs" ];
+	PITqbs = [ "Mason Rudolph", "Mitchell Trubisky", "Joshua Dobbs" ];
 	HOUqbs = [ "Tyrod Taylor", "Deshaun Watson", "Davis Mills" ];
 	TENqbs = [ "Ryan Tannehill", "Logan Woodside", "Kevin Hogan" ];
 	MINqbs = [ "Kirk Cousins", "Sean Mannion", "Kellen Mond" ];
@@ -995,7 +996,8 @@ function resetAll(e){
 	{name: "Quez Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Zach Pascal", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Tyree Jackson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Jason Croom", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Richard Rodgers II", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Noah Togiai", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Dallas Goedert", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jack Stoll", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Jake Elliott", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0} ];
