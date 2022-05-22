@@ -22,11 +22,11 @@ function init(){
 					document.getElementById("texans"), document.getElementById("titans"), document.getElementById("vikings"), document.getElementById("49ers") ];
 					
 	/*TEAM QUARTERBACKS*/
-	CHIqbs = [ "Trevor Siemian", "Nick Foles", "Justin Fields" ];
+	CHIqbs = [ "Trevor Siemian", "Nathan Peterman", "Justin Fields" ];
 	CINqbs = [ "Joe Burrow", "Brandon Allen", "Jake Browning" ];
-	BUFqbs = [ "Josh Allen", "Matt Barkley", "Davis Webb" ];
+	BUFqbs = [ "Josh Allen", "Matt Barkley", "Case Keenum" ];
 	DENqbs = [ "Russell Wilson", "Teddy Bridgewater", "Brett Rypien" ];
-	CLEqbs = [ "Baker Mayfield", "Case Keenum", "Nick Mullens" ];
+	CLEqbs = [ "Baker Mayfield", "Deshaun Watson", "Joshua Dobbs" ];
 	TBqbs = [ "Tom Brady", "Kyle Trask", "Blaine Gabbert" ];
 	ARIqbs = [ "Kyler Murray", "Trace McSorley", "Colt McCoy" ];
 	LACqbs = [ "Justin Herbert", "Chase Daniel", "Easton Stick" ];
@@ -36,22 +36,22 @@ function init(){
 	MIAqbs = [ "Tua Tagovailoa", "Jacoby Brissett", "Jake Luton" ];
 	PHIqbs = [ "Jalen Hurts", "Gardner Minshew", "Reid Sinnett" ];
 	ATLqbs = [ "Feleipe Franks", "Marcus Mariota", "Josh Rosen" ];
-	NYGqbs = [ "Daniel Jones", "Jake Fromm", "Mike Glennon" ];
+	NYGqbs = [ "Daniel Jones", "Tyrod Taylor", "Davis Webb" ];
 	JAXqbs = [ "Trevor Lawrence", "C.J. Beathard", "Danny Etling" ];
 	NYJqbs = [ "Zach Wilson", "Joe Flacco", "Mike White" ];
 	DETqbs = [ "Jared Goff", "Tim Boyle", "David Blough" ];
 	GBqbs = [ "Aaron Rodgers", "Jordan Love", "Kurt Benkert" ];
 	CARqbs = [ "Cam Newton", "Sam Darnold", "P.J. Walker" ];
-	NEqbs = [ "Mac Jones", "Brian Hoyer", "Jarrett Stidham" ];
-	WASqbs = [ "Carson Wentz", "Taylor Heinicke", "Kyle Allen" ];
-	LVqbs = [ "Derek Carr", "Garrett Gilbert", "Nathan Peterman" ];
+	NEqbs = [ "Mac Jones", "Brian Hoyer", "Bailey Zappe" ];
+	WASqbs = [ "Carson Wentz", "Taylor Heinicke", "Sam Howell" ];
+	LVqbs = [ "Derek Carr", "Nick Mullens", "Jarrett Stidham" ];
 	LARqbs = [ "Matthew Stafford", "John Wolford", "Bryce Perkins" ];
 	BALqbs = [ "Lamar Jackson", "Tyler Huntley", "Josh Johnson" ];
 	NOqbs = [ "Taysom Hill", "Andy Dalton", "Ian Book" ];
 	SEAqbs = [ "Drew Lock", "Geno Smith", "Jacob Eason" ];
-	PITqbs = [ "Mason Rudolph", "Mitchell Trubisky", "Joshua Dobbs" ];
-	HOUqbs = [ "Tyrod Taylor", "Deshaun Watson", "Davis Mills" ];
-	TENqbs = [ "Ryan Tannehill", "Logan Woodside", "Kevin Hogan" ];
+	PITqbs = [ "Mason Rudolph", "Mitchell Trubisky", "Kenny Pickett" ];
+	HOUqbs = [ "Kyle Allen", "Kevin Hogan", "Davis Mills" ];
+	TENqbs = [ "Ryan Tannehill", "Logan Woodside", "Malik Willis" ];
 	MINqbs = [ "Kirk Cousins", "Sean Mannion", "Kellen Mond" ];
 	SFqbs = [ "Jimmy Garoppolo", "Trey Lance", "Tyler Bray" ];
 	
@@ -756,11 +756,11 @@ function resetAll(e){
 	document.getElementById("box-score").style.visibility = "hidden";
 	
 	/*REINITIALIZE THE QUARTERBACKS*/
-	CHIqbs = [ "Trevor Siemian", "Nick Foles", "Justin Fields" ];
+	CHIqbs = [ "Trevor Siemian", "Nathan Peterman", "Justin Fields" ];
 	CINqbs = [ "Joe Burrow", "Brandon Allen", "Jake Browning" ];
-	BUFqbs = [ "Josh Allen", "Matt Barkley", "Davis Webb" ];
+	BUFqbs = [ "Josh Allen", "Matt Barkley", "Case Keenum" ];
 	DENqbs = [ "Russell Wilson", "Teddy Bridgewater", "Brett Rypien" ];
-	CLEqbs = [ "Baker Mayfield", "Case Keenum", "Nick Mullens" ];
+	CLEqbs = [ "Baker Mayfield", "Deshaun Watson", "Joshua Dobbs" ];
 	TBqbs = [ "Tom Brady", "Kyle Trask", "Blaine Gabbert" ];
 	ARIqbs = [ "Kyler Murray", "Trace McSorley", "Colt McCoy" ];
 	LACqbs = [ "Justin Herbert", "Chase Daniel", "Easton Stick" ];
@@ -770,22 +770,22 @@ function resetAll(e){
 	MIAqbs = [ "Tua Tagovailoa", "Jacoby Brissett", "Jake Luton" ];
 	PHIqbs = [ "Jalen Hurts", "Gardner Minshew", "Reid Sinnett" ];
 	ATLqbs = [ "Feleipe Franks", "Marcus Mariota", "Josh Rosen" ];
-	NYGqbs = [ "Daniel Jones", "Jake Fromm", "Mike Glennon" ];
+	NYGqbs = [ "Daniel Jones", "Tyrod Taylor", "Davis Webb" ];
 	JAXqbs = [ "Trevor Lawrence", "C.J. Beathard", "Danny Etling" ];
 	NYJqbs = [ "Zach Wilson", "Joe Flacco", "Mike White" ];
 	DETqbs = [ "Jared Goff", "Tim Boyle", "David Blough" ];
 	GBqbs = [ "Aaron Rodgers", "Jordan Love", "Kurt Benkert" ];
 	CARqbs = [ "Cam Newton", "Sam Darnold", "P.J. Walker" ];
-	NEqbs = [ "Mac Jones", "Brian Hoyer", "Jarrett Stidham" ];
-	WASqbs = [ "Carson Wentz", "Taylor Heinicke", "Kyle Allen" ];
-	LVqbs = [ "Derek Carr", "Garrett Gilbert", "Nathan Peterman" ];
+	NEqbs = [ "Mac Jones", "Brian Hoyer", "Bailey Zappe" ];
+	WASqbs = [ "Carson Wentz", "Taylor Heinicke", "Sam Howell" ];
+	LVqbs = [ "Derek Carr", "Nick Mullens", "Jarrett Stidham" ];
 	LARqbs = [ "Matthew Stafford", "John Wolford", "Bryce Perkins" ];
 	BALqbs = [ "Lamar Jackson", "Tyler Huntley", "Josh Johnson" ];
 	NOqbs = [ "Taysom Hill", "Andy Dalton", "Ian Book" ];
 	SEAqbs = [ "Drew Lock", "Geno Smith", "Jacob Eason" ];
-	PITqbs = [ "Mason Rudolph", "Mitchell Trubisky", "Joshua Dobbs" ];
-	HOUqbs = [ "Tyrod Taylor", "Deshaun Watson", "Davis Mills" ];
-	TENqbs = [ "Ryan Tannehill", "Logan Woodside", "Kevin Hogan" ];
+	PITqbs = [ "Mason Rudolph", "Mitchell Trubisky", "Kenny Pickett" ];
+	HOUqbs = [ "Kyle Allen", "Kevin Hogan", "Davis Mills" ];
+	TENqbs = [ "Ryan Tannehill", "Logan Woodside", "Malik Willis" ];
 	MINqbs = [ "Kirk Cousins", "Sean Mannion", "Kellen Mond" ];
 	SFqbs = [ "Jimmy Garoppolo", "Trey Lance", "Tyler Bray" ];
 	
