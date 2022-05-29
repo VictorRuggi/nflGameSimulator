@@ -347,6 +347,8 @@ function init(){
 	{name: "Equanimeous St. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Marquez Valdes-Scantling", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Juwann Winfree", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Randall Cobb", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Sammy Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Dominique Dafney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Tyler Davis", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Josiah Deguara", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -439,7 +441,6 @@ function init(){
 	{name: "Miles Boykin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Devin Duvernay", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "James Proche", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Sammy Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Tylan Wallace", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Mark Andrews", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Nick Boyle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -1081,6 +1082,8 @@ function resetAll(e){
 	{name: "Equanimeous St. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Marquez Valdes-Scantling", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Juwann Winfree", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Randall Cobb", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
+	{name: "Sammy Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Dominique Dafney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Tyler Davis", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Josiah Deguara", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -1173,7 +1176,6 @@ function resetAll(e){
 	{name: "Miles Boykin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Devin Duvernay", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "James Proche", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
-	{name: "Sammy Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Tylan Wallace", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Mark Andrews", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
 	{name: "Nick Boyle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0},
@@ -2430,9 +2432,9 @@ function firstQuarter(team1, team2){
 	{
 		var away=0;
 		var home=0;
-		var driveResult = Math.floor(Math.random() * 40 + 1);
+		var driveResult = Math.floor(Math.random() * 50 + 1);
 
-		if(driveResult == 1 || driveResult == 2) //Touchdown
+		if(driveResult >= 1 && driveResult < 4) //Touchdown
 		{
 			away=7;
 			team1[1] += away;
@@ -2485,7 +2487,7 @@ function firstQuarter(team1, team2){
 				document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown reception from " + playerName.name + " from " + team1[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
 			}
 		}
-		else if(driveResult == 3) //Field goal
+		else if(driveResult == 4) //Field goal
 		{
 			away=3;
 			team1[1] += away;
@@ -2523,7 +2525,7 @@ function firstQuarter(team1, team2){
 				document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " defense intercepts the pass from " + team1[3] + " QB " + team1[4][0].name + " for a touchdown, extra point from " + team2[4][team2[4].length - 1].name + "</p>";
 			}
 		}
-		else if(driveResult == 5 || driveResult == 6) //Touchdown
+		else if(driveResult >= 5 && driveResult < 8) //Touchdown
 		{
 			home=7;
 			team2[1] += home;
@@ -2576,7 +2578,7 @@ function firstQuarter(team1, team2){
 				document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown reception from " + playerName.name + " from " + team2[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
 			}
 		}
-		else if(driveResult == 7) //Field goal
+		else if(driveResult == 8) //Field goal
 		{
 			home=3;
 			team2[1] += home;
@@ -2634,9 +2636,9 @@ function secondQuarter(team1, team2){
 	{
 		var away=0;
 		var home=0;
-		var driveResult = Math.floor(Math.random() * 40 + 1);
+		var driveResult = Math.floor(Math.random() * 50 + 1);
 
-		if(driveResult == 1 || driveResult == 2) //Touchdown
+		if(driveResult >= 1 && driveResult < 4) //Touchdown
 		{
 			away=7;
 			team1[1] += away;
@@ -2689,7 +2691,7 @@ function secondQuarter(team1, team2){
 				document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown reception from " + playerName.name + " from " + team1[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
 			}
 		}
-		else if(driveResult == 3) //Field goal
+		else if(driveResult == 4) //Field goal
 		{
 			away=3;
 			team1[1] += away;
@@ -2727,7 +2729,7 @@ function secondQuarter(team1, team2){
 				document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " defense intercepts the pass from " + team1[3] + " QB " + team1[4][0].name + " for a touchdown, extra point from " + team2[4][team2[4].length - 1].name + "</p>";
 			}
 		}
-		else if(driveResult == 5 || driveResult == 6) //Touchdown
+		else if(driveResult >= 5 && driveResult < 8) //Touchdown
 		{
 			home=7;
 			team2[1] += home;
@@ -2780,7 +2782,7 @@ function secondQuarter(team1, team2){
 				document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown reception from " + playerName.name + " from " + team2[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
 			}
 		}
-		else if(driveResult == 7) //Field goal
+		else if(driveResult == 8) //Field goal
 		{
 			home=3;
 			team2[1] += home;
@@ -2837,9 +2839,9 @@ function thirdQuarter(team1, team2){
 	{
 		var away=0;
 		var home=0;
-		var driveResult = Math.floor(Math.random() * 40 + 1);
+		var driveResult = Math.floor(Math.random() * 50 + 1);
 
-		if(driveResult == 1 || driveResult == 2) //Touchdown
+		if(driveResult >= 1 && driveResult < 4) //Touchdown
 		{
 			away=7;
 			team1[1] += away;
@@ -2892,7 +2894,7 @@ function thirdQuarter(team1, team2){
 				document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown reception from " + playerName.name + " from " + team1[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
 			}
 		}
-		else if(driveResult == 3) //Field goal
+		else if(driveResult == 4) //Field goal
 		{
 			away=3;
 			team1[1] += away;
@@ -2930,7 +2932,7 @@ function thirdQuarter(team1, team2){
 				document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " defense intercepts the pass from " + team1[3] + " QB " + team1[4][0].name + " for a touchdown, extra point from " + team2[4][team2[4].length - 1].name + "</p>";
 			}
 		}
-		else if(driveResult == 5 || driveResult == 6) //Touchdown
+		else if(driveResult >= 5 && driveResult < 8) //Touchdown
 		{
 			home=7;
 			team2[1] += home;
@@ -2983,7 +2985,7 @@ function thirdQuarter(team1, team2){
 				document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown reception from " + playerName.name + " from " + team2[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
 			}
 		}
-		else if(driveResult == 7) //Field goal
+		else if(driveResult == 8) //Field goal
 		{
 			home=3;
 			team2[1] += home;
@@ -3040,9 +3042,9 @@ function fourthQuarter(team1, team2){
 	{
 		var away=0;
 		var home=0;
-		var driveResult = Math.floor(Math.random() * 40 + 1);
+		var driveResult = Math.floor(Math.random() * 50 + 1);
 
-		if(driveResult == 1 || driveResult == 2) //Touchdown
+		if(driveResult >= 1 && driveResult < 4) //Touchdown
 		{
 			away=7;
 			team1[1] += away;
@@ -3095,7 +3097,7 @@ function fourthQuarter(team1, team2){
 				document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " touchdown reception from " + playerName.name + " from " + team1[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
 			}
 		}
-		else if(driveResult == 3) //Field goal
+		else if(driveResult == 4) //Field goal
 		{
 			away=3;
 			team1[1] += away;
@@ -3133,7 +3135,7 @@ function fourthQuarter(team1, team2){
 				document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " defense intercepts the pass from " + team1[3] + " QB " + team1[4][0].name + " for a touchdown, extra point from " + team2[4][team2[4].length - 1].name + "</p>";
 			}
 		}
-		else if(driveResult == 5 || driveResult == 6) //Touchdown
+		else if(driveResult >= 5 && driveResult < 8) //Touchdown
 		{
 			home=7;
 			team2[1] += home;
@@ -3186,7 +3188,7 @@ function fourthQuarter(team1, team2){
 				document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " touchdown reception from " + playerName.name + " from " + team2[4][0].name + " touchdown pass and extra point from " + extraPoint.name + "</p>";
 			}
 		}
-		else if(driveResult == 7) //Field goal
+		else if(driveResult == 8) //Field goal
 		{
 			home=3;
 			team2[1] += home;
