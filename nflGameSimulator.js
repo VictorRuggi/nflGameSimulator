@@ -24,38 +24,38 @@ function init(){
 					document.getElementById("texans"), document.getElementById("titans"), document.getElementById("vikings"), document.getElementById("49ers") ];
 					
 	/*TEAM QUARTERBACKS*/
-	CHIqbs = [ {name: "Trevor Siemian", college: "Northwestern"}, {name: "Nathan Peterman", college: "Pittsburgh"}, {name: "Justin Fields", college: "Ohio State"} ];
-	CINqbs = [ {name: "Joe Burrow", college: "LSU"}, {name: "Brandon Allen", college: "Arkansas"}, {name: "Jake Browning", college: "Washington"} ];
-	BUFqbs = [ {name: "Josh Allen", college: "Wyoming"}, {name: "Matt Barkley", college: "USC"}, {name: "Case Keenum", college: "Houston"} ];
-	DENqbs = [ {name: "Russell Wilson", college: "Wisconsin"}, {name: "Teddy Bridgewater", college: "Louisville"}, {name: "Brett Rypien", college: "Boise State"} ];
-	CLEqbs = [ {name: "Baker Mayfield", college: "Oklahoma"}, {name: "Deshaun Watson", college: "Clemson"}, {name: "Joshua Dobbs", college: "Tennessee"} ];
-	TBqbs = [ {name: "Tom Brady", college: "Michigan"}, {name: "Kyle Trask", college: "Florida"}, {name: "Blaine Gabbert", college: "Missouri"} ];
-	ARIqbs = [ {name: "Kyler Murray", college: "Oklahoma"}, {name: "Trace McSorley", college: "Penn State"}, {name: "Colt McCoy", college: "Texas"} ];
-	LACqbs = [ {name: "Justin Herbert", college: "Oregon"}, {name: "Chase Daniel", college: "Missouri"}, {name: "Easton Stick", college: "North Dakota State"} ];
-	KCqbs = [ {name: "Patrick Mahomes", college: "Texas Tech"}, {name: "Chad Henne", college: "Michigan"}, {name: "Shane Buechele", college: "SMU"} ];
-	INDqbs = [ {name: "Matt Ryan", college: "Boston College"}, {name: "Sam Ehlinger", college: "Texas"}, {name: "James Morgan", college: "FIU"}  ];
-	DALqbs = [ {name: "Dak Prescott", college: "Mississippi State"}, {name: "Cooper Rush", college: "Central Michigan"}, {name: "Will Grier", college: "West Virginia"} ];
-	MIAqbs = [ {name: "Tua Tagovailoa", college: "Alabama"}, {name: "Jacoby Brissett", college: "NC State"}, {name: "Jake Luton", college: "Oregon State"} ];
-	PHIqbs = [ {name: "Jalen Hurts", college: "Oklahoma"}, {name: "Gardner Minshew", college: "Washington State"}, {name: "Reid Sinnett", college: "San Diego"} ];
-	ATLqbs = [ {name: "Feleipe Franks", college: "Arkansas"}, {name: "Marcus Mariota", college: "Oregon"}, {name: "Josh Rosen", college: "UCLA"} ];
-	NYGqbs = [ {name: "Daniel Jones", college: "Duke"}, {name: "Tyrod Taylor", college: "Virginia Tech"}, {name: "Davis Webb", college: "California"} ];
-	JAXqbs = [ {name: "Trevor Lawrence", college: "Clemson"}, {name: "C.J. Beathard", college: "Iowa"}, {name: "Danny Etling", college: "LSU"} ];
-	NYJqbs = [ {name: "Zach Wilson", college: "BYU"}, {name: "Joe Flacco", college: "Delaware"}, {name: "Mike White", college: "Western Kentucky"} ];
-	DETqbs = [ {name: "Jared Goff", college: "California"}, {name: "Tim Boyle", college: "Eastern Kentucky"}, {name: "David Blough", college: "Purdue"} ];
-	GBqbs = [ {name: "Aaron Rodgers", college: "California"}, {name: "Jordan Love", college: "Utah State"}, {name: "Kurt Benkert", college: "Virginia"} ];
-	CARqbs = [ {name: "Cam Newton", college: "Auburn"}, {name: "Sam Darnold", college: "USC"}, {name: "P.J. Walker", college: "Temple"} ];
-	NEqbs = [ {name: "Mac Jones", college: "Alabama"}, {name: "Brian Hoyer", college: "Michigan State"}, {name: "Bailey Zappe", college: "Western Kentucky"} ];
-	WASqbs = [ {name: "Carson Wentz", college: "North Dakota State"}, {name: "Taylor Heinicke", college: "Old Dominion"}, {name: "Sam Howell", college: "North Carolina"} ];
-	LVqbs = [ {name: "Derek Carr", college: "Fresno State"}, {name: "Nick Mullens", college: "Southern Miss"}, {name: "Jarrett Stidham", college: "Auburn"} ];
-	LARqbs = [ {name: "Matthew Stafford", college: "Georgia"}, {name: "John Wolford", college: "Wake Forest"}, {name: "Bryce Perkins", college: "Virginia"} ];
-	BALqbs = [ {name: "Lamar Jackson", college: "Louisville"}, {name: "Tyler Huntley", college: "Utah"}, {name: "Josh Johnson", college: "San Diego"} ];
-	NOqbs = [ {name: "Taysom Hill", college: "BYU"}, {name: "Andy Dalton", college: "TCU"}, {name: "Ian Book", college: "Notre Dame"} ];
-	SEAqbs = [ {name: "Drew Lock", college: "Missouri"}, {name: "Geno Smith", college: "West Virginia"}, {name: "Jacob Eason", college: "Washington"} ];
-	PITqbs = [ {name: "Mason Rudolph", college: "Oklahoma State"}, {name: "Mitchell Trubisky", college: "North Carolina"}, {name: "Kenny Pickett", college: "Pittsburgh"} ];
-	HOUqbs = [ {name: "Kyle Allen", college: "Houston"}, {name: "Kevin Hogan", college: "Stanford"}, {name: "Davis Mills", college: "Stanford"} ];
-	TENqbs = [ {name: "Ryan Tannehill", college: "Texas A&amp;M"}, {name: "Logan Woodside", college: "Toledo"}, {name: "Malik Willis", college: "Liberty"} ];
-	MINqbs = [ {name: "Kirk Cousins", college: "Michigan State"}, {name: "Sean Mannion", college: "Oregon State"}, {name: "Kellen Mond", college: "Texas A&amp;M"} ];
-	SFqbs = [ {name: "Jimmy Garoppolo", college: "Eastern Illinois"}, {name: "Trey Lance", college: "North Dakota State"}, {name: "Tyler Bray", college: "Tennessee"} ];
+	CHIqbs = [ {name: "Trevor Siemian", college: "Northwestern", dropOff: Number(Number(0).toFixed(1))}, {name: "Nathan Peterman", college: "Pittsburgh", dropOff: Number(Number(5).toFixed(1))}, {name: "Justin Fields", college: "Ohio State", dropOff: Number(Number(3.5).toFixed(1))} ];
+	CINqbs = [ {name: "Joe Burrow", college: "LSU", dropOff: Number(Number(0).toFixed(1))}, {name: "Brandon Allen", college: "Arkansas", dropOff: Number(Number(4.5).toFixed(1))}, {name: "Jake Browning", college: "Washington", dropOff: Number(Number(6).toFixed(1))} ];
+	BUFqbs = [ {name: "Josh Allen", college: "Wyoming", dropOff: Number(Number(0).toFixed(1))}, {name: "Matt Barkley", college: "USC", dropOff: Number(Number(4).toFixed(1))}, {name: "Case Keenum", college: "Houston", dropOff: Number(Number(4).toFixed(1))} ];
+	DENqbs = [ {name: "Russell Wilson", college: "Wisconsin", dropOff: Number(Number(0).toFixed(1))}, {name: "Teddy Bridgewater", college: "Louisville", dropOff: Number(Number(4.5).toFixed(1))}, {name: "Brett Rypien", college: "Boise State", dropOff: Number(Number(6.5).toFixed(1))} ];
+	CLEqbs = [ {name: "Baker Mayfield", college: "Oklahoma", dropOff: Number(Number(0).toFixed(1))}, {name: "Deshaun Watson", college: "Clemson", dropOff: Number(Number(3).toFixed(1))}, {name: "Joshua Dobbs", college: "Tennessee", dropOff: Number(Number(5).toFixed(1))} ];
+	TBqbs = [ {name: "Tom Brady", college: "Michigan", dropOff: Number(Number(0).toFixed(1))}, {name: "Kyle Trask", college: "Florida", dropOff: Number(Number(4.5).toFixed(1))}, {name: "Blaine Gabbert", college: "Missouri", dropOff: Number(Number(7).toFixed(1))} ];
+	ARIqbs = [ {name: "Kyler Murray", college: "Oklahoma", dropOff: Number(Number(0).toFixed(1))}, {name: "Trace McSorley", college: "Penn State", dropOff: Number(Number(4).toFixed(1))}, {name: "Colt McCoy", college: "Texas", dropOff: Number(Number(6).toFixed(1))} ];
+	LACqbs = [ {name: "Justin Herbert", college: "Oregon", dropOff: Number(Number(0).toFixed(1))}, {name: "Chase Daniel", college: "Missouri", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Easton Stick", college: "North Dakota State", dropOff: Number(Number(6).toFixed(1))} ];
+	KCqbs = [ {name: "Patrick Mahomes", college: "Texas Tech", dropOff: Number(Number(0).toFixed(1))}, {name: "Chad Henne", college: "Michigan", dropOff: Number(Number(3).toFixed(1))}, {name: "Shane Buechele", college: "SMU", dropOff: Number(Number(5.5).toFixed(1))} ];
+	INDqbs = [ {name: "Matt Ryan", college: "Boston College", dropOff: Number(Number(0).toFixed(1))}, {name: "Sam Ehlinger", college: "Texas", dropOff: Number(Number(3).toFixed(1))}, {name: "James Morgan", college: "FIU", dropOff: Number(Number(5).toFixed(1))}  ];
+	DALqbs = [ {name: "Dak Prescott", college: "Mississippi State", dropOff: Number(Number(0).toFixed(1))}, {name: "Cooper Rush", college: "Central Michigan", dropOff: Number(Number(4).toFixed(1))}, {name: "Will Grier", college: "West Virginia", dropOff: Number(Number(6.5).toFixed(1))} ];
+	MIAqbs = [ {name: "Tua Tagovailoa", college: "Alabama", dropOff: Number(Number(0).toFixed(1))}, {name: "Jacoby Brissett", college: "NC State", dropOff: Number(Number(3).toFixed(1))}, {name: "Jake Luton", college: "Oregon State", dropOff: Number(Number(5.5).toFixed(1))} ];
+	PHIqbs = [ {name: "Jalen Hurts", college: "Oklahoma", dropOff: Number(Number(0).toFixed(1))}, {name: "Gardner Minshew", college: "Washington State", dropOff: Number(Number(2.5).toFixed(1))}, {name: "Reid Sinnett", college: "San Diego", dropOff: Number(Number(6).toFixed(1))} ];
+	ATLqbs = [ {name: "Feleipe Franks", college: "Arkansas", dropOff: Number(Number(0).toFixed(1))}, {name: "Marcus Mariota", college: "Oregon", dropOff: Number(Number(2).toFixed(1))}, {name: "Josh Rosen", college: "UCLA", dropOff: Number(Number(4.5).toFixed(1))} ];
+	NYGqbs = [ {name: "Daniel Jones", college: "Duke", dropOff: Number(Number(0).toFixed(1))}, {name: "Tyrod Taylor", college: "Virginia Tech", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Davis Webb", college: "California", dropOff: Number(Number(6.5).toFixed(1))} ];
+	JAXqbs = [ {name: "Trevor Lawrence", college: "Clemson", dropOff: Number(Number(0).toFixed(1))}, {name: "C.J. Beathard", college: "Iowa", dropOff: Number(Number(4).toFixed(1))}, {name: "Danny Etling", college: "LSU", dropOff: Number(Number(6.5).toFixed(1))} ];
+	NYJqbs = [ {name: "Zach Wilson", college: "BYU", dropOff: Number(Number(0).toFixed(1))}, {name: "Joe Flacco", college: "Delaware", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Mike White", college: "Western Kentucky", dropOff: Number(Number(6).toFixed(1))} ];
+	DETqbs = [ {name: "Jared Goff", college: "California", dropOff: Number(Number(0).toFixed(1))}, {name: "Tim Boyle", college: "Eastern Kentucky", dropOff: Number(Number(4).toFixed(1))}, {name: "David Blough", college: "Purdue", dropOff: Number(Number(6.5).toFixed(1))} ];
+	GBqbs = [ {name: "Aaron Rodgers", college: "California", dropOff: Number(Number(0).toFixed(1))}, {name: "Jordan Love", college: "Utah State", dropOff: Number(Number(5).toFixed(1))}, {name: "Kurt Benkert", college: "Virginia", dropOff: Number(Number(7.5).toFixed(1))} ];
+	CARqbs = [ {name: "Cam Newton", college: "Auburn", dropOff: Number(Number(0).toFixed(1))}, {name: "Sam Darnold", college: "USC", dropOff: Number(Number(3).toFixed(1))}, {name: "P.J. Walker", college: "Temple", dropOff: Number(Number(5).toFixed(1))} ];
+	NEqbs = [ {name: "Mac Jones", college: "Alabama", dropOff: Number(Number(0).toFixed(1))}, {name: "Brian Hoyer", college: "Michigan State", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Bailey Zappe", college: "Western Kentucky", dropOff: Number(Number(5.5).toFixed(1))} ];
+	WASqbs = [ {name: "Carson Wentz", college: "North Dakota State", dropOff: Number(Number(0).toFixed(1))}, {name: "Taylor Heinicke", college: "Old Dominion", dropOff: Number(Number(2).toFixed(1))}, {name: "Sam Howell", college: "North Carolina", dropOff: Number(Number(4.5).toFixed(1))} ];
+	LVqbs = [ {name: "Derek Carr", college: "Fresno State", dropOff: Number(Number(0).toFixed(1))}, {name: "Nick Mullens", college: "Southern Miss", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Jarrett Stidham", college: "Auburn", dropOff: Number(Number(5.5).toFixed(1))} ];
+	LARqbs = [ {name: "Matthew Stafford", college: "Georgia", dropOff: Number(Number(0).toFixed(1))}, {name: "John Wolford", college: "Wake Forest", dropOff: Number(Number(3).toFixed(1))}, {name: "Bryce Perkins", college: "Virginia", dropOff: Number(Number(6).toFixed(1))} ];
+	BALqbs = [ {name: "Lamar Jackson", college: "Louisville", dropOff: Number(Number(0).toFixed(1))}, {name: "Tyler Huntley", college: "Utah", dropOff: Number(Number(2.5).toFixed(1))}, {name: "Josh Johnson", college: "San Diego", dropOff: Number(Number(5).toFixed(1))} ];
+	NOqbs = [ {name: "Taysom Hill", college: "BYU", dropOff: Number(Number(0).toFixed(1))}, {name: "Andy Dalton", college: "TCU", dropOff: Number(Number(2.5).toFixed(1))}, {name: "Ian Book", college: "Notre Dame", dropOff: Number(Number(4.5).toFixed(1))} ];
+	SEAqbs = [ {name: "Drew Lock", college: "Missouri", dropOff: Number(Number(0).toFixed(1))}, {name: "Geno Smith", college: "West Virginia", dropOff: Number(Number(4.5).toFixed(1))}, {name: "Jacob Eason", college: "Washington", dropOff: Number(Number(7).toFixed(1))} ];
+	PITqbs = [ {name: "Mason Rudolph", college: "Oklahoma State", dropOff: Number(Number(0).toFixed(1))}, {name: "Mitchell Trubisky", college: "North Carolina", dropOff: Number(Number(2.5).toFixed(1))}, {name: "Kenny Pickett", college: "Pittsburgh", dropOff: Number(Number(4.5).toFixed(1))} ];
+	HOUqbs = [ {name: "Kyle Allen", college: "Houston", dropOff: Number(Number(0).toFixed(1))}, {name: "Kevin Hogan", college: "Stanford", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Davis Mills", college: "Stanford", dropOff: Number(Number(6).toFixed(1))} ];
+	TENqbs = [ {name: "Ryan Tannehill", college: "Texas A&amp;M", dropOff: Number(Number(0).toFixed(1))}, {name: "Logan Woodside", college: "Toledo", dropOff: Number(Number(4).toFixed(1))}, {name: "Malik Willis", college: "Liberty", dropOff: Number(Number(6.5).toFixed(1))} ];
+	MINqbs = [ {name: "Kirk Cousins", college: "Michigan State", dropOff: Number(Number(0).toFixed(1))}, {name: "Sean Mannion", college: "Oregon State", dropOff: Number(Number(4.5).toFixed(1))}, {name: "Kellen Mond", college: "Texas A&amp;M", dropOff: Number(Number(6).toFixed(1))} ];
+	SFqbs = [ {name: "Jimmy Garoppolo", college: "Eastern Illinois", dropOff: Number(Number(0).toFixed(1))}, {name: "Trey Lance", college: "North Dakota State", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Tyler Bray", college: "Tennessee", dropOff: Number(Number(6).toFixed(1))} ];
 	
 	/*TEAM O-LINES*/
 	CHIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
@@ -762,38 +762,38 @@ function resetAll(e){
 	document.getElementById("box-score").style.visibility = "hidden";
 	
 	/*REINITIALIZE THE QUARTERBACKS*/
-	CHIqbs = [ {name: "Trevor Siemian", college: "Northwestern"}, {name: "Nathan Peterman", college: "Pittsburgh"}, {name: "Justin Fields", college: "Ohio State"} ];
-	CINqbs = [ {name: "Joe Burrow", college: "LSU"}, {name: "Brandon Allen", college: "Arkansas"}, {name: "Jake Browning", college: "Washington"} ];
-	BUFqbs = [ {name: "Josh Allen", college: "Wyoming"}, {name: "Matt Barkley", college: "USC"}, {name: "Case Keenum", college: "Houston"} ];
-	DENqbs = [ {name: "Russell Wilson", college: "Wisconsin"}, {name: "Teddy Bridgewater", college: "Louisville"}, {name: "Brett Rypien", college: "Boise State"} ];
-	CLEqbs = [ {name: "Baker Mayfield", college: "Oklahoma"}, {name: "Deshaun Watson", college: "Clemson"}, {name: "Joshua Dobbs", college: "Tennessee"} ];
-	TBqbs = [ {name: "Tom Brady", college: "Michigan"}, {name: "Kyle Trask", college: "Florida"}, {name: "Blaine Gabbert", college: "Missouri"} ];
-	ARIqbs = [ {name: "Kyler Murray", college: "Oklahoma"}, {name: "Trace McSorley", college: "Penn State"}, {name: "Colt McCoy", college: "Texas"} ];
-	LACqbs = [ {name: "Justin Herbert", college: "Oregon"}, {name: "Chase Daniel", college: "Missouri"}, {name: "Easton Stick", college: "North Dakota State"} ];
-	KCqbs = [ {name: "Patrick Mahomes", college: "Texas Tech"}, {name: "Chad Henne", college: "Michigan"}, {name: "Shane Buechele", college: "SMU"} ];
-	INDqbs = [ {name: "Matt Ryan", college: "Boston College"}, {name: "Sam Ehlinger", college: "Texas"}, {name: "James Morgan", college: "FIU"}  ];
-	DALqbs = [ {name: "Dak Prescott", college: "Mississippi State"}, {name: "Cooper Rush", college: "Central Michigan"}, {name: "Will Grier", college: "West Virginia"} ];
-	MIAqbs = [ {name: "Tua Tagovailoa", college: "Alabama"}, {name: "Jacoby Brissett", college: "NC State"}, {name: "Jake Luton", college: "Oregon State"} ];
-	PHIqbs = [ {name: "Jalen Hurts", college: "Oklahoma"}, {name: "Gardner Minshew", college: "Washington State"}, {name: "Reid Sinnett", college: "San Diego"} ];
-	ATLqbs = [ {name: "Feleipe Franks", college: "Arkansas"}, {name: "Marcus Mariota", college: "Oregon"}, {name: "Josh Rosen", college: "UCLA"} ];
-	NYGqbs = [ {name: "Daniel Jones", college: "Duke"}, {name: "Tyrod Taylor", college: "Virginia Tech"}, {name: "Davis Webb", college: "California"} ];
-	JAXqbs = [ {name: "Trevor Lawrence", college: "Clemson"}, {name: "C.J. Beathard", college: "Iowa"}, {name: "Danny Etling", college: "LSU"} ];
-	NYJqbs = [ {name: "Zach Wilson", college: "BYU"}, {name: "Joe Flacco", college: "Delaware"}, {name: "Mike White", college: "Western Kentucky"} ];
-	DETqbs = [ {name: "Jared Goff", college: "California"}, {name: "Tim Boyle", college: "Eastern Kentucky"}, {name: "David Blough", college: "Purdue"} ];
-	GBqbs = [ {name: "Aaron Rodgers", college: "California"}, {name: "Jordan Love", college: "Utah State"}, {name: "Kurt Benkert", college: "Virginia"} ];
-	CARqbs = [ {name: "Cam Newton", college: "Auburn"}, {name: "Sam Darnold", college: "USC"}, {name: "P.J. Walker", college: "Temple"} ];
-	NEqbs = [ {name: "Mac Jones", college: "Alabama"}, {name: "Brian Hoyer", college: "Michigan State"}, {name: "Bailey Zappe", college: "Western Kentucky"} ];
-	WASqbs = [ {name: "Carson Wentz", college: "North Dakota State"}, {name: "Taylor Heinicke", college: "Old Dominion"}, {name: "Sam Howell", college: "North Carolina"} ];
-	LVqbs = [ {name: "Derek Carr", college: "Fresno State"}, {name: "Nick Mullens", college: "Southern Miss"}, {name: "Jarrett Stidham", college: "Auburn"} ];
-	LARqbs = [ {name: "Matthew Stafford", college: "Georgia"}, {name: "John Wolford", college: "Wake Forest"}, {name: "Bryce Perkins", college: "Virginia"} ];
-	BALqbs = [ {name: "Lamar Jackson", college: "Louisville"}, {name: "Tyler Huntley", college: "Utah"}, {name: "Josh Johnson", college: "San Diego"} ];
-	NOqbs = [ {name: "Taysom Hill", college: "BYU"}, {name: "Andy Dalton", college: "TCU"}, {name: "Ian Book", college: "Notre Dame"} ];
-	SEAqbs = [ {name: "Drew Lock", college: "Missouri"}, {name: "Geno Smith", college: "West Virginia"}, {name: "Jacob Eason", college: "Washington"} ];
-	PITqbs = [ {name: "Mason Rudolph", college: "Oklahoma State"}, {name: "Mitchell Trubisky", college: "North Carolina"}, {name: "Kenny Pickett", college: "Pittsburgh"} ];
-	HOUqbs = [ {name: "Kyle Allen", college: "Houston"}, {name: "Kevin Hogan", college: "Stanford"}, {name: "Davis Mills", college: "Stanford"} ];
-	TENqbs = [ {name: "Ryan Tannehill", college: "Texas A&amp;M"}, {name: "Logan Woodside", college: "Toledo"}, {name: "Malik Willis", college: "Liberty"} ];
-	MINqbs = [ {name: "Kirk Cousins", college: "Michigan State"}, {name: "Sean Mannion", college: "Oregon State"}, {name: "Kellen Mond", college: "Texas A&amp;M"} ];
-	SFqbs = [ {name: "Jimmy Garoppolo", college: "Eastern Illinois"}, {name: "Trey Lance", college: "North Dakota State"}, {name: "Tyler Bray", college: "Tennessee"} ];
+	CHIqbs = [ {name: "Trevor Siemian", college: "Northwestern", dropOff: Number(Number(0).toFixed(1))}, {name: "Nathan Peterman", college: "Pittsburgh", dropOff: Number(Number(5).toFixed(1))}, {name: "Justin Fields", college: "Ohio State", dropOff: Number(Number(3.5).toFixed(1))} ];
+	CINqbs = [ {name: "Joe Burrow", college: "LSU", dropOff: Number(Number(0).toFixed(1))}, {name: "Brandon Allen", college: "Arkansas", dropOff: Number(Number(4.5).toFixed(1))}, {name: "Jake Browning", college: "Washington", dropOff: Number(Number(6).toFixed(1))} ];
+	BUFqbs = [ {name: "Josh Allen", college: "Wyoming", dropOff: Number(Number(0).toFixed(1))}, {name: "Matt Barkley", college: "USC", dropOff: Number(Number(4).toFixed(1))}, {name: "Case Keenum", college: "Houston", dropOff: Number(Number(4).toFixed(1))} ];
+	DENqbs = [ {name: "Russell Wilson", college: "Wisconsin", dropOff: Number(Number(0).toFixed(1))}, {name: "Teddy Bridgewater", college: "Louisville", dropOff: Number(Number(4.5).toFixed(1))}, {name: "Brett Rypien", college: "Boise State", dropOff: Number(Number(6.5).toFixed(1))} ];
+	CLEqbs = [ {name: "Baker Mayfield", college: "Oklahoma", dropOff: Number(Number(0).toFixed(1))}, {name: "Deshaun Watson", college: "Clemson", dropOff: Number(Number(3).toFixed(1))}, {name: "Joshua Dobbs", college: "Tennessee", dropOff: Number(Number(5).toFixed(1))} ];
+	TBqbs = [ {name: "Tom Brady", college: "Michigan", dropOff: Number(Number(0).toFixed(1))}, {name: "Kyle Trask", college: "Florida", dropOff: Number(Number(4.5).toFixed(1))}, {name: "Blaine Gabbert", college: "Missouri", dropOff: Number(Number(7).toFixed(1))} ];
+	ARIqbs = [ {name: "Kyler Murray", college: "Oklahoma", dropOff: Number(Number(0).toFixed(1))}, {name: "Trace McSorley", college: "Penn State", dropOff: Number(Number(4).toFixed(1))}, {name: "Colt McCoy", college: "Texas", dropOff: Number(Number(6).toFixed(1))} ];
+	LACqbs = [ {name: "Justin Herbert", college: "Oregon", dropOff: Number(Number(0).toFixed(1))}, {name: "Chase Daniel", college: "Missouri", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Easton Stick", college: "North Dakota State", dropOff: Number(Number(6).toFixed(1))} ];
+	KCqbs = [ {name: "Patrick Mahomes", college: "Texas Tech", dropOff: Number(Number(0).toFixed(1))}, {name: "Chad Henne", college: "Michigan", dropOff: Number(Number(3).toFixed(1))}, {name: "Shane Buechele", college: "SMU", dropOff: Number(Number(5.5).toFixed(1))} ];
+	INDqbs = [ {name: "Matt Ryan", college: "Boston College", dropOff: Number(Number(0).toFixed(1))}, {name: "Sam Ehlinger", college: "Texas", dropOff: Number(Number(3).toFixed(1))}, {name: "James Morgan", college: "FIU", dropOff: Number(Number(5).toFixed(1))}  ];
+	DALqbs = [ {name: "Dak Prescott", college: "Mississippi State", dropOff: Number(Number(0).toFixed(1))}, {name: "Cooper Rush", college: "Central Michigan", dropOff: Number(Number(4).toFixed(1))}, {name: "Will Grier", college: "West Virginia", dropOff: Number(Number(6.5).toFixed(1))} ];
+	MIAqbs = [ {name: "Tua Tagovailoa", college: "Alabama", dropOff: Number(Number(0).toFixed(1))}, {name: "Jacoby Brissett", college: "NC State", dropOff: Number(Number(3).toFixed(1))}, {name: "Jake Luton", college: "Oregon State", dropOff: Number(Number(5.5).toFixed(1))} ];
+	PHIqbs = [ {name: "Jalen Hurts", college: "Oklahoma", dropOff: Number(Number(0).toFixed(1))}, {name: "Gardner Minshew", college: "Washington State", dropOff: Number(Number(2.5).toFixed(1))}, {name: "Reid Sinnett", college: "San Diego", dropOff: Number(Number(6).toFixed(1))} ];
+	ATLqbs = [ {name: "Feleipe Franks", college: "Arkansas", dropOff: Number(Number(0).toFixed(1))}, {name: "Marcus Mariota", college: "Oregon", dropOff: Number(Number(2).toFixed(1))}, {name: "Josh Rosen", college: "UCLA", dropOff: Number(Number(4.5).toFixed(1))} ];
+	NYGqbs = [ {name: "Daniel Jones", college: "Duke", dropOff: Number(Number(0).toFixed(1))}, {name: "Tyrod Taylor", college: "Virginia Tech", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Davis Webb", college: "California", dropOff: Number(Number(6.5).toFixed(1))} ];
+	JAXqbs = [ {name: "Trevor Lawrence", college: "Clemson", dropOff: Number(Number(0).toFixed(1))}, {name: "C.J. Beathard", college: "Iowa", dropOff: Number(Number(4).toFixed(1))}, {name: "Danny Etling", college: "LSU", dropOff: Number(Number(6.5).toFixed(1))} ];
+	NYJqbs = [ {name: "Zach Wilson", college: "BYU", dropOff: Number(Number(0).toFixed(1))}, {name: "Joe Flacco", college: "Delaware", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Mike White", college: "Western Kentucky", dropOff: Number(Number(6).toFixed(1))} ];
+	DETqbs = [ {name: "Jared Goff", college: "California", dropOff: Number(Number(0).toFixed(1))}, {name: "Tim Boyle", college: "Eastern Kentucky", dropOff: Number(Number(4).toFixed(1))}, {name: "David Blough", college: "Purdue", dropOff: Number(Number(6.5).toFixed(1))} ];
+	GBqbs = [ {name: "Aaron Rodgers", college: "California", dropOff: Number(Number(0).toFixed(1))}, {name: "Jordan Love", college: "Utah State", dropOff: Number(Number(5).toFixed(1))}, {name: "Kurt Benkert", college: "Virginia", dropOff: Number(Number(7.5).toFixed(1))} ];
+	CARqbs = [ {name: "Cam Newton", college: "Auburn", dropOff: Number(Number(0).toFixed(1))}, {name: "Sam Darnold", college: "USC", dropOff: Number(Number(3).toFixed(1))}, {name: "P.J. Walker", college: "Temple", dropOff: Number(Number(5).toFixed(1))} ];
+	NEqbs = [ {name: "Mac Jones", college: "Alabama", dropOff: Number(Number(0).toFixed(1))}, {name: "Brian Hoyer", college: "Michigan State", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Bailey Zappe", college: "Western Kentucky", dropOff: Number(Number(5.5).toFixed(1))} ];
+	WASqbs = [ {name: "Carson Wentz", college: "North Dakota State", dropOff: Number(Number(0).toFixed(1))}, {name: "Taylor Heinicke", college: "Old Dominion", dropOff: Number(Number(2).toFixed(1))}, {name: "Sam Howell", college: "North Carolina", dropOff: Number(Number(4.5).toFixed(1))} ];
+	LVqbs = [ {name: "Derek Carr", college: "Fresno State", dropOff: Number(Number(0).toFixed(1))}, {name: "Nick Mullens", college: "Southern Miss", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Jarrett Stidham", college: "Auburn", dropOff: Number(Number(5.5).toFixed(1))} ];
+	LARqbs = [ {name: "Matthew Stafford", college: "Georgia", dropOff: Number(Number(0).toFixed(1))}, {name: "John Wolford", college: "Wake Forest", dropOff: Number(Number(3).toFixed(1))}, {name: "Bryce Perkins", college: "Virginia", dropOff: Number(Number(6).toFixed(1))} ];
+	BALqbs = [ {name: "Lamar Jackson", college: "Louisville", dropOff: Number(Number(0).toFixed(1))}, {name: "Tyler Huntley", college: "Utah", dropOff: Number(Number(2.5).toFixed(1))}, {name: "Josh Johnson", college: "San Diego", dropOff: Number(Number(5).toFixed(1))} ];
+	NOqbs = [ {name: "Taysom Hill", college: "BYU", dropOff: Number(Number(0).toFixed(1))}, {name: "Andy Dalton", college: "TCU", dropOff: Number(Number(2.5).toFixed(1))}, {name: "Ian Book", college: "Notre Dame", dropOff: Number(Number(4.5).toFixed(1))} ];
+	SEAqbs = [ {name: "Drew Lock", college: "Missouri", dropOff: Number(Number(0).toFixed(1))}, {name: "Geno Smith", college: "West Virginia", dropOff: Number(Number(4.5).toFixed(1))}, {name: "Jacob Eason", college: "Washington", dropOff: Number(Number(7).toFixed(1))} ];
+	PITqbs = [ {name: "Mason Rudolph", college: "Oklahoma State", dropOff: Number(Number(0).toFixed(1))}, {name: "Mitchell Trubisky", college: "North Carolina", dropOff: Number(Number(2.5).toFixed(1))}, {name: "Kenny Pickett", college: "Pittsburgh", dropOff: Number(Number(4.5).toFixed(1))} ];
+	HOUqbs = [ {name: "Kyle Allen", college: "Houston", dropOff: Number(Number(0).toFixed(1))}, {name: "Kevin Hogan", college: "Stanford", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Davis Mills", college: "Stanford", dropOff: Number(Number(6).toFixed(1))} ];
+	TENqbs = [ {name: "Ryan Tannehill", college: "Texas A&amp;M", dropOff: Number(Number(0).toFixed(1))}, {name: "Logan Woodside", college: "Toledo", dropOff: Number(Number(4).toFixed(1))}, {name: "Malik Willis", college: "Liberty", dropOff: Number(Number(6.5).toFixed(1))} ];
+	MINqbs = [ {name: "Kirk Cousins", college: "Michigan State", dropOff: Number(Number(0).toFixed(1))}, {name: "Sean Mannion", college: "Oregon State", dropOff: Number(Number(4.5).toFixed(1))}, {name: "Kellen Mond", college: "Texas A&amp;M", dropOff: Number(Number(6).toFixed(1))} ];
+	SFqbs = [ {name: "Jimmy Garoppolo", college: "Eastern Illinois", dropOff: Number(Number(0).toFixed(1))}, {name: "Trey Lance", college: "North Dakota State", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Tyler Bray", college: "Tennessee", dropOff: Number(Number(6).toFixed(1))} ];
 	
 	/*REINITIALIZE THE ROSTERS*/
 	CHIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
@@ -3943,6 +3943,9 @@ function awayqb2(e){
 	team1[4][0].college = team1[7][1].college;
 	document.getElementById("header-text").innerHTML = "<p>"+team1[3]+" has named "+team1[7][1].name+" their starting quarterback</p>";
 	
+	overUnder = overUnder - team1[7][1].dropOff;
+	document.getElementById("welcome-to-the-game").innerHTML = "<p><b>WELCOME TO THE GAME. THIS GAME WILL OPPOSE THE " + team1[6] + " " + team1[0].toUpperCase() + " AND THE " + team2[6] + " " + team2[0].toUpperCase() + ".<br/>THE OVER-UNDER FOR THIS GAME IS "+overUnder+" POINTS.<br/>PLEASE SELECT THE STARTING QUARTERBACKS FOR THIS MATCHUP. THEN CLICK SUBMIT TO KICKOFF THE GAME.</b><br/><br/></p>";
+	
 	document.getElementById("awayqb1").disabled = true;
 	document.getElementById("awayqb2").disabled = true;
 	document.getElementById("awayqb3").disabled = true;
@@ -3959,6 +3962,9 @@ function awayqb3(e){
 	team1[4][0].name = team1[7][2].name;
 	team1[4][0].college = team1[7][2].college;
 	document.getElementById("header-text").innerHTML = "<p>"+team1[3]+" has named "+team1[7][2].name+" their starting quarterback</p>";
+	
+	overUnder = overUnder - team1[7][2].dropOff;
+	document.getElementById("welcome-to-the-game").innerHTML = "<p><b>WELCOME TO THE GAME. THIS GAME WILL OPPOSE THE " + team1[6] + " " + team1[0].toUpperCase() + " AND THE " + team2[6] + " " + team2[0].toUpperCase() + ".<br/>THE OVER-UNDER FOR THIS GAME IS "+overUnder+" POINTS.<br/>PLEASE SELECT THE STARTING QUARTERBACKS FOR THIS MATCHUP. THEN CLICK SUBMIT TO KICKOFF THE GAME.</b><br/><br/></p>";
 	
 	document.getElementById("awayqb1").disabled = true;
 	document.getElementById("awayqb2").disabled = true;
@@ -3994,6 +4000,9 @@ function homeqb2(e){
 	team2[4][0].college = team2[7][1].college;
 	document.getElementById("header-text").innerHTML = "<p>"+team2[3]+" has named "+team2[7][1].name+" their starting quarterback</p>";
 	
+	overUnder = overUnder - team2[7][1].dropOff;
+	document.getElementById("welcome-to-the-game").innerHTML = "<p><b>WELCOME TO THE GAME. THIS GAME WILL OPPOSE THE " + team1[6] + " " + team1[0].toUpperCase() + " AND THE " + team2[6] + " " + team2[0].toUpperCase() + ".<br/>THE OVER-UNDER FOR THIS GAME IS "+overUnder+" POINTS.<br/>PLEASE SELECT THE STARTING QUARTERBACKS FOR THIS MATCHUP. THEN CLICK SUBMIT TO KICKOFF THE GAME.</b><br/><br/></p>";
+	
 	document.getElementById("homeqb1").disabled = true;
 	document.getElementById("homeqb2").disabled = true;
 	document.getElementById("homeqb3").disabled = true;
@@ -4010,6 +4019,9 @@ function homeqb3(e){
 	team2[4][0].name = team2[7][2].name;
 	team2[4][0].college = team2[7][2].college;
 	document.getElementById("header-text").innerHTML = "<p>"+team2[3]+" has named "+team2[7][2].name+" their starting quarterback</p>";
+	
+	overUnder = overUnder - team2[7][2].dropOff;
+	document.getElementById("welcome-to-the-game").innerHTML = "<p><b>WELCOME TO THE GAME. THIS GAME WILL OPPOSE THE " + team1[6] + " " + team1[0].toUpperCase() + " AND THE " + team2[6] + " " + team2[0].toUpperCase() + ".<br/>THE OVER-UNDER FOR THIS GAME IS "+overUnder+" POINTS.<br/>PLEASE SELECT THE STARTING QUARTERBACKS FOR THIS MATCHUP. THEN CLICK SUBMIT TO KICKOFF THE GAME.</b><br/><br/></p>";	
 	
 	document.getElementById("homeqb1").disabled = true;
 	document.getElementById("homeqb2").disabled = true;
