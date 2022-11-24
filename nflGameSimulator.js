@@ -58,519 +58,528 @@ function init(){
 	SFqbs = [ {name: "Jimmy Garoppolo", college: "Eastern Illinois", dropOff: Number(Number(0).toFixed(1))}, {name: "Trey Lance", college: "North Dakota State", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Tyler Bray", college: "Tennessee", dropOff: Number(Number(6).toFixed(1))} ];
 	
 	/*TEAM O-LINES*/
-	CHIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Khalil Herbert", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Virginia Tech"},
-	{name: "David Montgomery", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Iowa State"},
-	{name: "Khari Blasingame", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Vanderbilt"},
-	{name: "Darnell Mooney", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tulane"},
-	{name: "Byron Pringle", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Kansas State"},
-	{name: "Equanimeous St. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Notre Dame"},
-	{name: "N&#39;Keal Harry", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arizona State"},
-	{name: "Jimmy Graham", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Jesse James", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Cole Kmet", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Notre Dame"},
-	{name: "James O&#39;Shaughnessy", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Illinois State"},
-	{name: "Cairo Santos", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tulane"} ];
+	CHIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Khalil Herbert", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Virginia Tech"},
+	{name: "David Montgomery", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Iowa State"},
+	{name: "Khari Blasingame", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Vanderbilt"},
+	{name: "Darnell Mooney", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Tulane"},
+	{name: "Chase Claypool", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Notre Dame"},
+	{name: "Byron Pringle", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Kansas State"},
+	{name: "Equanimeous St. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Notre Dame"},
+	{name: "N&#39;Keal Harry", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arizona State"},
+	{name: "Jimmy Graham", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Jesse James", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Penn State"},
+	{name: "Cole Kmet", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Notre Dame"},
+	{name: "James O&#39;Shaughnessy", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Illinois State"},
+	{name: "Cairo Santos", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Tulane"} ];
 	
-	CINoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Chris Evans", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Michigan"},
-	{name: "Joe Mixon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "Samaje Perine", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "Trayveon Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas A&amp;M"},
-	{name: "Tyler Boyd", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Pittsburgh"},
-	{name: "Ja&#39;Marr Chase", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Tee Higgins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Clemson"},
-	{name: "Stanley Morgan Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Nebraska"},
-	{name: "Mike Thomas", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Southern Miss"},
-	{name: "Drew Sample", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Washington"},
-	{name: "Mitchell Wilcox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Florida"},
-	{name: "Evan McPherson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida"} ];
+	CINoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Chris Evans", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Michigan"},
+	{name: "Joe Mixon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Oklahoma"},
+	{name: "Samaje Perine", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oklahoma"},
+	{name: "Trayveon Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas A&amp;M"},
+	{name: "Tyler Boyd", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Pittsburgh"},
+	{name: "Ja&#39;Marr Chase", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "LSU"},
+	{name: "Tee Higgins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Clemson"},
+	{name: "Stanley Morgan Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Nebraska"},
+	{name: "Mike Thomas", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Southern Miss"},
+	{name: "Drew Sample", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Washington"},
+	{name: "Mitchell Wilcox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Florida"},
+	{name: "Evan McPherson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida"} ];
 	
-	BUFoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Reggie Gilliam", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Toledo"},
-	{name: "Taiwan Jones", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Eastern Washington"},
-	{name: "Zack Moss", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Utah"},
-	{name: "Devin Singletary", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida Atlantic"},
-	{name: "Duke Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Cole Beasley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "SMU"},
-	{name: "Gabriel Davis", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCF"},
-	{name: "Stefon Diggs", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Maryland"},
-	{name: "Jake Kumerow", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wisconsin-Whitewater"},
-	{name: "Isaiah McKenzie", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Emmanuel Sanders", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "SMU"},
-	{name: "Marquez Stevenson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Houston"},
-	{name: "Tavon Austin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "West Virginia"},
-	{name: "Jamison Crowder", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Duke"},
-	{name: "Dawson Knox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ole Miss"},
-	{name: "Tommy Sweeney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Boston College"},
-	{name: "O.J. Howard", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Tyler Bass", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia Southern"} ];
+	BUFoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Reggie Gilliam", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Toledo"},
+	{name: "Taiwan Jones", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Eastern Washington"},
+	{name: "Zack Moss", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Utah"},
+	{name: "Devin Singletary", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Florida Atlantic"},
+	{name: "Duke Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Cole Beasley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "SMU"},
+	{name: "Gabriel Davis", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "UCF"},
+	{name: "Stefon Diggs", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Maryland"},
+	{name: "Jake Kumerow", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Wisconsin-Whitewater"},
+	{name: "Isaiah McKenzie", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia"},
+	{name: "Emmanuel Sanders", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "SMU"},
+	{name: "Marquez Stevenson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Houston"},
+	{name: "Tavon Austin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "West Virginia"},
+	{name: "Jamison Crowder", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Duke"},
+	{name: "Dawson Knox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ole Miss"},
+	{name: "Tommy Sweeney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Boston College"},
+	{name: "O.J. Howard", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Alabama"},
+	{name: "Tyler Bass", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia Southern"} ];
 	
-	DENoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Mike Boone", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Cincinnati"},
-	{name: "Melvin Gordon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wisconsin"},
-	{name: "Javonte Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "North Carolina"},
-	{name: "Kendall Hinton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wake Forest"},
-	{name: "Diontae Spencer", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "McNeese State"},
-	{name: "Courtland Sutton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "SMU"},
-	{name: "Albert Okwuegbunam", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Missouri"},
-	{name: "Andrew Beck", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas"},
-	{name: "Eric Tomlinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UTEP"},
-	{name: "Brandon McManus", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Temple"} ];
+	DENoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Mike Boone", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Cincinnati"},
+	{name: "Melvin Gordon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Wisconsin"},
+	{name: "Javonte Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "North Carolina"},
+	{name: "Kendall Hinton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Wake Forest"},
+	{name: "Diontae Spencer", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "McNeese State"},
+	{name: "Courtland Sutton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "SMU"},
+	{name: "Jerry Jeudy", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Alabama"},
+	{name: "Albert Okwuegbunam", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Missouri"},
+	{name: "Andrew Beck", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas"},
+	{name: "Eric Tomlinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UTEP"},
+	{name: "Brandon McManus", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Temple"} ];
 	
-	CLEoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Nick Chubb", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Demetric Felton", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCLA"},
-	{name: "Kareem Hunt", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Toledo"},
-	{name: "D&#39;Ernest Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Florida"},
-	{name: "Ja&#39;Marcus Bradley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Louisiana-Lafayette"},
-	{name: "Donovan Peoples-Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Michigan"},
-	{name: "Anthony Schwartz", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Auburn"},
-	{name: "Amari Cooper", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Jakeem Grant", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas Tech"},
-	{name: "Harrison Bryant", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida Atlantic"},
-	{name: "David Njoku", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Chase McLaughlin", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Illinois"} ];
+	CLEoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Nick Chubb", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Georgia"},
+	{name: "Demetric Felton", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCLA"},
+	{name: "Kareem Hunt", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Toledo"},
+	{name: "D&#39;Ernest Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Florida"},
+	{name: "Ja&#39;Marcus Bradley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Louisiana-Lafayette"},
+	{name: "Donovan Peoples-Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Michigan"},
+	{name: "Anthony Schwartz", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Auburn"},
+	{name: "Amari Cooper", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Alabama"},
+	{name: "Jakeem Grant", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas Tech"},
+	{name: "Harrison Bryant", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida Atlantic"},
+	{name: "David Njoku", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Chase McLaughlin", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Illinois"} ];
 	
-	TBoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Kenjon Barner", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oregon"},
-	{name: "Le&#39;Veon Bell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Michigan State"},
-	{name: "Ke&#39;Shawn Vaughn", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Vanderbilt"},
-	{name: "Leonard Fournette", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Mike Evans", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas A&amp;M"},
-	{name: "Cyril Grayson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Tyler Johnson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Minnesota"},
-	{name: "Scotty Miller", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Bowling Green"},
-	{name: "Breshad Perriman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCF"},
-	{name: "Chris Godwin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Russell Gage", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Julio Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Cameron Brate", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Harvard"},
-	{name: "Kyle Rudolph", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Notre Dame"},
-	{name: "Ryan Succop", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Carolina"} ];
+	TBoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Kenjon Barner", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oregon"},
+	{name: "Le&#39;Veon Bell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Michigan State"},
+	{name: "Ke&#39;Shawn Vaughn", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Vanderbilt"},
+	{name: "Leonard Fournette", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "LSU"},
+	{name: "Mike Evans", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Texas A&amp;M"},
+	{name: "Cyril Grayson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
+	{name: "Tyler Johnson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Minnesota"},
+	{name: "Scotty Miller", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Bowling Green"},
+	{name: "Breshad Perriman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCF"},
+	{name: "Chris Godwin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Penn State"},
+	{name: "Russell Gage", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
+	{name: "Julio Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Alabama"},
+	{name: "Cameron Brate", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Harvard"},
+	{name: "Kyle Rudolph", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Notre Dame"},
+	{name: "Ryan Succop", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Carolina"} ];
 	
-	ARIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Eno Benjamin", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arizona State"},
-	{name: "James Conner", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Pittsburgh"},
-	{name: "Jonathan Ward", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Central Michigan"},
-	{name: "Darrel Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Greg Dortch", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wake Forest"},
-	{name: "A.J. Green", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Andy Isabella", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Massachusetts"},
-	{name: "Rondale Moore", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Purdue"},
-	{name: "Antoine Wesley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas Tech"},
-	{name: "Marquise Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "Christian Blake", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Northern Illinois"},
-	{name: "Darrell Daniels", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Washington"},
-	{name: "Zach Ertz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Stanford"},
-	{name: "Demetrius Harris", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wisconsin-Milwaukee"},
-	{name: "Stephen Anderson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "California"},
-	{name: "Matt Prater", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCF"} ];
+	ARIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Eno Benjamin", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Arizona State"},
+	{name: "James Conner", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Pittsburgh"},
+	{name: "Jonathan Ward", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Central Michigan"},
+	{name: "Darrel Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
+	{name: "Greg Dortch", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Wake Forest"},
+	{name: "A.J. Green", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia"},
+	{name: "DeAndre Hopkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Clemson"},
+	{name: "Andy Isabella", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Massachusetts"},
+	{name: "Rondale Moore", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Purdue"},
+	{name: "Antoine Wesley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas Tech"},
+	{name: "Marquise Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Oklahoma"},
+	{name: "Christian Blake", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Northern Illinois"},
+	{name: "Darrell Daniels", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Washington"},
+	{name: "Zach Ertz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Stanford"},
+	{name: "Demetrius Harris", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Wisconsin-Milwaukee"},
+	{name: "Stephen Anderson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "California"},
+	{name: "Matt Prater", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCF"} ];
 	
-	LACoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Austin Ekeler", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Western Colorado"},
-	{name: "Joshua Kelley", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCLA"},
-	{name: "Gabe Nabers", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida State"},
-	{name: "Larry Rountree III", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Missouri"},
-	{name: "Keenan Allen", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "California"},
-	{name: "Jalen Guyton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "North Texas"},
-	{name: "Josh Palmer", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tennessee"},
-	{name: "Mike Williams", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Clemson"},
-	{name: "DeAndre Carter", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Sacramento State"},
-	{name: "Tre&#39; McKitty", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Gerald Everett", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Alabama"},
-	{name: "Dustin Hopkins", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida State"} ];
+	LACoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Austin Ekeler", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Western Colorado"},
+	{name: "Joshua Kelley", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCLA"},
+	{name: "Gabe Nabers", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Florida State"},
+	{name: "Larry Rountree III", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Missouri"},
+	{name: "Keenan Allen", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "California"},
+	{name: "Jalen Guyton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "North Texas"},
+	{name: "Josh Palmer", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Tennessee"},
+	{name: "Mike Williams", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Clemson"},
+	{name: "DeAndre Carter", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Sacramento State"},
+	{name: "Tre&#39; McKitty", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia"},
+	{name: "Gerald Everett", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Alabama"},
+	{name: "Dustin Hopkins", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida State"} ];
 	
-	KCoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Michael Burton", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Rutgers"},
-	{name: "Clyde Edwards-Helaire", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Derrick Gore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Louisiana-Monroe"},
-	{name: "Jerick McKinnon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia Southern"},
-	{name: "Ronald Jones II", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "USC"},
-	{name: "Josh Gordon", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Baylor"},
-	{name: "Mecole Hardman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Justin Watson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn"},
-	{name: "Marquez Valdes-Scantling", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Florida"},
-	{name: "Blake Bell", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "Noah Gray", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Duke"},
-	{name: "Travis Kelce", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Cincinnati"},
-	{name: "Harrison Butker", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia Tech"} ];
+	KCoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Michael Burton", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Rutgers"},
+	{name: "Clyde Edwards-Helaire", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "LSU"},
+	{name: "Derrick Gore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Louisiana-Monroe"},
+	{name: "Jerick McKinnon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Georgia Southern"},
+	{name: "Ronald Jones II", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "USC"},
+	{name: "Josh Gordon", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Baylor"},
+	{name: "Mecole Hardman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Georgia"},
+	{name: "JuJu Smith-Schuster", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Georgia"},
+	{name: "Justin Watson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Penn"},
+	{name: "Marquez Valdes-Scantling", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Florida"},
+	{name: "Kadarius Toney", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida"},
+	{name: "Blake Bell", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oklahoma"},
+	{name: "Noah Gray", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Duke"},
+	{name: "Travis Kelce", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Cincinnati"},
+	{name: "Harrison Butker", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia Tech"} ];
 	
-	INDoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Nyheim Hines", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "NC State"},
-	{name: "Deon Jackson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Duke"},
-	{name: "Jonathan Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wisconsin"},
-	{name: "Phillip Lindsay", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Colorado"},
-	{name: "Ty&#39;Son Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "BYU"},
-	{name: "Parris Campbell", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ohio State"},
-	{name: "T.Y. Hilton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "FIU"},
-	{name: "Dezmon Patmon", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Washington State"},
-	{name: "Michael Pittman Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "USC"},
-	{name: "Michael Strachan", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Charleston WV"},
-	{name: "Isaiah Ford", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Virginia Tech"},
-	{name: "Mo Alie-Cox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "VCU"},
-	{name: "Kylen Granson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "SMU"},
-	{name: "Rodrigo Blankenship", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"} ];
+	INDoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Nyheim Hines", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "NC State"},
+	{name: "Deon Jackson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Duke"},
+	{name: "Jonathan Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Wisconsin"},
+	{name: "Phillip Lindsay", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Colorado"},
+	{name: "Ty&#39;Son Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "BYU"},
+	{name: "Parris Campbell", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Ohio State"},
+	{name: "T.Y. Hilton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "FIU"},
+	{name: "Dezmon Patmon", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Washington State"},
+	{name: "Michael Pittman Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "USC"},
+	{name: "Michael Strachan", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Charleston WV"},
+	{name: "Isaiah Ford", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Virginia Tech"},
+	{name: "Mo Alie-Cox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "VCU"},
+	{name: "Kylen Granson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "SMU"},
+	{name: "Rodrigo Blankenship", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia"} ];
 	
-	DALoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Ezekiel Elliott", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ohio State"},
-	{name: "Tony Pollard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Memphis"},
-	{name: "Ryan Nall", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oregon State"},
-	{name: "Noah Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ohio State"},
-	{name: "Simi Fehoko", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Stanford"},
-	{name: "Michael Gallup", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Colorado State"},
-	{name: "CeeDee Lamb", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "James Washington", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma State"},
-	{name: "Sean McKeon", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Michigan"},
-	{name: "Dalton Schultz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Stanford"},
-	{name: "Jeremy Sprinkle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arkansas"},
-	{name: "Lirim Hajrullahu", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Western Ontario"} ];
+	DALoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Ezekiel Elliott", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Ohio State"},
+	{name: "Tony Pollard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Memphis"},
+	{name: "Ryan Nall", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oregon State"},
+	{name: "Noah Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ohio State"},
+	{name: "Simi Fehoko", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Stanford"},
+	{name: "Michael Gallup", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Colorado State"},
+	{name: "CeeDee Lamb", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Oklahoma"},
+	{name: "James Washington", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oklahoma State"},
+	{name: "Sean McKeon", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Michigan"},
+	{name: "Dalton Schultz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Stanford"},
+	{name: "Jeremy Sprinkle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arkansas"},
+	{name: "Brett Maher", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Nebraska"} ];
 	
-	MIAoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Salvon Ahmed", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Washington"},
-	{name: "Myles Gaskin", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Washington"},
-	{name: "Chase Edmonds", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Fordham"},
-	{name: "Sony Michel", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Jaylen Waddle", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Preston Williams", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Colorado State"},
-	{name: "Tyreek Hill", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "West Alabama"},
-	{name: "Cedrick Wilson Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Boise State"},
-	{name: "River Cracraft", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Washington State"},
-	{name: "Trent Sherfield", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Vanderbilt"},
-	{name: "Cethan Carter", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Nebraska"},
-	{name: "Mike Gesicki", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Hunter Long", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Boston College"},
-	{name: "Adam Shaheen", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ashland"},
-	{name: "Durham Smythe", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Notre Dame"},
-	{name: "Jason Sanders", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "New Mexico"} ];
+	MIAoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Salvon Ahmed", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Washington"},
+	{name: "Myles Gaskin", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Washington"},
+	{name: "Chase Edmonds", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Fordham"},
+	{name: "Raheem Mostert", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Purdue"},
+	{name: "Sony Michel", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia"},
+	{name: "Jaylen Waddle", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Alabama"},
+	{name: "Preston Williams", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Colorado State"},
+	{name: "Tyreek Hill", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "West Alabama"},
+	{name: "Cedrick Wilson Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Boise State"},
+	{name: "River Cracraft", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Washington State"},
+	{name: "Trent Sherfield", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Vanderbilt"},
+	{name: "Cethan Carter", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Nebraska"},
+	{name: "Mike Gesicki", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Penn State"},
+	{name: "Hunter Long", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Boston College"},
+	{name: "Adam Shaheen", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ashland"},
+	{name: "Durham Smythe", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Notre Dame"},
+	{name: "Jason Sanders", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "New Mexico"} ];
 	
-	PHIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Kenneth Gainwell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Memphis"},
-	{name: "Miles Sanders", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Jordan Howard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Indiana"},
-	{name: "Boston Scott", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Louisiana Tech"},
-	{name: "J.J. Arcega-Whiteside", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Stanford"},
-	{name: "Jalen Reagor", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "TCU"},
-	{name: "DeVonta Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Greg Ward", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Houston"},
-	{name: "Quez Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Southern Miss"},
-	{name: "Zach Pascal", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Old Dominion"},
-	{name: "A.J. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ole Miss"},
-	{name: "Tyree Jackson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Buffalo"},
-	{name: "Jason Croom", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tennessee"},
-	{name: "Dallas Goedert", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Dakota State"},
-	{name: "Jack Stoll", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Nebraska"},
-	{name: "Jake Elliott", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Memphis"} ];
+	PHIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Kenneth Gainwell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Memphis"},
+	{name: "Miles Sanders", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Penn State"},
+	{name: "Jordan Howard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Indiana"},
+	{name: "Boston Scott", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Louisiana Tech"},
+	{name: "Trey Sermon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ohio State"},
+	{name: "DeVonta Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Alabama"},
+	{name: "Greg Ward", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Houston"},
+	{name: "Quez Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Southern Miss"},
+	{name: "Zach Pascal", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Old Dominion"},
+	{name: "A.J. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Ole Miss"},
+	{name: "Tyree Jackson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Buffalo"},
+	{name: "Jason Croom", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Tennessee"},
+	{name: "Dallas Goedert", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Dakota State"},
+	{name: "Jack Stoll", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Nebraska"},
+	{name: "Jake Elliott", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Memphis"} ];
 	
-	ATLoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Qadree Ollison", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Pittsburgh"},
-	{name: "Cordarrelle Patterson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tennessee"},
-	{name: "Keith Smith", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "San Jose State"},
-	{name: "Damien Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "Frank Darby", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arizona State"},
-	{name: "Olamide Zaccheaus", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Virginia"},
-	{name: "Damiere Byrd", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Carolina"},
-	{name: "KhaDarel Hodge", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Prairie View A&amp;M"},
-	{name: "Bryan Edwards", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Carolina"},
-	{name: "Kyle Pitts", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida"},
-	{name: "Anthony Firkser", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Harvard"},
-	{name: "Younghoe Koo", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia Southern"} ];
+	ATLoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Qadree Ollison", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Pittsburgh"},
+	{name: "Cordarrelle Patterson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Tennessee"},
+	{name: "Keith Smith", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "San Jose State"},
+	{name: "Damien Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oklahoma"},
+	{name: "Frank Darby", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arizona State"},
+	{name: "Olamide Zaccheaus", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Virginia"},
+	{name: "Damiere Byrd", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Carolina"},
+	{name: "KhaDarel Hodge", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Prairie View A&amp;M"},
+	{name: "Bryan Edwards", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "South Carolina"},
+	{name: "Kyle Pitts", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida"},
+	{name: "Anthony Firkser", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Harvard"},
+	{name: "Younghoe Koo", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia Southern"} ];
 	
-	NYGoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Saquon Barkley", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Devontae Booker", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Utah"},
-	{name: "Cullen Gillaspia", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas A&amp;M"},
-	{name: "Elijhaa Penny", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Idaho"},
-	{name: "Matt Breida", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia Southern"},
-	{name: "Kenny Golladay", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Northern Illinois"},
-	{name: "Collin Johnson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas"},
-	{name: "John Ross", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Washington"},
-	{name: "Kadarius Toney", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida"},
-	{name: "Marcus Kemp", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Hawaii"},
-	{name: "Chris Myarick", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Temple"},
-	{name: "Ricky Seals-Jones", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas A&amp;M"},
-	{name: "Jordan Akins", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCF"},
-	{name: "Graham Gano", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida State"} ];
+	NYGoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Saquon Barkley", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Penn State"},
+	{name: "Devontae Booker", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Utah"},
+	{name: "Cullen Gillaspia", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas A&amp;M"},
+	{name: "Elijhaa Penny", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Idaho"},
+	{name: "Matt Breida", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia Southern"},
+	{name: "Kenny Golladay", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Northern Illinois"},
+	{name: "Collin Johnson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas"},
+	{name: "John Ross", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Washington"},
+	{name: "Marcus Kemp", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Hawaii"},
+	{name: "Chris Myarick", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Temple"},
+	{name: "Ricky Seals-Jones", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas A&amp;M"},
+	{name: "Jordan Akins", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCF"},
+	{name: "Graham Gano", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida State"} ];
 	
-	JAXoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Ryquell Armstead", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Temple"},
-	{name: "Mekhi Sargent", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Iowa"},
-	{name: "Marvin Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "California"},
-	{name: "Laviska Shenault", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Colorado"},
-	{name: "Laquon Treadwell", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ole Miss"},
-	{name: "Christian Kirk", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas A&amp;M"},
-	{name: "Zay Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "East Carolina"},
-	{name: "Luke Farrell", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ohio State"},
-	{name: "Chris Manhertz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Canisius"},
-	{name: "Kahale Warring", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "San Diego State"},
-	{name: "Evan Engram", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ole Miss"},
-	{name: "Matthew Wright", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCF"} ];
+	JAXoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Ryquell Armstead", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Temple"},
+	{name: "Travis Etienne", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Clemson"},
+	{name: "Darrell Henderson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Memphis"},
+	{name: "Marvin Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "California"},
+	{name: "Laviska Shenault", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Colorado"},
+	{name: "Laquon Treadwell", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ole Miss"},
+	{name: "Christian Kirk", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Texas A&amp;M"},
+	{name: "Zay Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "East Carolina"},
+	{name: "Luke Farrell", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ohio State"},
+	{name: "Chris Manhertz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Canisius"},
+	{name: "Kahale Warring", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "San Diego State"},
+	{name: "Evan Engram", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ole Miss"},
+	{name: "Matthew Wright", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCF"} ];
 	
-	NYJoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Nick Bawden", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "San Diego State"},
-	{name: "Michael Carter", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "North Carolina"},
-	{name: "Ty Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Maryland"},
-	{name: "La&#39;Mical Perine", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida"},
-	{name: "Braxton Berrios", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Denzel Mims", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Baylor"},
-	{name: "Jeff Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Boston College"},
-	{name: "Kenny Yeboah", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ole Miss"},
-	{name: "C.J. Uzomah", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Auburn"},
-	{name: "Tyler Conklin", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Central Michigan"},
-	{name: "Greg Zuerlein", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Missouri Western"}	];
+	NYJoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Nick Bawden", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "San Diego State"},
+	{name: "Michael Carter", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "North Carolina"},
+	{name: "Ty Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Maryland"},
+	{name: "La&#39;Mical Perine", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida"},
+	{name: "Braxton Berrios", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Miami FL"},
+	{name: "Denzel Mims", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Baylor"},
+	{name: "Jeff Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Boston College"},
+	{name: "Kenny Yeboah", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ole Miss"},
+	{name: "C.J. Uzomah", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Auburn"},
+	{name: "Tyler Conklin", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Central Michigan"},
+	{name: "Greg Zuerlein", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Missouri Western"}	];
 	
-	DEToffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Jason Cabinda", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Godwin Igwebuike", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Northwestern"},
-	{name: "Jermar Jefferson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oregon State"},
-	{name: "Craig Reynolds", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Kutztown"},
-	{name: "D&#39;Andre Swift", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Jamaal Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "BYU"},
-	{name: "Justin Jackson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Northwestern"},
-	{name: "Trinity Benson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "East Central"},
-	{name: "Tom Kennedy", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Bryant"},
-	{name: "Josh Reynolds", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas A&amp;M"},
-	{name: "Amon-Ra St. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "USC"},
-	{name: "Brock Wright", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Notre Dame"},
-	{name: "Riley Patterson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Memphis"} ];
+	DEToffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Jason Cabinda", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Penn State"},
+	{name: "Godwin Igwebuike", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Northwestern"},
+	{name: "Jermar Jefferson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oregon State"},
+	{name: "Craig Reynolds", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Kutztown"},
+	{name: "D&#39;Andre Swift", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Georgia"},
+	{name: "Jamaal Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "BYU"},
+	{name: "Justin Jackson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Northwestern"},
+	{name: "Trinity Benson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "East Central"},
+	{name: "Tom Kennedy", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Bryant"},
+	{name: "Josh Reynolds", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Texas A&amp;M"},
+	{name: "Amon-Ra St. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "USC"},
+	{name: "Brock Wright", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Notre Dame"},
+	{name: "Riley Patterson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Memphis"} ];
 	
-	GBoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "A.J. Dillon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Boston College"},
-	{name: "Aaron Jones", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UTEP"},
-	{name: "Patrick Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Memphis"},
-	{name: "Allen Lazard", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Iowa State"},
-	{name: "Juwann Winfree", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Colorado"},
-	{name: "Randall Cobb", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Kentucky"},
-	{name: "Sammy Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Clemson"},
-	{name: "Dominique Dafney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Indiana State"},
-	{name: "Tyler Davis", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia Tech"},
-	{name: "Josiah Deguara", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Cincinnati"},
-	{name: "Marcedes Lewis", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCLA"},
-	{name: "Mason Crosby", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Colorado"} ];
+	GBoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "A.J. Dillon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Boston College"},
+	{name: "Aaron Jones", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "UTEP"},
+	{name: "Patrick Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Memphis"},
+	{name: "Allen Lazard", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Iowa State"},
+	{name: "Juwann Winfree", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Colorado"},
+	{name: "Randall Cobb", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Kentucky"},
+	{name: "Sammy Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Clemson"},
+	{name: "Dominique Dafney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Indiana State"},
+	{name: "Tyler Davis", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia Tech"},
+	{name: "Josiah Deguara", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Cincinnati"},
+	{name: "Marcedes Lewis", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCLA"},
+	{name: "Mason Crosby", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Colorado"} ];
 	
-	CARoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Chuba Hubbard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma State"},
-	{name: "Giovanni Ricci", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Western Michigan"},
-	{name: "D&#39;Onta Foreman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas"},
-	{name: "Robby Anderson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Temple"},
-	{name: "Terrace Marshall Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "D.J. Moore", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Maryland"},
-	{name: "Shi Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Carolina"},
-	{name: "Brandon Zylstra", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Concordia-Moorhead"},
-	{name: "Rashard Higgins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Colorado State"},
-	{name: "Andre Roberts", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "The Citadel"},
-	{name: "Ian Thomas", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Indiana"},
-	{name: "Zane Gonzalez", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arizona State"} ];
+	CARoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Chuba Hubbard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Oklahoma State"},
+	{name: "Giovanni Ricci", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Western Michigan"},
+	{name: "D&#39;Onta Foreman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Texas"},
+	{name: "Robby Anderson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Temple"},
+	{name: "Terrace Marshall Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
+	{name: "D.J. Moore", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Maryland"},
+	{name: "Shi Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "South Carolina"},
+	{name: "Brandon Zylstra", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Concordia-Moorhead"},
+	{name: "Rashard Higgins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Colorado State"},
+	{name: "Andre Roberts", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "The Citadel"},
+	{name: "Ian Thomas", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Indiana"},
+	{name: "Zane Gonzalez", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arizona State"} ];
 	
-	NEoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Damien Harris", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Rhamondre Stevenson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "J.J. Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arizona"},
-	{name: "Nelson Agholor", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "USC"},
-	{name: "Kendrick Bourne", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Eastern Washington"},
-	{name: "Jakobi Meyers", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "NC State"},
-	{name: "Matthew Slater", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCLA"},
-	{name: "DeVante Parker", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Louisville"},
-	{name: "Lil&#39;Jordan Humphrey", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas"},
-	{name: "Ty Montgomery", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Stanford"},
-	{name: "Devin Asiasi", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCLA"},
-	{name: "Hunter Henry", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arkansas"},
-	{name: "Jonnu Smith", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "FIU"},
-	{name: "Nick Folk", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arizona"} ];
+	NEoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Damien Harris", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Alabama"},
+	{name: "Rhamondre Stevenson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Oklahoma"},
+	{name: "J.J. Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arizona"},
+	{name: "Nelson Agholor", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "USC"},
+	{name: "Kendrick Bourne", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Eastern Washington"},
+	{name: "Jakobi Meyers", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "NC State"},
+	{name: "Matthew Slater", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCLA"},
+	{name: "DeVante Parker", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Louisville"},
+	{name: "Lil&#39;Jordan Humphrey", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas"},
+	{name: "Ty Montgomery", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Stanford"},
+	{name: "Devin Asiasi", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCLA"},
+	{name: "Hunter Henry", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arkansas"},
+	{name: "Jonnu Smith", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "FIU"},
+	{name: "Nick Folk", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arizona"} ];
 	
-	WASoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Jaret Patterson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Buffalo"},
-	{name: "Jonathan Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arkansas"},
-	{name: "Antonio Gibson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Memphis"},
-	{name: "J.D. McKissic", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arkansas State"},
-	{name: "Dyami Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "North Carolina"},
-	{name: "Adam Humphries", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Clemson"},
-	{name: "Terry McLaurin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ohio State"},
-	{name: "Dax Milne", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "BYU"},
-	{name: "Curtis Samuel", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ohio State"},
-	{name: "Cam Sims", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Alex Erickson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wisconsin"},
-	{name: "John Bates", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Boise State"},
-	{name: "Sammis Reyes", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Loyola-New Orleans"},
-	{name: "Joey Slye", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Virginia Tech"} ];
+	WASoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Jaret Patterson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Buffalo"},
+	{name: "Jonathan Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arkansas"},
+	{name: "Antonio Gibson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Memphis"},
+	{name: "J.D. McKissic", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arkansas State"},
+	{name: "Dyami Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "North Carolina"},
+	{name: "Adam Humphries", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Clemson"},
+	{name: "Terry McLaurin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Ohio State"},
+	{name: "Dax Milne", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "BYU"},
+	{name: "Curtis Samuel", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Ohio State"},
+	{name: "Cam Sims", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Alabama"},
+	{name: "Alex Erickson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Wisconsin"},
+	{name: "John Bates", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Boise State"},
+	{name: "Sammis Reyes", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Loyola-New Orleans"},
+	{name: "Joey Slye", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Virginia Tech"} ];
 	
-	LVoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Peyton Barber", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Auburn"},
-	{name: "Josh Jacobs", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Jalen Richard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Southern Miss"},
-	{name: "Sutton Smith", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Northern Illinois"},
-	{name: "Austin Walter", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Rice"},
-	{name: "Ameer Abdullah", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Nebraska"},
-	{name: "Brandon Bolden", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ole Miss"},
-	{name: "Jakob Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tennessee"},
-	{name: "Davante Adams", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Fresno State"},
-	{name: "DeSean Jackson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "California"},
-	{name: "Hunter Renfrow", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Clemson"},
-	{name: "Demarcus Robinson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida"},
-	{name: "Mack Hollins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "North Carolina"},
-	{name: "Keelan Cole", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Kentucky Wesleyan"},
-	{name: "Nick Bowers", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Daniel Helm", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Duke"},
-	{name: "Foster Moreau", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Jesper Horsted", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Princeton"},
-	{name: "Daniel Carlson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Auburn"} ];
+	LVoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Peyton Barber", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Auburn"},
+	{name: "Josh Jacobs", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Alabama"},
+	{name: "Jalen Richard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Southern Miss"},
+	{name: "Sutton Smith", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Northern Illinois"},
+	{name: "Austin Walter", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Rice"},
+	{name: "Ameer Abdullah", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Nebraska"},
+	{name: "Brandon Bolden", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ole Miss"},
+	{name: "Jakob Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Tennessee"},
+	{name: "Davante Adams", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Fresno State"},
+	{name: "DeSean Jackson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "California"},
+	{name: "Hunter Renfrow", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Clemson"},
+	{name: "Demarcus Robinson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida"},
+	{name: "Mack Hollins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "North Carolina"},
+	{name: "Keelan Cole", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Kentucky Wesleyan"},
+	{name: "Nick Bowers", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Penn State"},
+	{name: "Daniel Helm", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Duke"},
+	{name: "Foster Moreau", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
+	{name: "Jesper Horsted", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Princeton"},
+	{name: "Daniel Carlson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Auburn"} ];
 	
-	LARoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Cam Akers", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida State"},
-	{name: "Jake Funk", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Maryland"},
-	{name: "Buddy Howell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida Atlantic"},
-	{name: "Odell Beckham Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Van Jefferson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida"},
-	{name: "J.J. Koski", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Cal Poly"},
-	{name: "Cooper Kupp", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Eastern Washington"},
-	{name: "Ben Skowronek", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Notre Dame"},
-	{name: "Allen Robinson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Kendall Blanton", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Missouri"},
-	{name: "Tyler Higbee", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Western Kentucky"},
-	{name: "Brycen Hopkins", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Purdue"},
-	{name: "Jared Pinkney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Vanderbilt"},
-	{name: "Matt Gay", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Utah"} ];
+	LARoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Cam Akers", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Florida State"},
+	{name: "Jake Funk", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Maryland"},
+	{name: "Buddy Howell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Florida Atlantic"},
+	{name: "Odell Beckham Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
+	{name: "Van Jefferson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida"},
+	{name: "J.J. Koski", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Cal Poly"},
+	{name: "Cooper Kupp", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Eastern Washington"},
+	{name: "Ben Skowronek", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Notre Dame"},
+	{name: "Allen Robinson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Penn State"},
+	{name: "Kendall Blanton", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Missouri"},
+	{name: "Tyler Higbee", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Western Kentucky"},
+	{name: "Brycen Hopkins", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Purdue"},
+	{name: "Jared Pinkney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Vanderbilt"},
+	{name: "Matt Gay", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Utah"} ];
 	
-	BALoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Devonta Freeman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida State"},
-	{name: "Latavius Murray", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCF"},
-	{name: "Patrick Ricard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Maine"},
-	{name: "Corey Clement", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wisconsin"},
-	{name: "Mike Davis", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Carolina"},
-	{name: "Rashod Bateman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Minnesota"},
-	{name: "Devin Duvernay", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas"},
-	{name: "James Proche", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "SMU"},
-	{name: "Tylan Wallace", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma State"},
-	{name: "Mark Andrews", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "Nick Boyle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Delaware"},
-	{name: "Josh Oliver", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "San Jose State"},
-	{name: "Tony Poljan", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Virginia"},
-	{name: "Justin Tucker", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas"} ];
+	BALoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Devonta Freeman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Florida State"},
+	{name: "Latavius Murray", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCF"},
+	{name: "Patrick Ricard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Maine"},
+	{name: "Corey Clement", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Wisconsin"},
+	{name: "Mike Davis", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Carolina"},
+	{name: "Rashod Bateman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Minnesota"},
+	{name: "Devin Duvernay", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Texas"},
+	{name: "James Proche", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "SMU"},
+	{name: "Tylan Wallace", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oklahoma State"},
+	{name: "Mark Andrews", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oklahoma"},
+	{name: "Nick Boyle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Delaware"},
+	{name: "Josh Oliver", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "San Jose State"},
+	{name: "Tony Poljan", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Virginia"},
+	{name: "Justin Tucker", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas"} ];
 	
-	NOoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Mark Ingram Jr.", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Tony Jones Jr.", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Notre Dame"},
-	{name: "Alvin Kamara", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tennessee"},
-	{name: "Adam Prentice", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Carolina"},
-	{name: "Dwayne Washington", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Washington"},
-	{name: "Marquez Callaway", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tennessee"},
-	{name: "Deonte Harty", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Assumption"},
-	{name: "Tre&#39;Quan Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCF"},
-	{name: "Kenny Stills", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "Jarvis Landry", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Juwan Johnson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oregon"},
-	{name: "Adam Trautman", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Dayton"},
-	{name: "J.P. Holtz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Pittsburgh"},
-	{name: "Chris Herndon", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Brett Maher", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Nebraska"} ];
+	NOoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Mark Ingram Jr.", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Alabama"},
+	{name: "Tony Jones Jr.", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Notre Dame"},
+	{name: "Alvin Kamara", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Tennessee"},
+	{name: "Adam Prentice", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Carolina"},
+	{name: "Dwayne Washington", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Washington"},
+	{name: "Marquez Callaway", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Tennessee"},
+	{name: "Chris Olave", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Ohio State"},
+	{name: "Deonte Harty", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Assumption"},
+	{name: "Tre&#39;Quan Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCF"},
+	{name: "Kenny Stills", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oklahoma"},
+	{name: "Jarvis Landry", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
+	{name: "Juwan Johnson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oregon"},
+	{name: "Adam Trautman", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Dayton"},
+	{name: "J.P. Holtz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Pittsburgh"},
+	{name: "Chris Herndon", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Wil Lutz", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia State"} ];
 	
-	SEAoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Nick Bellore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Central Michigan"},
-	{name: "Alex Collins", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arkansas"},
-	{name: "DeeJay Dallas", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Travis Homer", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Rashaad Penny", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "San Diego State"},
-	{name: "D&#39;Wayne Eskridge", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Western Michigan"},
-	{name: "Penny Hart", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia State"},
-	{name: "Tyler Lockett", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Kansas State"},
-	{name: "DK Metcalf", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ole Miss"},
-	{name: "Freddie Swain", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida"},
-	{name: "Marquise Goodwin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas"},
-	{name: "Will Dissly", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Washington"},
-	{name: "Colby Parkinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Stanford"},
-	{name: "Noah Fant", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Iowa"},
-	{name: "Jason Myers", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Marist"} ];
+	SEAoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Nick Bellore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Central Michigan"},
+	{name: "Alex Collins", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arkansas"},
+	{name: "DeeJay Dallas", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Travis Homer", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Rashaad Penny", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "San Diego State"},
+	{name: "Kenneth Walker III", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Michigan State"},
+	{name: "D&#39;Wayne Eskridge", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Western Michigan"},
+	{name: "Penny Hart", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia State"},
+	{name: "Tyler Lockett", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Kansas State"},
+	{name: "DK Metcalf", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Ole Miss"},
+	{name: "Freddie Swain", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida"},
+	{name: "Marquise Goodwin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas"},
+	{name: "Will Dissly", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Washington"},
+	{name: "Colby Parkinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Stanford"},
+	{name: "Noah Fant", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Iowa"},
+	{name: "Jason Myers", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Marist"} ];
 	
-	PIToffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Kalen Ballage", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arizona State"},
-	{name: "Najee Harris", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Benny Snell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Kentucky"},
-	{name: "Derek Watt", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wisconsin"},
-	{name: "Jeremy McNichols", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Boise State"},
-	{name: "Chase Claypool", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Notre Dame"},
-	{name: "Diontae Johnson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Toledo"},
-	{name: "Cody White", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Michigan State"},
-	{name: "Gunner Olszewski", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Bemidji State"},
-	{name: "Miles Boykin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Notre Dame"},
-	{name: "Pat Freiermuth", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Zach Gentry", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Michigan"},
-	{name: "Kevin Rader", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Youngstown State"},
-	{name: "Chris Boswell", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Rice"} ];
+	PIToffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Kalen Ballage", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arizona State"},
+	{name: "Najee Harris", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Alabama"},
+	{name: "Benny Snell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Kentucky"},
+	{name: "Derek Watt", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Wisconsin"},
+	{name: "Jeremy McNichols", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Boise State"},
+	{name: "Diontae Johnson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Toledo"},
+	{name: "Cody White", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Michigan State"},
+	{name: "Gunner Olszewski", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Bemidji State"},
+	{name: "Miles Boykin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Notre Dame"},
+	{name: "Pat Freiermuth", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Penn State"},
+	{name: "Zach Gentry", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Michigan"},
+	{name: "Kevin Rader", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Youngstown State"},
+	{name: "Chris Boswell", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Rice"} ];
 	
-	HOUoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Rex Burkhead", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Nebraska"},
-	{name: "Royce Freeman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oregon"},
-	{name: "David Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Northern Iowa"},
-	{name: "Scottie Phillips", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ole Miss"},
-	{name: "Andy Janovich", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Nebraska"},
-	{name: "Marlon Mack", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Florida"},
-	{name: "Dare Ogunbowale", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wisconsin"},
-	{name: "Danny Amendola", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas Tech"},
-	{name: "Davion Davis", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Sam Houston State"},
-	{name: "Phillip Dorsett", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Chris Moore", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Cincinnati"},
-	{name: "Nico Collins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Michigan"},
-	{name: "Chris Conley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Brandin Cooks", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oregon State"},
-	{name: "Chester Rogers", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Grambling State"},
-	{name: "Pharoah Brown", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oregon"},
-	{name: "Brevin Jordan", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Antony Auclair", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Laval"},
-	{name: "Jeff Driskel", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Louisiana Tech"},
-	{name: "Ka&#39;imi Fairbairn", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCLA"} ];
+	HOUoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Rex Burkhead", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Nebraska"},
+	{name: "Dameon Pierce", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Florida"},
+	{name: "Royce Freeman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oregon"},
+	{name: "David Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Northern Iowa"},
+	{name: "Scottie Phillips", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ole Miss"},
+	{name: "Andy Janovich", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Nebraska"},
+	{name: "Marlon Mack", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Florida"},
+	{name: "Dare Ogunbowale", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Wisconsin"},
+	{name: "Danny Amendola", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas Tech"},
+	{name: "Davion Davis", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Sam Houston State"},
+	{name: "Phillip Dorsett", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Chris Moore", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Cincinnati"},
+	{name: "Nico Collins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Michigan"},
+	{name: "Chris Conley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Georgia"},
+	{name: "Brandin Cooks", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Oregon State"},
+	{name: "Chester Rogers", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Grambling State"},
+	{name: "Pharoah Brown", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oregon"},
+	{name: "Brevin Jordan", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Antony Auclair", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Laval"},
+	{name: "Jeff Driskel", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Louisiana Tech"},
+	{name: "Ka&#39;imi Fairbairn", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCLA"} ];
 	
-	TENoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Dontrell Hilliard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tulane"},
-	{name: "Trenton Cannon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Virginia State"},
-	{name: "Tory Carter", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Derrick Henry", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Jordan Wilkins", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ole Miss"},
-	{name: "Dez Fitzpatrick", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Louisville"},
-	{name: "Racey McMath", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Nick Westbrook-Ikhine", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Indiana"},
-	{name: "Terry Godwin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Cody Hollister", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arkansas"},
-	{name: "Mason Kinsey", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Berry College"},
-	{name: "Josh Malone", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tennessee"},
-	{name: "Robert Woods", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "USC"},
-	{name: "Geoff Swaim", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas"},
-	{name: "Austin Hooper", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Stanford"},
-	{name: "Tommy Hudson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arizona State"},
-	{name: "Briley Moore", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Kansas State"},
-	{name: "Randy Bullock", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas A&amp;M"} ];
+	TENoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Dontrell Hilliard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Tulane"},
+	{name: "Trenton Cannon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Virginia State"},
+	{name: "Tory Carter", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
+	{name: "Derrick Henry", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Alabama"},
+	{name: "Jordan Wilkins", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ole Miss"},
+	{name: "Dez Fitzpatrick", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Louisville"},
+	{name: "Racey McMath", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
+	{name: "Nick Westbrook-Ikhine", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Indiana"},
+	{name: "Terry Godwin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia"},
+	{name: "Cody Hollister", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arkansas"},
+	{name: "Mason Kinsey", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Berry College"},
+	{name: "Josh Malone", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Tennessee"},
+	{name: "Robert Woods", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "USC"},
+	{name: "Geoff Swaim", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas"},
+	{name: "Austin Hooper", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Stanford"},
+	{name: "Tommy Hudson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arizona State"},
+	{name: "Briley Moore", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Kansas State"},
+	{name: "Randy Bullock", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas A&amp;M"} ];
 	
-	MINoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Dalvin Cook", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida State"},
-	{name: "Wayne Gallman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Clemson"},
-	{name: "C.J. Ham", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Augustana SD"},
-	{name: "Alexander Mattison", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Boise State"},
-	{name: "Kene Nwangwu", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Iowa State"},
-	{name: "Dan Chisena", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Justin Jefferson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "K.J. Osborn", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Ihmir Smith-Marsette", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Iowa"},
-	{name: "Dede Westbrook", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "Albert Wilson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia State"},
-	{name: "Luke Stocker", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tennessee"},
-	{name: "Shaun Beyer", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Iowa"},
-	{name: "Greg Joseph", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida Atlantic"} ];
+	MINoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Dalvin Cook", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Florida State"},
+	{name: "Wayne Gallman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Clemson"},
+	{name: "C.J. Ham", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Augustana SD"},
+	{name: "Alexander Mattison", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Boise State"},
+	{name: "Kene Nwangwu", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Iowa State"},
+	{name: "Dan Chisena", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Penn State"},
+	{name: "Justin Jefferson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "LSU"},
+	{name: "Adam Thielen", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Minnesota State"},
+	{name: "K.J. Osborn", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Ihmir Smith-Marsette", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Iowa"},
+	{name: "Dede Westbrook", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oklahoma"},
+	{name: "Albert Wilson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia State"},
+	{name: "Jalen Reagor", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "TCU"},
+	{name: "Luke Stocker", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Tennessee"},
+	{name: "Shaun Beyer", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Iowa"},
+	{name: "Greg Joseph", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida Atlantic"} ];
 	
-	SFoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "JaMycal Hasty", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Baylor"},
-	{name: "Kyle Juszczyk", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Harvard"},
-	{name: "Elijah Mitchell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Louisiana-Lafayette"},
-	{name: "Jeff Wilson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "North Texas"},
-	{name: "Brandon Aiyuk", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arizona State"},
-	{name: "Travis Benjamin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Jauan Jennings", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tennessee"},
-	{name: "Deebo Samuel", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Carolina"},
-	{name: "Malik Turner", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Illinois"},
-	{name: "Ray-Ray McCloud", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Clemson"},
-	{name: "Ross Dwelley", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "San Diego"},
-	{name: "Tanner Hudson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Southern Arkansas"},
-	{name: "George Kittle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Iowa"},
-	{name: "Charlie Woerner", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Robbie Gould", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"} ];
+	SFoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "JaMycal Hasty", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Baylor"},
+	{name: "Kyle Juszczyk", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Harvard"},
+	{name: "Elijah Mitchell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Louisiana-Lafayette"},
+	{name: "Jeff Wilson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "North Texas"},
+	{name: "Brandon Aiyuk", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Arizona State"},
+	{name: "Travis Benjamin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Jauan Jennings", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Tennessee"},
+	{name: "Deebo Samuel", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "South Carolina"},
+	{name: "Malik Turner", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Illinois"},
+	{name: "Ray-Ray McCloud", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Clemson"},
+	{name: "Ross Dwelley", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "San Diego"},
+	{name: "Tanner Hudson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Southern Arkansas"},
+	{name: "George Kittle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Iowa"},
+	{name: "Charlie Woerner", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia"},
+	{name: "Robbie Gould", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Penn State"} ];
 	
 	/*TEAM D-LINES*/
 	CHIdefense = [ {name: "Bears Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
@@ -806,519 +815,528 @@ function resetAll(e){
 	SFqbs = [ {name: "Jimmy Garoppolo", college: "Eastern Illinois", dropOff: Number(Number(0).toFixed(1))}, {name: "Trey Lance", college: "North Dakota State", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Tyler Bray", college: "Tennessee", dropOff: Number(Number(6).toFixed(1))} ];
 	
 	/*REINITIALIZE THE ROSTERS*/
-	CHIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Khalil Herbert", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Virginia Tech"},
-	{name: "David Montgomery", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Iowa State"},
-	{name: "Khari Blasingame", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Vanderbilt"},
-	{name: "Darnell Mooney", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tulane"},
-	{name: "Byron Pringle", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Kansas State"},
-	{name: "Equanimeous St. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Notre Dame"},
-	{name: "N&#39;Keal Harry", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arizona State"},
-	{name: "Jimmy Graham", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Jesse James", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Cole Kmet", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Notre Dame"},
-	{name: "James O&#39;Shaughnessy", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Illinois State"},
-	{name: "Cairo Santos", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tulane"} ];
+	CHIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Khalil Herbert", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Virginia Tech"},
+	{name: "David Montgomery", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Iowa State"},
+	{name: "Khari Blasingame", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Vanderbilt"},
+	{name: "Darnell Mooney", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Tulane"},
+	{name: "Chase Claypool", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Notre Dame"},
+	{name: "Byron Pringle", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Kansas State"},
+	{name: "Equanimeous St. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Notre Dame"},
+	{name: "N&#39;Keal Harry", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arizona State"},
+	{name: "Jimmy Graham", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Jesse James", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Penn State"},
+	{name: "Cole Kmet", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Notre Dame"},
+	{name: "James O&#39;Shaughnessy", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Illinois State"},
+	{name: "Cairo Santos", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Tulane"} ];
 	
-	CINoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Chris Evans", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Michigan"},
-	{name: "Joe Mixon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "Samaje Perine", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "Trayveon Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas A&amp;M"},
-	{name: "Tyler Boyd", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Pittsburgh"},
-	{name: "Ja&#39;Marr Chase", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Tee Higgins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Clemson"},
-	{name: "Stanley Morgan Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Nebraska"},
-	{name: "Mike Thomas", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Southern Miss"},
-	{name: "Drew Sample", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Washington"},
-	{name: "Mitchell Wilcox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Florida"},
-	{name: "Evan McPherson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida"} ];
+	CINoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Chris Evans", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Michigan"},
+	{name: "Joe Mixon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Oklahoma"},
+	{name: "Samaje Perine", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oklahoma"},
+	{name: "Trayveon Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas A&amp;M"},
+	{name: "Tyler Boyd", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Pittsburgh"},
+	{name: "Ja&#39;Marr Chase", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "LSU"},
+	{name: "Tee Higgins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Clemson"},
+	{name: "Stanley Morgan Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Nebraska"},
+	{name: "Mike Thomas", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Southern Miss"},
+	{name: "Drew Sample", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Washington"},
+	{name: "Mitchell Wilcox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Florida"},
+	{name: "Evan McPherson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida"} ];
 	
-	BUFoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Reggie Gilliam", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Toledo"},
-	{name: "Taiwan Jones", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Eastern Washington"},
-	{name: "Zack Moss", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Utah"},
-	{name: "Devin Singletary", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida Atlantic"},
-	{name: "Duke Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Cole Beasley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "SMU"},
-	{name: "Gabriel Davis", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCF"},
-	{name: "Stefon Diggs", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Maryland"},
-	{name: "Jake Kumerow", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wisconsin-Whitewater"},
-	{name: "Isaiah McKenzie", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Emmanuel Sanders", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "SMU"},
-	{name: "Marquez Stevenson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Houston"},
-	{name: "Tavon Austin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "West Virginia"},
-	{name: "Jamison Crowder", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Duke"},
-	{name: "Dawson Knox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ole Miss"},
-	{name: "Tommy Sweeney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Boston College"},
-	{name: "O.J. Howard", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Tyler Bass", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia Southern"} ];
+	BUFoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Reggie Gilliam", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Toledo"},
+	{name: "Taiwan Jones", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Eastern Washington"},
+	{name: "Zack Moss", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Utah"},
+	{name: "Devin Singletary", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Florida Atlantic"},
+	{name: "Duke Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Cole Beasley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "SMU"},
+	{name: "Gabriel Davis", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "UCF"},
+	{name: "Stefon Diggs", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Maryland"},
+	{name: "Jake Kumerow", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Wisconsin-Whitewater"},
+	{name: "Isaiah McKenzie", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia"},
+	{name: "Emmanuel Sanders", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "SMU"},
+	{name: "Marquez Stevenson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Houston"},
+	{name: "Tavon Austin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "West Virginia"},
+	{name: "Jamison Crowder", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Duke"},
+	{name: "Dawson Knox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ole Miss"},
+	{name: "Tommy Sweeney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Boston College"},
+	{name: "O.J. Howard", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Alabama"},
+	{name: "Tyler Bass", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia Southern"} ];
 	
-	DENoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Mike Boone", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Cincinnati"},
-	{name: "Melvin Gordon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wisconsin"},
-	{name: "Javonte Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "North Carolina"},
-	{name: "Kendall Hinton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wake Forest"},
-	{name: "Diontae Spencer", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "McNeese State"},
-	{name: "Courtland Sutton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "SMU"},
-	{name: "Albert Okwuegbunam", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Missouri"},
-	{name: "Andrew Beck", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas"},
-	{name: "Eric Tomlinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UTEP"},
-	{name: "Brandon McManus", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Temple"} ];
+	DENoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Mike Boone", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Cincinnati"},
+	{name: "Melvin Gordon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Wisconsin"},
+	{name: "Javonte Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "North Carolina"},
+	{name: "Kendall Hinton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Wake Forest"},
+	{name: "Diontae Spencer", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "McNeese State"},
+	{name: "Courtland Sutton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "SMU"},
+	{name: "Jerry Jeudy", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Alabama"},
+	{name: "Albert Okwuegbunam", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Missouri"},
+	{name: "Andrew Beck", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas"},
+	{name: "Eric Tomlinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UTEP"},
+	{name: "Brandon McManus", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Temple"} ];
 	
-	CLEoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Nick Chubb", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Demetric Felton", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCLA"},
-	{name: "Kareem Hunt", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Toledo"},
-	{name: "D&#39;Ernest Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Florida"},
-	{name: "Ja&#39;Marcus Bradley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Louisiana-Lafayette"},
-	{name: "Donovan Peoples-Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Michigan"},
-	{name: "Anthony Schwartz", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Auburn"},
-	{name: "Amari Cooper", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Jakeem Grant", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas Tech"},
-	{name: "Harrison Bryant", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida Atlantic"},
-	{name: "David Njoku", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Chase McLaughlin", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Illinois"} ];
+	CLEoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Nick Chubb", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Georgia"},
+	{name: "Demetric Felton", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCLA"},
+	{name: "Kareem Hunt", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Toledo"},
+	{name: "D&#39;Ernest Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Florida"},
+	{name: "Ja&#39;Marcus Bradley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Louisiana-Lafayette"},
+	{name: "Donovan Peoples-Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Michigan"},
+	{name: "Anthony Schwartz", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Auburn"},
+	{name: "Amari Cooper", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Alabama"},
+	{name: "Jakeem Grant", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas Tech"},
+	{name: "Harrison Bryant", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida Atlantic"},
+	{name: "David Njoku", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Chase McLaughlin", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Illinois"} ];
 	
-	TBoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Kenjon Barner", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oregon"},
-	{name: "Le&#39;Veon Bell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Michigan State"},
-	{name: "Ke&#39;Shawn Vaughn", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Vanderbilt"},
-	{name: "Leonard Fournette", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Mike Evans", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas A&amp;M"},
-	{name: "Cyril Grayson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Tyler Johnson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Minnesota"},
-	{name: "Scotty Miller", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Bowling Green"},
-	{name: "Breshad Perriman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCF"},
-	{name: "Chris Godwin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Russell Gage", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Julio Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Cameron Brate", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Harvard"},
-	{name: "Kyle Rudolph", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Notre Dame"},
-	{name: "Ryan Succop", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Carolina"} ];
+	TBoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Kenjon Barner", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oregon"},
+	{name: "Le&#39;Veon Bell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Michigan State"},
+	{name: "Ke&#39;Shawn Vaughn", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Vanderbilt"},
+	{name: "Leonard Fournette", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "LSU"},
+	{name: "Mike Evans", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Texas A&amp;M"},
+	{name: "Cyril Grayson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
+	{name: "Tyler Johnson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Minnesota"},
+	{name: "Scotty Miller", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Bowling Green"},
+	{name: "Breshad Perriman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCF"},
+	{name: "Chris Godwin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Penn State"},
+	{name: "Russell Gage", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
+	{name: "Julio Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Alabama"},
+	{name: "Cameron Brate", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Harvard"},
+	{name: "Kyle Rudolph", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Notre Dame"},
+	{name: "Ryan Succop", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Carolina"} ];
 	
-	ARIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Eno Benjamin", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arizona State"},
-	{name: "James Conner", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Pittsburgh"},
-	{name: "Jonathan Ward", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Central Michigan"},
-	{name: "Darrel Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Greg Dortch", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wake Forest"},
-	{name: "A.J. Green", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Andy Isabella", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Massachusetts"},
-	{name: "Rondale Moore", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Purdue"},
-	{name: "Antoine Wesley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas Tech"},
-	{name: "Marquise Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "Christian Blake", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Northern Illinois"},
-	{name: "Darrell Daniels", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Washington"},
-	{name: "Zach Ertz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Stanford"},
-	{name: "Demetrius Harris", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wisconsin-Milwaukee"},
-	{name: "Stephen Anderson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "California"},
-	{name: "Matt Prater", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCF"} ];
+	ARIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Eno Benjamin", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Arizona State"},
+	{name: "James Conner", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Pittsburgh"},
+	{name: "Jonathan Ward", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Central Michigan"},
+	{name: "Darrel Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
+	{name: "Greg Dortch", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Wake Forest"},
+	{name: "A.J. Green", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia"},
+	{name: "DeAndre Hopkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Clemson"},
+	{name: "Andy Isabella", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Massachusetts"},
+	{name: "Rondale Moore", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Purdue"},
+	{name: "Antoine Wesley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas Tech"},
+	{name: "Marquise Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Oklahoma"},
+	{name: "Christian Blake", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Northern Illinois"},
+	{name: "Darrell Daniels", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Washington"},
+	{name: "Zach Ertz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Stanford"},
+	{name: "Demetrius Harris", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Wisconsin-Milwaukee"},
+	{name: "Stephen Anderson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "California"},
+	{name: "Matt Prater", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCF"} ];
 	
-	LACoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Austin Ekeler", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Western Colorado"},
-	{name: "Joshua Kelley", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCLA"},
-	{name: "Gabe Nabers", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida State"},
-	{name: "Larry Rountree III", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Missouri"},
-	{name: "Keenan Allen", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "California"},
-	{name: "Jalen Guyton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "North Texas"},
-	{name: "Josh Palmer", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tennessee"},
-	{name: "Mike Williams", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Clemson"},
-	{name: "DeAndre Carter", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Sacramento State"},
-	{name: "Tre&#39; McKitty", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Gerald Everett", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Alabama"},
-	{name: "Dustin Hopkins", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida State"} ];
+	LACoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Austin Ekeler", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Western Colorado"},
+	{name: "Joshua Kelley", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCLA"},
+	{name: "Gabe Nabers", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Florida State"},
+	{name: "Larry Rountree III", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Missouri"},
+	{name: "Keenan Allen", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "California"},
+	{name: "Jalen Guyton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "North Texas"},
+	{name: "Josh Palmer", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Tennessee"},
+	{name: "Mike Williams", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Clemson"},
+	{name: "DeAndre Carter", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Sacramento State"},
+	{name: "Tre&#39; McKitty", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia"},
+	{name: "Gerald Everett", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Alabama"},
+	{name: "Dustin Hopkins", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida State"} ];
 	
-	KCoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Michael Burton", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Rutgers"},
-	{name: "Clyde Edwards-Helaire", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Derrick Gore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Louisiana-Monroe"},
-	{name: "Jerick McKinnon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia Southern"},
-	{name: "Ronald Jones II", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "USC"},
-	{name: "Josh Gordon", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Baylor"},
-	{name: "Mecole Hardman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Justin Watson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn"},
-	{name: "Marquez Valdes-Scantling", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Florida"},
-	{name: "Blake Bell", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "Noah Gray", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Duke"},
-	{name: "Travis Kelce", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Cincinnati"},
-	{name: "Harrison Butker", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia Tech"} ];
+	KCoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Michael Burton", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Rutgers"},
+	{name: "Clyde Edwards-Helaire", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "LSU"},
+	{name: "Derrick Gore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Louisiana-Monroe"},
+	{name: "Jerick McKinnon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Georgia Southern"},
+	{name: "Ronald Jones II", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "USC"},
+	{name: "Josh Gordon", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Baylor"},
+	{name: "Mecole Hardman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Georgia"},
+	{name: "JuJu Smith-Schuster", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Georgia"},
+	{name: "Justin Watson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Penn"},
+	{name: "Marquez Valdes-Scantling", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Florida"},
+	{name: "Kadarius Toney", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida"},
+	{name: "Blake Bell", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oklahoma"},
+	{name: "Noah Gray", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Duke"},
+	{name: "Travis Kelce", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Cincinnati"},
+	{name: "Harrison Butker", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia Tech"} ];
 	
-	INDoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Nyheim Hines", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "NC State"},
-	{name: "Deon Jackson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Duke"},
-	{name: "Jonathan Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wisconsin"},
-	{name: "Phillip Lindsay", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Colorado"},
-	{name: "Ty&#39;Son Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "BYU"},
-	{name: "Parris Campbell", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ohio State"},
-	{name: "T.Y. Hilton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "FIU"},
-	{name: "Dezmon Patmon", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Washington State"},
-	{name: "Michael Pittman Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "USC"},
-	{name: "Michael Strachan", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Charleston WV"},
-	{name: "Isaiah Ford", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Virginia Tech"},
-	{name: "Mo Alie-Cox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "VCU"},
-	{name: "Kylen Granson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "SMU"},
-	{name: "Rodrigo Blankenship", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"} ];
+	INDoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Nyheim Hines", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "NC State"},
+	{name: "Deon Jackson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Duke"},
+	{name: "Jonathan Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Wisconsin"},
+	{name: "Phillip Lindsay", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Colorado"},
+	{name: "Ty&#39;Son Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "BYU"},
+	{name: "Parris Campbell", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Ohio State"},
+	{name: "T.Y. Hilton", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "FIU"},
+	{name: "Dezmon Patmon", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Washington State"},
+	{name: "Michael Pittman Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "USC"},
+	{name: "Michael Strachan", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Charleston WV"},
+	{name: "Isaiah Ford", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Virginia Tech"},
+	{name: "Mo Alie-Cox", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "VCU"},
+	{name: "Kylen Granson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "SMU"},
+	{name: "Rodrigo Blankenship", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia"} ];
 	
-	DALoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Ezekiel Elliott", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ohio State"},
-	{name: "Tony Pollard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Memphis"},
-	{name: "Ryan Nall", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oregon State"},
-	{name: "Noah Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ohio State"},
-	{name: "Simi Fehoko", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Stanford"},
-	{name: "Michael Gallup", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Colorado State"},
-	{name: "CeeDee Lamb", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "James Washington", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma State"},
-	{name: "Sean McKeon", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Michigan"},
-	{name: "Dalton Schultz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Stanford"},
-	{name: "Jeremy Sprinkle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arkansas"},
-	{name: "Lirim Hajrullahu", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Western Ontario"} ];
+	DALoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Ezekiel Elliott", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Ohio State"},
+	{name: "Tony Pollard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Memphis"},
+	{name: "Ryan Nall", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oregon State"},
+	{name: "Noah Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ohio State"},
+	{name: "Simi Fehoko", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Stanford"},
+	{name: "Michael Gallup", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Colorado State"},
+	{name: "CeeDee Lamb", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Oklahoma"},
+	{name: "James Washington", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oklahoma State"},
+	{name: "Sean McKeon", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Michigan"},
+	{name: "Dalton Schultz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Stanford"},
+	{name: "Jeremy Sprinkle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arkansas"},
+	{name: "Brett Maher", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Nebraska"} ];
 	
-	MIAoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Salvon Ahmed", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Washington"},
-	{name: "Myles Gaskin", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Washington"},
-	{name: "Chase Edmonds", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Fordham"},
-	{name: "Sony Michel", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Jaylen Waddle", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Preston Williams", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Colorado State"},
-	{name: "Tyreek Hill", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "West Alabama"},
-	{name: "Cedrick Wilson Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Boise State"},
-	{name: "River Cracraft", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Washington State"},
-	{name: "Trent Sherfield", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Vanderbilt"},
-	{name: "Cethan Carter", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Nebraska"},
-	{name: "Mike Gesicki", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Hunter Long", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Boston College"},
-	{name: "Adam Shaheen", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ashland"},
-	{name: "Durham Smythe", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Notre Dame"},
-	{name: "Jason Sanders", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "New Mexico"} ];
+	MIAoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Salvon Ahmed", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Washington"},
+	{name: "Myles Gaskin", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Washington"},
+	{name: "Chase Edmonds", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Fordham"},
+	{name: "Raheem Mostert", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Purdue"},
+	{name: "Sony Michel", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia"},
+	{name: "Jaylen Waddle", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Alabama"},
+	{name: "Preston Williams", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Colorado State"},
+	{name: "Tyreek Hill", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "West Alabama"},
+	{name: "Cedrick Wilson Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Boise State"},
+	{name: "River Cracraft", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Washington State"},
+	{name: "Trent Sherfield", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Vanderbilt"},
+	{name: "Cethan Carter", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Nebraska"},
+	{name: "Mike Gesicki", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Penn State"},
+	{name: "Hunter Long", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Boston College"},
+	{name: "Adam Shaheen", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ashland"},
+	{name: "Durham Smythe", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Notre Dame"},
+	{name: "Jason Sanders", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "New Mexico"} ];
 	
-	PHIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Kenneth Gainwell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Memphis"},
-	{name: "Miles Sanders", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Jordan Howard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Indiana"},
-	{name: "Boston Scott", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Louisiana Tech"},
-	{name: "J.J. Arcega-Whiteside", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Stanford"},
-	{name: "Jalen Reagor", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "TCU"},
-	{name: "DeVonta Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Greg Ward", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Houston"},
-	{name: "Quez Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Southern Miss"},
-	{name: "Zach Pascal", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Old Dominion"},
-	{name: "A.J. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ole Miss"},
-	{name: "Tyree Jackson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Buffalo"},
-	{name: "Jason Croom", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tennessee"},
-	{name: "Dallas Goedert", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Dakota State"},
-	{name: "Jack Stoll", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Nebraska"},
-	{name: "Jake Elliott", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Memphis"} ];
+	PHIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Kenneth Gainwell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Memphis"},
+	{name: "Miles Sanders", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Penn State"},
+	{name: "Jordan Howard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Indiana"},
+	{name: "Boston Scott", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Louisiana Tech"},
+	{name: "Trey Sermon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ohio State"},
+	{name: "DeVonta Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Alabama"},
+	{name: "Greg Ward", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Houston"},
+	{name: "Quez Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Southern Miss"},
+	{name: "Zach Pascal", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Old Dominion"},
+	{name: "A.J. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Ole Miss"},
+	{name: "Tyree Jackson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Buffalo"},
+	{name: "Jason Croom", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Tennessee"},
+	{name: "Dallas Goedert", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Dakota State"},
+	{name: "Jack Stoll", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Nebraska"},
+	{name: "Jake Elliott", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Memphis"} ];
 	
-	ATLoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Qadree Ollison", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Pittsburgh"},
-	{name: "Cordarrelle Patterson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tennessee"},
-	{name: "Keith Smith", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "San Jose State"},
-	{name: "Damien Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "Frank Darby", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arizona State"},
-	{name: "Olamide Zaccheaus", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Virginia"},
-	{name: "Damiere Byrd", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Carolina"},
-	{name: "KhaDarel Hodge", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Prairie View A&amp;M"},
-	{name: "Bryan Edwards", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Carolina"},
-	{name: "Kyle Pitts", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida"},
-	{name: "Anthony Firkser", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Harvard"},
-	{name: "Younghoe Koo", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia Southern"} ];
+	ATLoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Qadree Ollison", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Pittsburgh"},
+	{name: "Cordarrelle Patterson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Tennessee"},
+	{name: "Keith Smith", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "San Jose State"},
+	{name: "Damien Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oklahoma"},
+	{name: "Frank Darby", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arizona State"},
+	{name: "Olamide Zaccheaus", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Virginia"},
+	{name: "Damiere Byrd", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Carolina"},
+	{name: "KhaDarel Hodge", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Prairie View A&amp;M"},
+	{name: "Bryan Edwards", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "South Carolina"},
+	{name: "Kyle Pitts", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida"},
+	{name: "Anthony Firkser", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Harvard"},
+	{name: "Younghoe Koo", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia Southern"} ];
 	
-	NYGoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Saquon Barkley", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Devontae Booker", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Utah"},
-	{name: "Cullen Gillaspia", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas A&amp;M"},
-	{name: "Elijhaa Penny", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Idaho"},
-	{name: "Matt Breida", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia Southern"},
-	{name: "Kenny Golladay", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Northern Illinois"},
-	{name: "Collin Johnson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas"},
-	{name: "John Ross", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Washington"},
-	{name: "Kadarius Toney", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida"},
-	{name: "Marcus Kemp", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Hawaii"},
-	{name: "Chris Myarick", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Temple"},
-	{name: "Ricky Seals-Jones", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas A&amp;M"},
-	{name: "Jordan Akins", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCF"},
-	{name: "Graham Gano", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida State"} ];
+	NYGoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Saquon Barkley", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Penn State"},
+	{name: "Devontae Booker", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Utah"},
+	{name: "Cullen Gillaspia", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas A&amp;M"},
+	{name: "Elijhaa Penny", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Idaho"},
+	{name: "Matt Breida", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia Southern"},
+	{name: "Kenny Golladay", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Northern Illinois"},
+	{name: "Collin Johnson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas"},
+	{name: "John Ross", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Washington"},
+	{name: "Marcus Kemp", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Hawaii"},
+	{name: "Chris Myarick", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Temple"},
+	{name: "Ricky Seals-Jones", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas A&amp;M"},
+	{name: "Jordan Akins", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCF"},
+	{name: "Graham Gano", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida State"} ];
 	
-	JAXoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Ryquell Armstead", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Temple"},
-	{name: "Mekhi Sargent", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Iowa"},
-	{name: "Marvin Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "California"},
-	{name: "Laviska Shenault", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Colorado"},
-	{name: "Laquon Treadwell", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ole Miss"},
-	{name: "Christian Kirk", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas A&amp;M"},
-	{name: "Zay Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "East Carolina"},
-	{name: "Luke Farrell", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ohio State"},
-	{name: "Chris Manhertz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Canisius"},
-	{name: "Kahale Warring", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "San Diego State"},
-	{name: "Evan Engram", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ole Miss"},
-	{name: "Matthew Wright", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCF"} ];
+	JAXoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Ryquell Armstead", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Temple"},
+	{name: "Travis Etienne", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Clemson"},
+	{name: "Darrell Henderson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Memphis"},
+	{name: "Marvin Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "California"},
+	{name: "Laviska Shenault", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Colorado"},
+	{name: "Laquon Treadwell", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ole Miss"},
+	{name: "Christian Kirk", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Texas A&amp;M"},
+	{name: "Zay Jones", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "East Carolina"},
+	{name: "Luke Farrell", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ohio State"},
+	{name: "Chris Manhertz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Canisius"},
+	{name: "Kahale Warring", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "San Diego State"},
+	{name: "Evan Engram", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ole Miss"},
+	{name: "Matthew Wright", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCF"} ];
 	
-	NYJoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Nick Bawden", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "San Diego State"},
-	{name: "Michael Carter", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "North Carolina"},
-	{name: "Ty Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Maryland"},
-	{name: "La&#39;Mical Perine", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida"},
-	{name: "Braxton Berrios", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Denzel Mims", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Baylor"},
-	{name: "Jeff Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Boston College"},
-	{name: "Kenny Yeboah", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ole Miss"},
-	{name: "C.J. Uzomah", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Auburn"},
-	{name: "Tyler Conklin", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Central Michigan"},
-	{name: "Greg Zuerlein", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Missouri Western"}	];
+	NYJoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Nick Bawden", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "San Diego State"},
+	{name: "Michael Carter", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "North Carolina"},
+	{name: "Ty Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Maryland"},
+	{name: "La&#39;Mical Perine", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida"},
+	{name: "Braxton Berrios", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Miami FL"},
+	{name: "Denzel Mims", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Baylor"},
+	{name: "Jeff Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Boston College"},
+	{name: "Kenny Yeboah", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ole Miss"},
+	{name: "C.J. Uzomah", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Auburn"},
+	{name: "Tyler Conklin", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Central Michigan"},
+	{name: "Greg Zuerlein", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Missouri Western"}	];
 	
-	DEToffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Jason Cabinda", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Godwin Igwebuike", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Northwestern"},
-	{name: "Jermar Jefferson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oregon State"},
-	{name: "Craig Reynolds", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Kutztown"},
-	{name: "D&#39;Andre Swift", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Jamaal Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "BYU"},
-	{name: "Justin Jackson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Northwestern"},
-	{name: "Trinity Benson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "East Central"},
-	{name: "Tom Kennedy", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Bryant"},
-	{name: "Josh Reynolds", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas A&amp;M"},
-	{name: "Amon-Ra St. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "USC"},
-	{name: "Brock Wright", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Notre Dame"},
-	{name: "Riley Patterson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Memphis"} ];
+	DEToffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Jason Cabinda", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Penn State"},
+	{name: "Godwin Igwebuike", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Northwestern"},
+	{name: "Jermar Jefferson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oregon State"},
+	{name: "Craig Reynolds", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Kutztown"},
+	{name: "D&#39;Andre Swift", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Georgia"},
+	{name: "Jamaal Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "BYU"},
+	{name: "Justin Jackson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Northwestern"},
+	{name: "Trinity Benson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "East Central"},
+	{name: "Tom Kennedy", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Bryant"},
+	{name: "Josh Reynolds", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Texas A&amp;M"},
+	{name: "Amon-Ra St. Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "USC"},
+	{name: "Brock Wright", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Notre Dame"},
+	{name: "Riley Patterson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Memphis"} ];
 	
-	GBoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "A.J. Dillon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Boston College"},
-	{name: "Aaron Jones", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UTEP"},
-	{name: "Patrick Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Memphis"},
-	{name: "Allen Lazard", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Iowa State"},
-	{name: "Juwann Winfree", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Colorado"},
-	{name: "Randall Cobb", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Kentucky"},
-	{name: "Sammy Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Clemson"},
-	{name: "Dominique Dafney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Indiana State"},
-	{name: "Tyler Davis", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia Tech"},
-	{name: "Josiah Deguara", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Cincinnati"},
-	{name: "Marcedes Lewis", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCLA"},
-	{name: "Mason Crosby", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Colorado"} ];
+	GBoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "A.J. Dillon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Boston College"},
+	{name: "Aaron Jones", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "UTEP"},
+	{name: "Patrick Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Memphis"},
+	{name: "Allen Lazard", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Iowa State"},
+	{name: "Juwann Winfree", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Colorado"},
+	{name: "Randall Cobb", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Kentucky"},
+	{name: "Sammy Watkins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Clemson"},
+	{name: "Dominique Dafney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Indiana State"},
+	{name: "Tyler Davis", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia Tech"},
+	{name: "Josiah Deguara", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Cincinnati"},
+	{name: "Marcedes Lewis", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCLA"},
+	{name: "Mason Crosby", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Colorado"} ];
 	
-	CARoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Chuba Hubbard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma State"},
-	{name: "Giovanni Ricci", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Western Michigan"},
-	{name: "D&#39;Onta Foreman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas"},
-	{name: "Robby Anderson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Temple"},
-	{name: "Terrace Marshall Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "D.J. Moore", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Maryland"},
-	{name: "Shi Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Carolina"},
-	{name: "Brandon Zylstra", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Concordia-Moorhead"},
-	{name: "Rashard Higgins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Colorado State"},
-	{name: "Andre Roberts", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "The Citadel"},
-	{name: "Ian Thomas", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Indiana"},
-	{name: "Zane Gonzalez", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arizona State"} ];
+	CARoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Chuba Hubbard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Oklahoma State"},
+	{name: "Giovanni Ricci", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Western Michigan"},
+	{name: "D&#39;Onta Foreman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Texas"},
+	{name: "Robby Anderson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Temple"},
+	{name: "Terrace Marshall Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
+	{name: "D.J. Moore", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Maryland"},
+	{name: "Shi Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "South Carolina"},
+	{name: "Brandon Zylstra", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Concordia-Moorhead"},
+	{name: "Rashard Higgins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Colorado State"},
+	{name: "Andre Roberts", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "The Citadel"},
+	{name: "Ian Thomas", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Indiana"},
+	{name: "Zane Gonzalez", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arizona State"} ];
 	
-	NEoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Damien Harris", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Rhamondre Stevenson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "J.J. Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arizona"},
-	{name: "Nelson Agholor", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "USC"},
-	{name: "Kendrick Bourne", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Eastern Washington"},
-	{name: "Jakobi Meyers", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "NC State"},
-	{name: "Matthew Slater", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCLA"},
-	{name: "DeVante Parker", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Louisville"},
-	{name: "Lil&#39;Jordan Humphrey", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas"},
-	{name: "Ty Montgomery", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Stanford"},
-	{name: "Devin Asiasi", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCLA"},
-	{name: "Hunter Henry", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arkansas"},
-	{name: "Jonnu Smith", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "FIU"},
-	{name: "Nick Folk", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arizona"} ];
+	NEoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Damien Harris", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Alabama"},
+	{name: "Rhamondre Stevenson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Oklahoma"},
+	{name: "J.J. Taylor", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arizona"},
+	{name: "Nelson Agholor", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "USC"},
+	{name: "Kendrick Bourne", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Eastern Washington"},
+	{name: "Jakobi Meyers", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "NC State"},
+	{name: "Matthew Slater", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCLA"},
+	{name: "DeVante Parker", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Louisville"},
+	{name: "Lil&#39;Jordan Humphrey", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas"},
+	{name: "Ty Montgomery", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Stanford"},
+	{name: "Devin Asiasi", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCLA"},
+	{name: "Hunter Henry", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arkansas"},
+	{name: "Jonnu Smith", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "FIU"},
+	{name: "Nick Folk", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arizona"} ];
 	
-	WASoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Jaret Patterson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Buffalo"},
-	{name: "Jonathan Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arkansas"},
-	{name: "Antonio Gibson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Memphis"},
-	{name: "J.D. McKissic", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arkansas State"},
-	{name: "Dyami Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "North Carolina"},
-	{name: "Adam Humphries", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Clemson"},
-	{name: "Terry McLaurin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ohio State"},
-	{name: "Dax Milne", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "BYU"},
-	{name: "Curtis Samuel", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ohio State"},
-	{name: "Cam Sims", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Alex Erickson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wisconsin"},
-	{name: "John Bates", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Boise State"},
-	{name: "Sammis Reyes", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Loyola-New Orleans"},
-	{name: "Joey Slye", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Virginia Tech"} ];
+	WASoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Jaret Patterson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Buffalo"},
+	{name: "Jonathan Williams", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arkansas"},
+	{name: "Antonio Gibson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Memphis"},
+	{name: "J.D. McKissic", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arkansas State"},
+	{name: "Dyami Brown", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "North Carolina"},
+	{name: "Adam Humphries", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Clemson"},
+	{name: "Terry McLaurin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Ohio State"},
+	{name: "Dax Milne", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "BYU"},
+	{name: "Curtis Samuel", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Ohio State"},
+	{name: "Cam Sims", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Alabama"},
+	{name: "Alex Erickson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Wisconsin"},
+	{name: "John Bates", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Boise State"},
+	{name: "Sammis Reyes", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Loyola-New Orleans"},
+	{name: "Joey Slye", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Virginia Tech"} ];
 	
-	LVoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Peyton Barber", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Auburn"},
-	{name: "Josh Jacobs", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Jalen Richard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Southern Miss"},
-	{name: "Sutton Smith", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Northern Illinois"},
-	{name: "Austin Walter", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Rice"},
-	{name: "Ameer Abdullah", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Nebraska"},
-	{name: "Brandon Bolden", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ole Miss"},
-	{name: "Jakob Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tennessee"},
-	{name: "Davante Adams", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Fresno State"},
-	{name: "DeSean Jackson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "California"},
-	{name: "Hunter Renfrow", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Clemson"},
-	{name: "Demarcus Robinson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida"},
-	{name: "Mack Hollins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "North Carolina"},
-	{name: "Keelan Cole", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Kentucky Wesleyan"},
-	{name: "Nick Bowers", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Daniel Helm", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Duke"},
-	{name: "Foster Moreau", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Jesper Horsted", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Princeton"},
-	{name: "Daniel Carlson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Auburn"} ];
+	LVoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Peyton Barber", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Auburn"},
+	{name: "Josh Jacobs", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Alabama"},
+	{name: "Jalen Richard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Southern Miss"},
+	{name: "Sutton Smith", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Northern Illinois"},
+	{name: "Austin Walter", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Rice"},
+	{name: "Ameer Abdullah", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Nebraska"},
+	{name: "Brandon Bolden", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ole Miss"},
+	{name: "Jakob Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Tennessee"},
+	{name: "Davante Adams", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Fresno State"},
+	{name: "DeSean Jackson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "California"},
+	{name: "Hunter Renfrow", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Clemson"},
+	{name: "Demarcus Robinson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida"},
+	{name: "Mack Hollins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "North Carolina"},
+	{name: "Keelan Cole", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Kentucky Wesleyan"},
+	{name: "Nick Bowers", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Penn State"},
+	{name: "Daniel Helm", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Duke"},
+	{name: "Foster Moreau", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
+	{name: "Jesper Horsted", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Princeton"},
+	{name: "Daniel Carlson", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Auburn"} ];
 	
-	LARoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Cam Akers", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida State"},
-	{name: "Jake Funk", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Maryland"},
-	{name: "Buddy Howell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida Atlantic"},
-	{name: "Odell Beckham Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Van Jefferson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida"},
-	{name: "J.J. Koski", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Cal Poly"},
-	{name: "Cooper Kupp", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Eastern Washington"},
-	{name: "Ben Skowronek", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Notre Dame"},
-	{name: "Allen Robinson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Kendall Blanton", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Missouri"},
-	{name: "Tyler Higbee", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Western Kentucky"},
-	{name: "Brycen Hopkins", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Purdue"},
-	{name: "Jared Pinkney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Vanderbilt"},
-	{name: "Matt Gay", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Utah"} ];
+	LARoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Cam Akers", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Florida State"},
+	{name: "Jake Funk", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Maryland"},
+	{name: "Buddy Howell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Florida Atlantic"},
+	{name: "Odell Beckham Jr.", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
+	{name: "Van Jefferson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida"},
+	{name: "J.J. Koski", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Cal Poly"},
+	{name: "Cooper Kupp", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Eastern Washington"},
+	{name: "Ben Skowronek", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Notre Dame"},
+	{name: "Allen Robinson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Penn State"},
+	{name: "Kendall Blanton", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Missouri"},
+	{name: "Tyler Higbee", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Western Kentucky"},
+	{name: "Brycen Hopkins", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Purdue"},
+	{name: "Jared Pinkney", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Vanderbilt"},
+	{name: "Matt Gay", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Utah"} ];
 	
-	BALoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Devonta Freeman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida State"},
-	{name: "Latavius Murray", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCF"},
-	{name: "Patrick Ricard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Maine"},
-	{name: "Corey Clement", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wisconsin"},
-	{name: "Mike Davis", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Carolina"},
-	{name: "Rashod Bateman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Minnesota"},
-	{name: "Devin Duvernay", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas"},
-	{name: "James Proche", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "SMU"},
-	{name: "Tylan Wallace", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma State"},
-	{name: "Mark Andrews", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "Nick Boyle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Delaware"},
-	{name: "Josh Oliver", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "San Jose State"},
-	{name: "Tony Poljan", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Virginia"},
-	{name: "Justin Tucker", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas"} ];
+	BALoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Devonta Freeman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Florida State"},
+	{name: "Latavius Murray", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCF"},
+	{name: "Patrick Ricard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Maine"},
+	{name: "Corey Clement", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Wisconsin"},
+	{name: "Mike Davis", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Carolina"},
+	{name: "Rashod Bateman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Minnesota"},
+	{name: "Devin Duvernay", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Texas"},
+	{name: "James Proche", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "SMU"},
+	{name: "Tylan Wallace", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oklahoma State"},
+	{name: "Mark Andrews", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oklahoma"},
+	{name: "Nick Boyle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Delaware"},
+	{name: "Josh Oliver", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "San Jose State"},
+	{name: "Tony Poljan", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Virginia"},
+	{name: "Justin Tucker", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas"} ];
 	
-	NOoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Mark Ingram Jr.", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Tony Jones Jr.", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Notre Dame"},
-	{name: "Alvin Kamara", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tennessee"},
-	{name: "Adam Prentice", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Carolina"},
-	{name: "Dwayne Washington", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Washington"},
-	{name: "Marquez Callaway", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tennessee"},
-	{name: "Deonte Harty", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Assumption"},
-	{name: "Tre&#39;Quan Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCF"},
-	{name: "Kenny Stills", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "Jarvis Landry", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Juwan Johnson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oregon"},
-	{name: "Adam Trautman", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Dayton"},
-	{name: "J.P. Holtz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Pittsburgh"},
-	{name: "Chris Herndon", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Brett Maher", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Nebraska"} ];
+	NOoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Mark Ingram Jr.", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Alabama"},
+	{name: "Tony Jones Jr.", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Notre Dame"},
+	{name: "Alvin Kamara", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Tennessee"},
+	{name: "Adam Prentice", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Carolina"},
+	{name: "Dwayne Washington", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Washington"},
+	{name: "Marquez Callaway", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Tennessee"},
+	{name: "Chris Olave", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Ohio State"},
+	{name: "Deonte Harty", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Assumption"},
+	{name: "Tre&#39;Quan Smith", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCF"},
+	{name: "Kenny Stills", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oklahoma"},
+	{name: "Jarvis Landry", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
+	{name: "Juwan Johnson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oregon"},
+	{name: "Adam Trautman", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Dayton"},
+	{name: "J.P. Holtz", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Pittsburgh"},
+	{name: "Chris Herndon", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Wil Lutz", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia State"} ];
 	
-	SEAoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Nick Bellore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Central Michigan"},
-	{name: "Alex Collins", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arkansas"},
-	{name: "DeeJay Dallas", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Travis Homer", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Rashaad Penny", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "San Diego State"},
-	{name: "D&#39;Wayne Eskridge", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Western Michigan"},
-	{name: "Penny Hart", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia State"},
-	{name: "Tyler Lockett", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Kansas State"},
-	{name: "DK Metcalf", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ole Miss"},
-	{name: "Freddie Swain", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida"},
-	{name: "Marquise Goodwin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas"},
-	{name: "Will Dissly", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Washington"},
-	{name: "Colby Parkinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Stanford"},
-	{name: "Noah Fant", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Iowa"},
-	{name: "Jason Myers", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Marist"} ];
+	SEAoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Nick Bellore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Central Michigan"},
+	{name: "Alex Collins", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arkansas"},
+	{name: "DeeJay Dallas", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Travis Homer", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Rashaad Penny", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "San Diego State"},
+	{name: "Kenneth Walker III", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Michigan State"},
+	{name: "D&#39;Wayne Eskridge", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Western Michigan"},
+	{name: "Penny Hart", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia State"},
+	{name: "Tyler Lockett", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Kansas State"},
+	{name: "DK Metcalf", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Ole Miss"},
+	{name: "Freddie Swain", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida"},
+	{name: "Marquise Goodwin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas"},
+	{name: "Will Dissly", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Washington"},
+	{name: "Colby Parkinson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Stanford"},
+	{name: "Noah Fant", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Iowa"},
+	{name: "Jason Myers", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Marist"} ];
 	
-	PIToffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Kalen Ballage", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arizona State"},
-	{name: "Najee Harris", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Benny Snell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Kentucky"},
-	{name: "Derek Watt", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wisconsin"},
-	{name: "Jeremy McNichols", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Boise State"},
-	{name: "Chase Claypool", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Notre Dame"},
-	{name: "Diontae Johnson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Toledo"},
-	{name: "Cody White", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Michigan State"},
-	{name: "Gunner Olszewski", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Bemidji State"},
-	{name: "Miles Boykin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Notre Dame"},
-	{name: "Pat Freiermuth", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Zach Gentry", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Michigan"},
-	{name: "Kevin Rader", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Youngstown State"},
-	{name: "Chris Boswell", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Rice"} ];
+	PIToffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Kalen Ballage", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arizona State"},
+	{name: "Najee Harris", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Alabama"},
+	{name: "Benny Snell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Kentucky"},
+	{name: "Derek Watt", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Wisconsin"},
+	{name: "Jeremy McNichols", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Boise State"},
+	{name: "Diontae Johnson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Toledo"},
+	{name: "Cody White", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Michigan State"},
+	{name: "Gunner Olszewski", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Bemidji State"},
+	{name: "Miles Boykin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Notre Dame"},
+	{name: "Pat Freiermuth", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Penn State"},
+	{name: "Zach Gentry", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Michigan"},
+	{name: "Kevin Rader", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Youngstown State"},
+	{name: "Chris Boswell", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Rice"} ];
 	
-	HOUoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Rex Burkhead", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Nebraska"},
-	{name: "Royce Freeman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oregon"},
-	{name: "David Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Northern Iowa"},
-	{name: "Scottie Phillips", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ole Miss"},
-	{name: "Andy Janovich", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Nebraska"},
-	{name: "Marlon Mack", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Florida"},
-	{name: "Dare Ogunbowale", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Wisconsin"},
-	{name: "Danny Amendola", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas Tech"},
-	{name: "Davion Davis", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Sam Houston State"},
-	{name: "Phillip Dorsett", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Chris Moore", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Cincinnati"},
-	{name: "Nico Collins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Michigan"},
-	{name: "Chris Conley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Brandin Cooks", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oregon State"},
-	{name: "Chester Rogers", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Grambling State"},
-	{name: "Pharoah Brown", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oregon"},
-	{name: "Brevin Jordan", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Antony Auclair", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Laval"},
-	{name: "Jeff Driskel", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Louisiana Tech"},
-	{name: "Ka&#39;imi Fairbairn", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "UCLA"} ];
+	HOUoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Rex Burkhead", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Nebraska"},
+	{name: "Dameon Pierce", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Florida"},
+	{name: "Royce Freeman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oregon"},
+	{name: "David Johnson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Northern Iowa"},
+	{name: "Scottie Phillips", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ole Miss"},
+	{name: "Andy Janovich", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Nebraska"},
+	{name: "Marlon Mack", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "South Florida"},
+	{name: "Dare Ogunbowale", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Wisconsin"},
+	{name: "Danny Amendola", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas Tech"},
+	{name: "Davion Davis", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Sam Houston State"},
+	{name: "Phillip Dorsett", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Chris Moore", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Cincinnati"},
+	{name: "Nico Collins", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Michigan"},
+	{name: "Chris Conley", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Georgia"},
+	{name: "Brandin Cooks", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Oregon State"},
+	{name: "Chester Rogers", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Grambling State"},
+	{name: "Pharoah Brown", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oregon"},
+	{name: "Brevin Jordan", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Antony Auclair", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Laval"},
+	{name: "Jeff Driskel", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Louisiana Tech"},
+	{name: "Ka&#39;imi Fairbairn", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "UCLA"} ];
 	
-	TENoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Dontrell Hilliard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tulane"},
-	{name: "Trenton Cannon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Virginia State"},
-	{name: "Tory Carter", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Derrick Henry", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Alabama"},
-	{name: "Jordan Wilkins", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Ole Miss"},
-	{name: "Dez Fitzpatrick", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Louisville"},
-	{name: "Racey McMath", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "Nick Westbrook-Ikhine", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Indiana"},
-	{name: "Terry Godwin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Cody Hollister", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arkansas"},
-	{name: "Mason Kinsey", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Berry College"},
-	{name: "Josh Malone", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tennessee"},
-	{name: "Robert Woods", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "USC"},
-	{name: "Geoff Swaim", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas"},
-	{name: "Austin Hooper", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Stanford"},
-	{name: "Tommy Hudson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arizona State"},
-	{name: "Briley Moore", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Kansas State"},
-	{name: "Randy Bullock", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Texas A&amp;M"} ];
+	TENoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Dontrell Hilliard", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Tulane"},
+	{name: "Trenton Cannon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Virginia State"},
+	{name: "Tory Carter", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
+	{name: "Derrick Henry", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Alabama"},
+	{name: "Jordan Wilkins", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Ole Miss"},
+	{name: "Dez Fitzpatrick", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Louisville"},
+	{name: "Racey McMath", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
+	{name: "Nick Westbrook-Ikhine", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Indiana"},
+	{name: "Terry Godwin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia"},
+	{name: "Cody Hollister", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arkansas"},
+	{name: "Mason Kinsey", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Berry College"},
+	{name: "Josh Malone", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Tennessee"},
+	{name: "Robert Woods", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "USC"},
+	{name: "Geoff Swaim", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas"},
+	{name: "Austin Hooper", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Stanford"},
+	{name: "Tommy Hudson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Arizona State"},
+	{name: "Briley Moore", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Kansas State"},
+	{name: "Randy Bullock", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Texas A&amp;M"} ];
 	
-	MINoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "Dalvin Cook", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida State"},
-	{name: "Wayne Gallman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Clemson"},
-	{name: "C.J. Ham", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Augustana SD"},
-	{name: "Alexander Mattison", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Boise State"},
-	{name: "Kene Nwangwu", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Iowa State"},
-	{name: "Dan Chisena", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"},
-	{name: "Justin Jefferson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "LSU"},
-	{name: "K.J. Osborn", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Ihmir Smith-Marsette", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Iowa"},
-	{name: "Dede Westbrook", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Oklahoma"},
-	{name: "Albert Wilson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia State"},
-	{name: "Luke Stocker", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tennessee"},
-	{name: "Shaun Beyer", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Iowa"},
-	{name: "Greg Joseph", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Florida Atlantic"} ];
+	MINoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "Dalvin Cook", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Florida State"},
+	{name: "Wayne Gallman", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Clemson"},
+	{name: "C.J. Ham", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Augustana SD"},
+	{name: "Alexander Mattison", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Boise State"},
+	{name: "Kene Nwangwu", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Iowa State"},
+	{name: "Dan Chisena", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Penn State"},
+	{name: "Justin Jefferson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "LSU"},
+	{name: "Adam Thielen", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Minnesota State"},
+	{name: "K.J. Osborn", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Ihmir Smith-Marsette", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Iowa"},
+	{name: "Dede Westbrook", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Oklahoma"},
+	{name: "Albert Wilson", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia State"},
+	{name: "Jalen Reagor", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "TCU"},
+	{name: "Luke Stocker", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Tennessee"},
+	{name: "Shaun Beyer", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Iowa"},
+	{name: "Greg Joseph", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Florida Atlantic"} ];
 	
-	SFoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: ""},
-	{name: "JaMycal Hasty", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Baylor"},
-	{name: "Kyle Juszczyk", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Harvard"},
-	{name: "Elijah Mitchell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Louisiana-Lafayette"},
-	{name: "Jeff Wilson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "North Texas"},
-	{name: "Brandon Aiyuk", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Arizona State"},
-	{name: "Travis Benjamin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Miami FL"},
-	{name: "Jauan Jennings", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Tennessee"},
-	{name: "Deebo Samuel", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "South Carolina"},
-	{name: "Malik Turner", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Illinois"},
-	{name: "Ray-Ray McCloud", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Clemson"},
-	{name: "Ross Dwelley", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "San Diego"},
-	{name: "Tanner Hudson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Southern Arkansas"},
-	{name: "George Kittle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Iowa"},
-	{name: "Charlie Woerner", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Georgia"},
-	{name: "Robbie Gould", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, college: "Penn State"} ];
+	SFoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
+	{name: "JaMycal Hasty", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Baylor"},
+	{name: "Kyle Juszczyk", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Harvard"},
+	{name: "Elijah Mitchell", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Louisiana-Lafayette"},
+	{name: "Jeff Wilson", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "North Texas"},
+	{name: "Brandon Aiyuk", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Arizona State"},
+	{name: "Travis Benjamin", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Miami FL"},
+	{name: "Jauan Jennings", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Tennessee"},
+	{name: "Deebo Samuel", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "South Carolina"},
+	{name: "Malik Turner", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Illinois"},
+	{name: "Ray-Ray McCloud", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Clemson"},
+	{name: "Ross Dwelley", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "San Diego"},
+	{name: "Tanner Hudson", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Southern Arkansas"},
+	{name: "George Kittle", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Iowa"},
+	{name: "Charlie Woerner", pos: "TE", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Georgia"},
+	{name: "Robbie Gould", pos: "K", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Penn State"} ];
 	
 	CHIdefense = [ {name: "Bears Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
 	CINdefense = [ {name: "Bengals Defense", pos: "DEF", points: 0, safeties: 0, defensiveTD: 0} ];
@@ -2596,33 +2614,126 @@ function firstQuarter(team1, team2){
 			away=7;
 			team1[1] += away;
 			
-			/*TOUCHDOWN*/
-			var randomPlayerIndex = Math.floor(Math.random() * (team1[4].length - 1));
-			team1[4][randomPlayerIndex].points = team1[4][randomPlayerIndex].points + 6;
-			
-			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
-			if(team1[4][randomPlayerIndex].pos.valueOf() == "QB"){
-				team1[4][randomPlayerIndex].rushTD++;
-			}
-			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
-			else if (team1[4][randomPlayerIndex].pos.valueOf() == "RB"){
-				rbTDnumber = Math.floor(Math.random() * 2);
-				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
-					team1[4][randomPlayerIndex].rushTD++;
+			var scoringPosition = Math.floor(Math.random() * 4);
+			switch (scoringPosition){
+				case 0: { //QB
+					team1[4][0].rushTD++;
+					team1[4][0].points = team1[4][0].points + 6;
+					var playerName = team1[4][0];
+					break;
 				}
-				else {
-					team1[4][randomPlayerIndex].recTD++;
+				case 1: { //RB
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//RB1 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "RB1"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team1[4][i].rushTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									var playerName = team1[4][i];
+								}
+								else {
+									team1[4][i].recTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									team1[4][0].passTD++;
+									var playerName = team1[4][i];
+								}
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//RB2 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "RB2"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team1[4][i].rushTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									var playerName = team1[4][i];
+								}
+								else {
+									team1[4][i].recTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									team1[4][0].passTD++;
+									var playerName = team1[4][i];
+								}
+							}
+						}
+					}
+					else{
+						//OTHER RB SCORES
+						var rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						while (!(team1[4][rnd].pos.valueOf() == "RB" && team1[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						}
+						rbTDnumber = Math.floor(Math.random() * 2);
+						if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+							team1[4][rnd].rushTD++;
+							team1[4][rnd].points = team1[4][rnd].points + 6;
+							var playerName = team1[4][rnd];
+						}
+						else {
+							team1[4][rnd].recTD++;
+							team1[4][rnd].points = team1[4][rnd].points + 6;
+							team1[4][0].passTD++;
+							var playerName = team1[4][rnd];
+						}
+					}
+					break;
+				}
+				case 2: { //WR
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//WR1 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "WR1"){
+								team1[4][i].recTD++;
+								team1[4][i].points = team1[4][i].points + 6;
+								team1[4][0].passTD++;
+								var playerName = team1[4][i];
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//WR2 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "WR2"){
+								team1[4][i].recTD++;
+								team1[4][i].points = team1[4][i].points + 6;
+								team1[4][0].passTD++;
+								var playerName = team1[4][i];
+							}
+						}
+					}
+					else{
+						//OTHER WR SCORES
+						var rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						while (!(team1[4][rnd].pos.valueOf() == "WR" && team1[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						}
+						team1[4][rnd].recTD++;
+						team1[4][rnd].points = team1[4][rnd].points + 6;
+						team1[4][0].passTD++;
+						var playerName = team1[4][rnd];
+					}
+					break;
+				}
+				case 3: { //TE
+					var rnd = Math.floor(Math.random() * (team1[4].length - 1));
+					while (!(team1[4][rnd].pos.valueOf() == "TE" && team1[4][rnd].rank.valueOf() == "")){
+						rnd = Math.floor(Math.random() * (team1[4].length - 1));
+					}
+					team1[4][rnd].recTD++;
+					team1[4][rnd].points = team1[4][rnd].points + 6;
 					team1[4][0].passTD++;
+					var playerName = team1[4][rnd];
+					break;
 				}
 			}
-			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
-			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
-			else{
-				team1[4][randomPlayerIndex].recTD++;
-				team1[4][0].passTD++;
-			}
 			
-			var playerName = team1[4][randomPlayerIndex];
+			/*TOUCHDOWN*/
 			
 			/*EXTRA POINT; KICKER LAST PLAYER IN ROSTER*/
 			team1[4][team1[4].length - 1].points++;
@@ -2687,33 +2798,126 @@ function firstQuarter(team1, team2){
 			home=7;
 			team2[1] += home;
 			
-			/*TOUCHDOWN*/
-			var randomPlayerIndex = Math.floor(Math.random() * (team2[4].length - 1));
-			team2[4][randomPlayerIndex].points = team2[4][randomPlayerIndex].points + 6;
-			
-			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
-			if(team2[4][randomPlayerIndex].pos.valueOf() == "QB"){
-				team2[4][randomPlayerIndex].rushTD++;
-			}
-			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
-			else if (team2[4][randomPlayerIndex].pos.valueOf() == "RB"){
-				rbTDnumber = Math.floor(Math.random() * 2);
-				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
-					team2[4][randomPlayerIndex].rushTD++;
+			var scoringPosition = Math.floor(Math.random() * 4);
+			switch (scoringPosition){
+				case 0: { //QB
+					team2[4][0].rushTD++;
+					team2[4][0].points = team2[4][0].points + 6;
+					var playerName = team2[4][0];
+					break;
 				}
-				else {
-					team2[4][randomPlayerIndex].recTD++;
+				case 1: { //RB
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//RB1 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "RB1"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team2[4][i].rushTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									var playerName = team2[4][i];
+								}
+								else {
+									team2[4][i].recTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									team2[4][0].passTD++;
+									var playerName = team2[4][i];
+								}
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//RB2 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "RB2"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team2[4][i].rushTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									var playerName = team2[4][i];
+								}
+								else {
+									team2[4][i].recTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									team2[4][0].passTD++;
+									var playerName = team2[4][i];
+								}
+							}
+						}
+					}
+					else{
+						//OTHER RB SCORES
+						var rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						while (!(team2[4][rnd].pos.valueOf() == "RB" && team2[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						}
+						rbTDnumber = Math.floor(Math.random() * 2);
+						if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+							team2[4][rnd].rushTD++;
+							team2[4][rnd].points = team2[4][rnd].points + 6;
+							var playerName = team2[4][rnd];
+						}
+						else {
+							team2[4][rnd].recTD++;
+							team2[4][rnd].points = team2[4][rnd].points + 6;
+							team2[4][0].passTD++;
+							var playerName = team2[4][rnd];
+						}
+					}
+					break;
+				}
+				case 2: { //WR
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//WR1 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "WR1"){
+								team2[4][i].recTD++;
+								team2[4][i].points = team2[4][i].points + 6;
+								team2[4][0].passTD++;
+								var playerName = team2[4][i];
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//WR2 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "WR2"){
+								team2[4][i].recTD++;
+								team2[4][i].points = team2[4][i].points + 6;
+								team2[4][0].passTD++;
+								var playerName = team2[4][i];
+							}
+						}
+					}
+					else{
+						//OTHER WR SCORES
+						var rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						while (!(team2[4][rnd].pos.valueOf() == "WR" && team2[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						}
+						team2[4][rnd].recTD++;
+						team2[4][rnd].points = team2[4][rnd].points + 6;
+						team2[4][0].passTD++;
+						var playerName = team2[4][rnd];
+					}
+					break;
+				}
+				case 3: { //TE
+					var rnd = Math.floor(Math.random() * (team2[4].length - 1));
+					while (!(team2[4][rnd].pos.valueOf() == "TE" && team2[4][rnd].rank.valueOf() == "")){
+						rnd = Math.floor(Math.random() * (team2[4].length - 1));
+					}
+					team2[4][rnd].recTD++;
+					team2[4][rnd].points = team2[4][rnd].points + 6;
 					team2[4][0].passTD++;
+					var playerName = team2[4][rnd];
+					break;
 				}
 			}
-			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
-			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
-			else{
-				team2[4][randomPlayerIndex].recTD++;
-				team2[4][0].passTD++;
-			}
 			
-			var playerName = team2[4][randomPlayerIndex];
+			/*TOUCHDOWN*/
 			
 			/*EXTRA POINT; KICKER LAST PLAYER IN ROSTER*/
 			team2[4][team2[4].length - 1].points++;
@@ -2800,33 +3004,126 @@ function secondQuarter(team1, team2){
 			away=7;
 			team1[1] += away;
 			
-			/*TOUCHDOWN*/
-			var randomPlayerIndex = Math.floor(Math.random() * (team1[4].length - 1));
-			team1[4][randomPlayerIndex].points = team1[4][randomPlayerIndex].points + 6;
-			
-			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
-			if(team1[4][randomPlayerIndex].pos.valueOf() == "QB"){
-				team1[4][randomPlayerIndex].rushTD++;
-			}
-			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
-			else if (team1[4][randomPlayerIndex].pos.valueOf() == "RB"){
-				rbTDnumber = Math.floor(Math.random() * 2);
-				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
-					team1[4][randomPlayerIndex].rushTD++;
+			var scoringPosition = Math.floor(Math.random() * 4);
+			switch (scoringPosition){
+				case 0: { //QB
+					team1[4][0].rushTD++;
+					team1[4][0].points = team1[4][0].points + 6;
+					var playerName = team1[4][0];
+					break;
 				}
-				else {
-					team1[4][randomPlayerIndex].recTD++;
+				case 1: { //RB
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//RB1 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "RB1"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team1[4][i].rushTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									var playerName = team1[4][i];
+								}
+								else {
+									team1[4][i].recTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									team1[4][0].passTD++;
+									var playerName = team1[4][i];
+								}
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//RB2 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "RB2"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team1[4][i].rushTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									var playerName = team1[4][i];
+								}
+								else {
+									team1[4][i].recTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									team1[4][0].passTD++;
+									var playerName = team1[4][i];
+								}
+							}
+						}
+					}
+					else{
+						//OTHER RB SCORES
+						var rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						while (!(team1[4][rnd].pos.valueOf() == "RB" && team1[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						}
+						rbTDnumber = Math.floor(Math.random() * 2);
+						if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+							team1[4][rnd].rushTD++;
+							team1[4][rnd].points = team1[4][rnd].points + 6;
+							var playerName = team1[4][rnd];
+						}
+						else {
+							team1[4][rnd].recTD++;
+							team1[4][rnd].points = team1[4][rnd].points + 6;
+							team1[4][0].passTD++;
+							var playerName = team1[4][rnd];
+						}
+					}
+					break;
+				}
+				case 2: { //WR
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//WR1 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "WR1"){
+								team1[4][i].recTD++;
+								team1[4][i].points = team1[4][i].points + 6;
+								team1[4][0].passTD++;
+								var playerName = team1[4][i];
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//WR2 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "WR2"){
+								team1[4][i].recTD++;
+								team1[4][i].points = team1[4][i].points + 6;
+								team1[4][0].passTD++;
+								var playerName = team1[4][i];
+							}
+						}
+					}
+					else{
+						//OTHER WR SCORES
+						var rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						while (!(team1[4][rnd].pos.valueOf() == "WR" && team1[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						}
+						team1[4][rnd].recTD++;
+						team1[4][rnd].points = team1[4][rnd].points + 6;
+						team1[4][0].passTD++;
+						var playerName = team1[4][rnd];
+					}
+					break;
+				}
+				case 3: { //TE
+					var rnd = Math.floor(Math.random() * (team1[4].length - 1));
+					while (!(team1[4][rnd].pos.valueOf() == "TE" && team1[4][rnd].rank.valueOf() == "")){
+						rnd = Math.floor(Math.random() * (team1[4].length - 1));
+					}
+					team1[4][rnd].recTD++;
+					team1[4][rnd].points = team1[4][rnd].points + 6;
 					team1[4][0].passTD++;
+					var playerName = team1[4][rnd];
+					break;
 				}
 			}
-			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
-			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
-			else{
-				team1[4][randomPlayerIndex].recTD++;
-				team1[4][0].passTD++;
-			}
 			
-			var playerName = team1[4][randomPlayerIndex];
+			/*TOUCHDOWN*/
 			
 			/*EXTRA POINT; KICKER LAST PLAYER IN ROSTER*/
 			team1[4][team1[4].length - 1].points++;
@@ -2891,33 +3188,126 @@ function secondQuarter(team1, team2){
 			home=7;
 			team2[1] += home;
 			
-			/*TOUCHDOWN*/
-			var randomPlayerIndex = Math.floor(Math.random() * (team2[4].length - 1));
-			team2[4][randomPlayerIndex].points = team2[4][randomPlayerIndex].points + 6;
-			
-			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
-			if(team2[4][randomPlayerIndex].pos.valueOf() == "QB"){
-				team2[4][randomPlayerIndex].rushTD++;
-			}
-			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
-			else if (team2[4][randomPlayerIndex].pos.valueOf() == "RB"){
-				rbTDnumber = Math.floor(Math.random() * 2);
-				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
-					team2[4][randomPlayerIndex].rushTD++;
+			var scoringPosition = Math.floor(Math.random() * 4);
+			switch (scoringPosition){
+				case 0: { //QB
+					team2[4][0].rushTD++;
+					team2[4][0].points = team2[4][0].points + 6;
+					var playerName = team2[4][0];
+					break;
 				}
-				else {
-					team2[4][randomPlayerIndex].recTD++;
+				case 1: { //RB
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//RB1 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "RB1"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team2[4][i].rushTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									var playerName = team2[4][i];
+								}
+								else {
+									team2[4][i].recTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									team2[4][0].passTD++;
+									var playerName = team2[4][i];
+								}
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//RB2 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "RB2"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team2[4][i].rushTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									var playerName = team2[4][i];
+								}
+								else {
+									team2[4][i].recTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									team2[4][0].passTD++;
+									var playerName = team2[4][i];
+								}
+							}
+						}
+					}
+					else{
+						//OTHER RB SCORES
+						var rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						while (!(team2[4][rnd].pos.valueOf() == "RB" && team2[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						}
+						rbTDnumber = Math.floor(Math.random() * 2);
+						if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+							team2[4][rnd].rushTD++;
+							team2[4][rnd].points = team2[4][rnd].points + 6;
+							var playerName = team2[4][rnd];
+						}
+						else {
+							team2[4][rnd].recTD++;
+							team2[4][rnd].points = team2[4][rnd].points + 6;
+							team2[4][0].passTD++;
+							var playerName = team2[4][rnd];
+						}
+					}
+					break;
+				}
+				case 2: { //WR
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//WR1 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "WR1"){
+								team2[4][i].recTD++;
+								team2[4][i].points = team2[4][i].points + 6;
+								team2[4][0].passTD++;
+								var playerName = team2[4][i];
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//WR2 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "WR2"){
+								team2[4][i].recTD++;
+								team2[4][i].points = team2[4][i].points + 6;
+								team2[4][0].passTD++;
+								var playerName = team2[4][i];
+							}
+						}
+					}
+					else{
+						//OTHER WR SCORES
+						var rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						while (!(team2[4][rnd].pos.valueOf() == "WR" && team2[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						}
+						team2[4][rnd].recTD++;
+						team2[4][rnd].points = team2[4][rnd].points + 6;
+						team2[4][0].passTD++;
+						var playerName = team2[4][rnd];
+					}
+					break;
+				}
+				case 3: { //TE
+					var rnd = Math.floor(Math.random() * (team2[4].length - 1));
+					while (!(team2[4][rnd].pos.valueOf() == "TE" && team2[4][rnd].rank.valueOf() == "")){
+						rnd = Math.floor(Math.random() * (team2[4].length - 1));
+					}
+					team2[4][rnd].recTD++;
+					team2[4][rnd].points = team2[4][rnd].points + 6;
 					team2[4][0].passTD++;
+					var playerName = team2[4][rnd];
+					break;
 				}
 			}
-			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
-			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
-			else{
-				team2[4][randomPlayerIndex].recTD++;
-				team2[4][0].passTD++;
-			}
 			
-			var playerName = team2[4][randomPlayerIndex];
+			/*TOUCHDOWN*/
 			
 			/*EXTRA POINT; KICKER LAST PLAYER IN ROSTER*/
 			team2[4][team2[4].length - 1].points++;
@@ -3003,33 +3393,126 @@ function thirdQuarter(team1, team2){
 			away=7;
 			team1[1] += away;
 			
-			/*TOUCHDOWN*/
-			var randomPlayerIndex = Math.floor(Math.random() * (team1[4].length - 1));
-			team1[4][randomPlayerIndex].points = team1[4][randomPlayerIndex].points + 6;
-			
-			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
-			if(team1[4][randomPlayerIndex].pos.valueOf() == "QB"){
-				team1[4][randomPlayerIndex].rushTD++;
-			}
-			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
-			else if (team1[4][randomPlayerIndex].pos.valueOf() == "RB"){
-				rbTDnumber = Math.floor(Math.random() * 2);
-				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
-					team1[4][randomPlayerIndex].rushTD++;
+			var scoringPosition = Math.floor(Math.random() * 4);
+			switch (scoringPosition){
+				case 0: { //QB
+					team1[4][0].rushTD++;
+					team1[4][0].points = team1[4][0].points + 6;
+					var playerName = team1[4][0];
+					break;
 				}
-				else {
-					team1[4][randomPlayerIndex].recTD++;
+				case 1: { //RB
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//RB1 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "RB1"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team1[4][i].rushTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									var playerName = team1[4][i];
+								}
+								else {
+									team1[4][i].recTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									team1[4][0].passTD++;
+									var playerName = team1[4][i];
+								}
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//RB2 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "RB2"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team1[4][i].rushTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									var playerName = team1[4][i];
+								}
+								else {
+									team1[4][i].recTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									team1[4][0].passTD++;
+									var playerName = team1[4][i];
+								}
+							}
+						}
+					}
+					else{
+						//OTHER RB SCORES
+						var rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						while (!(team1[4][rnd].pos.valueOf() == "RB" && team1[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						}
+						rbTDnumber = Math.floor(Math.random() * 2);
+						if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+							team1[4][rnd].rushTD++;
+							team1[4][rnd].points = team1[4][rnd].points + 6;
+							var playerName = team1[4][rnd];
+						}
+						else {
+							team1[4][rnd].recTD++;
+							team1[4][rnd].points = team1[4][rnd].points + 6;
+							team1[4][0].passTD++;
+							var playerName = team1[4][rnd];
+						}
+					}
+					break;
+				}
+				case 2: { //WR
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//WR1 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "WR1"){
+								team1[4][i].recTD++;
+								team1[4][i].points = team1[4][i].points + 6;
+								team1[4][0].passTD++;
+								var playerName = team1[4][i];
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//WR2 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "WR2"){
+								team1[4][i].recTD++;
+								team1[4][i].points = team1[4][i].points + 6;
+								team1[4][0].passTD++;
+								var playerName = team1[4][i];
+							}
+						}
+					}
+					else{
+						//OTHER WR SCORES
+						var rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						while (!(team1[4][rnd].pos.valueOf() == "WR" && team1[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						}
+						team1[4][rnd].recTD++;
+						team1[4][rnd].points = team1[4][rnd].points + 6;
+						team1[4][0].passTD++;
+						var playerName = team1[4][rnd];
+					}
+					break;
+				}
+				case 3: { //TE
+					var rnd = Math.floor(Math.random() * (team1[4].length - 1));
+					while (!(team1[4][rnd].pos.valueOf() == "TE" && team1[4][rnd].rank.valueOf() == "")){
+						rnd = Math.floor(Math.random() * (team1[4].length - 1));
+					}
+					team1[4][rnd].recTD++;
+					team1[4][rnd].points = team1[4][rnd].points + 6;
 					team1[4][0].passTD++;
+					var playerName = team1[4][rnd];
+					break;
 				}
 			}
-			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
-			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
-			else{
-				team1[4][randomPlayerIndex].recTD++;
-				team1[4][0].passTD++;
-			}
 			
-			var playerName = team1[4][randomPlayerIndex];
+			/*TOUCHDOWN*/
 			
 			/*EXTRA POINT; KICKER LAST PLAYER IN ROSTER*/
 			team1[4][team1[4].length - 1].points++;
@@ -3094,33 +3577,126 @@ function thirdQuarter(team1, team2){
 			home=7;
 			team2[1] += home;
 			
-			/*TOUCHDOWN*/
-			var randomPlayerIndex = Math.floor(Math.random() * (team2[4].length - 1));
-			team2[4][randomPlayerIndex].points = team2[4][randomPlayerIndex].points + 6;
-			
-			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
-			if(team2[4][randomPlayerIndex].pos.valueOf() == "QB"){
-				team2[4][randomPlayerIndex].rushTD++;
-			}
-			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
-			else if (team2[4][randomPlayerIndex].pos.valueOf() == "RB"){
-				rbTDnumber = Math.floor(Math.random() * 2);
-				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
-					team2[4][randomPlayerIndex].rushTD++;
+			var scoringPosition = Math.floor(Math.random() * 4);
+			switch (scoringPosition){
+				case 0: { //QB
+					team2[4][0].rushTD++;
+					team2[4][0].points = team2[4][0].points + 6;
+					var playerName = team2[4][0];
+					break;
 				}
-				else {
-					team2[4][randomPlayerIndex].recTD++;
+				case 1: { //RB
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//RB1 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "RB1"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team2[4][i].rushTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									var playerName = team2[4][i];
+								}
+								else {
+									team2[4][i].recTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									team2[4][0].passTD++;
+									var playerName = team2[4][i];
+								}
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//RB2 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "RB2"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team2[4][i].rushTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									var playerName = team2[4][i];
+								}
+								else {
+									team2[4][i].recTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									team2[4][0].passTD++;
+									var playerName = team2[4][i];
+								}
+							}
+						}
+					}
+					else{
+						//OTHER RB SCORES
+						var rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						while (!(team2[4][rnd].pos.valueOf() == "RB" && team2[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						}
+						rbTDnumber = Math.floor(Math.random() * 2);
+						if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+							team2[4][rnd].rushTD++;
+							team2[4][rnd].points = team2[4][rnd].points + 6;
+							var playerName = team2[4][rnd];
+						}
+						else {
+							team2[4][rnd].recTD++;
+							team2[4][rnd].points = team2[4][rnd].points + 6;
+							team2[4][0].passTD++;
+							var playerName = team2[4][rnd];
+						}
+					}
+					break;
+				}
+				case 2: { //WR
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//WR1 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "WR1"){
+								team2[4][i].recTD++;
+								team2[4][i].points = team2[4][i].points + 6;
+								team2[4][0].passTD++;
+								var playerName = team2[4][i];
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//WR2 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "WR2"){
+								team2[4][i].recTD++;
+								team2[4][i].points = team2[4][i].points + 6;
+								team2[4][0].passTD++;
+								var playerName = team2[4][i];
+							}
+						}
+					}
+					else{
+						//OTHER WR SCORES
+						var rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						while (!(team2[4][rnd].pos.valueOf() == "WR" && team2[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						}
+						team2[4][rnd].recTD++;
+						team2[4][rnd].points = team2[4][rnd].points + 6;
+						team2[4][0].passTD++;
+						var playerName = team2[4][rnd];
+					}
+					break;
+				}
+				case 3: { //TE
+					var rnd = Math.floor(Math.random() * (team2[4].length - 1));
+					while (!(team2[4][rnd].pos.valueOf() == "TE" && team2[4][rnd].rank.valueOf() == "")){
+						rnd = Math.floor(Math.random() * (team2[4].length - 1));
+					}
+					team2[4][rnd].recTD++;
+					team2[4][rnd].points = team2[4][rnd].points + 6;
 					team2[4][0].passTD++;
+					var playerName = team2[4][rnd];
+					break;
 				}
 			}
-			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
-			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
-			else{
-				team2[4][randomPlayerIndex].recTD++;
-				team2[4][0].passTD++;
-			}
 			
-			var playerName = team2[4][randomPlayerIndex];
+			/*TOUCHDOWN*/
 			
 			/*EXTRA POINT; KICKER LAST PLAYER IN ROSTER*/
 			team2[4][team2[4].length - 1].points++;
@@ -3206,33 +3782,126 @@ function fourthQuarter(team1, team2){
 			away=7;
 			team1[1] += away;
 			
-			/*TOUCHDOWN*/
-			var randomPlayerIndex = Math.floor(Math.random() * (team1[4].length - 1));
-			team1[4][randomPlayerIndex].points = team1[4][randomPlayerIndex].points + 6;
-			
-			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
-			if(team1[4][randomPlayerIndex].pos.valueOf() == "QB"){
-				team1[4][randomPlayerIndex].rushTD++;
-			}
-			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
-			else if (team1[4][randomPlayerIndex].pos.valueOf() == "RB"){
-				rbTDnumber = Math.floor(Math.random() * 2);
-				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
-					team1[4][randomPlayerIndex].rushTD++;
+			var scoringPosition = Math.floor(Math.random() * 4);
+			switch (scoringPosition){
+				case 0: { //QB
+					team1[4][0].rushTD++;
+					team1[4][0].points = team1[4][0].points + 6;
+					var playerName = team1[4][0];
+					break;
 				}
-				else {
-					team1[4][randomPlayerIndex].recTD++;
+				case 1: { //RB
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//RB1 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "RB1"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team1[4][i].rushTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									var playerName = team1[4][i];
+								}
+								else {
+									team1[4][i].recTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									team1[4][0].passTD++;
+									var playerName = team1[4][i];
+								}
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//RB2 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "RB2"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team1[4][i].rushTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									var playerName = team1[4][i];
+								}
+								else {
+									team1[4][i].recTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									team1[4][0].passTD++;
+									var playerName = team1[4][i];
+								}
+							}
+						}
+					}
+					else{
+						//OTHER RB SCORES
+						var rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						while (!(team1[4][rnd].pos.valueOf() == "RB" && team1[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						}
+						rbTDnumber = Math.floor(Math.random() * 2);
+						if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+							team1[4][rnd].rushTD++;
+							team1[4][rnd].points = team1[4][rnd].points + 6;
+							var playerName = team1[4][rnd];
+						}
+						else {
+							team1[4][rnd].recTD++;
+							team1[4][rnd].points = team1[4][rnd].points + 6;
+							team1[4][0].passTD++;
+							var playerName = team1[4][rnd];
+						}
+					}
+					break;
+				}
+				case 2: { //WR
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//WR1 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "WR1"){
+								team1[4][i].recTD++;
+								team1[4][i].points = team1[4][i].points + 6;
+								team1[4][0].passTD++;
+								var playerName = team1[4][i];
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//WR2 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "WR2"){
+								team1[4][i].recTD++;
+								team1[4][i].points = team1[4][i].points + 6;
+								team1[4][0].passTD++;
+								var playerName = team1[4][i];
+							}
+						}
+					}
+					else{
+						//OTHER WR SCORES
+						var rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						while (!(team1[4][rnd].pos.valueOf() == "WR" && team1[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						}
+						team1[4][rnd].recTD++;
+						team1[4][rnd].points = team1[4][rnd].points + 6;
+						team1[4][0].passTD++;
+						var playerName = team1[4][rnd];
+					}
+					break;
+				}
+				case 3: { //TE
+					var rnd = Math.floor(Math.random() * (team1[4].length - 1));
+					while (!(team1[4][rnd].pos.valueOf() == "TE" && team1[4][rnd].rank.valueOf() == "")){
+						rnd = Math.floor(Math.random() * (team1[4].length - 1));
+					}
+					team1[4][rnd].recTD++;
+					team1[4][rnd].points = team1[4][rnd].points + 6;
 					team1[4][0].passTD++;
+					var playerName = team1[4][rnd];
+					break;
 				}
 			}
-			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
-			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
-			else{
-				team1[4][randomPlayerIndex].recTD++;
-				team1[4][0].passTD++;
-			}
 			
-			var playerName = team1[4][randomPlayerIndex];
+			/*TOUCHDOWN*/
 			
 			/*EXTRA POINT; KICKER LAST PLAYER IN ROSTER*/
 			team1[4][team1[4].length - 1].points++;
@@ -3297,33 +3966,126 @@ function fourthQuarter(team1, team2){
 			home=7;
 			team2[1] += home;
 			
-			/*TOUCHDOWN*/
-			var randomPlayerIndex = Math.floor(Math.random() * (team2[4].length - 1));
-			team2[4][randomPlayerIndex].points = team2[4][randomPlayerIndex].points + 6;
-			
-			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
-			if(team2[4][randomPlayerIndex].pos.valueOf() == "QB"){
-				team2[4][randomPlayerIndex].rushTD++;
-			}
-			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
-			else if (team2[4][randomPlayerIndex].pos.valueOf() == "RB"){
-				rbTDnumber = Math.floor(Math.random() * 2);
-				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
-					team2[4][randomPlayerIndex].rushTD++;
+			var scoringPosition = Math.floor(Math.random() * 4);
+			switch (scoringPosition){
+				case 0: { //QB
+					team2[4][0].rushTD++;
+					team2[4][0].points = team2[4][0].points + 6;
+					var playerName = team2[4][0];
+					break;
 				}
-				else {
-					team2[4][randomPlayerIndex].recTD++;
+				case 1: { //RB
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//RB1 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "RB1"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team2[4][i].rushTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									var playerName = team2[4][i];
+								}
+								else {
+									team2[4][i].recTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									team2[4][0].passTD++;
+									var playerName = team2[4][i];
+								}
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//RB2 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "RB2"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team2[4][i].rushTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									var playerName = team2[4][i];
+								}
+								else {
+									team2[4][i].recTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									team2[4][0].passTD++;
+									var playerName = team2[4][i];
+								}
+							}
+						}
+					}
+					else{
+						//OTHER RB SCORES
+						var rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						while (!(team2[4][rnd].pos.valueOf() == "RB" && team2[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						}
+						rbTDnumber = Math.floor(Math.random() * 2);
+						if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+							team2[4][rnd].rushTD++;
+							team2[4][rnd].points = team2[4][rnd].points + 6;
+							var playerName = team2[4][rnd];
+						}
+						else {
+							team2[4][rnd].recTD++;
+							team2[4][rnd].points = team2[4][rnd].points + 6;
+							team2[4][0].passTD++;
+							var playerName = team2[4][rnd];
+						}
+					}
+					break;
+				}
+				case 2: { //WR
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//WR1 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "WR1"){
+								team2[4][i].recTD++;
+								team2[4][i].points = team2[4][i].points + 6;
+								team2[4][0].passTD++;
+								var playerName = team2[4][i];
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//WR2 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "WR2"){
+								team2[4][i].recTD++;
+								team2[4][i].points = team2[4][i].points + 6;
+								team2[4][0].passTD++;
+								var playerName = team2[4][i];
+							}
+						}
+					}
+					else{
+						//OTHER WR SCORES
+						var rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						while (!(team2[4][rnd].pos.valueOf() == "WR" && team2[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						}
+						team2[4][rnd].recTD++;
+						team2[4][rnd].points = team2[4][rnd].points + 6;
+						team2[4][0].passTD++;
+						var playerName = team2[4][rnd];
+					}
+					break;
+				}
+				case 3: { //TE
+					var rnd = Math.floor(Math.random() * (team2[4].length - 1));
+					while (!(team2[4][rnd].pos.valueOf() == "TE" && team2[4][rnd].rank.valueOf() == "")){
+						rnd = Math.floor(Math.random() * (team2[4].length - 1));
+					}
+					team2[4][rnd].recTD++;
+					team2[4][rnd].points = team2[4][rnd].points + 6;
 					team2[4][0].passTD++;
+					var playerName = team2[4][rnd];
+					break;
 				}
 			}
-			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
-			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
-			else{
-				team2[4][randomPlayerIndex].recTD++;
-				team2[4][0].passTD++;
-			}
 			
-			var playerName = team2[4][randomPlayerIndex];
+			/*TOUCHDOWN*/
 			
 			/*EXTRA POINT; KICKER LAST PLAYER IN ROSTER*/
 			team2[4][team2[4].length - 1].points++;
@@ -3496,33 +4258,126 @@ function overtime(team1, team2){
 	{
 		team1[1] += 6;
 		
-		/*TOUCHDOWN*/
-			var randomPlayerIndex = Math.floor(Math.random() * (team1[4].length - 1));
-			team1[4][randomPlayerIndex].points = team1[4][randomPlayerIndex].points + 6;
-			
-			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
-			if(team1[4][randomPlayerIndex].pos.valueOf() == "QB"){
-				team1[4][randomPlayerIndex].rushTD++;
-			}
-			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
-			else if (team1[4][randomPlayerIndex].pos.valueOf() == "RB"){
-				rbTDnumber = Math.floor(Math.random() * 2);
-				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
-					team1[4][randomPlayerIndex].rushTD++;
+		var scoringPosition = Math.floor(Math.random() * 4);
+			switch (scoringPosition){
+				case 0: { //QB
+					team1[4][0].rushTD++;
+					team1[4][0].points = team1[4][0].points + 6;
+					var playerName = team1[4][0];
+					break;
 				}
-				else {
-					team1[4][randomPlayerIndex].recTD++;
+				case 1: { //RB
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//RB1 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "RB1"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team1[4][i].rushTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									var playerName = team1[4][i];
+								}
+								else {
+									team1[4][i].recTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									team1[4][0].passTD++;
+									var playerName = team1[4][i];
+								}
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//RB2 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "RB2"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team1[4][i].rushTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									var playerName = team1[4][i];
+								}
+								else {
+									team1[4][i].recTD++;
+									team1[4][i].points = team1[4][i].points + 6;
+									team1[4][0].passTD++;
+									var playerName = team1[4][i];
+								}
+							}
+						}
+					}
+					else{
+						//OTHER RB SCORES
+						var rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						while (!(team1[4][rnd].pos.valueOf() == "RB" && team1[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						}
+						rbTDnumber = Math.floor(Math.random() * 2);
+						if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+							team1[4][rnd].rushTD++;
+							team1[4][rnd].points = team1[4][rnd].points + 6;
+							var playerName = team1[4][rnd];
+						}
+						else {
+							team1[4][rnd].recTD++;
+							team1[4][rnd].points = team1[4][rnd].points + 6;
+							team1[4][0].passTD++;
+							var playerName = team1[4][rnd];
+						}
+					}
+					break;
+				}
+				case 2: { //WR
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//WR1 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "WR1"){
+								team1[4][i].recTD++;
+								team1[4][i].points = team1[4][i].points + 6;
+								team1[4][0].passTD++;
+								var playerName = team1[4][i];
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//WR2 SCORES
+						for(var i=0;i<team1[4].length;i++){
+							if(team1[4][i].rank.valueOf() == "WR2"){
+								team1[4][i].recTD++;
+								team1[4][i].points = team1[4][i].points + 6;
+								team1[4][0].passTD++;
+								var playerName = team1[4][i];
+							}
+						}
+					}
+					else{
+						//OTHER WR SCORES
+						var rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						while (!(team1[4][rnd].pos.valueOf() == "WR" && team1[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team1[4].length - 1));
+						}
+						team1[4][rnd].recTD++;
+						team1[4][rnd].points = team1[4][rnd].points + 6;
+						team1[4][0].passTD++;
+						var playerName = team1[4][rnd];
+					}
+					break;
+				}
+				case 3: { //TE
+					var rnd = Math.floor(Math.random() * (team1[4].length - 1));
+					while (!(team1[4][rnd].pos.valueOf() == "TE" && team1[4][rnd].rank.valueOf() == "")){
+						rnd = Math.floor(Math.random() * (team1[4].length - 1));
+					}
+					team1[4][rnd].recTD++;
+					team1[4][rnd].points = team1[4][rnd].points + 6;
 					team1[4][0].passTD++;
+					var playerName = team1[4][rnd];
+					break;
 				}
 			}
-			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
-			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
-			else{
-				team1[4][randomPlayerIndex].recTD++;
-				team1[4][0].passTD++;
-			}
 			
-			var playerName = team1[4][randomPlayerIndex];
+			/*TOUCHDOWN*/
 			
 		if(playerName.pos.valueOf() == "QB"){
 			document.getElementById("simulation").innerHTML += "<p>" + team1[3] + " rushing touchdown from " + playerName.name + "</p>";
@@ -3568,33 +4423,126 @@ function overtime(team1, team2){
 	{
 		team2[1] += 6;
 		
-		/*TOUCHDOWN*/
-			var randomPlayerIndex = Math.floor(Math.random() * (team2[4].length - 1));
-			team2[4][randomPlayerIndex].points = team2[4][randomPlayerIndex].points + 6;
-			
-			/*ALL TOUCHDOWNS SCORED BY THE QUARTERBACK ARE RUSHING TOUCHDOWNS. WHILE A QB PASSING TO HIMSELF IS POSSIBLE, IT IS VERY RARE AND NOT TRACKED HERE.*/
-			if(team2[4][randomPlayerIndex].pos.valueOf() == "QB"){
-				team2[4][randomPlayerIndex].rushTD++;
-			}
-			/*RUNNING BACKS CAN SCORE TOUCHDOWNS BY THEMSELVES ON THE GROUND OR VIA A QUARTERBACK PASS RECEPTION INTO THE END ZONE.*/
-			else if (team2[4][randomPlayerIndex].pos.valueOf() == "RB"){
-				rbTDnumber = Math.floor(Math.random() * 2);
-				if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
-					team2[4][randomPlayerIndex].rushTD++;
+		var scoringPosition = Math.floor(Math.random() * 4);
+			switch (scoringPosition){
+				case 0: { //QB
+					team2[4][0].rushTD++;
+					team2[4][0].points = team2[4][0].points + 6;
+					var playerName = team2[4][0];
+					break;
 				}
-				else {
-					team2[4][randomPlayerIndex].recTD++;
+				case 1: { //RB
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//RB1 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "RB1"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team2[4][i].rushTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									var playerName = team2[4][i];
+								}
+								else {
+									team2[4][i].recTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									team2[4][0].passTD++;
+									var playerName = team2[4][i];
+								}
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//RB2 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "RB2"){
+								rbTDnumber = Math.floor(Math.random() * 2);
+								if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+									team2[4][i].rushTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									var playerName = team2[4][i];
+								}
+								else {
+									team2[4][i].recTD++;
+									team2[4][i].points = team2[4][i].points + 6;
+									team2[4][0].passTD++;
+									var playerName = team2[4][i];
+								}
+							}
+						}
+					}
+					else{
+						//OTHER RB SCORES
+						var rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						while (!(team2[4][rnd].pos.valueOf() == "RB" && team2[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						}
+						rbTDnumber = Math.floor(Math.random() * 2);
+						if(rbTDnumber == 0){ //IF 0, RUNNING BACK SCORES RUSHING TD. IF 1, RUNNING BACK SCORES A RECEIVING TD, WITH THE QB BEING CREDITED WITH A TOUCHDOWN PASS
+							team2[4][rnd].rushTD++;
+							team2[4][rnd].points = team2[4][rnd].points + 6;
+							var playerName = team2[4][rnd];
+						}
+						else {
+							team2[4][rnd].recTD++;
+							team2[4][rnd].points = team2[4][rnd].points + 6;
+							team2[4][0].passTD++;
+							var playerName = team2[4][rnd];
+						}
+					}
+					break;
+				}
+				case 2: { //WR
+					var endZonePlayer = Math.floor(Math.random() * 10);
+					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
+						//WR1 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "WR1"){
+								team2[4][i].recTD++;
+								team2[4][i].points = team2[4][i].points + 6;
+								team2[4][0].passTD++;
+								var playerName = team2[4][i];
+							}
+						}
+					}
+					else if(endZonePlayer == 6 || endZonePlayer == 7){
+						//WR2 SCORES
+						for(var i=0;i<team2[4].length;i++){
+							if(team2[4][i].rank.valueOf() == "WR2"){
+								team2[4][i].recTD++;
+								team2[4][i].points = team2[4][i].points + 6;
+								team2[4][0].passTD++;
+								var playerName = team2[4][i];
+							}
+						}
+					}
+					else{
+						//OTHER WR SCORES
+						var rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						while (!(team2[4][rnd].pos.valueOf() == "WR" && team2[4][rnd].rank.valueOf() == "")){
+							rnd = Math.floor(Math.random() * (team2[4].length - 1));
+						}
+						team2[4][rnd].recTD++;
+						team2[4][rnd].points = team2[4][rnd].points + 6;
+						team2[4][0].passTD++;
+						var playerName = team2[4][rnd];
+					}
+					break;
+				}
+				case 3: { //TE
+					var rnd = Math.floor(Math.random() * (team2[4].length - 1));
+					while (!(team2[4][rnd].pos.valueOf() == "TE" && team2[4][rnd].rank.valueOf() == "")){
+						rnd = Math.floor(Math.random() * (team2[4].length - 1));
+					}
+					team2[4][rnd].recTD++;
+					team2[4][rnd].points = team2[4][rnd].points + 6;
 					team2[4][0].passTD++;
+					var playerName = team2[4][rnd];
+					break;
 				}
 			}
-			/*WIDE RECEIVERS AND TIGHT ENDS ONLY SCORE TOUCHDOWNS IF THE BALL IS PASSED TO THEM. 
-			THEREFORE, THEY GET CREDITED WITH A RECEIVING TD AND THE QB WITH A PASSING TD*/
-			else{
-				team2[4][randomPlayerIndex].recTD++;
-				team2[4][0].passTD++;
-			}
 			
-			var playerName = team2[4][randomPlayerIndex];
+			/*TOUCHDOWN*/
 			
 		if(playerName.pos.valueOf() == "QB"){
 			document.getElementById("simulation").innerHTML += "<p>" + team2[3] + " rushing touchdown from " + playerName.name + "</p>";
