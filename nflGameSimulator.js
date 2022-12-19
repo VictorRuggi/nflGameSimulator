@@ -55,7 +55,7 @@ function init(){
 	HOUqbs = [ {name: "Kyle Allen", college: "Houston", dropOff: Number(Number(0).toFixed(1))}, {name: "Kevin Hogan", college: "Stanford", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Davis Mills", college: "Stanford", dropOff: Number(Number(6).toFixed(1))} ];
 	TENqbs = [ {name: "Ryan Tannehill", college: "Texas A&amp;M", dropOff: Number(Number(0).toFixed(1))}, {name: "Logan Woodside", college: "Toledo", dropOff: Number(Number(4).toFixed(1))}, {name: "Malik Willis", college: "Liberty", dropOff: Number(Number(6.5).toFixed(1))} ];
 	MINqbs = [ {name: "Kirk Cousins", college: "Michigan State", dropOff: Number(Number(0).toFixed(1))}, {name: "Sean Mannion", college: "Oregon State", dropOff: Number(Number(4.5).toFixed(1))}, {name: "Kellen Mond", college: "Texas A&amp;M", dropOff: Number(Number(6).toFixed(1))} ];
-	SFqbs = [ {name: "Jimmy Garoppolo", college: "Eastern Illinois", dropOff: Number(Number(0).toFixed(1))}, {name: "Trey Lance", college: "North Dakota State", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Tyler Bray", college: "Tennessee", dropOff: Number(Number(6).toFixed(1))} ];
+	SFqbs = [ {name: "Jimmy Garoppolo", college: "Eastern Illinois", dropOff: Number(Number(0).toFixed(1))}, {name: "Trey Lance", college: "North Dakota State", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Brock Purdy", college: "Iowa State", dropOff: Number(Number(6).toFixed(1))} ];
 	
 	/*TEAM O-LINES*/
 	CHIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
@@ -186,10 +186,11 @@ function init(){
 	
 	KCoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
 	{name: "Michael Burton", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Rutgers"},
-	{name: "Clyde Edwards-Helaire", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "LSU"},
+	{name: "Clyde Edwards-Helaire", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
 	{name: "Derrick Gore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Louisiana-Monroe"},
 	{name: "Jerick McKinnon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Georgia Southern"},
 	{name: "Ronald Jones II", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "USC"},
+	{name: "Isiah Pacheco", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Rutgers"},
 	{name: "Josh Gordon", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Baylor"},
 	{name: "Mecole Hardman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Georgia"},
 	{name: "JuJu Smith-Schuster", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Georgia"},
@@ -814,7 +815,7 @@ function resetAll(e){
 	HOUqbs = [ {name: "Kyle Allen", college: "Houston", dropOff: Number(Number(0).toFixed(1))}, {name: "Kevin Hogan", college: "Stanford", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Davis Mills", college: "Stanford", dropOff: Number(Number(6).toFixed(1))} ];
 	TENqbs = [ {name: "Ryan Tannehill", college: "Texas A&amp;M", dropOff: Number(Number(0).toFixed(1))}, {name: "Logan Woodside", college: "Toledo", dropOff: Number(Number(4).toFixed(1))}, {name: "Malik Willis", college: "Liberty", dropOff: Number(Number(6.5).toFixed(1))} ];
 	MINqbs = [ {name: "Kirk Cousins", college: "Michigan State", dropOff: Number(Number(0).toFixed(1))}, {name: "Sean Mannion", college: "Oregon State", dropOff: Number(Number(4.5).toFixed(1))}, {name: "Kellen Mond", college: "Texas A&amp;M", dropOff: Number(Number(6).toFixed(1))} ];
-	SFqbs = [ {name: "Jimmy Garoppolo", college: "Eastern Illinois", dropOff: Number(Number(0).toFixed(1))}, {name: "Trey Lance", college: "North Dakota State", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Tyler Bray", college: "Tennessee", dropOff: Number(Number(6).toFixed(1))} ];
+	SFqbs = [ {name: "Jimmy Garoppolo", college: "Eastern Illinois", dropOff: Number(Number(0).toFixed(1))}, {name: "Trey Lance", college: "North Dakota State", dropOff: Number(Number(3.5).toFixed(1))}, {name: "Brock Purdy", college: "Iowa State", dropOff: Number(Number(6).toFixed(1))} ];
 	
 	/*REINITIALIZE THE ROSTERS*/
 	CHIoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
@@ -945,10 +946,11 @@ function resetAll(e){
 	
 	KCoffense = [ {name: "", pos: "QB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: ""},
 	{name: "Michael Burton", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Rutgers"},
-	{name: "Clyde Edwards-Helaire", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "LSU"},
+	{name: "Clyde Edwards-Helaire", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "LSU"},
 	{name: "Derrick Gore", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Louisiana-Monroe"},
 	{name: "Jerick McKinnon", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB2",  college: "Georgia Southern"},
 	{name: "Ronald Jones II", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "USC"},
+	{name: "Isiah Pacheco", pos: "RB", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "RB1",  college: "Rutgers"},
 	{name: "Josh Gordon", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "",  college: "Baylor"},
 	{name: "Mecole Hardman", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR2",  college: "Georgia"},
 	{name: "JuJu Smith-Schuster", pos: "WR", points: 0, passTD: 0, rushTD: 0, recTD: 0, fg: 0, xp: 0, rank: "WR1",  college: "Georgia"},
@@ -2618,7 +2620,7 @@ function firstQuarter(team1, team2){
 			away=7;
 			team1[1] += away;
 			
-			var scoringPosition = Math.floor(Math.random() * 4);
+			var scoringPosition = Math.floor(Math.random() * 10);
 			switch (scoringPosition){
 				case 0: { //QB
 					team1[4][0].rushTD++;
@@ -2626,7 +2628,7 @@ function firstQuarter(team1, team2){
 					var playerName = team1[4][0];
 					break;
 				}
-				case 1: { //RB
+				case 1: case 3: case 5: case 7: { //RB
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//RB1 SCORES
@@ -2687,7 +2689,7 @@ function firstQuarter(team1, team2){
 					}
 					break;
 				}
-				case 2: { //WR
+				case 2: case 4: case 6: case 8: { //WR
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//WR1 SCORES
@@ -2724,7 +2726,7 @@ function firstQuarter(team1, team2){
 					}
 					break;
 				}
-				case 3: { //TE
+				case 9: { //TE
 					var rnd = Math.floor(Math.random() * (team1[4].length - 1));
 					while (!(team1[4][rnd].pos.valueOf() == "TE" && team1[4][rnd].rank.valueOf() == "")){
 						rnd = Math.floor(Math.random() * (team1[4].length - 1));
@@ -2802,7 +2804,7 @@ function firstQuarter(team1, team2){
 			home=7;
 			team2[1] += home;
 			
-			var scoringPosition = Math.floor(Math.random() * 4);
+			var scoringPosition = Math.floor(Math.random() * 10);
 			switch (scoringPosition){
 				case 0: { //QB
 					team2[4][0].rushTD++;
@@ -2810,7 +2812,7 @@ function firstQuarter(team1, team2){
 					var playerName = team2[4][0];
 					break;
 				}
-				case 1: { //RB
+				case 1: case 3: case 5: case 7: { //RB
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//RB1 SCORES
@@ -2871,7 +2873,7 @@ function firstQuarter(team1, team2){
 					}
 					break;
 				}
-				case 2: { //WR
+				case 2: case 4: case 6: case 8: { //WR
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//WR1 SCORES
@@ -2908,7 +2910,7 @@ function firstQuarter(team1, team2){
 					}
 					break;
 				}
-				case 3: { //TE
+				case 9: { //TE
 					var rnd = Math.floor(Math.random() * (team2[4].length - 1));
 					while (!(team2[4][rnd].pos.valueOf() == "TE" && team2[4][rnd].rank.valueOf() == "")){
 						rnd = Math.floor(Math.random() * (team2[4].length - 1));
@@ -3008,7 +3010,7 @@ function secondQuarter(team1, team2){
 			away=7;
 			team1[1] += away;
 			
-			var scoringPosition = Math.floor(Math.random() * 4);
+			var scoringPosition = Math.floor(Math.random() * 10);
 			switch (scoringPosition){
 				case 0: { //QB
 					team1[4][0].rushTD++;
@@ -3016,7 +3018,7 @@ function secondQuarter(team1, team2){
 					var playerName = team1[4][0];
 					break;
 				}
-				case 1: { //RB
+				case 1: case 3: case 5: case 7: { //RB
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//RB1 SCORES
@@ -3077,7 +3079,7 @@ function secondQuarter(team1, team2){
 					}
 					break;
 				}
-				case 2: { //WR
+				case 2: case 4: case 6: case 8: { //WR
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//WR1 SCORES
@@ -3114,7 +3116,7 @@ function secondQuarter(team1, team2){
 					}
 					break;
 				}
-				case 3: { //TE
+				case 9: { //TE
 					var rnd = Math.floor(Math.random() * (team1[4].length - 1));
 					while (!(team1[4][rnd].pos.valueOf() == "TE" && team1[4][rnd].rank.valueOf() == "")){
 						rnd = Math.floor(Math.random() * (team1[4].length - 1));
@@ -3192,7 +3194,7 @@ function secondQuarter(team1, team2){
 			home=7;
 			team2[1] += home;
 			
-			var scoringPosition = Math.floor(Math.random() * 4);
+			var scoringPosition = Math.floor(Math.random() * 10);
 			switch (scoringPosition){
 				case 0: { //QB
 					team2[4][0].rushTD++;
@@ -3200,7 +3202,7 @@ function secondQuarter(team1, team2){
 					var playerName = team2[4][0];
 					break;
 				}
-				case 1: { //RB
+				case 1: case 3: case 5: case 7: { //RB
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//RB1 SCORES
@@ -3261,7 +3263,7 @@ function secondQuarter(team1, team2){
 					}
 					break;
 				}
-				case 2: { //WR
+				case 2: case 4: case 6: case 8: { //WR
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//WR1 SCORES
@@ -3298,7 +3300,7 @@ function secondQuarter(team1, team2){
 					}
 					break;
 				}
-				case 3: { //TE
+				case 9: { //TE
 					var rnd = Math.floor(Math.random() * (team2[4].length - 1));
 					while (!(team2[4][rnd].pos.valueOf() == "TE" && team2[4][rnd].rank.valueOf() == "")){
 						rnd = Math.floor(Math.random() * (team2[4].length - 1));
@@ -3397,7 +3399,7 @@ function thirdQuarter(team1, team2){
 			away=7;
 			team1[1] += away;
 			
-			var scoringPosition = Math.floor(Math.random() * 4);
+			var scoringPosition = Math.floor(Math.random() * 10);
 			switch (scoringPosition){
 				case 0: { //QB
 					team1[4][0].rushTD++;
@@ -3405,7 +3407,7 @@ function thirdQuarter(team1, team2){
 					var playerName = team1[4][0];
 					break;
 				}
-				case 1: { //RB
+				case 1: case 3: case 5: case 7: { //RB
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//RB1 SCORES
@@ -3466,7 +3468,7 @@ function thirdQuarter(team1, team2){
 					}
 					break;
 				}
-				case 2: { //WR
+				case 2: case 4: case 6: case 8: { //WR
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//WR1 SCORES
@@ -3503,7 +3505,7 @@ function thirdQuarter(team1, team2){
 					}
 					break;
 				}
-				case 3: { //TE
+				case 9: { //TE
 					var rnd = Math.floor(Math.random() * (team1[4].length - 1));
 					while (!(team1[4][rnd].pos.valueOf() == "TE" && team1[4][rnd].rank.valueOf() == "")){
 						rnd = Math.floor(Math.random() * (team1[4].length - 1));
@@ -3581,7 +3583,7 @@ function thirdQuarter(team1, team2){
 			home=7;
 			team2[1] += home;
 			
-			var scoringPosition = Math.floor(Math.random() * 4);
+			var scoringPosition = Math.floor(Math.random() * 10);
 			switch (scoringPosition){
 				case 0: { //QB
 					team2[4][0].rushTD++;
@@ -3589,7 +3591,7 @@ function thirdQuarter(team1, team2){
 					var playerName = team2[4][0];
 					break;
 				}
-				case 1: { //RB
+				case 1: case 3: case 5: case 7: { //RB
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//RB1 SCORES
@@ -3650,7 +3652,7 @@ function thirdQuarter(team1, team2){
 					}
 					break;
 				}
-				case 2: { //WR
+				case 2: case 4: case 6: case 8: { //WR
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//WR1 SCORES
@@ -3687,7 +3689,7 @@ function thirdQuarter(team1, team2){
 					}
 					break;
 				}
-				case 3: { //TE
+				case 9: { //TE
 					var rnd = Math.floor(Math.random() * (team2[4].length - 1));
 					while (!(team2[4][rnd].pos.valueOf() == "TE" && team2[4][rnd].rank.valueOf() == "")){
 						rnd = Math.floor(Math.random() * (team2[4].length - 1));
@@ -3786,7 +3788,7 @@ function fourthQuarter(team1, team2){
 			away=7;
 			team1[1] += away;
 			
-			var scoringPosition = Math.floor(Math.random() * 4);
+			var scoringPosition = Math.floor(Math.random() * 10);
 			switch (scoringPosition){
 				case 0: { //QB
 					team1[4][0].rushTD++;
@@ -3794,7 +3796,7 @@ function fourthQuarter(team1, team2){
 					var playerName = team1[4][0];
 					break;
 				}
-				case 1: { //RB
+				case 1: case 3: case 5: case 7: { //RB
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//RB1 SCORES
@@ -3855,7 +3857,7 @@ function fourthQuarter(team1, team2){
 					}
 					break;
 				}
-				case 2: { //WR
+				case 2: case 4: case 6: case 8: { //WR
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//WR1 SCORES
@@ -3892,7 +3894,7 @@ function fourthQuarter(team1, team2){
 					}
 					break;
 				}
-				case 3: { //TE
+				case 9: { //TE
 					var rnd = Math.floor(Math.random() * (team1[4].length - 1));
 					while (!(team1[4][rnd].pos.valueOf() == "TE" && team1[4][rnd].rank.valueOf() == "")){
 						rnd = Math.floor(Math.random() * (team1[4].length - 1));
@@ -3970,7 +3972,7 @@ function fourthQuarter(team1, team2){
 			home=7;
 			team2[1] += home;
 			
-			var scoringPosition = Math.floor(Math.random() * 4);
+			var scoringPosition = Math.floor(Math.random() * 10);
 			switch (scoringPosition){
 				case 0: { //QB
 					team2[4][0].rushTD++;
@@ -3978,7 +3980,7 @@ function fourthQuarter(team1, team2){
 					var playerName = team2[4][0];
 					break;
 				}
-				case 1: { //RB
+				case 1: case 3: case 5: case 7: { //RB
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//RB1 SCORES
@@ -4039,7 +4041,7 @@ function fourthQuarter(team1, team2){
 					}
 					break;
 				}
-				case 2: { //WR
+				case 2: case 4: case 6: case 8: { //WR
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//WR1 SCORES
@@ -4076,7 +4078,7 @@ function fourthQuarter(team1, team2){
 					}
 					break;
 				}
-				case 3: { //TE
+				case 9: { //TE
 					var rnd = Math.floor(Math.random() * (team2[4].length - 1));
 					while (!(team2[4][rnd].pos.valueOf() == "TE" && team2[4][rnd].rank.valueOf() == "")){
 						rnd = Math.floor(Math.random() * (team2[4].length - 1));
@@ -4262,7 +4264,7 @@ function overtime(team1, team2){
 	{
 		team1[1] += 6;
 		
-		var scoringPosition = Math.floor(Math.random() * 4);
+		var scoringPosition = Math.floor(Math.random() * 10);
 			switch (scoringPosition){
 				case 0: { //QB
 					team1[4][0].rushTD++;
@@ -4270,7 +4272,7 @@ function overtime(team1, team2){
 					var playerName = team1[4][0];
 					break;
 				}
-				case 1: { //RB
+				case 1: case 3: case 5: case 7: { //RB
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//RB1 SCORES
@@ -4331,7 +4333,7 @@ function overtime(team1, team2){
 					}
 					break;
 				}
-				case 2: { //WR
+				case 2: case 4: case 6: case 8: { //WR
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//WR1 SCORES
@@ -4368,7 +4370,7 @@ function overtime(team1, team2){
 					}
 					break;
 				}
-				case 3: { //TE
+				case 9: { //TE
 					var rnd = Math.floor(Math.random() * (team1[4].length - 1));
 					while (!(team1[4][rnd].pos.valueOf() == "TE" && team1[4][rnd].rank.valueOf() == "")){
 						rnd = Math.floor(Math.random() * (team1[4].length - 1));
@@ -4427,7 +4429,7 @@ function overtime(team1, team2){
 	{
 		team2[1] += 6;
 		
-		var scoringPosition = Math.floor(Math.random() * 4);
+		var scoringPosition = Math.floor(Math.random() * 10);
 			switch (scoringPosition){
 				case 0: { //QB
 					team2[4][0].rushTD++;
@@ -4435,7 +4437,7 @@ function overtime(team1, team2){
 					var playerName = team2[4][0];
 					break;
 				}
-				case 1: { //RB
+				case 1: case 3: case 5: case 7: { //RB
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//RB1 SCORES
@@ -4496,7 +4498,7 @@ function overtime(team1, team2){
 					}
 					break;
 				}
-				case 2: { //WR
+				case 2: case 4: case 6: case 8: { //WR
 					var endZonePlayer = Math.floor(Math.random() * 10);
 					if((endZonePlayer >= 0 && endZonePlayer <= 5) || endZonePlayer == 9){
 						//WR1 SCORES
@@ -4533,7 +4535,7 @@ function overtime(team1, team2){
 					}
 					break;
 				}
-				case 3: { //TE
+				case 9: { //TE
 					var rnd = Math.floor(Math.random() * (team2[4].length - 1));
 					while (!(team2[4][rnd].pos.valueOf() == "TE" && team2[4][rnd].rank.valueOf() == "")){
 						rnd = Math.floor(Math.random() * (team2[4].length - 1));
